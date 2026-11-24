@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>煮雪话河山 · 指针</title>
+    <link>https://blog.zhuux.cn/</link>
+    <description>记录前端工程、构建工具与内容系统的实践与取舍。文章偏长，代码可复制，结论尽量可复现。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 21 Nov 2023 11:30:27 GMT</lastBuildDate>
+    <managingEditor>62405816@qq.com (煮雪话河山)</managingEditor>
+    <atom:link href="https://blog.zhuux.cn/feed/tag/cursor.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hexo美化：个性化鼠标指针样式</title>
+      <link>https://blog.zhuux.cn/posts/c57f6a8e</link>
+      <guid isPermaLink="true">https://blog.zhuux.cn/posts/c57f6a8e</guid>
+      <pubDate>Tue, 21 Nov 2023 11:30:27 GMT</pubDate>
+      <description>该方法通过外部引入，无需修改主题源文件 当我们使用电脑进行日常操作时，鼠标指针是我们与计算机界面直接交互的关键元素之一。然而，在大多数情况下，我们使用的鼠标指针样式都是统一的，这往往会导致视觉疲劳和操作困难。因此，个性化鼠标指针样式的重要性…</description>
+      <category>Hexo</category>
+      <category>Hexo</category>
+      <category>美化</category>
+      <category>指针</category>
+    </item>
+  </channel>
+</rss>

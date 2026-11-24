@@ -1,0 +1,8459 @@
+# 煮雪话河山 · 全量导出
+
+- 作者：煮雪话河山
+- 导出时间：2026-11-24（构建时快照，非实时）
+- 篇数：15（含归档，不含草稿与定时未到点内容）
+- 说明：每篇之间用 HTML 注释分隔，内容为仓库原文，含 frontmatter。
+
+---
+
+<!-- ===== 517785ce ===== -->
+---
+title: Vue项目准备工作
+summary: 在一个新的Vue项目开始之前，有一些准备工作是十分必要的，一个清晰、易于扩展的项目结构能帮助团队协作，并确保随着项目增大，不会出现难以维护的混乱代码。 Vue.js依赖于Node.js和npm（Node包管理器）。你可以从Node.js官网…
+date: 2025-01-08T15:41:28.000Z
+category: vue
+tags:
+  - vue
+  - study-notes
+cover: https://imgbed.kouseki.cn/file/1736322513326.jpg
+---
+
+## Vue项目准备工作
+
+在一个新的Vue项目开始之前，有一些准备工作是十分必要的，一个清晰、易于扩展的项目结构能帮助团队协作，并确保随着项目增大，不会出现难以维护的混乱代码。
+
+## 安装创建项目
+
+### 1. 安装Node.js
+
+Vue.js依赖于Node.js和npm（Node包管理器）。你可以从[Node.js官网](https://nodejs.org/zh-cn)下载并安装最新版本的Node.js，这将同时安装npm。
+
+```bash
+# 检查Node.js版本
+node -v
+
+# 检查npm版本
+npm -v
+```
+
+
+推荐使用`pnpm`进行后续步骤的安装以及使用，pnpm 本质上就是一个包管理器，这一点跟 npm/yarn 没有区别，但它有两个很关键的优势：
+
+- 包安装速度极快
+- 磁盘空间利用非常高效
+
+它的安装也非常简单：
+
+```bash
+npm i -g pnpm
+```
+
+
+### 2. 创建一个Vue应用
+
+确保你安装了最新版本的 [Node.js](https://nodejs.org/zh-cn)，并且你的当前工作目录正是打算创建项目的目录。在命令行中运行以下命令：
+
+```bash
+pnpm create vue@latest
+```
+
+
+这一指令将会安装并执行 [create-vue](https://github.com/vuejs/create-vue)，它是 Vue 官方的项目脚手架工具。你将会看到一些诸如 [TypeScript](https://www.tslang.cn/) 和测试支持之类的可选功能提示：
+
+```
+✔ Project name: … <your-project-name>
+✔ Add TypeScript? … No / Yes
+✔ Add JSX Support? … No / Yes
+✔ Add Vue Router for Single Page Application development? … No / Yes
+✔ Add Pinia for state management? … No / Yes
+✔ Add Vitest for Unit testing? … No / Yes
+✔ Add an End-to-End Testing Solution? … No / Cypress / Nightwatch / Playwright
+✔ Add ESLint for code quality? … No / Yes
+✔ Add Prettier for code formatting? … No / Yes
+✔ Add Vue DevTools 7 extension for debugging? (experimental) … No / Yes
+
+Scaffolding project in ./<your-project-name>...
+Done.
+```
+
+
+在项目被创建后，通过以下步骤安装依赖并启动开发服务器：
+
+```bash
+cd <your-project-name>
+pnpm install
+pnpm run dev
+```
+
+
+### 3. 项目结构
+
+```
+my-project
+├── node_modules/    # 项目依赖
+├── public/          # 公共资源
+├── src/             # 源代码
+│   ├── api/         # 接口api
+│   ├── assets/      # 静态资源
+│   ├── router/      # Vue路由
+│   ├── components/  # Vue组件
+│   ├── utils/       # 全局工具函数
+│   ├── views/       # 视图文件
+│   ├── App.vue      # 根组件
+│   ├── main.js      # 入口文件
+├── .gitignore       # Git忽略文件
+├── package.json     # 项目配置文件
+├── README.md        # 项目说明文件
+```
+
+
+## 项目配置
+
+### 1. 调整项目目录
+
+默认生成的目录结构不满足我们的开发需求，因此需要做一些自定义改动。主要是两个工作：
+
+- 删除初始化的默认文件
+- 修改剩余代码内容
+- 新增调整我们需要的目录结构
+- 拷贝初始化资源文件，安装预处理器插件
+
+#### 1.1 删除多余文件
+
+#### 1.2 修改文件内容
+
+`src/router/index.js`
+
+```js
+import { createRouter, createWebHistory } from 'vue-router'
+
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: []
+})
+
+export default router
+```
+
+
+`src/App.vue`
+
+```vue
+<script setup></script>
+
+<template>
+  <div>
+    <router-view></router-view>
+  </div>
+</template>
+
+<style scoped></style>
+```
+
+
+`src/main.js`
+
+```js
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
+
+import App from './App.vue'
+import router from './router'
+
+const app = createApp(App)
+
+app.use(createPinia())
+app.use(router)
+app.mount('#app')
+```
+
+
+#### 1.3 新增目录 /api /utils
+
+#### 1.4 引入样式
+
+将项目需要的全局样式 和 图片文件，复制到 assets 文件夹中,  并将全局样式在main.js中引入
+
+```js
+import '@/assets/main.scss'
+```
+
+
+### 2. 选择并配置代码风格与规范
+
+为了确保团队中的每个开发者都有一致的代码风格，避免低质量代码和不一致的代码格式，配置 *ESlint* 来检查代码质量并使用 *Prittier* 自动格式化代码，使用 *Husky* 来自动触发 Git 提交前的检查。
+
+#### 2.1 ESLint & Prettier 配置代码风格
+
+**环境同步：**
+
+1. **安装了插件 ESlint，开启保存自动修复**
+2. **禁用了插件 Prettier，并关闭保存自动格式化**
+
+```jsx
+// ESlint插件 + Vscode配置 实现自动格式化修复
+"editor.codeActionsOnSave": {
+    "source.fixAll": 'always'
+},
+"editor.formatOnSave": false,
+```
+
+
+**配置文件 eslint.config.js**
+
+1. Prettier 风格配置 [https://prettier.io](https://prettier.io/docs/en/options.html )
+
+   - 单引号
+   - 不使用分号
+   - 每行宽度至多80字符
+   - 不加对象|数组最后逗号
+   - 换行符号不限制（win mac 不一致）
+
+2. vue组件名称多单词组成（忽略index.vue）
+
+3. props解构（关闭）
+
+```jsx
+    rules: {
+      'prettier/prettier': [
+        'warn',
+        {
+          singleQuote: true, // 单引号
+          semi: false, // 无分号
+          printWidth: 100, // 每行宽度至多 100 字符
+          trailingComma: 'none', // 不加对象/数组最后的逗号
+          endOfLine: 'auto' // 换行符自动检测（Windows 和 Unix 系统兼容）
+        }
+      ],
+      'vue/multi-word-component-names': [
+        'warn',
+        {
+          ignores: ['index'] // 忽略 index.vue 的多词名称校验
+        }
+      ],
+      'vue/no-setup-props-destructure': 'off', // 允许 props 解构
+      'no-undef': 'error' // 未定义变量报错
+    }
+```
+
+
+
+
+#### 2.2 基于 husky 的代码检查工作流
+
+husky 是一个 git hooks 工具  ( git的钩子工具，可以在特定时机执行特定的命令 )
+
+**husky 配置**
+
+1. git初始化 git init
+
+2. 初始化 husky 工具配置  https://typicode.github.io/husky/
+
+```bash
+pnpm dlx husky-init && pnpm install
+```
+
+
+3. 修改 .husky/pre-commit 文件
+
+```bash
+pnpm lint
+```
+
+
+**问题：** 默认进行的是全量检查，耗时问题，历史问题。
+
+#### 2.3 lint-staged 配置
+
+1. 安装
+
+```bash
+pnpm i lint-staged -D
+```
+
+
+2. 配置 `package.json`
+
+```jsx
+{
+  // ... 省略 ...
+  "lint-staged": {
+    "*.{js,ts,vue}": [
+      "eslint --fix"
+    ]
+  }
+}
+
+{
+  "scripts": {
+    // ... 省略 ...
+    "lint-staged": "lint-staged"
+  }
+}
+```
+
+
+3. 修改 .husky/pre-commit 文件
+
+```bash
+pnpm lint-staged
+```
+
+### 3. Pinia - 构建用户仓库和持久化
+
+`官方文档`：https://prazdevs.github.io/pinia-plugin-persistedstate/zh/
+
+#### 3.1 安装使用配置插件
+
+- 安装插件 pinia-plugin-persistedstate
+
+```bash
+pnpm add pinia-plugin-persistedstate -D
+```
+
+
+- 使用 main.js
+
+```js
+import persist from 'pinia-plugin-persistedstate'
+...
+app.use(createPinia().use(persist))
+```
+
+
+- 配置 stores/user.js （这里以用户Token为例子）
+
+```js
+import { defineStore } from 'pinia'
+import { ref } from 'vue'
+
+// 用户模块
+export const useUserStore = defineStore(
+  'big-user',
+  () => {
+    const token = ref('') // 定义 token
+    const setToken = (t) => (token.value = t) // 设置 token
+
+    return { token, setToken }
+  },
+  {
+    persist: true // 持久化
+  }
+)
+```
+
+
+#### 3.2 配置仓库统一管理
+
+将所有的`Pinia模块`集中在`store/index.js`中，可以作为状态管理的入口文件。通过这种方式，可以快速找到所有的状态管理逻辑，提高代码的可维护性和清晰度。
+
+- `src/main.js`:
+
+```js
+import { createApp } from 'vue'
+
+import App from './App.vue'
+import router from './router'
+
+import pinia from '@/stores/index'
+
+import '@/assets/main.scss'
+
+const app = createApp(App)
+
+app.use(pinia)
+app.use(router)
+
+app.mount('#app')
+```
+
+
+- `src/stores/index.js`
+
+```js
+import { createPinia } from 'pinia'
+import persist from 'pinia-plugin-persistedstate'
+
+const pinia = createPinia()
+pinia.use(persist)
+
+export default pinia
+
+//接收模块的所有按需导出
+//等价于
+// import { useUserStore } from './modules/user'
+// export { useUserStore }
+export * from './modules/user'
+```
+
+
+至此，您已经完成了Pinia仓库的统一管理，现在由`stores/index.js`统一导出，导入路径统一`./stores`，仓库维护在 `src/stores/modules`中
+
+### 4. Axios - 数据交互
+
+大多数情况下都会使用`axios`来请求后端接口，一般都会对axios进行一些配置（比如：配置基础地址等等），一般项目开发中，对axios进行基本的二次封装，单独封装到一个模块中，便于使用
+
+- 1.安装`axios`
+
+```bash
+pnpm add axios
+```
+
+
+- 2.新建`utils/request.js`封装`axios`模块
+
+利用[`axios.create`](http://www.axios-js.com/zh-cn/docs/#axios-create-config)来创建一个自定义的`axios`来使用：
+
+```js
+import axios from 'axios'
+
+const baseURL = 'api基地址'
+
+const instance = axios.create({
+  // TODO 1. 基础地址，超时时间
+})
+
+instance.interceptors.request.use(
+  (config) => {
+    // TODO 2. 携带token
+    return config
+  },
+  (err) => Promise.reject(err)
+)
+
+instance.interceptors.response.use(
+  (res) => {
+    // TODO 3. 处理业务失败
+    // TODO 4. 摘取核心响应数据
+    return res
+  },
+  (err) => {
+    // TODO 5. 处理401错误
+    return Promise.reject(err)
+  }
+)
+
+export default instance
+```
+<!-- 阅读时长 9 分钟 · 状态 published · 导出时间 2026-11-24 -->
+
+---
+
+<!-- ===== bda0f2db ===== -->
+---
+title: Hexo美化：本站日志创建及配置
+summary: 最近在鱼塘水群，有些萌萌哒新人问到了怎么实现 本站日志 这个功能。 本站日志 的目的正是为了记录我在学习和开发过程中所做的每一项尝试与成就。这不仅是对自己努力的见证，也是希望能为其他开发者提供灵感和参考。通过这份日志，我希望能与大家共同探讨…
+date: 2024-10-28T20:37:27.000Z
+category: hexo
+tags:
+  - hexo
+  - beautify
+  - log
+cover: https://img.cent1pedee.top/img/update.jpg
+featured: true
+---
+
+## 前言
+
+最近在鱼塘水群，有些萌萌哒新人问到了怎么实现**本站日志**这个功能。**本站日志**的目的正是为了记录我在学习和开发过程中所做的每一项尝试与成就。这不仅是对自己努力的见证，也是希望能为其他开发者提供灵感和参考。通过这份日志，我希望能与大家共同探讨、学习与进步。
+
+本文以本站使用的主题 `anzhiyu` 主题为例，介绍如何为主题添加**本站日志**，当然目前是处于一个及其简陋的版本，很多地方或许达不到各位的审美标准，请各位大佬多多包容。
+
+## 样式预览
+
+
+
+![](https://img.cent1pedee.top/img/build.png)
+
+
+
+## 实现方式
+
+## 1. 配置文件
+
+- 在 `_config.anzhiyu.yml` 下的 `menu:` 添加 `本站日志: /update/ || xxx` , xxx 为你所想添加的图标，也可去掉。
+
+```yaml
+关于:
+  关于本人: /about/ || anzhiyu-icon-paper-plane
+  闲言碎语: /essay/ || anzhiyu-icon-lightbulb
+  本站日志: /update/ || xxx
+```
+
+
+## 2. Pug 文件修改
+
+- 在 `themes/anzhiyu/layout/page.pug` 中添加以下内容
+
+```pug
+      when 'update'
+        include includes/page/update.pug
+```
+
+
+<div class="hexo-note">
+
+注意，Pug 文件的缩进十分严格，在 Pug 中，缩进用于表示层级结构。
+
+</div>
+
+## 3. 添加 update.pug 文件
+
+- 在 `themes/anzhiyu/layout/includes/page`下新建`update.pug`文件，并添加以下内容：
+
+```pug
+#update
+  if site.data.update
+    each i in site.data.update
+      .author-content.author-content-item.UpdatePage.single(style = `background: url(${i.top_background}) left 37% / cover no-repeat !important;`)
+        .card-content
+          .author-content-item-tips=i.class_name
+          span.author-content-item-title=i.description
+          .content-bottom
+            .tips=i.tip
+          .banner-button-group
+            a.banner-button(href=i.buttonLink)
+              i.anzhiyufont.anzhiyu-icon-arrow-circle-right(style='font-size: 1.3rem')
+              span.banner-button-text=i.buttonText
+
+  #article-container
+    != page.content
+```
+
+
+<div class="hexo-note">
+
+注意，Pug 文件的缩进十分严格，在 Pug 中，缩进用于表示层级结构。
+
+</div>
+
+## 4. 添加 update.yml 文件
+
+- 在 `source/_data` 下新建 `update.yml` 文件，并添加以下内容：
+
+```yaml
+- top_background: "https://xxxxxx.png"
+  class_name: "Update Class 1"
+  description: "Description of the first update"
+  tip: "Tip for the first update"
+  buttonLink: "http://link_to_update1.com"
+  buttonText: "More"
+```
+
+
+<div class="hexo-note">
+
+**top_background** 请自行替换为自己所喜欢的壁纸。
+
+</div>
+
+## 5. 新建 Update 页面
+
+使用 `Hexo new page update` 命令新建页面，并在 `Front-matter` 中添加 `type: update`。
+
+## 6. 大功告成
+
+此时你已经完成了 **本站日志** 的创建，**如果需要添加内容，只需在 update 文件目录下的 index.md**中添加即可，页面支持 Markdown 格式，同时也支持 `anzhiyu` 主题下的外挂标签。你可以通过顶部的关于下的本站日志浏览完成后的效果，也可以通过下面的外挂链接浏览。
+<!-- 阅读时长 3 分钟 · 状态 published · 导出时间 2026-11-24 -->
+
+---
+
+<!-- ===== 9374da7d ===== -->
+---
+title: Hexo零成本方案：搭建Umami统计工具
+summary: 从早前的 LNMP 、OneinStack 到 XZ Utils ，再到现在的 Staticfile 、BootCDN ；供应链攻击总是让人猝不及防。七月中旬，糖果屋群突然就传来了51La被投毒的消息，而这也是我决定使用Umami的前提因素…
+date: 2024-08-31T21:26:00.000Z
+category: hexo
+tags:
+  - hexo
+  - umami
+  - tutorial
+cover: https://icdn.amarea.cn/upload/2022/04/625f01b68d30d.jpg
+---
+
+## 前言
+
+从早前的 LNMP 、OneinStack 到 XZ Utils ，再到现在的 Staticfile 、BootCDN ；供应链攻击总是让人猝不及防。七月中旬，糖果屋群突然就传来了51La被投毒的消息，而这也是我决定使用Umami的前提因素。但秉持着白嫖至上原则，因此写下了这篇文章。
+
+本文以本站使用的主题 `anzhiyu` 为例，结合以下教程，手把手从零教你开始搭建Umami。
+
+
+
+
+
+## 什么是Umami？
+
+**Umami** 是一个开源的网站访问统计工具，它可以作为**Google Analytics**的替代品。**Umami**专注于隐私保护，提供简洁直观的用户界面，并且允许用户自托管，这意味着你可以将数据保存在自己的服务器上，从而更好地控制数据安全和隐私。
+
+## 食用方法
+
+## 1、创建数据库
+
+首先在 [Supabase](https://supabase.com/)创建一个数据库。
+
+
+
+![png](https://imgbed.kouseki.cn/file/071d4a22159e6f6d7e891.png)
+
+
+
+- 创建步骤略过，请自行操作
+
+之后进入到创建项目的页面，按照相关的要求填写，名字、数据库密码后续需要使用。点击下面的 Generate a password 将生成的密码复制下来保存。
+
+待项目创建完毕，点击项目管理，点击数据库，找到 `Connection string` 中的URL栏目，复制内容，将 `[YOUR-PASSWORD]` 替换成前面所生成的密码，将括号去掉，就生成了一个新的链接。
+
+
+
+![png](https://imgbed.kouseki.cn/file/7ef6c44320528364a54a8.png)
+
+
+
+- 至此，您已经完成了该平台的操作。
+
+## 2、Vercel部署Umami
+
+从github上Fork [umami-softwareumami](https://github.com/umami-software/umami) 并import到Vercel中。
+
+环境配置分别添加 `DATABASE_URL` 和 `HASH_SALT`。前者是上一步在Supabase复制的 URL，记得替换自己的 Password，并且在最后加上 `?pgbouncer=true` ；后者需要自己随意生成一长串字符串，最后点击 Deploy。
+
+- 绑定完域名后即可访问您的统计网站。
+
+## 3、使用Umami
+
+通过上面的操作步骤基本上就创建好一个属于自己的统计网站，通过绑定的域名进入网站。默认的用户名和密码分别是`admin`和`Umami`。(建议先行更改用户名及密码)
+
+
+
+![webg](https://pic4.zhimg.com/80/v2-b94f07f48b4c0051371ec2b319016eed_720w.webp)
+
+
+
+- 添加之后点击编辑，点击跟踪代码，复制这串代码，并将这段代码添加到您的网站中，这里演示的是 `anzhiyu` 主题，请根据自己的主题进行修改。
+
+```yaml
+inject:
+  head:
+    # 自定义css
+    # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
+    - <script defer src="XXXXXXX" data-website-id="XXX"></script> # Umami访问统计
+```
+
+
+## 4、大功告成
+
+到这时候已经安装完毕，您可以通过自行搭建的统计网站查看网站的数据。
+
+同时，您也可以通过Umami的共享链接进行分享
+
+
+
+![png](https://imgbed.kouseki.cn/file/5152e97c86ab1e27814d8.png)
+<!-- 阅读时长 3 分钟 · 状态 published · 导出时间 2026-11-24 -->
+
+---
+
+<!-- ===== c57f6a8e ===== -->
+---
+title: Hexo美化：个性化鼠标指针样式
+summary: 该方法通过外部引入，无需修改主题源文件 当我们使用电脑进行日常操作时，鼠标指针是我们与计算机界面直接交互的关键元素之一。然而，在大多数情况下，我们使用的鼠标指针样式都是统一的，这往往会导致视觉疲劳和操作困难。因此，个性化鼠标指针样式的重要性…
+date: 2023-11-21T11:30:27.000Z
+category: hexo
+tags:
+  - hexo
+  - beautify
+  - cursor
+cover: https://img.cent1pedee.top/img/cursor.png
+---
+
+<div class="hexo-note">
+
+该方法通过外部引入，无需修改主题源文件
+
+</div>
+
+## 前言
+
+当我们使用电脑进行日常操作时，鼠标指针是我们与计算机界面直接交互的关键元素之一。然而，在大多数情况下，我们使用的鼠标指针样式都是统一的，这往往会导致视觉疲劳和操作困难。因此，个性化鼠标指针样式的重要性愈发凸显。定制化的鼠标指针不仅可以提升用户体验，也能够在繁忙的工作中带来更高的效率和愉悦感。随着个性化需求的不断增长，个性化鼠标指针样式已经成为了提升用户体验的重要途径之一。
+
+文以本站使用的主题 `anzhiyu` 为例，我将用最易操作的方式更改本站鼠标指针样式。
+
+## 样式预览
+
+
+
+![](https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201071208706.cur)
+
+![](https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201071205091.cur)
+
+
+
+## 实现方式
+
+- 在`themes/anzhiyu/source/_layout/`里，新建文件cursor.styl，内容如下
+
+```stylus
+body {
+	cursor: url(https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201071208706.cur), auto;
+}
+a {
+	cursor: url(https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201071205091.cur), auto!important;
+}
+```
+
+
+## 大功告成
+
+到这时候，如果你的文件路径正确，可以执行Hexo的三连命令来查看效果了！
+
+- 部分教程链接：
+<!-- 阅读时长 2 分钟 · 状态 published · 导出时间 2026-11-24 -->
+
+---
+
+<!-- ===== 576038b4 ===== -->
+---
+title: Hexo美化：个性化主题加载页设计方案
+summary: 该方法需要对源码进行一定程度上的修改，在修改代码前请务必备份一份在本地 Hexo是一款快速、简洁且高效的静态博客框架，它的加载页是展示个人品牌和风格的重要组成部分。通过定制加载页，你可以为你的网站增添个性化的风格，提升用户体验，以及传达特定…
+date: 2023-11-13T09:06:01.000Z
+category: hexo
+tags:
+  - hexo
+  - beautify
+  - loading
+cover: https://img.cent1pedee.top/img/loading.jpg
+---
+
+<div class="hexo-note">
+
+该方法需要对源码进行一定程度上的修改，在修改代码前请务必备份一份在本地
+
+</div>
+
+## 前言
+
+Hexo是一款快速、简洁且高效的静态博客框架，它的加载页是展示个人品牌和风格的重要组成部分。通过定制加载页，你可以为你的网站增添个性化的风格，提升用户体验，以及传达特定的信息。
+
+本文以本站使用的主题 `anzhiyu` 为例，在本教程中，我们将深入探讨如何更换Hexo加载页，从简单的概念到具体的实施步骤，帮助你轻松地定制属于自己的加载页。
+
+- **加载页的作用**：加载页是指在网页加载完成之前显示的页面，通常用于展示品牌标识、加载进度和欢迎信息。它不仅可以提升用户体验，还可以传达网站的特色和个性。
+
+- **加载页设计的考虑因素**：在定制加载页时，需要考虑网站的整体风格和目标受众。加载页应该与主题风格一致，同时尽量简洁明了，以保持用户的注意力和耐心。
+
+原教程中使用的是`butterfly`主题，本教程将以`anzhiyu`的格式进行更改。在此，感谢**百里飞洋**整合并提供了详细的配置教程，以及**小旦**为本站首页效果提供了宝贵的帮助。他们的博客链接如下：
+
+
+
+
+
+
+
+
+
+## 样式预览
+
+
+
+![](https://img.cent1pedee.top/img/Loading.gif)
+
+
+
+## 操作步骤
+
+## 1、新建文件
+
+- 在`themes/anzhiyu/layout/includes/loading/`里，新建文件wizard.pug，内容如下
+
+``` pug
+#loading-box
+  .loading-left-bg
+  .loading-right-bg
+  .wizard-scene
+    .wizard-objects
+      .wizard-square
+      .wizard-circle
+      .wizard-triangle
+    .wizard
+      .wizard-body
+      .wizard-right-arm
+        .wizard-right-hand
+      .wizard-left-arm
+        .wizard-left-hand
+      .wizard-head
+        .wizard-beard
+        .wizard-face
+          .wizard-adds
+        .wizard-hat
+          .wizard-hat-of-the-hat
+          .wizard-four-point-star.--first
+          .wizard-four-point-star.--second
+          .wizard-four-point-star.--third
+
+script.
+  const preloader = {
+    endLoading: () => {
+      document.getElementById('loading-box').classList.add("loaded");
+    },
+    initLoading: () => {
+      document.getElementById('loading-box').classList.remove("loaded")
+    }
+  }
+  window.addEventListener('load',()=> { preloader.endLoading() })
+  setTimeout(function(){preloader.endLoading();},10000)
+```
+
+
+## 2、修改index.pug
+
+- 找到`themes/anzhiyu/layout/includes/loading/`的`index.pug`文件，并替换文件内容
+
+``` pug
+if theme.preloader.source === 1
+  include ./fullpage-loading.pug
+else if theme.preloader.source === 2
+  include ./pace.pug
+else if theme.preloader.source === 3
+  include ./fullpage-loading.pug
+  include ./pace.pug
+else 
+  include ./wizard.pug
+```
+
+
+## 3、修改loading.styl
+
+- 找到`themes/anzhiyu/source/css/_global/`,拷贝一份`loading.styl`并重命名为`default.styl`
+- 为了便于后续管理,在此目录下新建`load_style`文件夹，将`default.styl`放入`load_style`文件夹中
+- 修改`loading.styl`文件，并替换以下内容
+
+```stylus
+if hexo-config('preloader.enable')
+  if hexo-config('preloader.source') == '1'
+    @import './personalized/_load_style/default.styl'
+  else if hexo-config('preloader.source') == '2'
+    @import './personalized/_load_style/default.styl'
+  else if hexo-config('preloader.source') == '3'
+    @import './personalized/_load_style/default.styl'
+  else
+    @import './personalized/_load_style/wizard.styl'
+```
+
+
+## 4、新建wizard.styl
+
+- 找到`themes/anzhiyu/source/css/_global/load_style/`并新建一个`wizard.styl`，内容如下
+
+```stylus
+.loading-bg
+  position fixed
+  z-index 1000
+  width 50%
+  height 100%
+  background var(--anzhiyu-card-bg)
+  
+#loading-box
+  .loading-left-bg
+    @extend .loading-bg
+    left 0
+  .loading-right-bg
+    @extend .loading-bg
+    right 0
+  &.loaded
+    z-index -1000
+    .loading-left-bg
+      transition all 1.0s
+      transform translate(-100%, 0)
+    .loading-right-bg
+      transition all 1.0s
+      transform translate(100%, 0)
+      
+#loading-box
+  position fixed
+  z-index 1000
+  display -webkit-box
+  display flex
+  -webkit-box-align center
+  align-items center
+  -webkit-box-pack center
+  justify-content center
+  -webkit-box-orient vertical
+  -webkit-box-direction normal
+  flex-direction column
+  flex-wrap wrap
+  width 100vw
+  height 100vh
+  overflow hidden
+
+  &.loaded
+    .wizard-scene
+      display none
+
+.wizard-scene
+  position fixed
+  z-index 1001
+  display -webkit-box
+  display flex
+
+.wizard
+  position relative
+  width 190px
+  height 240px
+
+.wizard-body
+  position absolute
+  bottom 0
+  left 68px
+  height 100px
+  width 60px
+  background #3f64ce
+  &::after
+    content ""
+    position absolute
+    bottom 0
+    left 20px
+    height 100px
+    width 60px
+    background #3f64ce
+    -webkit-transform skewX(14deg)
+    transform skewX(14deg)
+
+.wizard-right-arm
+  position absolute
+  bottom 74px
+  left 110px
+  height 44px
+  width 90px
+  background #3f64ce
+  border-radius 22px
+  -webkit-transform-origin 16px 22px
+  transform-origin 16px 22px
+  -webkit-transform rotate(70deg)
+  transform rotate(70deg)
+  -webkit-animation right_arm 10s ease-in-out infinite
+  animation right_arm 10s ease-in-out infinite
+  .right-hand
+    position absolute
+    right 8px
+    bottom 8px
+    width 30px
+    height 30px
+    border-radius 50%
+    background #f1c5b4
+    -webkit-transform-origin center center
+    transform-origin center center
+    -webkit-transform rotate(-40deg)
+    transform rotate(-40deg)
+    -webkit-animation right_hand 10s ease-in-out infinite
+    animation right_hand 10s ease-in-out infinite
+  .wizard-right-hand
+    &::after
+      content ""
+      position absolute
+      right 0px
+      top -8px
+      width 15px
+      height 30px
+      border-radius 10px
+      background #f1c5b4
+      -webkit-transform translateY(16px)
+      transform translateY(16px)
+      -webkit-animation right_finger 10s ease-in-out infinite
+      animation right_finger 10s ease-in-out infinite
+
+.wizard-left-arm
+  position absolute
+  bottom 74px
+  left 26px
+  height 44px
+  width 70px
+  background #3f64ce
+  border-bottom-left-radius 8px
+  -webkit-transform-origin 60px 26px
+  transform-origin 60px 26px
+  -webkit-transform rotate(-70deg)
+  transform rotate(-70deg)
+  -webkit-animation left_arm 10s ease-in-out infinite
+  animation left_arm 10s ease-in-out infinite
+  .wizard-left-hand
+    position absolute
+    left -18px
+    top 0
+    width 18px
+    height 30px
+    border-top-left-radius 35px
+    border-bottom-left-radius 35px
+    background #f1c5b4
+    &::after
+      content ""
+      position absolute
+      right 0
+      top 0
+      width 30px
+      height 15px
+      border-radius 20px
+      background #f1c5b4
+      -webkit-transform-origin right bottom
+      transform-origin right bottom
+      -webkit-transform scaleX(0)
+      transform scaleX(0)
+      -webkit-animation left_finger 10s ease-in-out infinite
+      animation left_finger 10s ease-in-out infinite
+
+.wizard-head
+  position absolute
+  top 0
+  left 14px
+  width 160px
+  height 210px
+  -webkit-transform-origin center center
+  transform-origin center center
+  -webkit-transform rotate(-3deg)
+  transform rotate(-3deg)
+  -webkit-animation head 10s ease-in-out infinite
+  animation head 10s ease-in-out infinite
+  .wizard-beard
+    position absolute
+    bottom 0
+    left 38px
+    height 106px
+    width 80px
+    border-bottom-right-radius 55%
+    background #ffffff
+    &::after
+      content ""
+      position absolute
+      top 16px
+      left -10px
+      width 40px
+      height 20px
+      border-radius 20px
+      background #ffffff
+  .wizard-face
+    position absolute
+    bottom 76px
+    left 38px
+    height 30px
+    width 60px
+    background #f1c5b4
+    &::before
+      content ""
+      position absolute
+      top 0px
+      left 40px
+      width 20px
+      height 40px
+      border-bottom-right-radius 20px
+      border-bottom-left-radius 20px
+      background #f1c5b4
+    &::after
+      content ""
+      position absolute
+      top 16px
+      left -10px
+      width 50px
+      height 20px
+      border-radius 20px
+      border-bottom-right-radius 0px
+      background #ffffff
+    .wizard-adds
+      position absolute
+      top 0px
+      left -10px
+      width 40px
+      height 20px
+      border-radius 20px
+      background #f1c5b4
+      &::after
+        content ""
+        position absolute
+        top 5px
+        left 80px
+        width 15px
+        height 20px
+        border-bottom-right-radius 20px
+        border-top-right-radius 20px
+        background #f1c5b4
+  .wizard-hat
+    position absolute
+    bottom 106px
+    left 0
+    width 160px
+    height 20px
+    border-radius 20px
+    background #3f64ce
+    &::before
+      content ""
+      position absolute
+      top -70px
+      left 50%
+      -webkit-transform translatex(-50%)
+      transform translatex(-50%)
+      width 0
+      height 0
+      border-style solid
+      border-width 0 34px 70px 50px
+      border-color transparent transparent #3f64ce transparent
+    &::after
+      content ""
+      position absolute
+      top 0
+      left 0
+      width 160px
+      height 20px
+      background #3f64ce
+      border-radius 20px
+    .wizard-hat-of-the-hat
+      position absolute
+      bottom 78px
+      left 79px
+      width 0
+      height 0
+      border-style solid
+      border-width 0 25px 25px 19px
+      border-color transparent transparent #3f64ce transparent
+      &::after
+        content ""
+        position absolute
+        top 6px
+        left -4px
+        width 35px
+        height 10px
+        border-radius 10px
+        border-bottom-left-radius 0px
+        background #3f64ce
+        -webkit-transform rotate(40deg)
+        transform rotate(40deg)
+    .wizard-four-point-star
+      position absolute
+      width 12px
+      height 12px
+      &::after
+        -webkit-transform rotate(156.66deg) skew(45deg)
+        transform rotate(156.66deg) skew(45deg)
+      &.--first
+        bottom 28px
+        left 46px
+      &.--second
+        bottom 40px
+        left 80px
+      &.--third
+        bottom 15px
+        left 108px
+
+.wizard-head .wizard-hat .wizard-four-point-star::after, .wizard-head .wizard-hat .wizard-four-point-star::before
+  content ""
+  position absolute
+  background #ffffff
+  display block
+  left 0
+  width 141.4213%
+  top 0
+  bottom 0
+  border-radius 10%
+  -webkit-transform rotate(66.66deg) skewX(45deg)
+  transform rotate(66.66deg) skewX(45deg)
+
+.wizard-objects
+  position relative
+  width 200px
+  height 240px
+
+.wizard-square
+  position absolute
+  bottom -60px
+  left -5px
+  width 120px
+  height 120px
+  border-radius 50%
+  -webkit-transform rotate(-360deg)
+  transform rotate(-360deg)
+  -webkit-animation path_square 10s ease-in-out infinite
+  animation path_square 10s ease-in-out infinite
+  &::after
+    content ""
+    position absolute
+    top 10px
+    left 0
+    width 50px
+    height 50px
+    background #9ab3f5
+
+.wizard-circle
+  position absolute
+  bottom 10px
+  left 0
+  width 100px
+  height 100px
+  border-radius 50%
+  -webkit-transform rotate(-360deg)
+  transform rotate(-360deg)
+  -webkit-animation path_circle 10s ease-in-out infinite
+  animation path_circle 10s ease-in-out infinite
+  &::after
+    content ""
+    position absolute
+    bottom -10px
+    left 25px
+    width 50px
+    height 50px
+    border-radius 50%
+    background #c56183
+
+.wizard-triangle
+  position absolute
+  bottom -62px
+  left -10px
+  width 110px
+  height 110px
+  border-radius 50%
+  -webkit-transform rotate(-360deg)
+  transform rotate(-360deg)
+  -webkit-animation path_triangle 10s ease-in-out infinite
+  animation path_triangle 10s ease-in-out infinite
+  &::after
+    content ""
+    position absolute
+    top 0
+    right -10px
+    width 0
+    height 0
+    border-style solid
+    border-width 0 28px 48px 28px
+    border-color transparent transparent #89beb3 transparent
+
+
+/** 10s animation - 10% = 1s */
+@-webkit-keyframes right_arm
+  0%
+    -webkit-transform rotate(70deg)
+    transform rotate(70deg)
+  10%
+    -webkit-transform rotate(8deg)
+    transform rotate(8deg)
+  15%
+    -webkit-transform rotate(20deg)
+    transform rotate(20deg)
+  20%
+    -webkit-transform rotate(10deg)
+    transform rotate(10deg)
+  25%
+    -webkit-transform rotate(26deg)
+    transform rotate(26deg)
+  30%
+    -webkit-transform rotate(10deg)
+    transform rotate(10deg)
+  35%
+    -webkit-transform rotate(28deg)
+    transform rotate(28deg)
+  40%
+    -webkit-transform rotate(9deg)
+    transform rotate(9deg)
+  45%
+    -webkit-transform rotate(28deg)
+    transform rotate(28deg)
+  50%
+    -webkit-transform rotate(8deg)
+    transform rotate(8deg)
+  58%
+    -webkit-transform rotate(74deg)
+    transform rotate(74deg)
+  62%
+    -webkit-transform rotate(70deg)
+    transform rotate(70deg)
+
+@keyframes right_arm
+  0%
+    -webkit-transform rotate(70deg)
+    transform rotate(70deg)
+  10%
+    -webkit-transform rotate(8deg)
+    transform rotate(8deg)
+  15%
+    -webkit-transform rotate(20deg)
+    transform rotate(20deg)
+  20%
+    -webkit-transform rotate(10deg)
+    transform rotate(10deg)
+  25%
+    -webkit-transform rotate(26deg)
+    transform rotate(26deg)
+  30%
+    -webkit-transform rotate(10deg)
+    transform rotate(10deg)
+  35%
+    -webkit-transform rotate(28deg)
+    transform rotate(28deg)
+  40%
+    -webkit-transform rotate(9deg)
+    transform rotate(9deg)
+  45%
+    -webkit-transform rotate(28deg)
+    transform rotate(28deg)
+  50%
+    -webkit-transform rotate(8deg)
+    transform rotate(8deg)
+  58%
+    -webkit-transform rotate(74deg)
+    transform rotate(74deg)
+  62%
+    -webkit-transform rotate(70deg)
+    transform rotate(70deg)
+
+@-webkit-keyframes left_arm
+  0%
+    -webkit-transform rotate(-70deg)
+    transform rotate(-70deg)
+  10%
+    -webkit-transform rotate(6deg)
+    transform rotate(6deg)
+  15%
+    -webkit-transform rotate(-18deg)
+    transform rotate(-18deg)
+  20%
+    -webkit-transform rotate(5deg)
+    transform rotate(5deg)
+  25%
+    -webkit-transform rotate(-18deg)
+    transform rotate(-18deg)
+  30%
+    -webkit-transform rotate(5deg)
+    transform rotate(5deg)
+  35%
+    -webkit-transform rotate(-17deg)
+    transform rotate(-17deg)
+  40%
+    -webkit-transform rotate(5deg)
+    transform rotate(5deg)
+  45%
+    -webkit-transform rotate(-18deg)
+    transform rotate(-18deg)
+  50%
+    -webkit-transform rotate(6deg)
+    transform rotate(6deg)
+  58%
+    -webkit-transform rotate(-74deg)
+    transform rotate(-74deg)
+  62%
+    -webkit-transform rotate(-70deg)
+    transform rotate(-70deg)
+
+@keyframes left_arm
+  0%
+    -webkit-transform rotate(-70deg)
+    transform rotate(-70deg)
+  10%
+    -webkit-transform rotate(6deg)
+    transform rotate(6deg)
+  15%
+    -webkit-transform rotate(-18deg)
+    transform rotate(-18deg)
+  20%
+    -webkit-transform rotate(5deg)
+    transform rotate(5deg)
+  25%
+    -webkit-transform rotate(-18deg)
+    transform rotate(-18deg)
+  30%
+    -webkit-transform rotate(5deg)
+    transform rotate(5deg)
+  35%
+    -webkit-transform rotate(-17deg)
+    transform rotate(-17deg)
+  40%
+    -webkit-transform rotate(5deg)
+    transform rotate(5deg)
+  45%
+    -webkit-transform rotate(-18deg)
+    transform rotate(-18deg)
+  50%
+    -webkit-transform rotate(6deg)
+    transform rotate(6deg)
+  58%
+    -webkit-transform rotate(-74deg)
+    transform rotate(-74deg)
+  62%
+    -webkit-transform rotate(-70deg)
+    transform rotate(-70deg)
+
+@-webkit-keyframes right_hand
+  0%
+    -webkit-transform rotate(-40deg)
+    transform rotate(-40deg)
+  10%
+    -webkit-transform rotate(-20deg)
+    transform rotate(-20deg)
+  15%
+    -webkit-transform rotate(-5deg)
+    transform rotate(-5deg)
+  20%
+    -webkit-transform rotate(-60deg)
+    transform rotate(-60deg)
+  25%
+    -webkit-transform rotate(0deg)
+    transform rotate(0deg)
+  30%
+    -webkit-transform rotate(-60deg)
+    transform rotate(-60deg)
+  35%
+    -webkit-transform rotate(0deg)
+    transform rotate(0deg)
+  40%
+    -webkit-transform rotate(-40deg)
+    transform rotate(-40deg)
+  45%
+    -webkit-transform rotate(-60deg)
+    transform rotate(-60deg)
+  50%
+    -webkit-transform rotate(10deg)
+    transform rotate(10deg)
+  60%
+    -webkit-transform rotate(-40deg)
+    transform rotate(-40deg)
+
+
+@keyframes right_hand
+  0%
+    -webkit-transform rotate(-40deg)
+    transform rotate(-40deg)
+  10%
+    -webkit-transform rotate(-20deg)
+    transform rotate(-20deg)
+  15%
+    -webkit-transform rotate(-5deg)
+    transform rotate(-5deg)
+  20%
+    -webkit-transform rotate(-60deg)
+    transform rotate(-60deg)
+  25%
+    -webkit-transform rotate(0deg)
+    transform rotate(0deg)
+  30%
+    -webkit-transform rotate(-60deg)
+    transform rotate(-60deg)
+  35%
+    -webkit-transform rotate(0deg)
+    transform rotate(0deg)
+  40%
+    -webkit-transform rotate(-40deg)
+    transform rotate(-40deg)
+  45%
+    -webkit-transform rotate(-60deg)
+    transform rotate(-60deg)
+  50%
+    -webkit-transform rotate(10deg)
+    transform rotate(10deg)
+  60%
+    -webkit-transform rotate(-40deg)
+    transform rotate(-40deg)
+
+@-webkit-keyframes right_finger
+  0%
+    -webkit-transform translateY(16px)
+    transform translateY(16px)
+  10%
+    -webkit-transform none
+    transform none
+  50%
+    -webkit-transform none
+    transform none
+  60%
+    -webkit-transform translateY(16px)
+    transform translateY(16px)
+
+@keyframes right_finger
+  0%
+    -webkit-transform translateY(16px)
+    transform translateY(16px)
+  10%
+    -webkit-transform none
+    transform none
+  50%
+    -webkit-transform none
+    transform none
+  60%
+    -webkit-transform translateY(16px)
+    transform translateY(16px)
+
+@-webkit-keyframes left_finger
+  0%
+    -webkit-transform scaleX(0)
+    transform scaleX(0)
+  10%
+    -webkit-transform scaleX(1) rotate(6deg)
+    transform scaleX(1) rotate(6deg)
+  15%
+    -webkit-transform scaleX(1) rotate(0deg)
+    transform scaleX(1) rotate(0deg)
+  20%
+    -webkit-transform scaleX(1) rotate(8deg)
+    transform scaleX(1) rotate(8deg)
+  25%
+    -webkit-transform scaleX(1) rotate(0deg)
+    transform scaleX(1) rotate(0deg)
+  30%
+    -webkit-transform scaleX(1) rotate(7deg)
+    transform scaleX(1) rotate(7deg)
+  35%
+    -webkit-transform scaleX(1) rotate(0deg)
+    transform scaleX(1) rotate(0deg)
+  40%
+    -webkit-transform scaleX(1) rotate(5deg)
+    transform scaleX(1) rotate(5deg)
+  45%
+    -webkit-transform scaleX(1) rotate(0deg)
+    transform scaleX(1) rotate(0deg)
+  50%
+    -webkit-transform scaleX(1) rotate(6deg)
+    transform scaleX(1) rotate(6deg)
+  58%
+    -webkit-transform scaleX(0)
+    transform scaleX(0)
+
+@keyframes left_finger
+  0%
+    -webkit-transform scaleX(0)
+    transform scaleX(0)
+  10%
+    -webkit-transform scaleX(1) rotate(6deg)
+    transform scaleX(1) rotate(6deg)
+  15%
+    -webkit-transform scaleX(1) rotate(0deg)
+    transform scaleX(1) rotate(0deg)
+  20%
+    -webkit-transform scaleX(1) rotate(8deg)
+    transform scaleX(1) rotate(8deg)
+  25%
+    -webkit-transform scaleX(1) rotate(0deg)
+    transform scaleX(1) rotate(0deg)
+  30%
+    -webkit-transform scaleX(1) rotate(7deg)
+    transform scaleX(1) rotate(7deg)
+  35%
+    -webkit-transform scaleX(1) rotate(0deg)
+    transform scaleX(1) rotate(0deg)
+  40%
+    -webkit-transform scaleX(1) rotate(5deg)
+    transform scaleX(1) rotate(5deg)
+  45%
+    -webkit-transform scaleX(1) rotate(0deg)
+    transform scaleX(1) rotate(0deg)
+  50%
+    -webkit-transform scaleX(1) rotate(6deg)
+    transform scaleX(1) rotate(6deg)
+  58%
+    -webkit-transform scaleX(0)
+    transform scaleX(0)
+
+@-webkit-keyframes head
+  0%
+    -webkit-transform rotate(-3deg)
+    transform rotate(-3deg)
+  10%
+    -webkit-transform translatex(10px) rotate(7deg)
+    transform translatex(10px) rotate(7deg)
+  50%
+    -webkit-transform translatex(0px) rotate(0deg)
+    transform translatex(0px) rotate(0deg)
+  56%
+    -webkit-transform rotate(-3deg)
+    transform rotate(-3deg)
+
+@keyframes head
+  0%
+    -webkit-transform rotate(-3deg)
+    transform rotate(-3deg)
+  10%
+    -webkit-transform translatex(10px) rotate(7deg)
+    transform translatex(10px) rotate(7deg)
+  50%
+    -webkit-transform translatex(0px) rotate(0deg)
+    transform translatex(0px) rotate(0deg)
+  56%
+    -webkit-transform rotate(-3deg)
+    transform rotate(-3deg)
+/** 10s animation - 10% = 1s */
+@-webkit-keyframes path_circle
+  0%
+    -webkit-transform translateY(0)
+    transform translateY(0)
+  10%
+    -webkit-transform translateY(-100px) rotate(-5deg)
+    transform translateY(-100px) rotate(-5deg)
+  55%
+    -webkit-transform translateY(-100px) rotate(-360deg)
+    transform translateY(-100px) rotate(-360deg)
+  58%
+    -webkit-transform translateY(-100px) rotate(-360deg)
+    transform translateY(-100px) rotate(-360deg)
+  63%
+    -webkit-transform rotate(-360deg)
+    transform rotate(-360deg)
+
+@keyframes path_circle
+  0%
+    -webkit-transform translateY(0)
+    transform translateY(0)
+  10%
+    -webkit-transform translateY(-100px) rotate(-5deg)
+    transform translateY(-100px) rotate(-5deg)
+  55%
+    -webkit-transform translateY(-100px) rotate(-360deg)
+    transform translateY(-100px) rotate(-360deg)
+  58%
+    -webkit-transform translateY(-100px) rotate(-360deg)
+    transform translateY(-100px) rotate(-360deg)
+  63%
+    -webkit-transform rotate(-360deg)
+    transform rotate(-360deg)
+
+@-webkit-keyframes path_square
+  0%
+    -webkit-transform translateY(0)
+    transform translateY(0)
+  10%
+    -webkit-transform translateY(-155px) translatex(-15px) rotate(10deg)
+    transform translateY(-155px) translatex(-15px) rotate(10deg)
+  55%
+    -webkit-transform translateY(-155px) translatex(-15px) rotate(-350deg)
+    transform translateY(-155px) translatex(-15px) rotate(-350deg)
+  57%
+    -webkit-transform translateY(-155px) translatex(-15px) rotate(-350deg)
+    transform translateY(-155px) translatex(-15px) rotate(-350deg)
+  63%
+    -webkit-transform rotate(-360deg)
+    transform rotate(-360deg)
+
+@keyframes path_square
+  0%
+    -webkit-transform translateY(0)
+    transform translateY(0)
+  10%
+    -webkit-transform translateY(-155px) translatex(-15px) rotate(10deg)
+    transform translateY(-155px) translatex(-15px) rotate(10deg)
+  55%
+    -webkit-transform translateY(-155px) translatex(-15px) rotate(-350deg)
+    transform translateY(-155px) translatex(-15px) rotate(-350deg)
+  57%
+    -webkit-transform translateY(-155px) translatex(-15px) rotate(-350deg)
+    transform translateY(-155px) translatex(-15px) rotate(-350deg)
+  63%
+    -webkit-transform rotate(-360deg)
+    transform rotate(-360deg)
+
+@-webkit-keyframes path_triangle
+  0%
+    -webkit-transform translateY(0)
+    transform translateY(0)
+  10%
+    -webkit-transform translateY(-172px) translatex(10px) rotate(-10deg)
+    transform translateY(-172px) translatex(10px) rotate(-10deg)
+  55%
+    -webkit-transform translateY(-172px) translatex(10px) rotate(-365deg)
+    transform translateY(-172px) translatex(10px) rotate(-365deg)
+  58%
+    -webkit-transform translateY(-172px) translatex(10px) rotate(-365deg)
+    transform translateY(-172px) translatex(10px) rotate(-365deg)
+  63%
+    -webkit-transform rotate(-360deg)
+    transform rotate(-360deg)
+
+@keyframes path_triangle
+  0%
+    -webkit-transform translateY(0)
+    transform translateY(0)
+  10%
+    -webkit-transform translateY(-172px) translatex(10px) rotate(-10deg)
+    transform translateY(-172px) translatex(10px) rotate(-10deg)
+  55%
+    -webkit-transform translateY(-172px) translatex(10px) rotate(-365deg)
+    transform translateY(-172px) translatex(10px) rotate(-365deg)
+  58%
+    -webkit-transform translateY(-172px) translatex(10px) rotate(-365deg)
+    transform translateY(-172px) translatex(10px) rotate(-365deg)
+  63%
+    -webkit-transform rotate(-360deg)
+    transform rotate(-360deg)
+```
+
+
+## 5、修改主题配置文件
+
+- 在主题配置文件中找到`preloader`,修改如下
+
+```yaml
+# Loading Animation (加载动画)
+preloader:
+  enable: true
+  # source
+  # 1. fullpage-loading
+  # 2. pace (progress bar)
+  # 3. all
+  # 4. wizard(custom)
+  source: 4
+  # pace theme (see https://codebyzach.github.io/pace/)
+  pace_css_url:
+  avatar: xxx # 自定加载动画义头像
+```
+
+
+## 6、大功告成
+
+到这时候，如果你的文件配置正确，可以执行Hexo的三连命令来查看效果了！
+
+- 改动参考
+<!-- 阅读时长 12 分钟 · 状态 published · 导出时间 2026-11-24 -->
+
+---
+
+<!-- ===== f730aac1 ===== -->
+---
+title: Hexo美化：自适应切换渐进式加载首页图
+summary: 该方法通过外部引入，无需修改主题源文件 随着互联网技术的发展，越来越多的人选择使用静态博客来展示自己的个人风格和内容。在一个偶然的机会下，我接触了 Hexo 静态博客的搭建与使用，并且对其进行了美化。 本文以本站使用的主题 anzhiyu…
+date: 2023-10-21T11:48:57.000Z
+category: hexo
+tags:
+  - hexo
+  - beautify
+  - background
+cover: https://img.cent1pedee.top/img/background.png
+---
+
+<div class="hexo-note">
+
+该方法通过外部引入，无需修改主题源文件
+
+</div>
+
+## 前言
+
+随着互联网技术的发展，越来越多的人选择使用静态博客来展示自己的个人风格和内容。在一个偶然的机会下，我接触了**Hexo**静态博客的搭建与使用，并且对其进行了美化。
+
+本文以本站使用的主题 `anzhiyu` 为例，介绍了如何为首页顶部图配置渐进式加载。渐进式加载是一种优化网页性能和用户体验的技术，它可以让图片在加载过程中逐渐显示出清晰度，从而避免了图片加载缓慢或失败时出现的空白或占位符。这个方法同样适用于一图流的博客背景，因此我们只需要更改部分代码即可实现本站首页效果。为了方便读者的阅读和参考，本文将详细描述操作步骤，并提供相关的截图和示例。在此，我要感谢**石头姐**提供了详细的配置教程，以及**小旦**为本站首页效果提供了宝贵的帮助。他们的博客链接如下：
+
+
+
+
+
+
+
+
+
+
+通过本文的介绍，我希望能够帮助更多的**Hexo**用户实现渐进式加载的效果，提升博客的美观性和性能。
+
+## 样式预览
+
+
+
+![](https://bu.dusays.com/2023/09/28/6515293424689.gif)
+
+
+
+- 原理是先加载小图文件并进行高斯模糊处理，在大图加载完成后再对大图进行加载。
+
+## 操作步骤
+
+## 1、新建文件
+
+- 新建文件`themes/anzhiyu/source/js/imgloaded.js`新增以下内容，并按照注释调整照片路径
+
+
+
+<!-- tab 首页顶部图渐进式加载 -->
+
+``` json
+// 首页头图加载优化
+/**
+ * @description 实现medium的渐进加载背景的效果
+ */
+class ProgressiveLoad {
+    constructor(smallSrc, largeSrc) {
+      this.smallSrc = smallSrc;
+      this.largeSrc = largeSrc;
+      this.initTpl();
+    }
+  
+    /**
+     * @description 生成ui模板
+     */
+    initTpl() {
+      this.container = document.createElement('div');
+      this.smallStage = document.createElement('div');
+      this.largeStage = document.createElement('div');
+      this.smallImg = new Image();
+      this.largeImg = new Image();
+      this.container.className = 'pl-container';
+      this.smallStage.className = 'pl-img pl-blur';
+      this.largeStage.className = 'pl-img';
+      this.container.appendChild(this.smallStage);
+      this.container.appendChild(this.largeStage);
+      this.smallImg.onload = this._onSmallLoaded.bind(this);
+      this.largeImg.onload = this._onLargeLoaded.bind(this);
+    }
+  
+    /**
+     * @description 加载背景
+     */
+    progressiveLoad() {
+      this.smallImg.src = this.smallSrc;
+      this.largeImg.src = this.largeSrc;
+    }
+  
+    /**
+     * @description 大图加载完成
+     */
+    _onLargeLoaded() {
+      this.largeStage.classList.add('pl-visible');
+      this.largeStage.style.backgroundImage = `url('${this.largeSrc}')`;
+    }
+  
+    /**
+     * @description 小图加载完成
+     */
+    _onSmallLoaded() {
+      this.smallStage.classList.add('pl-visible');
+      this.smallStage.style.backgroundImage = `url('${this.smallSrc}')`;
+    }
+  }
+  
+  const executeLoad = (config, target) => {
+    console.log('执行渐进背景替换');
+    const isMobile = window.matchMedia('(max-width: 767px)').matches;
+    const loader = new ProgressiveLoad(
+      isMobile ? config.mobileSmallSrc : config.smallSrc,
+      isMobile ? config.mobileLargeSrc : config.largeSrc
+    );
+    // 和背景图颜色保持一致，防止高斯模糊后差异较大
+    if (target.children[0]) {
+      target.insertBefore(loader.container, target.children[0]);
+    }
+    loader.progressiveLoad();
+  };
+  
+  const config = {
+    smallSrc: '/img/xiaotu.jpg', // 小图链接 尽可能配置小于100k的图片
+    largeSrc: '/img/tu.jpg', // 大图链接 最终显示的图片
+    mobileSmallSrc: '/img/sjxt.jpg', // 手机端小图链接 尽可能配置小于100k的图片
+    mobileLargeSrc: '/img/sjdt.jpg', // 手机端大图链接 最终显示的图片
+    enableRoutes: ['/'],
+    };
+
+  function initProgressiveLoad(config) {
+    const target = document.getElementById('page-header');
+    if (target && target.classList.contains('full_page')) {
+      executeLoad(config, target);
+    }
+  }
+  
+  function onPJAXComplete(config) {
+    const target = document.getElementById('page-header');
+    if (target && target.classList.contains('full_page')) {
+      initProgressiveLoad(config);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    initProgressiveLoad(config);
+  });
+  
+  document.addEventListener("pjax:complete", function() {
+    onPJAXComplete(config);
+  });
+  
+```
+
+
+<!-- endtab -->
+
+<!-- tab 首页一图流渐进式加载 -->
+
+```json
+// 首页一图流加载优化
+/**
+ * @description 实现medium的渐进加载背景的效果
+ */
+(function() {
+  class ProgressiveLoad {
+    constructor(smallSrc, largeSrc) {
+      this.smallSrc = smallSrc;
+      this.largeSrc = largeSrc;
+      this.initTpl();
+      this.container.addEventListener('animationend', () => {
+        this.smallStage.style.display = 'none'; 
+      }, {once: true});
+    }
+
+    initTpl() {
+      this.container = document.createElement('div');
+      this.smallStage = document.createElement('div');
+      this.largeStage = document.createElement('div');
+      this.smallImg = new Image();
+      this.largeImg = new Image();
+      this.container.className = 'pl-container';
+      this.smallStage.className = 'pl-img pl-blur';
+      this.largeStage.className = 'pl-img';
+      this.container.appendChild(this.smallStage);
+      this.container.appendChild(this.largeStage);
+      this.smallImg.onload = this._onSmallLoaded.bind(this);
+      this.largeImg.onload = this._onLargeLoaded.bind(this);
+    }
+
+    progressiveLoad() {
+      this.smallImg.src = this.smallSrc;
+      this.largeImg.src = this.largeSrc;
+    }
+
+    _onLargeLoaded() {
+      this.largeStage.classList.add('pl-visible');
+      this.largeStage.style.backgroundImage = `url('${this.largeSrc}')`;
+    }
+
+    _onSmallLoaded() {
+      this.smallStage.classList.add('pl-visible');
+      this.smallStage.style.backgroundImage = `url('${this.smallSrc}')`;
+    }
+  }
+
+  const executeLoad = (config, target) => {
+    console.log('执行渐进背景替换');
+    const isMobile = window.matchMedia('(max-width: 767px)').matches;
+    const loader = new ProgressiveLoad(
+      isMobile ? config.mobileSmallSrc : config.smallSrc,
+      isMobile ? config.mobileLargeSrc : config.largeSrc
+    );
+    if (target.children[0]) {
+      target.insertBefore(loader.container, target.children[0]);
+    }
+    loader.progressiveLoad();
+  };
+
+  const ldconfig = {
+    light: {
+	  smallSrc: '/img/bg2_80kbver.jpg', //浅色模式 小图链接 尽可能配置小于100k的图片 
+	  largeSrc: '/img/bg2.jpg', //浅色模式 大图链接 最终显示的图片
+	  mobileSmallSrc: '/img/bg2_80kbver.jpg', //手机端浅色小图链接 尽可能配置小于100k的图片
+	  mobileLargeSrc: '/img/bg2.jpg', //手机端浅色大图链接 最终显示的图片
+	  enableRoutes: ['/'],
+	  },
+	dark: {
+	  smallSrc: '/img/bg1_80kbver.jpg', //深色模式 小图链接 尽可能配置小于100k的图片 
+	  largeSrc: '/img/bg1.jpg', //深色模式 大图链接 最终显示的图片
+	  mobileSmallSrc: '/img/bg1_80kbver.jpg', //手机端深色模式小图链接 尽可能配置小于100k的图片
+	  mobileLargeSrc: '/img/bg1.jpg', //手机端深色大图链接 最终显示的图片
+	  enableRoutes: ['/'],
+	  },
+	};
+
+    const getCurrentTheme = () => {
+      return document.documentElement.getAttribute('data-theme'); 
+    }
+
+    const onThemeChange = () => {
+      const currentTheme = getCurrentTheme();
+      const config = ldconfig[currentTheme];
+      initProgressiveLoad(config);
+      document.addEventListener("DOMContentLoaded", function() {
+        initProgressiveLoad(config);
+      });
+    
+      document.addEventListener("pjax:complete", function() {
+        onPJAXComplete(config);
+      });
+    }
+
+    let initTheme = getCurrentTheme();
+    let initConfig = ldconfig[initTheme];
+    initProgressiveLoad(initConfig);
+
+  const observer = new MutationObserver(mutations => {
+    mutations.forEach(mutation => {
+      if (mutation.attributeName === "data-theme" && location.pathname === '/') {
+        onThemeChange();
+      }
+    });
+  });
+  
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ["data-theme"]  
+  });
+
+  function initProgressiveLoad(config) {
+    const container = document.querySelector('.pl-container');
+    if (container) {
+      container.remove();
+    }
+    const target = document.getElementById('page-header');
+    if (target && target.classList.contains('full_page')) {
+      executeLoad(config, target);
+    }
+  }
+
+  function onPJAXComplete(config) {
+    const target = document.getElementById('page-header');
+    if (target && target.classList.contains('full_page')) {
+      initProgressiveLoad(config);
+    }
+  }
+
+})();
+
+```
+
+
+<!-- endtab -->
+
+
+
+- 新建文件`themes/anzhiyu/source/css/imgloaded.css`新增以下内容，并按照注释自行决定调整内容
+
+
+
+<!-- tab 首页顶部图渐进式加载 -->
+
+```css
+/* 首页头图加载 */  
+.pl-container {  
+  width: 100%;  
+  height: 100%;  
+  position: relative;  /* 一图流这里改fixed */  
+  /* 一图流这里加z-index: -2; */ 
+  overflow: hidden;  
+  will-change: transform; /* 添加性能优化 */  
+  /* blur-to-clear模糊动画2s */
+  animation: blur-to-clear 2s cubic-bezier(.62,.21,.25,1) 0s 1 normal backwards running, scale 1.5s cubic-bezier(.62,.21,.25,1) 0s 1 both;  
+}  
+.pl-img {  
+  width: 100%;  
+  height: 100%;  
+  position: absolute;  
+  background-position: center;  
+  background-size: cover;  
+  background-repeat: no-repeat;  
+  opacity: 0;  
+  transition: opacity 1s;  
+}  
+  
+@keyframes blur-to-clear {  
+  0% {  
+    filter: blur(50px);  
+    opacity: 1;  
+  }  
+  100% {  
+    filter: blur(0);  
+    opacity: 1;  
+  }  
+}  
+  
+@keyframes scale {  
+  0% {  
+    transform: scale(1.5) translateZ(0);  
+    opacity: 0;  
+  }  
+  to {  
+    transform: scale(1) translateZ(0);  
+    opacity: 1;  
+  }  
+}  
+  
+.pl-visible {  
+  opacity: 1;  
+}  
+  
+.pl-blur {  
+  /* 小图锯齿多，增加高斯模糊 */  
+  filter: blur(50px);  
+}
+```
+
+
+<!-- endtab -->
+
+<!-- tab 首页一图流渐进式加载 -->
+
+```css
+/* 首页头图加载 */
+.pl-container {
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  position: fixed;
+  overflow: hidden;
+  will-change: transform; /* 添加性能优化 */
+  animation: blur-to-clear 2s cubic-bezier(.62,.21,.25,1) 0s 1 normal backwards running, scale 1.5s cubic-bezier(.62,.21,.25,1) 0s 1 both;
+}
+.pl-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+@keyframes blur-to-clear {
+  0% {
+    filter: blur(50px);
+    opacity: 1;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1.5) translateZ(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateZ(0);
+    opacity: 1;
+  }
+}
+
+.pl-visible {
+  opacity: 1;
+}
+
+.pl-blur {
+  /* 小图锯齿多，增加高斯模糊 */
+  filter: blur(50px);
+}
+```
+
+
+<!-- endtab -->
+
+
+
+## 2、引入文件
+
+- 在`_config.anzhiyu.yml`主题配置文件下`inject`配置项中`head`和`bottom`处
+- 分别引入`imgloaded.css`和`imgloaded.js`文件
+
+```yaml
+inject:  
+  head:  
+    - <link rel="stylesheet" href="/css/imgloaded.css?1">  
+  
+  bottom:  
+    - <script async data-pjax src="/js/imgloaded.js?1"></script> # 首页图片渐进式加载
+```
+
+
+## 3、配置图片
+
+- 为了使用顶部图功能，你必须在主题配置文件中设置`top_image`为`true`。然后，你可以在`top_image_url`中留空或者填写任意字符串，因为这个值不会影响图片的显示。图片的加载和渲染是由js文件实现的，所以你不需要在配置文件中提供图片的源地址。
+
+```yaml
+# The banner image of home page
+index_img: "background: url() top / cover no-repeat"
+```
+
+- 在`imgloaded.js`中的73到76行（或是83到86行）修改以下示例的部分
+- 若是首页一图流渐进式加载的`imgloaded.js`则修改56到71行
+
+
+
+<!-- tab 首页顶部图渐进式加载 -->
+
+```json
+const config = {  
+  smallSrc: '/img/xiaotu.jpg', // 小图链接 尽可能配置小于100k的图片  
+  largeSrc: '/img/tu.jpg', // 大图链接 最终显示的图片  
+  mobileSmallSrc: '/img/sjxt.jpg', // 手机端小图链接 尽可能配置小于100k的图片  
+  mobileLargeSrc: '/img/sjdt.jpg', // 手机端大图链接 最终显示的图片  
+  enableRoutes: ['/'],  
+  };
+```
+
+
+<!-- endtab -->
+
+<!-- tab 首页一图流渐进式加载 -->
+
+```json
+const ldconfig = {
+    light: {
+	    smallSrc: '/img/bg2_80kbver.jpg', //浅色模式 小图链接 尽可能配置小于100k的图片 
+	    largeSrc: '/img/bg2.jpg', //浅色模式 大图链接 最终显示的图片
+	    mobileSmallSrc: '/img/bg2_80kbver.jpg', //手机端浅色小图链接 尽可能配置小于100k的图片
+	    mobileLargeSrc: '/img/bg2.jpg', //手机端浅色大图链接 最终显示的图片
+	    enableRoutes: ['/'],
+	    },
+    dark: {
+	    smallSrc: '/img/bg1_80kbver.jpg', //深色模式 小图链接 尽可能配置小于100k的图片 
+	    largeSrc: '/img/bg1.jpg', //深色模式 大图链接 最终显示的图片
+	    mobileSmallSrc: '/img/bg1_80kbver.jpg', //手机端深色模式小图链接 尽可能配置小于100k的图片
+	    mobileLargeSrc: '/img/bg1.jpg', //手机端深色大图链接 最终显示的图片
+	    enableRoutes: ['/'],
+	    },
+	};
+```
+
+
+<!-- endtab -->
+
+
+
+## 4、图片懒加载配置修改
+
+- 本文的这一部分是根据**小旦**的概括而写的，作者在此注明出处。
+
+```
+lazyload:
+  enable: true
+  field: post # site/post
+  placeholder:
+  blur: true
+  progressive: true
+```
+
+
+## 5、大功告成
+
+到这时候，如果你的图片文件配置正确，可以执行Hexo的三连命令来查看效果了！
+
+
+- 部分教程链接：
+<!-- 阅读时长 11 分钟 · 状态 published · 导出时间 2026-11-24 -->
+
+---
+
+<!-- ===== 6e3d8d51 ===== -->
+---
+title: Git基础命令速查表：简明指南
+summary: Git部分基础知识转载自Microsoft DevOps 什么是Git? Git基础命令速查，以便后续快速使用Git命令 Git 已成为版本控制的全球标准。 那么，它到底是什么？ Git 是分布式版本控制系统，这意味着项目的本地克隆是完整的…
+date: 2023-09-25T23:53:30.000Z
+category: git
+tags:
+  - git
+  - tutorial
+  - repost
+cover: https://img.cent1pedee.top/img/git1.png
+featured: true
+---
+
+Git部分基础知识转载自[Microsoft DevOps 什么是Git?](https://learn.microsoft.com/zh-cn/devops/develop/git/what-is-git)
+
+Git基础命令速查，以便后续快速使用Git命令
+
+***
+
+## 什么是Git?
+
+Git 已成为版本控制的全球标准。 那么，它到底是什么？
+
+Git 是分布式版本控制系统，这意味着项目的本地克隆是完整的版本控制存储库。 通过这些功能齐全的本地存储库，无论脱机还是远程都能轻松工作。 开发人员在本地提交工作，然后将存储库的副本与服务器上的副本同步。 这种范例不同于集中式版本控制，后者要求客户端必须先与服务器同步代码，然后才能创建新版代码。
+
+Git 的灵活性和受欢迎程度使其成为任何团队的绝佳选择。 许多开发人员和大学毕业生已经知道如何使用 Git。 Git 的用户社区已创建资源来训练开发人员和 Git 的受欢迎程度，以便在需要时轻松获取帮助。 几乎每个开发环境都有 Git 支持和 Git 命令行工具在每个主要操作系统上实现。
+
+## Git基础知识
+
+每次保存工作时，Git 都会创建提交。 提交是某个时间点所有文件的快照。 如果文件未从一个提交更改为下一个提交，Git 将使用以前存储的文件。 此设计不同于存储文件的初始版本并随时间推移保留增量记录的其他系统。
+
+
+
+提交创建指向其他提交的链接，形成开发历史记录的图。 可以将代码还原到以前的提交，检查文件如何从一个提交更改为下一个提交，并查看更改的位置和时间等信息。 提交通过提交内容的唯一加密哈希在 Git 中标识。 由于所有内容都经过哈希处理，因此在未检测到 Git 的情况下无法进行更改、丢失信息或损坏文件。
+
+## 分支
+
+每个开发人员将更改保存到自己的本地代码存储库。 因此，根据同一提交，可能会进行许多不同的更改。 Git 提供了用于隔离更改并在以后将它们重新合并在一起的工具。 分支是用于工作的轻型指针，可管理此分离。 在分支中创建的工作完成后，可以合并回团队的主分支（或主干）。
+
+
+
+## 文件和提交
+
+Git 中的文件处于以下三种状态之一：已修改、暂存或提交。 首次修改文件时，更改仅存在于工作目录中。 它们尚不属于提交或开发历史记录。 开发人员必须 暂存 提交中要包含的已更改文件。 暂存区域包含下一个提交中要包括的所有更改。 开发人员对暂存文件感到满意后，文件将打包为 提交 ，其中包含描述更改的内容的消息。 此提交将成为开发历史记录的一部分。
+
+
+
+暂存允许开发人员选择要在提交中保存的文件更改，以便将大型更改分解为一系列较小的提交。 通过减少提交范围，可以更轻松地查看提交历史记录以查找特定文件更改。
+
+## Git的优势
+
+### 同时开发
+
+每个人都有自己的本地代码副本，并且可以在自己的分支上同时工作。 Git 脱机工作，因为几乎所有操作都是本地操作。
+
+### 更快的版本
+
+分支允许灵活且同时进行开发。 主分支包含发布的稳定、高质量的代码。 功能分支包含正在进行的工作，这些工作在完成后合并到主分支中。 通过将发布分支与正在进行的开发分开，可以更轻松地管理稳定的代码并更快地交付更新。
+
+### 内置集成
+
+由于它的受欢迎程度，Git 集成到大多数工具和产品中。 每个主要 IDE 都有内置的 Git 支持，许多工具都支持持续集成、持续部署、自动测试、工作项跟踪、指标和报告功能与 Git 集成。 此集成简化了日常工作流。
+
+### 强大的社区支持
+
+Git 是开源的，已成为版本控制的事实标准。 团队利用的工具和资源并不短缺。 与其他版本控制系统相比，社区对 Git 的支持量使得在需要时可以轻松获取帮助。
+
+### Git与任何团队合作
+
+通过鼓励协作、强制实施策略、自动化流程以及提高工作的可见性和可追溯性，将 Git 与源代码管理工具配合使用可以提高团队的工作效率。 团队可以针对各个工具进行版本控制、工作项跟踪以及持续集成和部署。 或者，他们可以选择一个解决方案，例如[GitHub](https://github.com/)或[Azure DevOps](https://azure.microsoft.com/zh-cn/products/devops/repos/) ，该解决方案支持所有这些任务。
+
+### 拉取请求
+
+在将代码更改合并到主分支之前，请使用[拉取请求](https://learn.microsoft.com/zh-cn/devops/develop/git/git-pull-requests)与团队讨论代码更改。 拉取请求中的讨论对于确保代码质量并提高团队的知识非常重要。 GitHub 和 Azure DevOps 等平台提供了丰富的拉取请求体验，开发人员可以浏览文件更改、留下批注、检查提交、查看生成和投票以批准代码。
+
+### 分支策略
+
+Teams 可以将 GitHub 和 Azure DevOps 配置为在整个团队中强制实施一致的工作流和流程。 他们可以设置[分支策略](https://learn.microsoft.com/zh-cn/azure/devops/repos/git/branch-policies?view=azure-devops&tabs=browser)，以确保拉取请求满足完成前的要求。 分支策略通过防止直接推送、要求审阅者并确保干净生成来保护重要分支。
+
+## 常用Git命令清单
+
+在开始使用Git之前，我们需要先安装Git软件。Git是一个分布式版本控制系统，支持在Linux/Unix、Solaris、Mac和Windows等多个平台上运行。
+
+你可以从git-scm.com/downloads这个网站下载适合你操作系统的Git安装包。如果你的系统是Windows，你可以访问npm.taobao.org/mirrors/git来下载安装Git。安装Git后，你还需要进行一些配置来使其正常工作。
+
+以上是使用Git前需要安装Git软件的概述，具体的安装和配置过程可以参考菜鸟教程（runoob.com）上的相关指南。
+
+以下Git命令转载自稀土掘金[**奇想派**](https://juejin.cn/post/7133507623399194661#heading-4)，侵权请联系站长删除。
+
+## 创建仓库命令
+
+- `git init`: 初始化仓库就是在当前目录下创建一个.git目录，用于存储Git所需的元数据和文件版本记录。该目录包含了objects、refs/head、refs/tags和模板文件等基本部分。
+
+- `git clone [url]`: 拷贝一份远程仓库，也就是下载一个项目和它的整个代码历史。
+
+## 配置
+
+- `git config --list`: 显示当前的Git配置
+
+- `git config -e [--global]`: 编辑Git配置文件
+
+- `git config [--global] user.name "[name]" / git config [--global] user.email "[email address]"`: 设置提交代码时的用户信息
+
+## 增加/删除文件
+
+- `git add [file1] [file2] ...`: 添加指定文件到暂存区
+
+- `git add [dir]`: 添加指定目录到暂存区，包括子目录
+
+- `git add .`: 添加当前目录的所有文件到暂存区
+
+- `git add -p`: 添加每个变化前，都会要求确认，对于同一个文件的多处变化，可以实现分次提交
+
+- `git rm [file1] [file2] ...`: 删除工作区文件，并且将这次删除放入暂存区
+
+- `git rm --cached [file]`: 停止追踪指定文件，但该文件会保留在工作区
+
+- `git mv [file-original] [file-renamed]`: 改名文件，并且将这个改名放入暂存区
+
+## 代码提交
+
+- `git commit -m [message]`: 提交暂存区到仓库区
+
+- `git commit [file1] [file2] ... -m [message]`: 提交暂存区的指定文件到仓库区
+
+- `git commit -a`: 提交工作区自上次commit之后的变化，直接到仓库区
+
+- `git commit -v`: 提交时显示所有diff信息
+
+- `git commit --amend -m [message]`: 使用一次新的commit，替代上一次提交。如果代码没有任何新变化，则用来改写上一次commit的提交信息
+
+- `git commit --amend [file1] [file2] ...`: 重做上一次commit，并包括指定文件的新变化
+
+## 分支
+
+- `git branch`: 列出所有本地分支
+
+- `git branch -r`: 列出所有远程分支
+
+- `git branch -a`: 列出所有本地分支和远程分支
+
+- `git branch [branch-name]`: 新建一个分支，但依然停留在当前分支
+
+- `git checkout -b [branch]`: 新建一个分支，并切换到该分支
+
+- `git branch [branch] [commit]`: 新建一个分支，指向指定commit
+
+- `git branch --track [branch] [remote-branch]`: 新建一个分支，与指定的远程分支建立追踪关系
+
+- `git checkout [branch-name]`: 切换到指定分支，并更新工作区
+
+- `git checkout -`: 切换到上一个分支
+
+- `git branch --set-upstream [branch] [remote-branch]`: 建立追踪关系，在现有分支与指定的远程分支之间
+
+- `git merge [branch]`: 合并指定分支到当前分支
+
+- `git cherry-pick [commit]`: 选择一个commit，合并进当前分支
+
+- `git branch -d [branch-name]`: 删除分支
+
+- `git push origin --delete [branch-name] 或 git branch -dr [remote/branch]`: 删除远程分支
+
+## 标签
+
+- `git tag`: 列出所有tag
+
+- `git tag [tag]`: 新建一个tag在当前commit
+
+- `git tag [tag] [commit]`: 新建一个tag在指定commit
+
+- `git tag -d [tag]`: 删除本地tag
+
+- `git push origin :refs/tags/[tagName]`: 删除远程tag
+
+- `git show [tag]`: 查看tag信息
+
+- `git push [remote] [tag]`: 提交指定tag
+
+- `git push [remote] --tags`: 	提交所有tag
+
+- `git checkout -b [branch] [tag]`: 新建一个分支，指向某个tag
+
+## 查看信息和历史
+
+- `git status`: 显示有变更的文件
+
+- `git log`: 显示当前分支的版本历史
+
+- `git log --stat`: 显示commit历史，以及每次commit发生变更的文件
+
+- `git log -S [keyword]`: 搜索提交历史，根据关键词
+
+- `git log [tag] HEAD --pretty=format:%s`: 显示某个commit之后的所有变动，每个commit占据一行
+
+- `git log [tag] HEAD --grep feature`: 显示某个commit之后的所有变动，其"提交说明"必须符合搜索条件
+
+- `git log --follow [file] 或 git whatchanged [file]`: 显示某个文件的版本历史，包括文件改名
+
+- `git log -p [file]`: 显示指定文件相关的每一次diff
+
+- `git log -5 --pretty --oneline`: 显示过去5次提交
+
+- `git shortlog -sn`: 显示所有提交过的用户，按提交次数排序
+
+- `git blame [file]`: 显示指定文件是什么人在什么时间修改过
+
+- `git diff`: 显示暂存区和工作区的差异
+
+- `git diff --cached [file]`: 显示暂存区和上一个commit的差异
+
+- `git diff HEAD`: 显示工作区与当前分支最新commit之间的差异
+
+- `git diff [first-branch]...[second-branch]`: 显示两次提交之间的差异
+
+- `git diff --shortstat "@{0 day ago}"`: 显示今天你写了多少行代码
+
+- `git show [commit]`: 显示某次提交的元数据和内容变化
+
+- `git show --name-only [commit]`: 显示某次提交发生变化的文件
+
+- `git show [commit]:[filename]`: 显示某次提交时，某个文件的内容
+
+- `git reflog`: 显示当前分支的最近几次提交
+
+## 远程同步
+
+- `git fetch [remote]`: 下载远程仓库的所有变动（远程新增或删除分支都能显示）
+
+- `git remote -v`: 显示所有远程仓库
+
+- `git config [--global] user.name "[name]" / git config [--global] user.email "[email address]"`: 设置提交代码时的用户信息
+
+- `git remote show [remote]`: 显示某个远程仓库的信息
+
+- `git remote add [shortname] [url]`: 增加一个新的远程仓库，并命名
+
+- `git pull [remote] [branch]`: 取回远程仓库的变化，并与本地分支合并
+
+- `git push [remote] [branch]`: 上传本地指定分支到远程仓库
+
+- `git push [remote] --force`: 强行推送当前分支到远程仓库，即使有冲突
+
+- `git push [remote] --all`: 推送所有分支到远程仓库
+
+## 撤销
+
+- `git checkout [file]`: 恢复暂存区的指定文件到工作区
+
+- `git checkout [commit] [file]`: 恢复某个commit的指定文件到暂存区和工作区
+
+- `git checkout .`: 恢复暂存区的所有文件到工作区
+
+- `git reset [file]`: 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变
+
+- `git reset --hard`: 重置暂存区与工作区，与上一次commit保持一致
+
+- `git reset [commit]`: 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变
+
+- `git reset --hard [commit]`: 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致
+
+- `git reset --keep [commit]`: 重置当前HEAD为指定commit，但保持暂存区和工作区不变
+
+- `git revert [commit]`: 新建一个commit，用来撤销指定commit。后者的所有变化都将被前者抵消，并且应用到当前分支
+
+- `git stash`: 暂时将未提交的变化移除，稍后再移入
+
+- `git stash pop`: 暂时将未提交的变化移除，稍后再移入
+
+## 其他
+
+- `git archive`: 生成一个可供发布的压缩包
+
+- `git repack`: 打包未归档文件
+
+- `git count-objects`: 计算解包的对象数量
+
+- `git help 或 git --help`: Git帮助，查看git相关命令，如果想看某个特定命令的具体细节，可使用git [命令] --help,如 git commit --help 表示查看提交相关命令的帮助
+<!-- 阅读时长 17 分钟 · 状态 published · 导出时间 2026-11-24 -->
+
+---
+
+<!-- ===== c375037e ===== -->
+---
+title: 快速部署AList到云服务器：Docker的最佳实践
+summary: AList是一个文件列表程序，支持多种存储，支持网页浏览和WebDAV，后端基于golang最好的http框架gin，前端使用vue和ant design。它可以将你的网盘挂载到一起，方便统一管理。 支持的网盘有：本地电脑磁盘、FTP、SF…
+date: 2023-09-12T20:34:42.000Z
+category: docker
+tags:
+  - docker
+  - alist
+  - tutorial
+cover: https://img.cent1pedee.top/img/docker1.jpg
+---
+
+## 什么是AList?
+
+AList是一个文件列表程序，支持多种存储，支持网页浏览和WebDAV，后端基于golang最好的http框架gin，前端使用vue和ant design。它可以将你的网盘挂载到一起，方便统一管理。
+
+支持的网盘有：本地电脑磁盘、FTP、SFTP、WebDAV、SMB、对象存储、115、123、百度、阿里云、MEGA、谷歌云盘、谷歌相册、移动、天翼、onedrive、pikpak、迅雷、夸克、蓝奏云、迅雷、Cloudreve等等。
+
+官网 [Home | AList Docs (nn.ci)](https://alist.nn.ci/zh/)
+
+***
+
+## AList部署方式
+
+为了方便使用直接搬运一份进博客里，个人使用的是云服务器进行部署，下文会有详细说明。
+AList部署方式来源[AList](https://alist.nn.ci/zh/guide/install/script.html)
+
+## 1.一键脚本
+
+仅适用于Linux amd64/arm64 平台
+
+### 安装
+
+```
+curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install
+```
+
+
+### 更新
+
+```
+curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s update
+```
+
+
+### 卸载
+
+```
+curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s uninstall
+```
+
+
+### 自定义路径
+
+默认安装在 `/opt/alist` 中。 自定义安装路径，将安装路径作为第二个参数添加，必须是绝对路径（如果路径以 alist 结尾，则直接安装到给定路径，否则会安装在给定路径 alist 目录下），如 安装到 `/root`：
+
+```
+# Install
+curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install /root
+# update
+curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s update /root
+# Uninstall
+curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s uninstall /root
+```
+
+- 启动: `systemctl start alist`
+- 关闭: `systemctl stop alist`
+- 状态: `systemctl status alist`
+- 重启: `systemctl restart alist`
+
+### 获取密码
+
+需要进入脚本安装AList的目录文件夹內执行如下命令
+
+#### 低于v3.25.0版本
+
+```
+./alist admin
+```
+
+
+#### 高于v3.25.0版本
+
+3.25.0以上版本将密码改成加密方式存储的hash值，无法直接反算出密码，如果忘记了密码只能通过重新`随机生成`或者`手动设置`
+
+```
+# 随机生成一个密码
+./alist admin random
+# 手动设置一个密码,`NEW_PASSWORD`是指你需要设置的密码
+./alist admin set NEW_PASSWORD
+```
+
+
+## 2.手动安装
+
+### 获取AList
+
+打开[AList Release](https://github.com/alist-org/alist/releases)下载待部署系统对应的文件。最新版的前端已经和后端打包好了，不用再下载前端文件了。
+
+xxxx 指的是不同系统/架构对应的名称，一般 Linux-x86/64 为 alist-linux-amd64。[如果你的 glibc 版本太低](https://alist.nn.ci/zh/faq/why.html#%E5%A6%82%E4%BD%95%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9)，建议下载 musl 版本
+
+当你看到`start server@0.0.0.0:5244`的输出，之后没有报错，说明操作成功。 第一次运行时会输出初始密码。程序默认监听 5244 端口。 现在打开`http://ip:5244`可以看到登录页面，WebDAV 请参阅[WebDav](https://alist.nn.ci/zh/guide/webdav.html)。
+
+### 手动运行
+
+v3.25.0以上版本将密码改成加密方式存储的hash值，无法直接反算出密码，如果忘记了密码只能通过重新`随机生成`或者`手动设置`
+
+
+
+<!-- tab Linux -->
+
+```
+# 解压下载的文件，得到可执行文件：
+tar -zxvf alist-xxxx.tar.gz
+# 授予程序执行权限：
+chmod +x alist
+# 运行程序
+./alist server
+
+# 获得管理员信息 以下两个不同版本，新版本也有随机生成和手动设置
+# 低于v3.25.0版本
+./alist admin
+
+# 高于v3.25.0版本
+# 随机生成一个密码
+./alist admin random
+# 手动设置一个密码 `NEW_PASSWORD`是指你需要设置的密码
+./alist admin set NEW_PASSWORD
+```
+
+
+<!-- endtab -->
+
+<!-- tab macOS -->
+
+```
+# 解压下载的文件，得到可执行文件：
+tar -zxvf alist-xxxx.tar.gz
+# 授予程序执行权限：
+chmod +x alist
+# 运行程序
+./alist server
+
+# 获得管理员信息 以下两个不同版本，新版本也有随机生成和手动设置
+# 低于v3.25.0版本
+./alist admin
+#高于v3.25.0版本
+# 随机生成一个密码
+./alist admin random
+# 手动设置一个密码 `NEW_PASSWORD`是指你需要设置的密码
+./alist admin set NEW_PASSWORD
+```
+
+
+<!-- endtab -->
+
+<!-- tab Windows -->
+
+```
+# 解压下载的文件，得到可执行文件：
+unzip alist-xxxx.zip
+# 运行程序
+.\alist.exe server
+
+# 获得管理员信息 以下两个不同版本，新版本也有随机生成和手动设置
+# 低于v3.25.0版本
+.\alist.exe admin
+
+# 高于v3.25.0版本
+# 随机生成一个密码
+.\alist.exe admin random
+# 手动设置一个密码 `NEW_PASSWORD`是指你需要设置的密码
+.\alist.exe admin set NEW_PASSWORD
+```
+
+
+<!-- endtab -->
+
+<!-- tab win(scoop) -->
+
+```
+# 安装
+scoop install alist
+# 运行
+alist server
+```
+
+
+<!-- endtab -->
+
+
+
+### 守护进程
+
+
+
+<!-- tab Linux -->
+使用任意方式编辑`/usr/lib/systemd/system/alist.service`并添加如下内容，其中 path_alist 为 AList 所在的路径
+
+```
+[Unit]
+Description=alist
+After=network.target
+ 
+[Service]
+Type=simple
+WorkingDirectory=path_alist
+ExecStart=path_alist/alist server
+Restart=on-failure
+ 
+[Install]
+WantedBy=multi-user.target
+```
+
+
+然后，执行`systemctl daemon-reload`重载配置，现在你可以使用这些命令来管理程序：
+- 启动:`systemctl start alist`
+- 关闭:`systemctl stop alist`
+- 配置开机自启:`systemctl enable alist`
+- 取消开机自启:`systemctl disable alist`
+- 状态:`systemctl status alist`
+- 重启:`systemctl restart alist`
+
+<!-- endtab -->
+
+<!-- tab macOS -->
+
+使用任意方式编辑`~/Library/LaunchAgents/ci.nn.alist.plist`并添加如下内容，修改`path_alist`为 AList 所在的路径，`path/to/working/dir`为 AList的工作路径
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>ci.nn.alist</string>
+        <key>KeepAlive</key>
+        <true/>
+        <key>ProcessType</key>
+        <string>Background</string>
+        <key>RunAtLoad</key>
+        <true/>
+        <key>WorkingDirectory</key>
+        <string>path/to/working/dir</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>path_alist/alist</string>
+            <string>server</string>
+        </array>
+    </dict>
+</plist>
+```
+
+
+执行`launchctl load ~/Library/LaunchAgents/ci.nn.alist.plist`加载配置，现在你可以使用这些命令来管理程序：
+- 开启:`launchctl start ~/Library/LaunchAgents/ci.nn.alist.plist`
+- 关闭:`launchctl stop ~/Library/LaunchAgents/ci.nn.alist.plist`
+- 卸载配置:`launchctl unload ~/Library/LaunchAgents/ci.nn.alist.plist`
+
+<!-- endtab -->
+
+<!-- tab Windows -->
+
+<h3>方法1</h3>
+
+1. 在 https://nssm.cc/download 下载最新版本的`nssm`；
+2. 在解压后的文件夹内按住 Shift 并右击空白处，选择“在此处打开 Powershell 窗口”；
+3. 在弹出的窗口中输入`.\nssm.exe install alist`；
+4. Path 选择 alist.exe 的路径，如`D:\alist\alist.exe`，Arguments 填`server`；
+5. Details 选项卡中可以自定义标题和描述，可以选择服务的自启动模式（自动|延迟启动|手动|禁用）；
+6. 在 I/O 选项卡为 Output (stdout) 和 Output (stderr) 各自指定一个日志文件的路径，如`D:\alist\stdout.log`，文件本身（`stdout.log`）可以不存在，但是指定的目录（`D:\alist`）必须存在；
+7. 点击“Install Service”即可。
+此后可以直接在服务中启动`alist`。
+
+<h3>方法2</h3>
+
+用`.VBS`脚本启动和停止，分别创建两个脚本 分别是 启动.vbs 和 停止.vbs
+
+直接在和Alist启动程序同级文件夹里面双击启动即可，不用担心没有反应 直接去 浏览器访问即可
+
+<div class="hexo-note">
+
+<h3>两个启动脚本</h3>
+<h4>启动.vbs</h4>
+
+```
+Dim ws
+Set ws = Wscript.CreateObject("Wscript.Shell")
+ws.run "alist.exe server",vbhide
+Wscript.quit
+```
+
+
+<h4>停止.vbs</h4>
+
+```
+Dim ws
+Set ws = Wscript.CreateObject("Wscript.Shell")
+ws.run "taskkill /f /im alist.exe",0
+Wscript.quit
+```
+
+
+</div>
+
+<!-- endtab -->
+
+
+
+<div class="hexo-note">
+
+<h3>相关信息</h3>
+<h4>对于所有平台，您可以使用以下命令来静默启动、停止和重新启动。 （v3.4.0 及更高版本）</h4>
+
+```
+# 携带`--force-bin-dir`参数启动服务
+alist start
+# 通过pid停止服务
+alist stop
+# 通过pid重启服务
+alist restart
+```
+
+
+</div>
+
+### 如何更新
+
+下载新版Alist，把之前的替换了即可。
+
+## 利用1panel快速部署AList
+
+### 1.安装1panel
+
+#### 在线安装
+
+##### 1.环境要求
+
+<div class="hexo-note">
+
+**安装前请确保您的系统符合安装条件：**
+- 操作系统：支持主流 Linux 发行版本（基于 Debian / RedHat，包括国产操作系统）；
+- 服务器架构：x86_64、aarch64、armv7l、ppc64le、s390x；
+- 内存要求：建议可用内存在 1GB 以上；
+- 浏览器要求：请使用 Chrome、FireFox、IE10+、Edge等现代浏览器；
+- 可访问互联网。
+
+</div>
+
+##### 2.安装部署
+
+<div class="hexo-note">
+
+GitHub release 链接: https://github.com/1Panel-dev/1Panel/releases
+
+</div>
+
+
+
+<!-- tab RedHat/CentOS -->
+
+```
+curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sh quick_start.sh
+```
+
+<!-- endtab -->
+
+<!-- tab Ubuntu -->
+
+```
+curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sudo bash quick_start.sh
+```
+
+<!-- endtab -->
+
+<!-- tab Debian -->
+
+```
+curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && bash quick_start.sh
+```
+
+<!-- endtab -->
+
+
+
+<div class="hexo-note">
+
+安装成功后，控制台会打印面板访问信息，可通过浏览器访问 1Panel：
+
+```
+http://目标服务器 IP 地址:目标端口/安全入口
+```
+
+- 如果使用的是云服务器，请至安全组开放目标端口。
+- ssh 登录 1Panel 服务器后，执行 1pctl user-info 命令可获取安全入口（entrance）
+
+</div>
+
+<div class="hexo-note">
+
+安装成功后，可使用 [1pctl](https://1panel.cn/docs/installation/cli/) 命令行工具来维护 1Panel
+
+</div>
+
+### 2.安装应用
+
+1. 登录之后，点击`应用商店`进入应用详情
+2. 下载`OpenResty`，`AList`以便后续操作(版本随意，我这里选择的是最新版本)
+3. 按顺序点击面板左侧的`网站`,`创建网站`,`反向代理`,并填写相关参数
+4. 申请免费SSL证书，按顺序点击`网站`,`网站设置`,`HTTPS`,启用HTTPS并填入相关证书
+5. 去域名提供商解析所需的二级域名
+6. 成功,访问解析的二级域名即可
+
+### 3.配置AList
+
+在设置完登录所需的账号密码之后,照着AList提供的文档进行[配置存储](https://alist.nn.ci/zh/guide/drivers/common.html)
+<!-- 阅读时长 11 分钟 · 状态 published · 导出时间 2026-11-24 -->
+
+---
+
+<!-- ===== 2b7ee90 ===== -->
+---
+title: 逐步学习Docker部署和容器管理
+summary: Docker 是一个开源平台，支持开发人员构建、部署、运行、更新和管理容器，这些容器是标准化的可执行组件，结合了应用源代码以及在任何环境中运行该代码所需的操作系统 (OS) 库和依赖项。 容器简化了分布式应用的部署和交付过程。 随着组织转向…
+date: 2023-09-09T11:33:52.000Z
+category: docker
+tags:
+  - docker
+  - tutorial
+cover: https://img.cent1pedee.top/img/docker5.jpg
+---
+
+## 1. 什么是Docker?
+
+Docker 是一个开源平台，支持开发人员构建、部署、运行、更新和管理容器，这些容器是标准化的可执行组件，结合了应用源代码以及在任何环境中运行该代码所需的操作系统 (OS) 库和依赖项。
+
+容器简化了分布式应用的部署和交付过程。  随着组织转向云原生开发和混合多云环境，它们已变得越来越流行。     开发人员可以直接使用 Linux 和其他操作系统中内置的功能，在没有 Docker 的情况下创建容器。 但 Docker 使容器化更加迅速、简便和安全。 截至本文撰写之时，Docker 报告称，已有超过 1300 万名开发人员在使用该平台（链接位于 ibm.com 外部）。
+
+Docker 也指 Docker, Inc.（链接位于 ibm.com 外部），即销售 Docker 商业版本的企业，还可以是 Docker, Inc. 和许多其他组织和个人开展的 Docker 开源项目。
+
+info：[IBM](https://www.ibm.com/cn-zh/topics/docker)
+
+***
+
+## 2. Docker的基本概念
+
+- 镜像(Image) : 容器的基础，类似于模板，包含了运行应用所需的所有内容。
+- 容器（Container）：由镜像创建的运行实例，是一个独立的、隔离的运行环境。
+- 仓库（Repository）：用于存储和分享镜像的地方，可以公开或私有。
+- Dockerfile：用于定义镜像内容的文本文件，可以通过其构建定制镜像。
+
+## 3. Docker的安装与配置
+
+- 安装Docker：根据不同Linux发行版选择合适的安装方式，如apt、yum或官方脚本，当然你也可以在Windows上安装Docker Desktop。
+- 配置镜像加速器：使用国内镜像加速器，加快镜像下载速度。
+- 用户权限设置：将用户添加到docker用户组，避免使用sudo运行Docker命令。
+
+## 3.1 Docker的基本常用命令
+
+- `docker info`: 显示docker的系统信息，包括镜像和容器的数量
+
+```Docker
+docker info
+```
+
+
+- `docker version`: 显示docker的版本信息
+
+```Docker
+docker version
+```
+
+
+- `docker --help`: 显示基本帮助信息，包括常用命令的列表和全局选项
+
+```Docker
+docker COMMAND --help
+```
+
+
+- `docker images`: 查看所有本地主机上的镜像 可以使用docker image ls代替
+
+```Docker
+docker images
+```
+
+
+- `docker search`: 搜索镜像
+
+```Docker
+docker search
+```
+
+
+- `docker pull`: 下载镜像 docker image pull
+
+```Docker
+docker pull
+```
+
+
+- `docker rmi`: 删除镜像 docker image rm
+
+```Docker
+docker rmi
+#docker删除指定容器
+    docker rm 容器id
+    #删除所有容器
+	    docker rm -f $(docker ps -aq)  	 #删除所有的容器
+	    docker ps -a -q|xargs docker rm  #删除所有的容器
+```
+
+
+
+- `docker run 镜像id`: 新建容器并启动。例如，在后台运行一个Nginx容器，并将主机的3306端口映射到容器的3306端口
+
+```Docker
+docker run -d -p 3306:3306 --name my-nginx nginx
+```
+
+
+- `docker ps`: 列出所有正在运行的容器及其相关信息，如容器ID、名称、状态等
+
+```Docker
+docker ps
+```
+
+
+- `docker build`: 通过Dockerfile构建镜像。例如，通过Dockerfile在当前目录下构建一个名为my-custom-image的镜像
+
+```Docker
+docker build -t my-custom-image
+```
+
+
+- `docker push`: 将镜像推送到仓库。例如，先给镜像打上标签，然后将镜像推送到Docker Hub的仓库中
+
+```Docker
+docker tag my-custom-image username/my-custom-image
+docker push username/my-custom-image
+```
+
+
+- `docker exec`: 在容器内执行命令。例如，进入容器的bash终端，允许您在容器内执行命令
+
+```Docker
+docker exec -it container_id bash
+```
+
+
+- `docker stop/start`: 停止/启动容器。例如，停止指定ID的容器
+
+```Docker
+docker stop/start container_id
+```
+
+
+## 4. 容器网络
+
+- 主机网络（Host Network）：使用主机网络模式时，容器与宿主机共享网络命名空间。这意味着容器使用与宿主机相同的IP地址和端口，可以直接访问宿主机上的网络服务。
+- 桥接网络（Bridge Network）：桥接网络是Docker默认创建的网络类型。在桥接网络中，每个容器都被分配一个独立的IP地址，并且可以通过指定的名称进行通信。桥接网络允许容器之间和容器与主机之间进行相互通信。
+- None网络（None Network）：在None网络模式下，容器将没有网络接口，因此无法直接访问网络。但是，你可以通过其他方式（例如主机网络或桥接网络）与容器进行通信。
+- Overlay网络（Overlay Network）：Overlay网络允许多个Docker守护进程在不同主机上的容器进行通信。它使用VXLAN（Virtual Extensible LAN）技术在不同的主机之间创建隧道，使得容器之间可以透明地通信。Overlay网络通常用于构建分布式应用程序或跨主机容器集群。
+
+## 5. 数据管理
+
+- 数据卷（Volume）：数据卷是一个可供一个或多个容器使用的特殊目录，可以将其与容器内的目录进行挂载。数据卷可以用于在容器之间共享数据，以及将数据持久化保存。数据卷的好处是在容器删除后仍然保留，不受容器生命周期的影响。
+- 挂载主机目录（Bind Mount）：通过挂载主机目录，你可以将宿主机上的目录直接映射到容器中。这使得容器可以访问宿主机上的文件系统并读取或写入数据。挂载主机目录适用于需要与宿主机共享数据或访问宿主机文件系统的情况。
+- 匿名卷（Anonymous Volume）：可以通过指定VOLUME指令或在容器运行时使用-v选项来创建匿名卷。匿名卷是自动由Docker创建的，并且在容器删除后会保留在宿主机上，但它没有持久化的能力，仅用于临时存储数据。
+- 数据卷容器（Data Volume Container）：数据卷容器是一个专门用于管理数据卷的容器。你可以创建一个数据卷容器，并将其挂载到其他容器来共享数据。数据卷容器提供了更好的灵活性和数据管理能力，允许多个容器共享和访问相同的数据卷。
+
+## 6. Docker Compose
+
+- 定义服务：使用 Docker Compose，你可以定义多个服务（即容器）以及它们的配置。每个服务都可以包含容器的镜像、容器的名称、暴露的端口、挂载的卷以及其它配置选项。
+- 管理容器关系：你可以使用 Docker Compose 定义多个服务之间的关系和依赖关系。这使得你可以轻松地创建应用程序的整体架构，例如前端和后端服务的连接或数据库与应用程序的连接。
+- 配置容器参数：通过 Docker Compose，你可以为每个容器设置环境变量、启动命令、资源限制等参数。这使你可以方便地自定义容器的行为。
+- 启动和停止应用程序：使用 Docker Compose，你可以一键启动或停止整个应用程序。它会根据定义的配置自动创建和管理容器。
+- 扩展和更新应用程序：Docker Compose 允许你轻松扩展应用程序，例如增加多个副本或负载均衡容器。当配置文件发生变化时，你可以使用 Docker Compose 快速更新应用程序。
+
+## 7. Docker Swarm
+
+- 集群管理：Docker Swarm 允许你将多个 Docker 主机组成一个集群，形成一个单一的虚拟计算资源池。你可以使用一个主节点（manager）来管理整个集群，包括容器的部署、调度和监控。
+- 服务编排：使用 Docker Swarm，你可以定义服务，即容器的集合，并指定各个服务所需的镜像、资源配置、副本数等。Swarm 会负责将服务的容器分配到集群中的不同主机上，并自动处理容器启动、停止和失败转移等操作。
+- 冗余和高可用性：Docker Swarm 提供了冗余和高可用性功能，确保集群的稳定和容错能力。如果一个主节点失效，Swarm 会自动选举一个新的主节点来接管管理操作，保证集群的正常运行。
+- 服务扩展：使用 Docker Swarm，你可以根据需要快速扩展服务的规模。只需指定所需的副本数，Swarm 就会自动在集群中的不同主机上启动相应数量的容器，实现服务的水平扩展。
+- 跨主机网络：Docker Swarm 提供了内置的跨主机网络功能，使得容器之间可以直接通信，无需手动配置网络连接。这使得跨主机容器集群的构建和管理变得更加方便和灵活。
+
+## 8. Docker安全
+
+- 命名空间和隔离：Docker 使用 Linux 命名空间和控制组（cgroups）来实现容器的隔离。每个容器都有自己独立的文件系统、进程空间和网络栈，以及资源限制和权限控制，从而避免了容器之间的相互干扰。
+- 容器镜像的安全性：使用官方和受信任的容器镜像是保证容器安全性的重要一环。官方镜像经过 Docker 团队的审查和维护，有更高的可信度。同时，你也可以通过签名验证、镜像扫描工具等方式来确保镜像的完整性和安全性。
+- 容器的最小化和仅读模式：为了减少容器的攻击面，可以采用最小化容器的原则，即只安装运行所需的软件和依赖项。此外，可以将容器设置为仅读模式，以防止容器运行时被修改或恶意注入。
+- 安全配置和最佳实践：使用安全的配置和最佳实践是保护 Docker 安全的重要措施。例如，限制容器的权限，避免使用特权模式，及时更新容器镜像和宿主机操作系统等。
+- 容器网络的防火墙和访问控制：通过使用容器网络的防火墙和访问控制规则，可以限制容器之间和容器与外部网络的通信，从而保护容器的网络安全。
+
+## 9. Docker在CI/CD中的应用
+
+- 环境一致性：Docker 提供了容器化的环境，使得开发、测试和生产环境之间可以保持一致。通过在容器中打包应用程序及其依赖，可以避免环境差异导致的问题，在不同环境中更轻松地进行开发、测试和部署。
+- 快速构建和部署：使用 Docker，可以将应用程序和其依赖项打包成镜像，使得构建和部署过程更简单和高效。构建镜像只需在 Dockerfile 中定义所需的组件和配置，并使用 Docker 构建命令即可。在部署阶段，通过拉取预先构建好的镜像，可以快速部署应用程序并进行水平扩展。
+- 可移植性和可重复性：Docker 镜像是独立于底层操作系统的，可以在不同的主机和云平台上运行。这使得应用程序的部署具有很高的可移植性，并能够在不同环境中实现一致的部署和运行结果。
+- 自动化测试和集成：Docker 容器可以与常用的 CI/CD 工具集成，如 Jenkins、GitLab CI、Travis CI 等。通过在容器中运行自动化测试，可以更快速、可靠地进行单元测试、集成测试和端到端测试，提高测试效率和结果的可靠性。
+- 与编排工具的结合：Docker 可以与容器编排工具（如 Docker Swarm、Kubernetes）结合使用，实现弹性扩展、负载均衡和自动恢复等功能。借助这些工具，可以更好地管理和编排容器化的应用程序，实现高效的 CI/CD 流程。
+<!-- 阅读时长 15 分钟 · 状态 published · 导出时间 2026-11-24 -->
+
+---
+
+<!-- ===== 4e8dad09 ===== -->
+---
+title: 垃圾代码书写准则
+summary: 垃圾代码书写准则
+date: 2023-09-02T01:45:23.000Z
+category: repost
+tags:
+  - repost
+cover: https://img.cent1pedee.top/img/shitcode.png
+---
+
+## 垃圾代码书写准则
+
+[![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
+
+这是一个你的项目应该遵循的垃圾代码书写准则的列表，把称为适当的垃圾代码。
+
+## 获取徽章
+
+如果你的仓库遵循垃圾代码书写准则，你应该用下面的"state-of-the-art shitcode" 徽章：
+
+[![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
+
+标记徽章的源代码:
+
+```
+[![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
+```
+
+
+## 准则
+
+### 💩 以一种代码已经被混淆的方式命名变量
+
+如果我们键入的东西越少，那么就有越多的时间去思考代码逻辑等问题。
+
+_Good 👍🏻_
+
+```javascript
+let a = 42;
+```
+
+
+_Bad 👎🏻_
+
+```javascript
+let age = 42;
+```
+
+
+### 💩 变量/函数混合命名风格
+
+为不同庆祝一下。
+
+_Good 👍🏻_
+
+```javascript
+let wWidth = 640;
+let w_height = 480;
+```
+
+
+_Bad 👎🏻_
+
+```javascript
+let windowWidth = 640;
+let windowHeight = 480;
+```
+
+
+### 💩 不要写注释
+
+反正没人会读你的代码。
+
+_Good 👍🏻_
+
+```javascript
+const cdr = 700;
+```
+
+
+_Bad 👎🏻_
+
+更多时候，评论应该包含一些“为什么”，而不是一些“是什么”。如果“什么”在代码中不清楚，那么代码可能太混乱了。
+
+```javascript
+// 700ms的数量是根据UX A/B测试结果进行经验计算的。
+// @查看: <详细解释700的一个链接>
+const callbackDebounceRate = 700;
+```
+
+
+### 💩 使用母语写注释
+
+如果您违反了“无注释”原则，那么至少尝试用一种不同于您用来编写代码的语言来编写注释。如果你的母语是英语，你可能会违反这个原则。
+
+_Good 👍🏻_
+
+```javascript
+// Закриваємо модальне віконечко при виникненні помилки.
+toggleModal(false);
+```
+
+
+_Bad 👎🏻_
+
+```javascript
+// 隐藏错误弹窗
+toggleModal(false);
+```
+
+
+### 💩 尽可能混合不同的格式
+
+为不同庆祝一下。
+
+_Good 👍🏻_
+
+```javascript
+let i = ['tomato', 'onion', 'mushrooms'];
+let d = [ "ketchup", "mayonnaise" ];
+```
+
+
+_Bad 👎🏻_
+
+```javascript
+let ingredients = ['tomato', 'onion', 'mushrooms'];
+let dressings = ['ketchup', 'mayonnaise'];
+```
+
+
+### 💩 尽可能把代码写成一行
+
+_Good 👍🏻_
+
+```javascript
+document.location.search.replace(/(^\?)/,'').split('&').reduce(function(o,n){n=n.split('=');o[n[0]]=n[1];return o},{})
+```
+
+
+_Bad 👎🏻_
+
+```javascript
+document.location.search
+  .replace(/(^\?)/, '')
+  .split('&')
+  .reduce((searchParams, keyValuePair) => {
+    keyValuePair = keyValuePair.split('=');
+    searchParams[keyValuePair[0]] = keyValuePair[1];
+    return searchParams;
+  },
+  {}
+)
+```
+
+
+### 💩 不要处理错误
+
+无论何时发现错误，都没有必要让任何人知道它。没有日志，没有错误弹框。
+
+_Good 👍🏻_
+
+```javascript
+try {
+  // 意料之外的情况。
+} catch (error) {
+  // tss... 🤫
+}
+```
+
+
+_Bad 👎🏻_
+
+```javascript
+try {
+  // 意料之外的情况。
+} catch (error) {
+  setErrorMessage(error.message);
+  // and/or
+  logError(error);
+}
+```
+
+
+### 💩 广泛使用全局变量
+
+全球化的原则。
+
+_Good 👍🏻_
+
+```javascript
+let x = 5;
+
+function square() {
+  x = x ** 2;
+}
+
+square(); // 现在x是25
+```
+
+
+_Bad 👎🏻_
+
+```javascript
+let x = 5;
+
+function square(num) {
+  return num ** 2;
+}
+
+x = square(x); // 现在x是25
+```
+
+
+### 💩 创建你不会使用的变量
+
+以防万一。
+
+_Good 👍🏻_
+
+```javascript
+function sum(a, b, c) {
+  const timeout = 1300;
+  const result = a + b;
+  return a + b;
+}
+```
+
+
+_Bad 👎🏻_
+
+```javascript
+function sum(a, b) {
+  return a + b;
+}
+```
+
+
+### 💩 如果语言允许，不要指定类型和/或不执行类型检查。
+
+_Good 👍🏻_
+
+```javascript
+function sum(a, b) {
+  return a + b;
+}
+
+// 在这里享受没有注释的快乐
+const guessWhat = sum([], {}); // -> "[object Object]"
+const guessWhatAgain = sum({}, []); // -> 0
+```
+
+
+_Bad 👎🏻_
+
+```javascript
+function sum(a: number, b: number): ?number {
+  // 当我们在JS中不做置换和/或流类型检查时，覆盖这种情况。
+  if (typeof a !== 'number' && typeof b !== 'number') {
+    return undefined;
+  }
+  return a + b;
+}
+
+// 这个应该在转换/编译期间失败。
+const guessWhat = sum([], {}); // -> undefined
+```
+
+
+### 💩 你应该有不能到达的代码
+
+这是你的 "Plan B".
+
+_Good 👍🏻_
+
+```javascript
+function square(num) {
+  if (typeof num === 'undefined') {
+    return undefined;
+  }
+  else {
+    return num ** 2;
+  }
+  return null; // 这就是我的"Plan B".
+}
+```
+
+
+_Bad 👎🏻_
+
+```javascript
+function square(num) {
+  if (typeof num === 'undefined') {
+    return undefined;
+  }
+  return num ** 2;
+}
+```
+
+
+### 💩 三角法则
+
+就像鸟巢，鸟巢，鸟巢。
+
+_Good 👍🏻_
+
+```javascript
+function someFunction() {
+  if (condition1) {
+    if (condition2) {
+      asyncFunction(params, (result) => {
+        if (result) {
+          for (;;) {
+            if (condition3) {
+            }
+          }
+        }
+      })
+    }
+  }
+}
+```
+
+
+_Bad 👎🏻_
+
+```javascript
+async function someFunction() {
+  if (!condition1 || !condition2) {
+    return;
+  }
+  
+  const result = await asyncFunction(params);
+  if (!result) {
+    return;
+  }
+  
+  for (;;) {
+    if (condition3) {
+    }
+  }
+}
+```
+
+
+### 💩 混合缩进
+
+避免缩进，因为它们会使复杂的代码在编辑器中占用更多的空间。如果你不喜欢回避他们，那就和他们捣乱。
+
+_Good 👍🏻_
+
+```javascript
+const fruits = ['apple',
+  'orange', 'grape', 'pineapple'];
+  const toppings = ['syrup', 'cream', 
+                    'jam', 
+                    'chocolate'];
+const desserts = [];
+fruits.forEach(fruit => {
+toppings.forEach(topping => {
+    desserts.push([
+fruit,topping]);
+    });})
+```
+
+
+_Bad 👎🏻_
+
+```javascript
+const fruits = ['apple', 'orange', 'grape', 'pineapple'];
+const toppings = ['syrup', 'cream', 'jam', 'chocolate'];
+const desserts = [];
+
+fruits.forEach(fruit => {
+  toppings.forEach(topping => {
+    desserts.push([fruit, topping]); 
+  });
+})
+```
+
+
+### 💩 不要锁住你的依赖项
+
+以非受控方式更新每个新安装的依赖项。为什么坚持使用过去的版本，让我们使用最先进的库版本。
+
+_Good 👍🏻_
+
+```
+$ ls -la
+
+package.json
+```
+
+
+_Bad 👎🏻_
+
+```
+$ ls -la
+
+package.json
+package-lock.json
+```
+
+
+### 💩 函数长的比短的好
+
+不要把程序逻辑分成可读的部分。如果IDE的搜索停止，而您无法找到所需的文件或函数，该怎么办?
+
+- 一个文件中10000行代码是OK的。
+- 一个函数体有1000行代码是OK的。
+- 在一个' service.js ' 中处理许多服务(第三方库和内部库、一些工具、手写的数据库ORM和jQuery滑块)? 这是OK的。
+
+### 💩 不要测试你的代码
+
+这是重复且不需要的工作。
+
+### 💩 避免代码风格统一
+
+编写您想要的代码，特别是在一个团队中有多个开发人员的情况下。这是“自由”原则。
+
+### 💩 构建新项目不需要 README 文档
+
+一开始我们就应该保持。
+
+### 💩 保存不必要的代码
+
+不要删除不用的代码，最多注释掉。
+<!-- 阅读时长 7 分钟 · 状态 published · 导出时间 2026-11-24 -->
+
+---
+
+<!-- ===== deb4dbdb ===== -->
+---
+title: 安知鱼主题标签 Tag Plugins
+summary: 添加大量外挂标签样式。
+date: 2023-08-31T15:54:27.000Z
+category: tag-plugins
+tags:
+  - tag-plugins
+  - hexo
+  - repost
+cover: https://img.cent1pedee.top/img/tag-plugins.png
+---
+
+<div class="hexo-note">
+
+`AnZhiYu主题`中大部分标签移植于[店长](https://akilar.top/)的[hexo-butterfly-tag-plugins-plus](https://www.npmjs.com/package/hexo-butterfly-tag-plugins-plus)，转载请注明来自[安知鱼](https://blog.anheyu.com/posts/d50a.html)
+
+</div>
+
+## 段落文本 p
+
+
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% p 样式参数(参数以空格划分), 文本内容 %}
+```
+
+
+<!-- endtab -->
+<!-- tab 配置参数 -->
+
+1. 字体: logo, code
+2. 颜色: red,yellow,green,cyan,blue,gray
+3. 大小: small, h4, h3, h2, h1, large, huge, ultra
+4. 对齐方向: left, center, right
+   <!-- endtab -->
+   <!-- tab 样式预览 -->
+
+- 彩色文字
+  在一段话中方便插入各种颜色的标签，包括：、、、、、。
+- 超大号文字
+  文档「开始」页面中的标题部分就是超大号文字。
+  
+  
+  <!-- endtab -->
+  <!-- tab 示例源码 -->
+
+```markdown
+- 彩色文字
+  在一段话中方便插入各种颜色的标签，包括：{% p red, 红色 %}、{% p yellow, 黄色 %}、{% p green, 绿色 %}、{% p cyan, 青色 %}、{% p blue, 蓝色 %}、{% p gray, 灰色 %}。
+- 超大号文字
+  文档「开始」页面中的标题部分就是超大号文字。
+  {% p center logo large, Volantis %}
+  {% p center small, A Wonderful Theme for Hexo %}
+```
+
+
+<!-- endtab -->
+
+
+
+## 行内文本 span
+
+
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% span 样式参数(参数以空格划分), 文本内容 %}
+```
+
+
+<!-- endtab -->
+<!-- tab 配置参数 -->
+
+1. 字体: logo, code
+2. 颜色: red,yellow,green,cyan,blue,gray
+3. 大小: small, h4, h3, h2, h1, large, huge, ultra
+4. 对齐方向: left, center, right
+   <!-- endtab -->
+   <!-- tab 样式预览 -->
+
+- 彩色文字
+  在一段话中方便插入各种颜色的标签，包括：红色、黄色、绿色、青色、蓝色、灰色。
+- 超大号文字
+  文档「开始」页面中的标题部分就是超大号文字。
+  Volantis
+  A Wonderful Theme for Hexo
+  <!-- endtab -->
+  <!-- tab 示例源码 -->
+
+```markdown
+- 彩色文字
+  在一段话中方便插入各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
+- 超大号文字
+  文档「开始」页面中的标题部分就是超大号文字。
+  {% span center logo large, Volantis %}
+  {% span center small, A Wonderful Theme for Hexo %}
+```
+
+
+<!-- endtab -->
+
+
+
+## 行内文本样式 text
+
+
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% u 文本内容 %}
+{% emp 文本内容 %}
+{% wavy 文本内容 %}
+{% del 文本内容 %}
+{% kbd 文本内容 %}
+{% psw 文本内容 %}
+```
+
+
+<!-- endtab -->
+<!-- tab 样式预览 -->
+
+1. 带 <u>下划线</u> 的文本
+2. 带  的文本
+3. 带 波浪线 的文本
+4. 带  的文本
+5. 键盘样式的文本  + 
+6. 密码样式的文本：
+   <!-- endtab -->
+   <!-- tab 示例源码 -->
+
+```markdown
+1. 带 {% u 下划线 %} 的文本
+2. 带 {% emp 着重号 %} 的文本
+3. 带 {% wavy 波浪线 %} 的文本
+4. 带 {% del 删除线 %} 的文本
+5. 键盘样式的文本 {% kbd command %} + {% kbd D %}
+6. 密码样式的文本：{% psw 这里没有验证码 %}
+```
+
+
+<!-- endtab -->
+
+
+
+## 分栏 tab
+
+<div class="hexo-note">
+
+分栏支持内置阿里图标，如果开启了 `fontawesome`可以使用 fontawesome 的图标，否则只能使用默内置阿里图标
+
+</div>
+
+
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% tabs Unique name, [index] %}
+
+<!-- tab [Tab caption] [@icon] -->
+
+Any content (support inline tags too).
+
+<!-- endtab -->
+
+{% endtabs %}
+```
+
+
+<!-- endtab -->
+<!-- tab 配置参数 -->
+
+1. Unique name :
+   - 选项卡块标签的唯一名称，不带逗号。
+   - 将在#id 中用作每个标签及其索引号的前缀。
+   - 如果名称中包含空格，则对于生成#id，所有空格将由破折号代替。
+   - 仅当前帖子/页面的 URL 必须是唯一的！
+2. [index]:
+   - 活动选项卡的索引号。
+   - 如果未指定，将选择第一个标签（1）。
+   - 如果 index 为-1，则不会选择任何选项卡。
+   - 可选参数。
+3. [Tab caption]:
+   - 当前选项卡的标题。
+   - 如果未指定标题，则带有制表符索引后缀的唯一名称将用作制表符的标题。
+   - 如果未指定标题，但指定了图标，则标题将为空。
+   - 可选参数。
+4. [@icon]: - FontAwesome 图标名称（全名，看起来像“ fas fa-font”） - 可以指定带空格或不带空格； - 例如'Tab caption @icon' 和 'Tab caption@icon'. - 可选参数。
+   <!-- endtab -->
+   <!-- tab 样式预览 -->
+
+<div class="hexo-note">
+
+Demo 1 - 预设选择第一个【默认】
+
+</div>
+
+
+
+<!-- tab -->
+
+**This is Tab 1.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 2.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 3.**
+
+<!-- endtab -->
+
+
+
+<div class="hexo-note">
+
+Demo 2 - 预设选择 tabs
+
+</div>
+
+
+
+<!-- tab -->
+
+**This is Tab 1.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 2.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 3.**
+
+<!-- endtab -->
+
+
+
+<div class="hexo-note">
+
+Demo 3 - 没有预设值
+
+</div>
+
+
+
+<!-- tab -->
+
+**This is Tab 1.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 2.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 3.**
+
+<!-- endtab -->
+
+
+
+<div class="hexo-note">
+
+Demo 4 - 自定义 Tab 名 + 只有 icon + icon 和 Tab 名
+
+</div>
+
+
+
+<!-- tab 第一个Tab -->
+
+**tab 名字为第一个 Tab**
+
+<!-- endtab -->
+
+<!-- tab @anzhiyufont anzhiyu-icon-oranges -->
+
+**只有图标 没有 Tab 名字**
+
+<!-- endtab -->
+
+<!-- tab 炸弹@anzhiyufont anzhiyu-icon-oranges -->
+
+**名字+icon**
+
+<!-- endtab -->
+
+
+
+<!-- endtab -->
+<!-- tab 示例源码 -->
+
+<div class="hexo-note">
+
+Demo 1 - 预设选择第一个【默认】
+
+</div>
+
+```markdown
+{% tabs test1 %}
+
+<!-- tab -->
+
+**This is Tab 1.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 2.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 3.**
+
+<!-- endtab -->
+
+{% endtabs %}
+```
+
+
+<div class="hexo-note">
+
+Demo 2 - 预设选择 tabs
+
+</div>
+
+```markdown
+{% tabs test2, 3 %}
+
+<!-- tab -->
+
+**This is Tab 1.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 2.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 3.**
+
+<!-- endtab -->
+
+{% endtabs %}
+```
+
+
+<div class="hexo-note">
+
+Demo 3 - 没有预设值
+
+</div>
+
+```markdown
+{% tabs test3, -1 %}
+
+<!-- tab -->
+
+**This is Tab 1.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 2.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 3.**
+
+<!-- endtab -->
+
+{% endtabs %}
+```
+
+
+<div class="hexo-note">
+
+Demo 4 - 自定义 Tab 名 + 只有 icon + icon 和 Tab 名
+
+</div>
+
+```markdown
+{% tabs test4 %}
+
+<!-- tab 第一个Tab -->
+
+**tab 名字为第一个 Tab**
+
+<!-- endtab -->
+
+<!-- tab @fab fa-apple-pay -->
+
+**只有图标 没有 Tab 名字**
+
+<!-- endtab -->
+
+<!-- tab 炸弹@fas fa-bomb -->
+
+**名字+icon**
+
+<!-- endtab -->
+
+{% endtabs %}
+```
+
+
+<!-- endtab -->
+
+
+
+## 按钮 btns
+
+
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% btns 样式参数 %}
+{% cell 标题, 链接, 图片或者图标 %}
+{% cell 标题, 链接, 图片或者图标 %}
+{% endbtns %}
+```
+
+
+<!-- endtab -->
+<!-- tab 参数配置 -->
+
+1. 圆角样式：rounded, circle
+2. 增加文字样式：可以在容器内增加 `<b>标题</b> `和` <p>描述文字</p>`
+3. 布局方式：
+   默认为自动宽度，适合视野内只有一两个的情况。
+
+| 参数   | 含义                                   |
+| :----- | :------------------------------------- |
+| wide   | 宽一点的按钮                           |
+| fill   | 填充布局，自动铺满至少一行，多了会换行 |
+| center | 居中，按钮之间是固定间距               |
+| around | 居中分散                               |
+| grid2  | 等宽最多 2 列，屏幕变窄会适当减少列数  |
+| grid3  | 等宽最多 3 列，屏幕变窄会适当减少列数  |
+| grid4  | 等宽最多 4 列，屏幕变窄会适当减少列数  |
+| grid5  | 等宽最多 5 列，屏幕变窄会适当减少列数  |
+
+<!-- endtab -->
+<!-- tab 样式预览 -->
+
+1. 如果需要显示类似「团队成员」之类的一组含有头像的链接：
+
+
+[xaoxuu](https://xaoxuu.com)
+[xaoxuu](https://xaoxuu.com)
+[xaoxuu](https://xaoxuu.com)
+[xaoxuu](https://xaoxuu.com)
+[xaoxuu](https://xaoxuu.com)
+
+
+2. 或者含有图标的按钮：
+
+
+[下载源码](/)
+[查看文档](/)
+
+
+3. 圆形图标 + 标题 + 描述 + 图片 + 网格 5 列 + 居中
+
+
+<a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1' class="no-text-decoration">
+<i class='anzhiyufont anzhiyu-icon-heartbeat'></i>
+<b>心率管家</b>
+
+<img src='https://cdn1.tianli0.top/gh/xaoxuu/cdn-assets/qrcode/heartmate_pro.png'>
+</a>
+<a href='https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1' class="no-text-decoration">
+<i class='anzhiyufont anzhiyu-icon-heartbeat'></i>
+<b>心率管家</b>
+
+<img src='https://cdn1.tianli0.top/gh/xaoxuu/cdn-assets/qrcode/heartmate_lite.png'>
+</a>
+
+
+<!-- endtab -->
+<!-- tab 示例源码 -->
+
+1. 如果需要显示类似「团队成员」之类的一组含有头像的链接：
+
+```markdown
+{% btns circle grid5 %}
+{% cell xaoxuu, https://xaoxuu.com, https://bu.dusays.com/2023/06/01/64787e6a5816d.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://bu.dusays.com/2023/06/01/64787e6a5816d.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://bu.dusays.com/2023/06/01/64787e6a5816d.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://bu.dusays.com/2023/06/01/64787e6a5816d.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://bu.dusays.com/2023/06/01/64787e6a5816d.png %}
+{% endbtns %}
+```
+
+
+2. 或者含有图标的按钮：
+
+```markdown
+{% btns rounded grid5 %}
+{% cell 下载源码, /, anzhiyufont anzhiyu-icon-bolt %}
+{% cell 查看文档, /, anzhiyufont anzhiyu-icon-book %}
+{% endbtns %}
+```
+
+
+3. 圆形图标 + 标题 + 描述 + 图片 + 网格 5 列 + 居中
+
+```markdown
+{% btns circle center grid5 %}
+<a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1' class="no-text-decoration">
+<i class='anzhiyufont anzhiyu-icon-heartbeat'></i>
+<b>心率管家</b>
+{% p red, 专业版 %}
+<img src='https://bu.dusays.com/2023/06/01/64787e2a1347c.png'>
+</a>
+<a href='https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1' class="no-text-decoration">
+<i class='anzhiyufont anzhiyu-icon-heartbeat'></i>
+<b>心率管家</b>
+{% p green, 免费版 %}
+<img src='https://bu.dusays.com/2023/06/01/64787e515e261.png'>
+</a>
+{% endbtns %}
+```
+
+
+<!-- endtab -->
+
+
+
+## 按钮 btn
+
+
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% btn [url],[text],[icon],[color] [style] [layout] [position] [size] %}
+
+[url] : 链接
+[text] : 按钮文字
+[icon] : [可选] 图标
+[color] : [可选] 按钮背景顔色(默认 style 时）
+按钮字体和边框顔色(outline 时)
+default/blue/pink/red/purple/orange/green
+[style] : [可选] 按钮样式 默认实心
+outline/留空
+[layout] : [可选] 按钮佈局 默认为 line
+block/留空
+[position] : [可选] 按钮位置 前提是设置了 layout 为 block 默认为左边
+center/right/留空
+[size] : [可选] 按钮大小
+larger/留空
+```
+
+
+<!-- endtab -->
+<!-- tab 参数配置 -->
+
+| 参数     | 含义                                                                                                       |
+| :------- | :--------------------------------------------------------------------------------------------------------- |
+| url      | 链接                                                                                                       |
+| text     | 按钮文字                                                                                                   |
+| icon     | [可选] 图标，如果开启了 `fontawesome`可以使用 fontawesome 的图标，否则只能使用默内置图标                   |
+| color    | [可选] 按钮背景顔色(默认 style 时）按钮字体和边框顔色(outline 时)default/blue/pink/red/purple/orange/green |
+| style    | [可选] 按钮样式 默认实心数，outline/留空                                                                   |
+| layout   | [可选] 按钮佈局 默认为 line block/留空                                                                     |
+| position | [可选] 按钮位置 前提是设置了 layout 为 block 默认为左边 center/right/留空数                                |
+| size     | [可选] 按钮大小 larger/留空                                                                                |
+
+<!-- endtab -->
+<!-- tab 样式预览 -->
+
+1. 一组按钮
+
+This is my website, click the button [AnZhiYu](https://anheyu.com/)
+This is my website, click the button [AnZhiYu](https://anheyu.com/)
+This is my website, click the button [AnZhiYu](https://anheyu.com/)
+This is my website, click the button [AnZhiYu](https://anheyu.com/)
+This is my website, click the button [AnZhiYu](https://anheyu.com/)
+
+2. 调整位置/大小
+
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+
+3. more than one button in center
+
+<span>
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+</span>
+
+4. 居中按钮
+
+<div class="btn-center">
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+</div>
+
+<!-- endtab -->
+<!-- tab 示例源码 -->
+
+1. 一组按钮
+
+```markdown
+This is my website, click the button {% btn 'https://anheyu.com/',AnZhiYu %}
+This is my website, click the button {% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right %}
+This is my website, click the button {% btn 'https://anheyu.com/',AnZhiYu,,outline %}
+This is my website, click the button {% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline %}
+This is my website, click the button {% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,larger %}
+```
+
+
+2. 调整位置/大小
+
+```markdown
+{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,block %}
+{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,block center larger %}
+{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,block right outline larger %}
+```
+
+
+3. more than one button in center
+
+```markdown
+<span>
+{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,larger %}
+{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,blue larger %}
+{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,pink larger %}
+{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,red larger %}
+{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,purple larger %}
+{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,orange larger %}
+{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,green larger %}
+</span>
+```
+
+
+4. 居中按钮
+
+```markdown
+<div class="btn-center">
+{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline larger %}
+{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline blue larger %}
+{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline pink larger %}
+{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline red larger %}
+{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline purple larger %}
+{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline orange larger %}
+{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline green larger %}
+</div>
+```
+
+
+<!-- endtab -->
+
+
+
+## 网站卡片 sites
+
+
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% sitegroup %}
+{% site 标题, url=链接, screenshot=截图链接, avatar=头像链接（可选）, description=描述（可选） %}
+{% site 标题, url=链接, screenshot=截图链接, avatar=头像链接（可选）, description=描述（可选） %}
+{% endsitegroup %}
+```
+
+
+<!-- endtab -->
+
+<!-- tab 样式预览 -->
+
+
+
+
+
+
+
+<!-- endtab -->
+<!-- tab 示例源码 -->
+
+```markdown
+{% sitegroup %}
+{% site xaoxuu, url=https://xaoxuu.com, screenshot=https://bu.dusays.com/2023/06/01/6478965ce6557.webp, avatar=https://cdn1.tianli0.top/gh/xaoxuu/cdn-assets/avatar/avatar.png, description=简约风格 %}
+{% site Colsrch, url=https://colsrch.top, screenshot=https://i.loli.net/2020/08/22/dFRWXm52OVu8qfK.png, avatar=https://cdn1.tianli0.top/gh/Colsrch/images/Colsrch/avatar.jpg, description=这是一段关于这个网站的描述文字 %}
+{% site Linhk1606, url=https://linhk1606.github.io, screenshot=https://bu.dusays.com/2023/06/01/6478963584621.png, avatar=https://bu.dusays.com/2023/06/01/6478968743368.png, description=这是一段关于这个网站的描述文字 %}
+{% endsitegroup %}
+```
+
+
+<!-- endtab -->
+
+
+
+## 单张图片 image
+
+
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% image 链接, width=宽度（可选）, height=高度（可选）, alt=描述（可选）, bg=占位颜色（可选） %}
+```
+
+
+<!-- endtab -->
+<!-- tab 参数配置 -->
+
+1. 图片宽度高度：width=300px, height=32px
+2. 图片描述：alt=图片描述（butterfly 需要在主题配置文件中开启图片描述）
+3. 占位背景色：bg=#f2f2f2
+   <!-- endtab -->
+   <!-- tab 样式预览 -->
+
+4. 添加描述：
+
+
+
+2. 指定宽度：
+
+
+
+3. 指定宽度并添加描述：
+
+
+
+4. 设置占位背景色：
+
+
+
+<!-- endtab -->
+<!-- tab 示例源码 -->
+
+1. 添加描述：
+
+```markdown
+{% image https://bu.dusays.com/2023/06/01/6478937d7de6f.webp, alt=每天下课回宿舍的路，没有什么故事。 %}
+```
+
+
+2. 指定宽度：
+
+```markdown
+{% image https://bu.dusays.com/2023/06/01/6478937d7de6f.webp, width=400px %}
+```
+
+
+3. 指定宽度并添加描述：
+
+```markdown
+{% image https://bu.dusays.com/2023/06/01/6478937d7de6f.webp, width=400px, alt=每天下课回宿舍的路，没有什么故事。 %}
+```
+
+
+4. 设置占位背景色：
+
+```markdown
+{% image https://bu.dusays.com/2023/06/01/6478937d7de6f.webp, width=400px, bg=#1D0C04, alt=优化不同宽度浏览的观感 %}
+```
+
+
+<!-- endtab -->
+
+
+
+## inlineImg 行内图片
+
+
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% inlineImg [src] [height] %}
+
+[src] : 图片链接
+[height] ： 图片高度限制【可选】
+```
+
+
+<!-- endtab -->
+<!-- tab 参数配置 -->
+
+| 参数   | 含义                 |
+| :----- | :------------------- |
+| src    | 图片链接             |
+| height | 图片高度限制【可选】 |
+
+<!-- endtab -->
+<!-- tab 样式预览 -->
+
+你看我长得漂亮不
+
+![](https://bu.dusays.com/2023/06/01/64787ded2ca1c.webp)
+
+我觉得很漂亮 
+
+<!-- endtab -->
+
+<!-- tab 示例源码 -->
+
+```
+你看我长得漂亮不
+
+![](https://i.loli.net/2021/03/19/2P6ivUGsdaEXSFI.png)
+
+我觉得很漂亮 {% inlineImg https://i.loli.net/2021/03/19/5M4jUB3ynq7ePgw.png 150px %}
+```
+
+
+<!-- endtab -->
+
+
+
+## 行内图片 inlineimage
+
+
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% inlineimage 图片链接, height=高度（可选） %}
+```
+
+
+<!-- endtab -->
+<!-- tab 参数配置 -->
+
+1. 高度：height=20px
+
+<!-- endtab -->
+<!-- tab 样式预览 -->
+
+这是  一段话。
+
+这又是  一段话。
+
+<!-- endtab -->
+<!-- tab 示例源码 -->
+
+```markdown
+这是 {% inlineimage https://bu.dusays.com/2023/06/01/647895232e5d5.webp %} 一段话。
+
+这又是 {% inlineimage https://bu.dusays.com/2022/05/19/6285328a83ca7.gif, height=40px %} 一段话。
+```
+
+
+<!-- endtab -->
+
+
+
+## label 标签
+
+
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% label text color %}
+```
+
+
+<!-- endtab -->
+<!-- tab 参数配置 -->
+
+| 参数  | 含义                                                                        |
+| :---- | :-------------------------------------------------------------------------- |
+| text  | 文字                                                                        |
+| color | 【可选】背景颜色，默认为 default，default/blue/pink/red/purple/orange/green |
+
+<!-- endtab -->
+<!-- tab 样式预览 -->
+
+臣亮言：创业未半，而。今天下三分，，此诚也！然侍衞之臣，不懈于内；，忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气；不宜妄自菲薄，引喻失义，以塞忠谏之路也。
+宫中、府中，俱为一体；陟罚臧否，不宜异同。若有、，及为忠善者，宜付有司，论其刑赏，以昭陛下平明之治；不宜偏私，使内外异法也。
+
+<!-- endtab -->
+
+<!-- tab 示例源码 -->
+
+```
+臣亮言：{% label 先帝 %}创业未半，而{% label 中道崩殂 blue %}。今天下三分，{% label 益州疲敝 pink %}，此诚{% label 危急存亡之秋 red %}也！然侍衞之臣，不懈于内；{% label 忠志之士 purple %}，忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气；不宜妄自菲薄，引喻失义，以塞忠谏之路也。
+宫中、府中，俱为一体；陟罚臧否，不宜异同。若有{% label 作奸 orange %}、{% label 犯科 green %}，及为忠善者，宜付有司，论其刑赏，以昭陛下平明之治；不宜偏私，使内外异法也。
+```
+
+
+<!-- endtab -->
+
+
+
+## timeline
+
+
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% timeline title,color %}
+
+<!-- timeline title -->
+
+xxxxx
+
+<!-- endtimeline -->
+<!-- timeline title -->
+
+xxxxx
+
+<!-- endtimeline -->
+
+{% endtimeline %}
+```
+
+
+<!-- endtab -->
+
+<!-- tab 参数配置 -->
+
+| 参数  | 含义                                                                       |
+| :---- | :------------------------------------------------------------------------- |
+| title | 标题/时间线                                                                |
+| color | timeline 颜色，default(留空) / blue / pink / red / purple / orange / green |
+
+<!-- endtab -->
+
+<!-- tab 样式预览 -->
+
+1. 默认颜色
+   
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+   <!-- endtimeline -->
+
+   
+
+2. blue
+   
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+   <!-- endtimeline -->
+
+   
+
+3. pink
+   
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+   <!-- endtimeline -->
+
+   
+
+4. red
+   
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+   <!-- endtimeline -->
+
+   
+
+5. purple
+   
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+   <!-- endtimeline -->
+
+   
+
+6. orange
+   
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+   <!-- endtimeline -->
+
+   
+
+7. green
+   
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+   <!-- endtimeline -->
+
+   
+
+<!-- endtab -->
+
+<!-- tab 示例源码 -->
+
+1. 默认颜色
+
+```
+   {% timeline 2022 %}
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+   <!-- endtimeline -->
+
+   {% endtimeline %}
+```
+
+
+2. blue
+
+```
+   {% timeline 2022,blue %}
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+   <!-- endtimeline -->
+
+   {% endtimeline %}
+```
+
+
+3. pink
+
+```
+   {% timeline 2022,pink %}
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+   <!-- endtimeline -->
+
+   {% endtimeline %}
+```
+
+
+4. red
+
+```
+   {% timeline 2022,red %}
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+   <!-- endtimeline -->
+
+   {% endtimeline %}
+```
+
+
+5. purple
+
+```
+   {% timeline 2022,purple %}
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+   <!-- endtimeline -->
+
+   {% endtimeline %}
+```
+
+
+6. orange
+
+```
+   {% timeline 2022,orange %}
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+   <!-- endtimeline -->
+
+   {% endtimeline %}
+```
+
+
+7. green
+
+```
+   {% timeline 2022,green %}
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+   <!-- endtimeline -->
+
+   {% endtimeline %}
+```
+
+
+<!-- endtab -->
+
+
+
+## flink 友链标签
+
+<div class="hexo-note">
+
+可在任何界面插入类似`友情链接`列表效果，内容格式与友情链接界面一样，支持 `yml 格式`,注意`yml数据`具有格式要求，请注意格式对齐，防止被编辑器格式化导致格式错误从而报错。
+
+</div>
+
+
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% flink %}
+xxxxxx
+{% endflink %}
+```
+
+
+<!-- endtab -->
+<!-- tab 参数配置 -->
+
+| 参数  | 含义                                                                        |
+| :---- | :-------------------------------------------------------------------------- |
+| class_name  | h2标题                                                                        |
+| flink_style | 【可选】友链样式，默认为 flexcard，flexcard/anzhiyu |
+| link_list | 【可选】友链样式，默认为 flexcard，flexcard/anzhiyu |
+
+<!-- endtab -->
+
+<!-- tab 样式预览 -->
+
+
+- class_name: 推荐博客
+  flink_style: flexcard
+  link_list:
+    - name: 安知鱼
+      link: https://anheyu.com/
+      avatar: https://img02.anheyu.com/adminuploads/1/2022/09/15/63232b7d91d22.jpg
+      descr: 生活明朗，万物可爱
+      siteshot: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/anheyu.com.jpg
+
+- class_name: 网站
+  class_desc: 值得推荐的网站
+  flink_style: anzhiyu
+  link_list:
+    - name: Youtube
+      link: https://www.youtube.com/
+      avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
+      descr: 视频网站
+    - name: Weibo
+      link: https://www.weibo.com/
+      avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
+      descr: 中国最大社交分享平台
+    - name: Twitter
+      link: https://twitter.com/
+      avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
+      descr: 社交分享平台
+
+
+<!-- endtab -->
+
+<!-- tab 示例源码 -->
+
+```markdown
+
+{% flink %}
+- class_name: 推荐博客
+  flink_style: flexcard
+  link_list:
+    - name: 安知鱼
+      link: https://anheyu.com/
+      avatar: https://img02.anheyu.com/adminuploads/1/2022/09/15/63232b7d91d22.jpg
+      descr: 生活明朗，万物可爱
+      siteshot: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/anheyu.com.jpg
+
+- class_name: 网站
+  class_desc: 值得推荐的网站
+  flink_style: anzhiyu
+  link_list:
+    - name: Youtube
+      link: https://www.youtube.com/
+      avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
+      descr: 视频网站
+    - name: Weibo
+      link: https://www.weibo.com/
+      avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
+      descr: 中国最大社交分享平台
+    - name: Twitter
+      link: https://twitter.com/
+      avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
+      descr: 社交分享平台
+{% endflink %}
+```
+
+
+<!-- endtab -->
+
+
+
+## mermaid 图
+
+<div class="hexo-note">
+
+使用`mermaid标签`可以绘制Flowchart（流程图）、Sequence diagram（时序图 ）、Class Diagram（类别图）、State Diagram（状态图）、Gantt（甘特图）和Pie Chart（圆形图），具体可以查看[mermaid文档](https://mermaid.js.org/#/)
+
+</div>
+
+
+修改 `主题配置文件`
+
+```yml
+# mermaid
+# see https://github.com/mermaid-js/mermaid
+mermaid:
+  enable: true
+  # built-in themes: default/forest/dark/neutral
+  theme:
+    light: default
+    dark: dark
+```
+
+
+
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% mermaid %}
+内容
+{% endmermaid %}
+```
+
+
+<!-- endtab -->
+
+<!-- tab 样式预览 -->
+
+![mermaid](https://bu.dusays.com/2023/06/01/647889d3a16f8.png)
+
+<!-- endtab -->
+
+<!-- tab 示例源码 -->
+
+```
+{% mermaid %}
+pie
+    title Key elements in Product X
+    "Calcium" : 42.96
+    "Potassium" : 50.05
+    "Magnesium" : 10.01
+    "Iron" :  5
+{% endmermaid %}
+```
+
+
+<!-- endtab -->
+
+
+
+## 复选列表 checkbox
+
+
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% checkbox 样式参数（可选）, 文本（支持简单md） %}
+```
+
+
+<!-- endtab -->
+<!-- tab 配置参数 -->
+
+1. 样式: plus, minus, times
+2. 颜色: red,yellow,green,cyan,blue,gray
+3. 选中状态: checked
+   <!-- endtab -->
+   <!-- tab 样式预览 -->
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <!-- endtab -->
+   <!-- tab 示例源码 -->
+
+```markdown
+{% checkbox 纯文本测试 %}
+{% checkbox checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
+{% checkbox red, 支持自定义颜色 %}
+{% checkbox green checked, 绿色 + 默认选中 %}
+{% checkbox yellow checked, 黄色 + 默认选中 %}
+{% checkbox cyan checked, 青色 + 默认选中 %}
+{% checkbox blue checked, 蓝色 + 默认选中 %}
+{% checkbox plus green checked, 增加 %}
+{% checkbox minus yellow checked, 减少 %}
+{% checkbox times red checked, 叉 %}
+```
+
+
+<!-- endtab -->
+
+
+
+## dogeplayer 多吉云播放器
+
+<div class="hexo-note">
+
+快捷引入[多吉云视频](https://console.dogecloud.com/vod/overview)
+
+</div>
+
+
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% dogeplayer 4945 ebb742fd1f0b5a7b %}
+```
+
+
+<!-- endtab -->
+<!-- tab 参数配置 -->
+
+获取`userId`与`vcode`
+
+![](https://bu.dusays.com/2023/06/01/64788b5bad729.webp)
+
+| 参数  | 含义                                                                        |
+| :---- | :-------------------------------------------------------------------------- |
+| userId  | 多吉云userId                                                                        |
+| vcode | 视频vcode |
+
+<!-- endtab -->
+<!-- tab 样式预览 -->
+
+![](https://bu.dusays.com/2023/06/01/64788c12883b8.webp)
+
+<!-- endtab -->
+
+<!-- tab 示例源码 -->
+
+```
+{% dogeplayer 4945 ebb742fd1f0b5a7b %}
+```
+
+
+<!-- endtab -->
+
+
+
+## 折叠框 folding
+
+<div class="hexo-note">
+
+折叠框folding
+
+</div>
+
+
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% folding 参数（可选）, 标题 %}
+![](https://bu.dusays.com/2023/06/01/64788d71c832d.webp)
+{% endfolding %}
+```
+
+
+<!-- endtab -->
+<!-- tab 配置参数 -->
+
+1. 颜色：blue, cyan, green, yellow, red
+2. 状态：状态填写 open 代表默认打开。
+   <!-- endtab -->
+   <!-- tab 样式预览 -->
+
+
+
+![](https://bu.dusays.com/2023/06/01/64788d71c832d.webp)
+
+
+
+
+
+这是一个默认打开的折叠框。
+
+
+
+
+
+```markdown
+![](https://bu.dusays.com/2023/06/01/64788d71c832d.webp)
+```
+
+
+
+
+
+
+- haha
+- hehe
+
+
+
+
+
+
+
+
+
+hahaha <span><img src='https://bu.dusays.com/2023/06/01/64788cd5a356b.png' style='height:24px'></span>
+
+
+
+
+
+
+
+<!-- endtab -->
+<!-- tab 示例源码 -->
+
+```markdown
+{% folding 查看图片测试 %}
+
+![](https://bu.dusays.com/2023/06/01/64788d71c832d.webp)
+
+{% endfolding %}
+
+{% folding cyan open, 查看默认打开的折叠框 %}
+
+这是一个默认打开的折叠框。
+
+{% endfolding %}
+
+{% folding green, 查看代码测试 %}
+假装这里有代码块（代码块没法嵌套代码块）
+{% endfolding %}
+
+{% folding yellow, 查看列表测试 %}
+
+- haha
+- hehe
+
+{% endfolding %}
+
+{% folding red, 查看嵌套测试 %}
+
+{% folding blue, 查看嵌套测试2 %}
+
+{% folding 查看嵌套测试3 %}
+
+hahaha <span><img src='https://bu.dusays.com/2023/06/01/64788cd5a356b.png' style='height:24px'></span>
+
+{% endfolding %}
+
+{% endfolding %}
+
+{% endfolding %}
+```
+
+
+<!-- endtab -->
+
+
+
+## Gallery 相册图库
+
+一个图库集合。
+
+
+
+<!-- tab 标签语法 -->
+
+1.  gallerygroup 相册图库
+
+    ```markdown
+    <div class="gallery-group-main">
+    {% galleryGroup name description link img-url %}
+    {% galleryGroup name description link img-url %}
+    {% galleryGroup name description link img-url %}
+    </div>
+    ```
+
+
+2.  gallery 相册
+
+
+
+<!-- tab 本地 -->
+
+```markdown
+{% gallery %}
+markdown 图片格式
+{% endgallery %}
+
+{% gallery true,220,10 %}
+markdown 图片格式
+{% endgallery %}
+
+{% gallery true,,10 %}
+markdown 图片格式
+{% endgallery %}
+```
+
+
+| 参数名    | 释义                                                                                 |
+| --------- | ------------------------------------------------------------------------------------ |
+| lazyload  | 【可选】点击按钮加载更多图片，填写 true/false。默认为 `false`。                      |
+| rowHeight | 【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为 `220`。 |
+| limit     | 【可选】每次加载多少张照片。默认为 `10`。                                            |
+
+<!-- endtab -->
+
+<!-- tab 远程 -->
+
+```markdown
+{% gallery url,[link],[lazyload],[rowHeight],[limit] %}
+{% endgallery %}
+```
+
+
+| 参数名    | 释义                                                                                 |
+| --------- | ------------------------------------------------------------------------------------ |
+| url       | 【必须】 识别词                                                                      |
+| link      | 【必须】远程的 json 链接                                                             |
+| lazyload  | 【可选】点击按钮加载更多图片，填写 true/false。默认为 `false`。                      |
+| rowHeight | 【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为 `220`。 |
+| limit     | 【可选】每次加载多少张照片。默认为 `10`。                                            |
+
+> 远程链接 Json 的例子
+
+有三个参数，`url`是必须存在的，`alt` 和 `title` 可有，也可没有。
+
+```json
+[
+  {
+    "url": "https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0556.jpg",
+    "alt": "IMG_0556.jpg",
+    "title": "这是title"
+  },
+  {
+    "url": "https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0472.jpg",
+    "alt": "IMG_0472.jpg"
+  },
+  {
+    "url": "https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0453.jpg",
+    "alt": ""
+  },
+  {
+    "url": "https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0931.jpg",
+    "alt": ""
+  }
+]
+```
+
+
+> 示例
+
+```markdown
+{% gallery url,https://xxxx.com/sss.json %}
+{% endgallery %}
+
+{% gallery url,https://xxxx.com/sss.json,true,220,10 %}
+{% endgallery %}
+
+{% gallery url,https://xxxx.com/sss.json,true,,10 %}
+{% endgallery %}
+```
+
+
+<!-- endtab -->
+
+
+
+<!-- endtab -->
+
+<!-- tab 参数配置 -->
+
+- gallerygroup 相册图库
+
+  | 参数名      | 释义                 |
+  | :---------- | :------------------- |
+  | name        | 图库名字             |
+  | description | 图库描述             |
+  | link        | 链接到对应相册的地址 |
+  | img-url     | 图库封面             |
+
+<div class="hexo-note">
+
+思维拓展一下，相册图库的实质其实就是个快捷方式，可以自定义添加描述、封面、链接。那么我们未必要把它当做一个相册，完全可以作为一个链接卡片，链接到视频、QQ、友链都是不错的选择。
+
+</div>
+
+- gallery 相册
+  区别于旧版的 Gallery 相册,新的 Gallery 相册会自动根据图片长度进行排版，书写也更加方便，与 markdown 格式一样。可根据需要插入到相应的 md。无需再自己配置长宽。**建议在粘贴时故意使用长短、大小、横竖不一的图片**，会有更好的效果。（尺寸完全相同的图片只会平铺输出，效果很糟糕）
+
+
+
+<!-- tab 本地 -->
+
+```markdown
+{% gallery %}
+markdown 图片格式
+{% endgallery %}
+
+{% gallery true,220,10 %}
+markdown 图片格式
+{% endgallery %}
+
+{% gallery true,,10 %}
+markdown 图片格式
+{% endgallery %}
+```
+
+
+| 参数名    | 释义                                                                                 |
+| --------- | ------------------------------------------------------------------------------------ |
+| lazyload  | 【可选】点击按钮加载更多图片，填写 true/false。默认为 `false`。                      |
+| rowHeight | 【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为 `220`。 |
+| limit     | 【可选】每次加载多少张照片。默认为 `10`。                                            |
+
+<!-- endtab -->
+
+<!-- tab 远程 -->
+
+```markdown
+{% gallery url,[link],[lazyload],[rowHeight],[limit] %}
+{% endgallery %}
+```
+
+
+| 参数名    | 释义                                                                                 |
+| --------- | ------------------------------------------------------------------------------------ |
+| url       | 【必须】 识别词                                                                      |
+| link      | 【必须】远程的 json 链接                                                             |
+| lazyload  | 【可选】点击按钮加载更多图片，填写 true/false。默认为 `false`。                      |
+| rowHeight | 【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为 `220`。 |
+| limit     | 【可选】每次加载多少张照片。默认为 `10`。                                            |
+
+> 远程链接 Json 的例子
+
+有三个参数，`url`是必须存在的，`alt` 和 `title` 可有，也可没有。
+
+```json
+[
+  {
+    "url": "https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0556.jpg",
+    "alt": "IMG_0556.jpg",
+    "title": "这是title"
+  },
+  {
+    "url": "https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0472.jpg",
+    "alt": "IMG_0472.jpg"
+  },
+  {
+    "url": "https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0453.jpg",
+    "alt": ""
+  },
+  {
+    "url": "https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0931.jpg",
+    "alt": ""
+  }
+]
+```
+
+
+> 示例
+
+```markdown
+{% gallery url,https://xxxx.com/sss.json %}
+{% endgallery %}
+
+{% gallery url,https://xxxx.com/sss.json,true,220,10 %}
+{% endgallery %}
+
+{% gallery url,https://xxxx.com/sss.json,true,,10 %}
+{% endgallery %}
+```
+
+
+<!-- endtab -->
+
+
+
+<!-- endtab -->
+
+<!-- tab 样式预览 -->
+
+- gallerygroup 相册图库
+
+<div class="gallery-group-main">
+
+
+
+</div>
+
+- gallery 相册
+
+
+![](https://bu.dusays.com/2023/06/01/647896b15759c.jpg)
+![](https://bu.dusays.com/2023/06/01/647896cabde59.jpg)
+![](https://bu.dusays.com/2023/06/01/647896eb0f3ea.jpg)
+![](https://bu.dusays.com/2023/06/01/647896ed810b3.jpg)
+![](https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg)
+![](https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg)
+![](https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg)
+![](https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg)
+
+
+<!-- endtab -->
+<!-- tab 示例源码 -->
+
+<div class="hexo-note">
+
+对于很多同学提问的`gallerygroup`和`gallery`相册页的链接问题。这里说下我个人的使用习惯。
+一般使用相册图库的话，可以在导航栏加一个 gallery 的 page(**使用指令`hexo new page gallery`添加**)，里面放相册图库作为封面。然后在`[Blogroot]/source/gallery/`下面建立相应的文件夹，例如若按照这里的示例，若欲使用`/gallery/MC/`路径访问 MC 相册，则需要新建`[Blogroot]/source/gallery/MC/index.md`，并在里面填入`gallery`相册内容。
+
+注意 ⚠️：本站相册集为单独优化，可参考[配置相册页面](https://anheyu.com/posts/220c.html)。
+
+</div>
+
+1. gallerygroup 相册图库
+
+   ```markdown
+   <div class="gallery-group-main">
+    {% galleryGroup MC 在Rikkaの六花服务器里留下的足迹 '/wordScenery/' https://bu.dusays.com/2023/06/01/64788f24d05bd.webp %}
+    {% galleryGroup Gundam 哦咧哇gundam哒！ '/thousand/' https://bu.dusays.com/2023/06/01/64788f456fc3d.webp %}
+    {% galleryGroup I-am-Akilar 某种意义上也算自拍吧 '/wallpaper/' https://bu.dusays.com/2023/06/01/64788f83e5fa1.webp %}
+   </div>
+   ```
+
+
+2. gallery 相册
+
+   ```markdown
+   {% gallery true,,2 %}
+   ![](https://bu.dusays.com/2023/06/01/647896b15759c.jpg)
+   ![](https://bu.dusays.com/2023/06/01/647896cabde59.jpg)
+   ![](https://bu.dusays.com/2023/06/01/647896eb0f3ea.jpg)
+   ![](https://bu.dusays.com/2023/06/01/647890012b1ec.webp)
+   ![](https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg)
+   ![](https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg)
+   ![](https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg)
+   ![](https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg)
+   {% endgallery %}
+   ```
+
+
+<!-- endtab -->
+
+
+
+## tag-hide
+
+<div class="hexo-note">
+
+如果你想把一些文字、内容隐藏起来，并提供按钮让用户点击显示。可以使用这个标签外挂。
+请注意，tag-hide内的标签外挂content内都不建议有h1 - h6 等标题。因为Toc会把隐藏内容标题也显示出来，而且当滚动屏幕时，如果隐藏内容没有显示出来，会导致Toc的滚动出现异常。
+
+</div>
+
+
+
+<!-- tab inline -->
+
+`inline` 在文本里面添加按钮隐藏内容，只限文字
+
+( content不能包含英文逗号，可用`&sbquo;`)
+
+```markdown
+{% hideInline content,display,bg,color %}
+```
+
+  - content: 文本内容
+
+  - display: 按钮显示的文字(可选)
+
+  - bg: 按钮的背景颜色(可选)
+
+  - color: 按钮文字的颜色(可选)
+
+> Demo
+
+```markdown
+哪个英文字母最酷？ {% hideInline 因为西装裤(C装酷),查看答案,#FF7242,#fff %}
+
+门里站着一个人? {% hideInline 闪 %}
+```
+
+
+哪个英文字母最酷？ 
+
+门里站着一个人? 
+
+<!-- endtab -->
+
+<!-- tab Block -->
+
+`block`独立的block隐藏内容，可以隐藏很多内容，包括图片，代码块等等
+
+( display 不能包含英文逗号，可用`&sbquo;`)
+
+```markdown
+{% hideBlock display,bg,color %}
+content
+{% endhideBlock %}
+```
+
+
+  - content: 文本内容
+
+  - display: 按钮显示的文字(可选)
+
+  - bg: 按钮的背景颜色(可选)
+
+  - color: 按钮文字的颜色(可选)
+
+> Demo
+
+```markdown
+查看答案
+{% hideBlock 查看答案 %}
+傻子，怎么可能有答案
+{% endhideBlock %}
+```
+
+
+查看答案
+
+傻子，怎么可能有答案
+
+<!-- endtab -->
+
+<!-- tab Toggle -->
+
+如果你需要展示的内容太多，可以把它隐藏在收缩框里，需要时再把它展开。
+
+( display 不能包含英文逗号，可用`&sbquo;`)
+
+```markdown
+{% hideToggle display,bg,color %}
+content
+{% endhideToggle %}
+```
+
+
+> Demo
+
+
+在你的博客根目录里
+
+git clone -b master https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git themes/anzhiyu
+
+如果想要安装比较新的dev分支，可以
+
+git clone -b dev https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git themes/anzhiyu
+
+
+
+<!-- endtab -->
+
+
+
+
+## 链接卡片 link
+
+
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% link 标题, 站点描述, 链接, 图片链接（可选） %}
+```
+
+
+<!-- endtab -->
+
+<!-- tab 样式预览 -->
+
+
+
+<!-- endtab -->
+<!-- tab 示例源码 -->
+
+```markdown
+{% link 获取网站的Favicon图标并显示在你的网页上,owen0o0,https://github.com/owen0o0/getFavicon %}
+```
+
+
+<!-- endtab -->
+
+
+
+## 单选列表 radio
+
+
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% radio 样式参数（可选）, 文本（支持简单md） %}
+```
+
+
+<!-- endtab -->
+<!-- tab 配置参数 -->
+
+1. 颜色: red,yellow,green,cyan,blue,gray
+2. 选中状态: checked
+   <!-- endtab -->
+   <!-- tab 样式预览 -->
+   
+   
+   
+   
+   
+   
+   
+   <!-- endtab -->
+   <!-- tab 示例源码 -->
+
+```markdown
+{% radio 纯文本测试 %}
+{% radio checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
+{% radio red, 支持自定义颜色 %}
+{% radio green, 绿色 %}
+{% radio yellow, 黄色 %}
+{% radio cyan, 青色 %}
+{% radio blue, 蓝色 %}
+```
+
+
+<!-- endtab -->
+
+
+
+## 上标标签 tip
+
+<div class="hexo-note">
+
+主要样式参考自[小康的 butterfly 渐变背景标签](https://www.antmoe.com/posts/3b43914f/)
+
+</div>
+
+
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% tip [参数，可选] %}文本内容{% endtip %}
+```
+
+
+<!-- endtab -->
+<!-- tab 配置参数 -->
+
+1. 样式: success,error,warning,bolt,ban,home,sync,cogs,key,bell
+2. 自定义图标: 支持 fontawesome。
+   <!-- endtab -->
+
+<!-- tab 样式预览 -->
+<div class="hexo-note">
+
+default
+
+</div>
+<div class="hexo-note">
+
+info
+
+</div>
+<div class="hexo-note">
+
+success
+
+</div>
+<div class="hexo-note">
+
+error
+
+</div>
+<div class="hexo-note">
+
+warning
+
+</div>
+<div class="hexo-note">
+
+bolt
+
+</div>
+<div class="hexo-note">
+
+ban
+
+</div>
+<div class="hexo-note">
+
+home
+
+</div>
+<div class="hexo-note">
+
+sync
+
+</div>
+<div class="hexo-note">
+
+cogs
+
+</div>
+<div class="hexo-note">
+
+key
+
+</div>
+<div class="hexo-note">
+
+bell
+
+</div>
+<div class="hexo-note">
+
+自定义 font awesome 图标
+
+</div>
+<!-- endtab -->
+
+<!-- tab 示例源码 -->
+
+```markdown
+{% tip %}default{% endtip %}
+{% tip info %}info{% endtip %}
+{% tip success %}success{% endtip %}
+{% tip error %}error{% endtip %}
+{% tip warning %}warning{% endtip %}
+{% tip bolt %}bolt{% endtip %}
+{% tip ban %}ban{% endtip %}
+{% tip home %}home{% endtip %}
+{% tip sync %}sync{% endtip %}
+{% tip cogs %}cogs{% endtip %}
+{% tip key %}key{% endtip %}
+{% tip bell %}bell{% endtip %}
+{% tip fa-atom %}自定义 font awesome 图标{% endtip %}
+```
+
+
+<!-- endtab -->
+
+
+
+## Note (Bootstrap Callout)
+
+
+
+<!-- tab 通用配置 -->
+
+修改主题配置文件
+
+```yml
+note:
+  # Note tag style values:
+  #  - simple    bs-callout old alert style. Default.
+  #  - modern    bs-callout new (v2-v3) alert style.
+  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
+  #  - disabled  disable all CSS styles import of note tag.
+  style: simple
+  icons: false
+  border_radius: 3
+  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
+  # Offset also applied to label tag variables. This option can work with disabled note tag.
+  light_bg_offset: 0
+```
+
+
+`Note`标签外挂有两种用法。`icons`和`light_bg_offset`只对方法一生效。
+
+`fontawesome`图标需开启主题配置文件中`icons.fontawesome`
+
+<!-- endtab -->
+
+<!-- tab 语法格式 -->
+
+`方法一`
+
+```markdown
+{% note [class] [no-icon] [style] %}
+Any content (support inline tags too.io).
+{% endnote %}
+```
+
+
+`方法二`
+
+```markdown
+{% note [color] [icon] [style] %}
+Any content (support inline tags too.io).
+{% endnote %}
+```
+
+
+<!-- endtab -->
+
+<!-- tab 配置参数 -->
+
+`方法一`
+
+| 参数    | 用法                                                                                                |
+| :------ | :-------------------------------------------------------------------------------------------------- |
+| class   | 【可选】标识，不同的标识有不同的配色<br>（ default / primary / success / info / warning / danger ） |
+| no-icon | 【可选】不显示 icon                                                                                 |
+| style   | 【可选】可以覆盖配置中的 style<br>（simple/modern/flat/disabled）                                   |
+
+`方法二`
+|参数|用法|
+|:--|:-------------|
+|class|【可选】标识，不同的标识有不同的配色<br>（ default / blue / pink / red / purple / orange / green ）|
+|no-icon|【可选】可配置自定义 icon (支持 fontawesome 图标和主题内置的阿里图标,`fontawesome`图标需开启主题配置文件中`icons.fontawesome`, 也可以配置 no-icon )|
+|style| 【可选】可以覆盖配置中的 style<br>（simple/modern/flat/disabled）|
+
+<!-- endtab -->
+
+<!-- tab 样式预览 -->
+
+`方法一`
+
+1. `simple`样式
+
+
+<div class="hexo-note">
+
+默认 提示块标签
+
+</div>
+<div class="hexo-note">
+
+default 提示块标签
+
+</div>
+<div class="hexo-note">
+
+primary 提示块标签
+
+</div>
+<div class="hexo-note">
+
+success 提示块标签
+
+</div>
+<div class="hexo-note">
+
+info 提示块标签
+
+</div>
+<div class="hexo-note">
+
+warning 提示块标签
+
+</div>
+<div class="hexo-note">
+
+danger 提示块标签
+
+</div>
+
+
+2. `modern`样式
+
+
+<div class="hexo-note">
+
+默认 提示块标签
+
+</div>
+<div class="hexo-note">
+
+default 提示块标签
+
+</div>
+<div class="hexo-note">
+
+primary 提示块标签
+
+</div>
+<div class="hexo-note">
+
+success 提示块标签
+
+</div>
+<div class="hexo-note">
+
+info 提示块标签
+
+</div>
+<div class="hexo-note">
+
+warning 提示块标签
+
+</div>
+<div class="hexo-note">
+
+danger 提示块标签
+
+</div>
+
+
+3. `flat`样式
+
+<div class="hexo-note">
+
+默认 提示块标签
+
+</div>
+<div class="hexo-note">
+
+default 提示块标签
+
+</div>
+<div class="hexo-note">
+
+primary 提示块标签
+
+</div>
+<div class="hexo-note">
+
+success 提示块标签
+
+</div>
+<div class="hexo-note">
+
+info 提示块标签
+
+</div>
+<div class="hexo-note">
+
+warning 提示块标签
+
+</div>
+<div class="hexo-note">
+
+danger 提示块标签
+
+</div>
+
+4. `disabled`样式
+
+<div class="hexo-note">
+
+默认 提示块标签
+
+</div>
+<div class="hexo-note">
+
+default 提示块标签
+
+</div>
+<div class="hexo-note">
+
+primary 提示块标签
+
+</div>
+<div class="hexo-note">
+
+success 提示块标签
+
+</div>
+<div class="hexo-note">
+
+info 提示块标签
+
+</div>
+<div class="hexo-note">
+
+warning 提示块标签
+
+</div>
+<div class="hexo-note">
+
+danger 提示块标签
+
+</div>
+
+5. `no-icon`样式
+
+<div class="hexo-note">
+
+默认 提示块标签
+
+</div>
+<div class="hexo-note">
+
+default 提示块标签
+
+</div>
+<div class="hexo-note">
+
+primary 提示块标签
+
+</div>
+<div class="hexo-note">
+
+success 提示块标签
+
+</div>
+<div class="hexo-note">
+
+info 提示块标签
+
+</div>
+<div class="hexo-note">
+
+warning 提示块标签
+
+</div>
+<div class="hexo-note">
+
+danger 提示块标签
+
+</div>
+
+`方法二`
+
+图标支持 `fontawesome` 和 `主题内置的阿里图标`，使用方法为加上对应的类名，`fontawesome`图标需开启主题配置文件中`icons.fontawesome`，默认未开启 fontawesome
+
+1.  simple 样式
+
+`主题内置阿里图标`
+
+<div class="hexo-note">
+
+你是刷 Visa 还是 UnionPay
+
+</div>
+<div class="hexo-note">
+
+2022 年快到了....
+
+</div>
+<div class="hexo-note">
+
+小心开车 安全至上
+
+</div>
+<div class="hexo-note">
+
+这是三片呢？还是四片？
+
+</div>
+<div class="hexo-note">
+
+你是刷 Visa 还是 UnionPay
+
+</div>
+<div class="hexo-note">
+
+剪刀石头布
+
+</div>
+<div class="hexo-note">
+
+前端最讨厌的浏览器
+
+</div>
+
+`fontawesome 图标`，开启主题配置文件中的`icons.fontawesome`为`true`后可见
+
+<div class="hexo-note">
+
+你是刷 Visa 还是 UnionPay
+
+</div>
+<div class="hexo-note">
+
+2022 年快到了....
+
+</div>
+<div class="hexo-note">
+
+小心开车 安全至上
+
+</div>
+<div class="hexo-note">
+
+这是三片呢？还是四片？
+
+</div>
+<div class="hexo-note">
+
+你是刷 Visa 还是 UnionPay
+
+</div>
+<div class="hexo-note">
+
+剪刀石头布
+
+</div>
+<div class="hexo-note">
+
+前端最讨厌的浏器
+
+</div>
+
+2.  modern 样式
+
+`主题内置阿里图标`
+
+<div class="hexo-note">
+
+你是刷 Visa 还是 UnionPay
+
+</div>
+<div class="hexo-note">
+
+2022 年快到了....
+
+</div>
+<div class="hexo-note">
+
+小心开车 安全至上
+
+</div>
+<div class="hexo-note">
+
+这是三片呢？还是四片？
+
+</div>
+<div class="hexo-note">
+
+你是刷 Visa 还是 UnionPay
+
+</div>
+<div class="hexo-note">
+
+剪刀石头布
+
+</div>
+<div class="hexo-note">
+
+前端最讨厌的浏览器
+
+</div>
+
+<p><code>fontawesome 图标</code>，开启主题配置文件中的<code>icons.fontawesome</code>为<code>true</code>后可见</p>
+
+<div class="hexo-note">
+
+你是刷 Visa 还是 UnionPay
+
+</div>
+<div class="hexo-note">
+
+2021 年快到了....
+
+</div>
+<div class="hexo-note">
+
+小心开车 安全至上
+
+</div>
+<div class="hexo-note">
+
+这是三片呢？还是四片？
+
+</div>
+<div class="hexo-note">
+
+你是刷 Visa 还是 UnionPay
+
+</div>
+<div class="hexo-note">
+
+剪刀石头布
+
+</div>
+<div class="hexo-note">
+
+前端最讨厌的浏览器
+
+</div>
+
+3.  flat 样式
+
+`主题内置阿里图标`
+
+<div class="hexo-note">
+
+你是刷 Visa 还是 UnionPay
+
+</div>
+<div class="hexo-note">
+
+2022 年快到了....
+
+</div>
+<div class="hexo-note">
+
+小心开车 安全至上
+
+</div>
+<div class="hexo-note">
+
+这是三片呢？还是四片？
+
+</div>
+<div class="hexo-note">
+
+你是刷 Visa 还是 UnionPay
+
+</div>
+<div class="hexo-note">
+
+剪刀石头布
+
+</div>
+<div class="hexo-note">
+
+前端最讨厌的浏览器
+
+</div>
+
+<p><code>fontawesome 图标</code>，开启主题配置文件中的<code>icons.fontawesome</code>为<code>true</code>后可见</p>
+
+<div class="hexo-note">
+
+你是刷 Visa 还是 UnionPay
+
+</div>
+<div class="hexo-note">
+
+2021 年快到了....
+
+</div>
+<div class="hexo-note">
+
+小心开车 安全至上
+
+</div>
+<div class="hexo-note">
+
+这是三片呢？还是四片？
+
+</div>
+<div class="hexo-note">
+
+你是刷 Visa 还是 UnionPay
+
+</div>
+<div class="hexo-note">
+
+剪刀石头布
+
+</div>
+<div class="hexo-note">
+
+前端最讨厌的浏览器
+
+</div>
+
+4.  disabled 样式
+
+`主题内置阿里图标`
+
+<div class="hexo-note">
+
+你是刷 Visa 还是 UnionPay
+
+</div>
+<div class="hexo-note">
+
+2022 年快到了....
+
+</div>
+<div class="hexo-note">
+
+小心开车 安全至上
+
+</div>
+<div class="hexo-note">
+
+这是三片呢？还是四片？
+
+</div>
+<div class="hexo-note">
+
+你是刷 Visa 还是 UnionPay
+
+</div>
+<div class="hexo-note">
+
+剪刀石头布
+
+</div>
+<div class="hexo-note">
+
+前端最讨厌的浏览器
+
+</div>
+
+<p><code>fontawesome 图标</code>，开启主题配置文件中的<code>icons.fontawesome</code>为<code>true</code>后可见</p>
+
+<div class="hexo-note">
+
+你是刷 Visa 还是 UnionPay
+
+</div>
+<div class="hexo-note">
+
+2021 年快到了....
+
+</div>
+<div class="hexo-note">
+
+小心开车 安全至上
+
+</div>
+<div class="hexo-note">
+
+这是三片呢？还是四片？
+
+</div>
+<div class="hexo-note">
+
+你是刷 Visa 还是 UnionPay
+
+</div>
+<div class="hexo-note">
+
+剪刀石头布
+
+</div>
+<div class="hexo-note">
+
+前端最讨厌的浏览器
+
+</div>
+
+5.  no-icon 样式
+
+<div class="hexo-note">
+
+你是刷 Visa 还是 UnionPay
+
+</div>
+<div class="hexo-note">
+
+2021 年快到了....
+
+</div>
+<div class="hexo-note">
+
+小心开车 安全至上
+
+</div>
+<div class="hexo-note">
+
+这是三片呢？还是四片？
+
+</div>
+<div class="hexo-note">
+
+你是刷 Visa 还是 UnionPay
+
+</div>
+<div class="hexo-note">
+
+剪刀石头布
+
+</div>
+<div class="hexo-note">
+
+前端最讨厌的浏览器
+
+</div>
+
+<!-- endtab -->
+
+<!-- tab 示例源码 -->
+
+`方法一`
+
+1. `simple`样式
+
+```markdown
+{% note simple %}默认 提示块标签{% endnote %}
+{% note default simple %}default 提示块标签{% endnote %}
+{% note primary simple %}primary 提示块标签{% endnote %}
+{% note success simple %}success 提示块标签{% endnote %}
+{% note info simple %}info 提示块标签{% endnote %}
+{% note warning simple %}warning 提示块标签{% endnote %}
+{% note danger simple %}danger 提示块标签{% endnote %}
+```
+
+
+2. `modern`样式
+
+```markdown
+{% note modern %}默认 提示块标签{% endnote %}
+{% note default modern %}default 提示块标签{% endnote %}
+{% note primary modern %}primary 提示块标签{% endnote %}
+{% note success modern %}success 提示块标签{% endnote %}
+{% note info modern %}info 提示块标签{% endnote %}
+{% note warning modern %}warning 提示块标签{% endnote %}
+{% note danger modern %}danger 提示块标签{% endnote %}
+```
+
+
+3. `flat`样式
+
+```markdown
+{% note flat %}默认 提示块标签{% endnote %}
+{% note default flat %}default 提示块标签{% endnote %}
+{% note primary flat %}primary 提示块标签{% endnote %}
+{% note success flat %}success 提示块标签{% endnote %}
+{% note info flat %}info 提示块标签{% endnote %}
+{% note warning flat %}warning 提示块标签{% endnote %}
+{% note danger flat %}danger 提示块标签{% endnote %}
+```
+
+
+4. `disabled`样式
+
+```markdown
+{% note disabled %}默认 提示块标签{% endnote %}
+{% note default disabled %}default 提示块标签{% endnote %}
+{% note primary disabled %}primary 提示块标签{% endnote %}
+{% note success disabled %}success 提示块标签{% endnote %}
+{% note info disabled %}info 提示块标签{% endnote %}
+{% note warning disabled %}warning 提示块标签{% endnote %}
+{% note danger disabled %}danger 提示块标签{% endnote %}
+```
+
+
+5. `no-icon`样式
+
+```markdown
+{% note no-icon %}默认 提示块标签{% endnote %}
+{% note default no-icon %}default 提示块标签{% endnote %}
+{% note primary no-icon %}primary 提示块标签{% endnote %}
+{% note success no-icon %}success 提示块标签{% endnote %}
+{% note info no-icon %}info 提示块标签{% endnote %}
+{% note warning no-icon %}warning 提示块标签{% endnote %}
+{% note danger no-icon %}danger 提示块标签{% endnote %}
+```
+
+
+`方法二`
+
+图标支持 `fontawesome` 和 `主题内置的阿里图标`，使用方法为加上对应的类名，`fontawesome`图标需开启主题配置文件中`icons.fontawesome`，默认未开启 fontawesome
+
+1.  simple 样式
+    `主题内置阿里图标`
+
+    ```markdown
+    {% note 'anzhiyufont anzhiyu-icon-rocket' simple %}你是刷 Visa 还是 UnionPay{% endnote %}
+    {% note blue 'anzhiyufont anzhiyu-icon-bullhorn' simple %}2022 年快到了....{% endnote %}
+    {% note pink 'anzhiyufont anzhiyu-icon-instagram' simple %}小心开车 安全至上{% endnote %}
+    {% note red 'anzhiyufont anzhiyu-icon-fan' simple%}这是三片呢？还是四片？{% endnote %}
+    {% note orange 'anzhiyufont anzhiyu-icon-dengpao' simple %}你是刷 Visa 还是 UnionPay{% endnote %}
+    {% note purple 'anzhiyufont anzhiyu-icon-sanmingzhi' simple %}剪刀石头布{% endnote %}
+    {% note green 'anzhiyufont anzhiyu-icon-ic_train' simple %}前端最讨厌的浏览器{% endnote %}
+    ```
+
+
+    <p><code>fontawesome 图标</code>，开启主题配置文件中的<code>icons.fontawesome</code>为<code>true</code>后可见</p>
+
+    ```markdown
+    {% note 'fab fa-cc-visa' simple %}你是刷 Visa 还是 UnionPay{% endnote %}
+    {% note blue 'fas fa-bullhorn' simple %}2022 年快到了....{% endnote %}
+    {% note pink 'fas fa-car-crash' simple %}小心开车 安全至上{% endnote %}
+    {% note red 'icon-fan' simple%}这是三片呢？还是四片？{% endnote %}
+    {% note orange 'fas fa-battery-half' simple %}你是刷 Visa 还是 UnionPay{% endnote %}
+    {% note purple 'far fa-hand-scissors' simple %}剪刀石头布{% endnote %}
+    {% note green 'fab fa-internet-explorer' simple %}前端最讨厌的浏览器{% endnote %}
+    ```
+
+
+2.  modern 样式
+    `主题内置阿里图标`
+
+    ```markdown
+    {% note 'anzhiyufont anzhiyu-icon-rocket' modern %}你是刷 Visa 还是 UnionPay{% endnote %}
+    {% note blue 'anzhiyufont anzhiyu-icon-bullhorn' modern %}2022 年快到了....{% endnote %}
+    {% note pink 'anzhiyufont anzhiyu-icon-instagram' modern %}小心开车 安全至上{% endnote %}
+    {% note red 'anzhiyufont anzhiyu-icon-fan' modern%}这是三片呢？还是四片？{% endnote %}
+    {% note orange 'anzhiyufont anzhiyu-icon-dengpao' modern %}你是刷 Visa 还是 UnionPay{% endnote %}
+    {% note purple 'anzhiyufont anzhiyu-icon-sanmingzhi' modern %}剪刀石头布{% endnote %}
+    {% note green 'anzhiyufont anzhiyu-icon-ic_train' modern %}前端最讨厌的浏览器{% endnote %}
+    ```
+
+
+    <p><code>fontawesome 图标</code>，开启主题配置文件中的<code>icons.fontawesome</code>为<code>true</code>后可见</p>
+
+    ```markdown
+    {% note 'fab fa-cc-visa' modern %}你是刷 Visa 还是 UnionPay{% endnote %}
+    {% note blue 'fas fa-bullhorn' modern %}2021 年快到了....{% endnote %}
+    {% note pink 'fas fa-car-crash' modern %}小心开车 安全至上{% endnote %}
+    {% note red 'icon-fan' modern%}这是三片呢？还是四片？{% endnote %}
+    {% note orange 'fas fa-battery-half' modern %}你是刷 Visa 还是 UnionPay{% endnote %}
+    {% note purple 'far fa-hand-scissors' modern %}剪刀石头布{% endnote %}
+    {% note green 'fab fa-internet-explorer' modern %}前端最讨厌的浏览器{% endnote %}
+    ```
+
+
+3.  flat 样式
+    `主题内置阿里图标`
+
+    ```markdown
+    {% note 'anzhiyufont anzhiyu-icon-rocket' flat %}你是刷 Visa 还是 UnionPay{% endnote %}
+    {% note blue 'anzhiyufont anzhiyu-icon-bullhorn' flat %}2022 年快到了....{% endnote %}
+    {% note pink 'anzhiyufont anzhiyu-icon-instagram' flat %}小心开车 安全至上{% endnote %}
+    {% note red 'anzhiyufont anzhiyu-icon-fan' flat%}这是三片呢？还是四片？{% endnote %}
+    {% note orange 'anzhiyufont anzhiyu-icon-dengpao' flat %}你是刷 Visa 还是 UnionPay{% endnote %}
+    {% note purple 'anzhiyufont anzhiyu-icon-sanmingzhi' flat %}剪刀石头布{% endnote %}
+    {% note green 'anzhiyufont anzhiyu-icon-ic_train' flat %}前端最讨厌的浏览器{% endnote %}
+    ```
+
+
+    <p><code>fontawesome 图标</code>，开启主题配置文件中的<code>icons.fontawesome</code>为<code>true</code>后可见</p>
+
+    ```markdown
+    {% note 'fab fa-cc-visa' flat %}你是刷 Visa 还是 UnionPay{% endnote %}
+    {% note blue 'fas fa-bullhorn' flat %}2021 年快到了....{% endnote %}
+    {% note pink 'fas fa-car-crash' flat %}小心开车 安全至上{% endnote %}
+    {% note red 'icon-fan' flat%}这是三片呢？还是四片？{% endnote %}
+    {% note orange 'fas fa-battery-half' flat %}你是刷 Visa 还是 UnionPay{% endnote %}
+    {% note purple 'far fa-hand-scissors' flat %}剪刀石头布{% endnote %}
+    {% note green 'fab fa-internet-explorer' flat %}前端最讨厌的浏览器{% endnote %}
+    ```
+
+
+4.  disabled 样式
+    `主题内置阿里图标`
+
+    ```markdown
+    {% note 'anzhiyufont anzhiyu-icon-rocket' disabled %}你是刷 Visa 还是 UnionPay{% endnote %}
+    {% note blue 'anzhiyufont anzhiyu-icon-bullhorn' disabled %}2022 年快到了....{% endnote %}
+    {% note pink 'anzhiyufont anzhiyu-icon-instagram' disabled %}小心开车 安全至上{% endnote %}
+    {% note red 'anzhiyufont anzhiyu-icon-fan' disabled%}这是三片呢？还是四片？{% endnote %}
+    {% note orange 'anzhiyufont anzhiyu-icon-dengpao' disabled %}你是刷 Visa 还是 UnionPay{% endnote %}
+    {% note purple 'anzhiyufont anzhiyu-icon-sanmingzhi' disabled %}剪刀石头布{% endnote %}
+    {% note green 'anzhiyufont anzhiyu-icon-ic_train' disabled %}前端最讨厌的浏览器{% endnote %}
+    ```
+
+
+    <p><code>fontawesome 图标</code>，开启主题配置文件中的<code>icons.fontawesome</code>为<code>true</code>后可见</p>
+
+    ```markdown
+    {% note 'fab fa-cc-visa' disabled %}你是刷 Visa 还是 UnionPay{% endnote %}
+    {% note blue 'fas fa-bullhorn' disabled %}2021 年快到了....{% endnote %}
+    {% note pink 'fas fa-car-crash' disabled %}小心开车 安全至上{% endnote %}
+    {% note red 'icon-fan' disabled %}这是三片呢？还是四片？{% endnote %}
+    {% note orange 'fas fa-battery-half' disabled %}你是刷 Visa 还是 UnionPay{% endnote %}
+    {% note purple 'far fa-hand-scissors' disabled %}剪刀石头布{% endnote %}
+    {% note green 'fab fa-internet-explorer' disabled %}前端最讨厌的浏览器{% endnote %}
+    ```
+
+
+5.  no-icon 样式
+
+    ```markdown
+    {% note no-icon %}你是刷 Visa 还是 UnionPay{% endnote %}
+    {% note blue no-icon %}2021 年快到了....{% endnote %}
+    {% note pink no-icon %}小心开车 安全至上{% endnote %}
+    {% note red no-icon %}这是三片呢？还是四片？{% endnote %}
+    {% note orange no-icon %}你是刷 Visa 还是 UnionPay{% endnote %}
+    {% note purple no-icon %}剪刀石头布{% endnote %}
+    {% note green no-icon %}前端最讨厌的浏览器{% endnote %}
+    ```
+
+
+<!-- endtab -->
+
+
+
+## 音频 audio
+
+
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% audio 音频链接 %}
+```
+
+
+<!-- endtab -->
+
+<!-- tab 样式预览 -->
+
+
+
+<!-- endtab -->
+<!-- tab 示例源码 -->
+
+```markdown
+{% audio https://npm.elemecdn.com/anzhiyu-music@1.0.4/%E9%9D%92%E8%8A%B1%E7%93%B7/%E9%9D%92%E8%8A%B1%E7%93%B7.mp3 %}
+```
+
+
+<!-- endtab -->
+
+
+
+## 视频 video
+
+
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% video 视频链接 %}
+```
+
+
+<!-- endtab -->
+<!-- tab 参数配置 -->
+
+1. 对其方向：left, center, right
+2. 列数：逗号后面直接写列数，支持 1 ～ 4 列。
+   <!-- endtab -->
+   <!-- tab 样式预览 -->
+3. 100%宽度
+
+![100%宽度](https://bu.dusays.com/2023/06/01/6478a1eeb1386.png)
+
+2. 50%宽度
+
+![50%宽度](https://bu.dusays.com/2023/06/01/6478a20a5f242.png)
+
+3. 25%宽度
+
+![25%宽度](https://bu.dusays.com/2023/06/01/6478a22b26088.png)
+
+<!-- endtab -->
+<!-- tab 示例源码 -->
+
+1. 100%宽度
+
+```markdown
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+```
+
+
+2. 50%宽度
+
+```markdown
+{% videos, 2 %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% endvideos %}
+```
+
+
+3. 25%宽度
+
+```markdown
+{% videos, 4 %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% endvideos %}
+```
+
+
+<!-- endtab -->
+<!-- 阅读时长 52 分钟 · 状态 published · 导出时间 2026-11-24 -->
+
+---
+
+<!-- ===== 443e71ba ===== -->
+---
+title: Python数据可视化：Matplotlib常用操作(基础篇)
+summary: Matplotlib介绍 Matplotlib是一个Python 2D绘图库，它以多种硬拷贝格式和跨平台的交互式环境生成出版物质量的图形。 Matplotlib可用于Python脚本，Python和IPython Shell、Jupyter…
+date: 2023-08-21T17:35:57.000Z
+category: python
+tags:
+  - python
+  - data-analysis
+  - data-visualization
+cover: https://img.cent1pedee.top/img/python-matplotlib.jpg
+---
+
+**Matplotlib介绍**
+
+- Matplotlib是一个Python 2D绘图库，它以多种硬拷贝格式和跨平台的交互式环境生成出版物质量的图形。 Matplotlib可用于Python脚本，Python和[IPython](https://ipython.org/) Shell、[Jupyter](http://jupyter.org/)笔记本，Web应用程序服务器和四个图形用户界面工具包。
+- Matplotlib 尝试使容易的事情变得更容易，使困难的事情变得可能。 您只需几行代码就可以生成图表、直方图、功率谱、条形图、误差图、散点图等。 更多的示例，请参见[基础绘图例子](https://matplotlib.org.cn/tutorials/introductory/sample_plots.html)和[示例陈列馆](https://matplotlib.org.cn/gallery/)。
+- 为了简单绘图，该 **pyplot** 模块提供了类似于MATLAB的界面，尤其是与IPython结合使用时。 对于高级用户，您可以通过面向对象的界面或MATLAB用户熟悉的一组功能来完全控制线型，字体属性，轴属性等。
+
+**安装**
+
+访问[Matplotlib安装说明](https://matplotlib.org.cn/users/installing.html)。
+
+关于Python Matplotlib的用法总结请参考博文：https://matplotlib.org.cn/intro/
+
+下面是部分例题以便更好的理解**Matplotlib**
+
+***
+
+## 简单绘图题（Matplotlib）
+
+### 绘制以下两个函数的图像
+
+### 1、设定一个你喜欢的绘图风格；
+
+
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+plt.style.use("seaborn-whitegrid")
+```
+
+
+### 2、绘制折线图：
+
+* 根据下面的X和Y按要求绘图
+* x = np.linspace(0, 2*np.pi, 100)
+* 函数1：y1 = 1 / 1 + np.exp(-x)
+* 函数2：y2 = (np.exp(x) - np.exp(-x)) / (np.exp(x) + np.exp(-x))
+
+
+* 对线条的颜色、形状、粗细进行设置；
+* 对数据点的形状、大小和颜色进行设置；
+* 调整坐标轴的范围，调整坐标轴刻度的大小；
+* 增加x轴、y轴的标签以及图像标题；
+* 增加图例、添加箭头和文字；
+* 将最终绘制好的图像保存到本地文件夹。
+
+
+```python
+# 默认原始图形
+
+x = np.linspace(0, 2*np.pi, 100)
+y1 = 1 / 1 + np.exp(-x)
+y2 = (np.exp(x) - np.exp(-x)) / (np.exp(x) + np.exp(-x))
+
+plt.plot(x, y1)
+plt.plot(x, y2)
+```
+
+
+
+
+
+    [<matplotlib.lines.Line2D at 0x249eac5e280>]
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/d9e1dad1e27b58bdf84e6.png)
+    
+
+
+
+```python
+#(1) 对线条的颜色、形状、粗细进行设置；
+plt.plot(x, y1,'r--',linewidth=10)
+plt.plot(x, y2,'g-',linewidth=5)
+```
+
+
+
+
+
+    [<matplotlib.lines.Line2D at 0x249eacbaee0>]
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/a605e7615a48eaa1fcaf5.png)
+    
+
+
+
+```python
+#(2)对数据点的形状、大小和颜色进行设置；
+plt.plot(x, y1,'r*',markersize=5)
+plt.plot(x, y2,'go',markersize=5)
+```
+
+
+
+
+
+    [<matplotlib.lines.Line2D at 0x249eaf7ebe0>]
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/3895d2a264c346a5c0921.png)
+    
+
+
+
+```python
+#对线条的颜色、形状、粗细进行设置；
+#对数据点的形状、大小和颜色进行设置；
+
+plt.plot(x, y1,'r*--',markersize=5,linewidth=10)
+plt.plot(x, y2,'go-',markersize=5,linewidth=5)
+```
+
+
+
+
+
+    [<matplotlib.lines.Line2D at 0x249ead2d130>]
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/023320c0a3fdc2fe4ab03.png)
+    
+
+
+
+```python
+x = np.linspace(0, 2*np.pi, 100)
+plt.plot(x, 1 / 1 + np.exp(-x))
+plt.plot(x, (np.exp(x) - np.exp(-x)) / (np.exp(x) + np.exp(-x)), linewidth=10, c='g')
+```
+
+
+
+
+
+    [<matplotlib.lines.Line2D at 0x24a8b56ba60>]
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/7668a0cc5c8fb17b0a591.png)
+    
+
+
+
+```python
+plt.plot(x, 1 / 1 + np.exp(-x), 'r+:', markersize=5)
+plt.plot(x, (np.exp(x) - np.exp(-x)) / (np.exp(x) + np.exp(-x)), 'g*--', markersize=5)
+```
+
+
+
+
+
+    [<matplotlib.lines.Line2D at 0x24a8b66c160>]
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/5d4a5db02a86073aed590.png)
+    
+
+
+
+```python
+#调整坐标轴的范围
+plt.plot(x, 1 / 1 + np.exp(-x))
+plt.plot(x, (np.exp(x) - np.exp(-x)) / (np.exp(x) + np.exp(-x)))
+plt.xlim(-2, 10)
+plt.ylim(0, 3)
+```
+
+
+
+
+
+    (0.0, 3.0)
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/7a9b30d66ea9b2679d956.png)
+    
+
+
+
+```python
+#调整坐标轴刻度的大小；
+plt.plot(x, 1 / 1 + np.exp(-x))
+plt.plot(x, (np.exp(x) - np.exp(-x)) / (np.exp(x) + np.exp(-x)))
+plt.xticks(np.arange(0, 7, step=0.5), fontsize=10)
+plt.yticks(np.arange(0, 2, step=0.5), fontsize=10)
+```
+
+
+
+
+
+    ([<matplotlib.axis.YTick at 0x24a8b70d7c0>,
+      <matplotlib.axis.YTick at 0x24a8b70d3a0>,
+      <matplotlib.axis.YTick at 0x24a8b709220>,
+      <matplotlib.axis.YTick at 0x24a8b746fd0>],
+     [Text(0, 0, ''), Text(0, 0, ''), Text(0, 0, ''), Text(0, 0, '')])
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/9099544b6105d61dd1ca0.png)
+    
+
+
+
+```python
+plt.plot(x, 1 / 1 + np.exp(-x))
+plt.plot(x, (np.exp(x) - np.exp(-x)) / (np.exp(x) + np.exp(-x)))
+plt.title("1 / 1 + e^x", fontsize=20)
+plt.xlabel("(e^x - e^(-x))/ (e^x + e^(-x))", fontsize=20)
+plt.ylabel("y", fontsize=20)
+```
+
+
+
+
+
+    Text(0, 0.5, 'y')
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/f0768a4cb110c07620507.png)
+    
+
+
+
+```python
+plt.plot(x, 1 / 1 + np.exp(-x), label="1 / 1 + e^x")
+plt.plot(x, (np.exp(x) - np.exp(-x)) / (np.exp(x) + np.exp(-x)), label="(e^x - e^(-x))/ (e^x + e^(-x))")
+plt.title("1 / 1 + e^x", fontsize=20)
+plt.xlabel("(e^x - e^(-x))/ (e^x + e^(-x))", fontsize=20)
+plt.ylabel("y", fontsize=20)
+plt.legend(loc="best", frameon=True, fontsize=15)
+plt.annotate('zero point', xy=(5, 1), xytext=(3, 0.75), fontsize=15,
+             arrowprops=dict(arrowstyle='->', facecolor='black'),
+             )
+plt.savefig('my_figure.png')
+```
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/33a4f8a15f0d2fdbe0527.png)
+    
+
+
+### 3、绘制散点图：
+
+
+```python
+plt.scatter(x, 1 / 1 + np.exp(-x), c=(1 / 1 + np.exp(-x)), s=100 * np.random.rand(100), cmap="viridis", alpha=0.2)
+plt.scatter(x, (np.exp(x) - np.exp(-x)) / (np.exp(x) + np.exp(-x)), c=((np.exp(x) - np.exp(-x)) / (np.exp(x) + np.exp(-x))), s= 50 * np.random.rand(100), cmap="viridis", alpha=0.7)
+plt.colorbar()
+```
+
+
+
+
+
+    <matplotlib.colorbar.Colorbar at 0x24a8b8c7cd0>
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/d862bbd8efcf48a344eaa.png)
+    
+
+
+* 按y值的大小进行颜色配置，选择一个你喜欢的颜色映射；
+* 生成一个随机序列，点的大小依赖于对应位置的随机序列的值；
+* 设置不同的透明度。
+
+### 4、绘制柱形图：
+
+* 利用函数1，生成一系列x, y，并绘制柱形图；
+* 利用函数2，生成一系列x, y，并绘制横向柱形图；
+* 利用函数1、2，生成一系列x, y，并绘制累加柱形图和并列柱形图；
+
+
+```python
+x = np.linspace(1, 10, 5)
+y = 1 / 1 + np.exp(-x)
+plt.bar(x, y, align='center', width=0.5)
+plt.tick_params(axis='both', labelsize=13)
+plt.xticks(np.arange(0, 11, step=0.5))
+```
+
+
+
+
+
+    ([<matplotlib.axis.XTick at 0x24a8b92d1c0>,
+      <matplotlib.axis.XTick at 0x24a8b92d190>,
+      <matplotlib.axis.XTick at 0x24a8b926d30>,
+      <matplotlib.axis.XTick at 0x24a8b9587c0>,
+      <matplotlib.axis.XTick at 0x24a8b958cd0>,
+      <matplotlib.axis.XTick at 0x24a8b965220>,
+      <matplotlib.axis.XTick at 0x24a8b965730>,
+      <matplotlib.axis.XTick at 0x24a8b965c40>,
+      <matplotlib.axis.XTick at 0x24a8b96b190>,
+      <matplotlib.axis.XTick at 0x24a8b965970>,
+      <matplotlib.axis.XTick at 0x24a8b958a00>,
+      <matplotlib.axis.XTick at 0x24a8b96b6a0>,
+      <matplotlib.axis.XTick at 0x24a8b96bbb0>,
+      <matplotlib.axis.XTick at 0x24a8b972100>,
+      <matplotlib.axis.XTick at 0x24a8b972610>,
+      <matplotlib.axis.XTick at 0x24a8b972b20>,
+      <matplotlib.axis.XTick at 0x24a8b975070>,
+      <matplotlib.axis.XTick at 0x24a8b975580>,
+      <matplotlib.axis.XTick at 0x24a8b9726a0>,
+      <matplotlib.axis.XTick at 0x24a8b96b730>,
+      <matplotlib.axis.XTick at 0x24a8b975880>,
+      <matplotlib.axis.XTick at 0x24a8b975c40>],
+     [Text(0, 0, ''),
+      Text(0, 0, ''),
+      Text(0, 0, ''),
+      Text(0, 0, ''),
+      Text(0, 0, ''),
+      Text(0, 0, ''),
+      Text(0, 0, ''),
+      Text(0, 0, ''),
+      Text(0, 0, ''),
+      Text(0, 0, ''),
+      Text(0, 0, ''),
+      Text(0, 0, ''),
+      Text(0, 0, ''),
+      Text(0, 0, ''),
+      Text(0, 0, ''),
+      Text(0, 0, ''),
+      Text(0, 0, ''),
+      Text(0, 0, ''),
+      Text(0, 0, ''),
+      Text(0, 0, ''),
+      Text(0, 0, ''),
+      Text(0, 0, '')])
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/9ed19363c45be86b48c15.png)
+    
+
+
+
+```python
+x = np.linspace(1, 10, 5)
+y = (np.exp(x) - np.exp(-x)) / (np.exp(x) + np.exp(-x))
+plt.barh(x, y, align='center')
+```
+
+
+
+
+
+    <BarContainer object of 5 artists>
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/aea51d082aa8615b2f6be.png)
+    
+
+
+
+```python
+x = np.linspace(1, 10, 5)
+y1 = 1 / 1 + np.exp(-x)
+y2 = (np.exp(x) - np.exp(-x)) / (np.exp(x) + np.exp(-x))
+plt.bar(x, y1, align='center', width=0.5)
+plt.bar(x + 0.5, y2, align='center', width=0.5)
+```
+
+
+
+
+
+    <BarContainer object of 5 artists>
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/2cfd38dbe408cd630c309.png)
+    
+
+
+
+```python
+x = np.linspace(1, 10, 5)
+y1 = 1 / 1 + np.exp(-x)
+y2 = (np.exp(x) - np.exp(-x)) / (np.exp(x) + np.exp(-x))
+plt.bar(x, y1, align='center', width=0.5)
+plt.bar(x, y2, bottom=y1, align='center', width=0.5)
+```
+
+
+
+
+
+    <BarContainer object of 5 artists>
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/ed17559fe66ffec61829d.png)
+    
+
+
+### 5、多子图：
+
+* 在函数1、2的基础上，增加正弦函数和余弦函数，绘制2*2的多子图。
+
+
+```python
+x = np.linspace(0, 4 * np.pi, 10000)
+y1 = 1 / 1 + np.exp(-x)
+y2 = (np.exp(x) - np.exp(-x)) / (np.exp(x) + np.exp(-x))
+y3 = np.sin(x)
+y4 = np.cos(x)
+
+plt.subplot(321)
+plt.plot(x, y1)
+
+plt.subplot(322)
+plt.plot(x, y2)
+
+plt.subplot(323)
+plt.plot(x, y3)
+
+plt.subplot(324)
+plt.plot(x, y4)
+```
+
+
+
+
+
+    [<matplotlib.lines.Line2D at 0x24a8b7c7820>]
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/d6a76a1ed8f9fad581ce0.png)
+    
+
+
+### 6、直方图：
+
+* 构造一个标准正态分布，绘制频次直方图、概率密度直方图、累计概率直方图。
+
+
+```python
+mu, sigma = 85, 10
+x = mu + sigma * np.random.randn(10000)
+plt.hist(x, bins=50)
+```
+
+
+
+
+
+    (array([  3.,   2.,   1.,   7.,   3.,   8.,   8.,  25.,  28.,  36.,  72.,
+             70., 122., 118., 165., 219., 300., 311., 397., 430., 516., 580.,
+            595., 627., 612., 661., 568., 535., 500., 455., 434., 371., 278.,
+            215., 196., 139., 101.,  86.,  58.,  48.,  41.,  18.,  14.,  11.,
+              8.,   6.,   1.,   0.,   0.,   1.]),
+     array([ 46.8047152 ,  48.35161112,  49.89850705,  51.44540298,
+             52.9922989 ,  54.53919483,  56.08609076,  57.63298669,
+             59.17988261,  60.72677854,  62.27367447,  63.82057039,
+             65.36746632,  66.91436225,  68.46125818,  70.0081541 ,
+             71.55505003,  73.10194596,  74.64884188,  76.19573781,
+             77.74263374,  79.28952967,  80.83642559,  82.38332152,
+             83.93021745,  85.47711337,  87.0240093 ,  88.57090523,
+             90.11780116,  91.66469708,  93.21159301,  94.75848894,
+             96.30538486,  97.85228079,  99.39917672, 100.94607265,
+            102.49296857, 104.0398645 , 105.58676043, 107.13365635,
+            108.68055228, 110.22744821, 111.77434414, 113.32124006,
+            114.86813599, 116.41503192, 117.96192784, 119.50882377,
+            121.0557197 , 122.60261563, 124.14951155]),
+     <BarContainer object of 50 artists>)
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/8a4d42cd166a08cf0c34f.png)
+    
+
+
+
+```python
+mu, sigma = 85, 10
+x = mu + sigma * np.random.randn(10000)
+plt.hist(x, bins=50, density=True, color='r')
+plt.text(60, .035, r'$\mu=100,\ \sigma=15$')
+```
+
+
+
+
+
+    Text(60, 0.035, '$\\mu=100,\\ \\sigma=15$')
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/245a004976a2de2dd5307.png)
+    
+
+
+
+```python
+mu, sigma = 85, 10
+x = mu + sigma * np.random.randn(10000)
+plt.hist(x, 50, density=True, cumulative=True, color="g")
+plt.text(60, .035, r'$\mu=100,\ \sigma=15$')
+```
+
+
+
+
+
+    Text(60, 0.035, '$\\mu=100,\\ \\sigma=15$')
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/76088d82f5ce6d11b6749.png)
+    
+
+
+### 7、误差图：
+
+* 利用函数 1，生成一系列x, y，随机生成一系列误差dy，绘制误差图。
+
+
+```python
+x = np.linspace(0, 4 * np.pi, 25)
+y = 1 / 1 + np.exp(-x)
+dy = np.random.rand(25)
+
+plt.errorbar(x, y, dy, fmt='+b')
+```
+
+
+
+
+
+    <ErrorbarContainer object of 3 artists>
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/be2ad3789c09ce2d36a0c.png)
+    
+
+
+## 简单绘图题（其他）
+
+### 1、面向对象绘图
+
+* 利用函数 1 和函数2，绘制一个画中画。
+
+
+```python
+x = np.linspace(0, 4 * np.pi, 10000)
+y1 = 1 / 1 + np.exp(-x)
+y2 = (np.exp(x) - np.exp(-x)) / (np.exp(x) + np.exp(-x))
+
+fig = plt.figure()
+
+ax1 = fig.add_axes([0, 0, 1, 1])
+ax2 = fig.add_axes([0.5, 0.5, 0.5, 0.5])
+
+ax1.plot(x, y1, 'r')
+ax2.plot(x, y2, 'b')
+```
+
+
+
+
+
+    [<matplotlib.lines.Line2D at 0x24a8ceebd00>]
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/2a49cb663f2915594e888.png)
+    
+
+
+### 2、三维图形绘制
+
+* 绘制一个薄圆柱体。
+
+
+```python
+from mpl_toolkits import mplot3d
+
+t = np.linspace(0, 2*np.pi, 1000)
+X = np.sin(t)
+Y = np.cos(t)
+Z = np.arange(t.size)[:, np.newaxis]
+
+ax = plt.axes(projection="3d")
+ax.plot_surface(X, Y, Z, cmap="viridis")
+```
+
+
+
+
+
+    <mpl_toolkits.mplot3d.art3d.Poly3DCollection at 0x24a8dff2d30>
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/cecb4aae947e84e5da3ac.png)
+<!-- 阅读时长 9 分钟 · 状态 published · 导出时间 2026-11-24 -->
+
+---
+
+<!-- ===== 2b53089b ===== -->
+---
+title: Python数据清洗：Numpy常用操作
+summary: 我为什么要用NumPy? 对于同样的数值计算任务，使用NumPy要比直接编写Python代码便捷得多； NumPy中的数组的存储效率和输入输出性能均远远优于Python中等价的基本数据结构，且其能够提升的性能是与数组中的元素成比例的； Nu…
+date: 2023-08-20T01:39:06.000Z
+category: python
+tags:
+  - python
+  - data-analysis
+  - data-cleaning
+cover: https://img.cent1pedee.top/img/python-numpy.jpg
+---
+
+**我为什么要用NumPy?**
+
+- 对于同样的数值计算任务，使用NumPy要比直接编写Python代码便捷得多；
+- NumPy中的数组的存储效率和输入输出性能均远远优于Python中等价的基本数据结构，且其能够提升的性能是与数组中的元素成比例的；
+- NumPy的大部分代码都是用C语言写的，其底层算法在设计时就有着优异的性能，这使得NumPy比纯Python代码高效得多
+- 当然，NumPy也有其不足之处，由于NumPy使用内存映射文件以达到最优的数据读写性能，而内存的大小限制了其对TB级大文件的处理；此外，NumPy数组的通用性不及Python提供的list容器。因此，在科学计算之外的领域，NumPy的优势也就不那么明显。
+
+关于Python Numpy矩阵的用法总结请参考博文：https://www.cnblogs.com/wj-1314/p/10244807.html
+
+***
+## 什么是NumPy?(基础篇)
+
+NumPy是一个功能强大的Python库，主要用于对多维数组执行计算。NumPy这个词来源于两个单词-- 和。NumPy提供了大量的库函数和操作，可以帮助程序员轻松地进行数值计算。这类数值计算广泛用于以下任务：
+
+- **机器学习模型**：在编写机器学习算法时，需要对矩阵进行各种数值计算。例如矩阵乘法、换位、加法等。NumPy提供了一个非常好的库，用于简单(在编写代码方面)和快速(在速度方面)计算。NumPy数组用于存储训练数据和机器学习模型的参数。
+
+- **图像处理和计算机图形学**：计算机中的图像表示为多维数字数组。NumPy成为同样情况下最自然的选择。实际上，NumPy提供了一些优秀的库函数来快速处理图像。例如，镜像图像、按特定角度旋转图像等。
+
+- **数学任务**：NumPy对于执行各种数学任务非常有用，如数值积分、微分、内插、外推等。因此，当涉及到数学任务时，它形成了一种基于Python的MATLAB的快速替代。
+
+## NumPy的安装
+
+在你的计算机上安装NumPy的最快也是最简单的方法是在shell上使用以下命令：`pip install numpy`。
+
+这将在你的计算机上安装最新/最稳定的NumPy版本。通过PIP安装是安装任何Python软件包的最简单方法。现在让我们来谈谈NumPy中最重要的概念，NumPy数组。
+
+## Numpy的使用以及应用
+
+- 导入Numpy模块
+- 使用np.array()创建
+- 使用plt 创建
+- 使用np的routines函数创建
+
+- 使用array()创建一个一维数组
+
+
+```python
+import numpy as np
+arr = np.array([1,2,3])
+arr
+```
+
+
+
+
+
+    array([1, 2, 3])
+
+
+
+- 使用array()创建一个多维数组
+
+
+```python
+arr = np.array([[1,2,3],[4,5,6]])
+arr
+```
+
+
+
+
+
+    array([[1, 2, 3],
+           [4, 5, 6]])
+
+
+
+- 数组和列表的区别是什么？
+    - 数组中存储的数据元素类型必须是统一类型
+    - 优先级：
+        - 字符串 > 浮点型 > 整型
+
+
+```python
+arr = np.array([1,2.2,"three"])
+arr
+```
+
+
+
+
+
+    array(['1', '2.2', 'three'], dtype='<U32')
+
+
+
+- 将外部的一张图片读取加载到numpy数组中，然后尝试改变数组元素的数值查看对原始图片的影响
+
+
+```python
+import matplotlib.pyplot as plt
+img_arr = plt.imread("C:\\Users\\图片.jpg") #返回的数组，数组中装载的就是图片内容
+plt.imshow(img_arr)#将numpy数组进行可视化展示
+```
+
+
+
+
+
+    <matplotlib.image.AxesImage at 0x2204a526cd0>
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/803b1e000d92f5b4d6dc4.png)
+    
+
+
+
+```python
+img_arr = img_arr - 100 #将每一个数组元素都减去100
+plt.imshow(img_arr)
+```
+
+
+
+
+
+    <matplotlib.image.AxesImage at 0x2204d86c690>
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/875edb3a27cef78116d17.png)
+    
+
+
+- zero()
+- ones()
+- linespace()
+- arange()
+- random系列
+
+
+```python
+np.ones(shape=(3,4))
+```
+
+
+
+
+
+    array([[1., 1., 1., 1.],
+           [1., 1., 1., 1.],
+           [1., 1., 1., 1.]])
+
+
+
+
+```python
+np.linspace(0,100,num=20)#一维的等差数列数组
+```
+
+
+
+
+
+    array([  0.        ,   5.26315789,  10.52631579,  15.78947368,
+            21.05263158,  26.31578947,  31.57894737,  36.84210526,
+            42.10526316,  47.36842105,  52.63157895,  57.89473684,
+            63.15789474,  68.42105263,  73.68421053,  78.94736842,
+            84.21052632,  89.47368421,  94.73684211, 100.        ])
+
+
+
+
+```python
+np.arange(10,50,step=2)#一维等差数列
+```
+
+
+
+
+
+    array([10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42,
+           44, 46, 48])
+
+
+
+
+```python
+np.random.randint(0,100,size=(5,3))
+```
+
+
+
+
+
+    array([[93, 62, 92],
+           [13, 20, 45],
+           [ 7, 65, 87],
+           [98, 23, 74],
+           [69, 18, 37]])
+
+
+
+## numpy的常用属性
+   - shape
+   - ndim
+   - size
+   - dtype
+
+
+```python
+arr = np.random.randint(0,100,size=(5,6))
+arr
+```
+
+
+
+
+
+    array([[78, 21, 12, 74, 84, 52],
+           [84, 57, 31, 61, 42, 10],
+           [60, 52, 95, 45, 19, 35],
+           [18, 31, 23, 21, 66, 21],
+           [89, 40, 84,  5, 47, 13]])
+
+
+
+
+```python
+arr.shape #返回的是数组的形状
+```
+
+
+
+
+
+    (5, 6)
+
+
+
+
+```python
+arr.ndim #返回的是数组的维度
+```
+
+
+
+
+
+    2
+
+
+
+
+```python
+arr.size #返回数组元素的个数
+```
+
+
+
+
+
+    30
+
+
+
+
+```python
+arr.dtype #返回的是数组元素的类型
+```
+
+
+
+
+
+    dtype('int32')
+
+
+
+
+```python
+type(arr) #数组的数据类型
+```
+
+
+
+
+
+    numpy.ndarray
+
+
+
+
+```python
+arr = np.array([1,2,3])
+arr.dtype
+```
+
+
+
+
+
+    dtype('int32')
+
+
+
+
+```python
+#创建一个数组，指定数组元素类型为int64
+arr = np.array([1,2,3],dtype="int64")
+arr.dtype
+```
+
+
+
+
+
+    dtype('int64')
+
+
+
+
+```python
+arr.dtype = "uint8" #修改数组的元素类型
+```
+
+
+
+```python
+arr.dtype
+```
+
+
+
+
+
+    dtype('uint8')
+
+
+
+## numpy的索引和切片操作(重点)
+   - 索引操作和列表同理
+
+
+```python
+arr = np.random.randint(1,100,size=(5,6))
+arr
+```
+
+
+
+
+
+    array([[94, 45,  2, 65, 25, 61],
+           [11, 45, 70, 66, 94, 85],
+           [32, 14, 90, 27, 32, 73],
+           [34, 32, 47, 74, 81, 69],
+           [42, 90, 73, 51, 20, 56]])
+
+
+
+
+```python
+arr[1] #取出了numpy数组中的下标为1的行数据
+```
+
+
+
+
+
+    array([11, 45, 70, 66, 94, 85])
+
+
+
+
+```python
+arr[[1,3,4]] #取出多行
+```
+
+
+
+
+
+    array([[11, 45, 70, 66, 94, 85],
+           [34, 32, 47, 74, 81, 69],
+           [42, 90, 73, 51, 20, 56]])
+
+
+
+   - 切片操作
+       - 切出前两行数据
+       - 切出前两列数据
+       - 切出前两行的前两列数据
+       - 数组数据翻转
+       - 练习：将一张图片上下左右进行翻转操作
+       - 练习：将图片进行指定区域的裁剪
+
+
+```python
+#切出arr数组的前两行的数据
+arr[0:2] #arr[行切片]
+```
+
+
+
+
+
+    array([[94, 45,  2, 65, 25, 61],
+           [11, 45, 70, 66, 94, 85]])
+
+
+
+
+```python
+#切出arr数组的前两列数据
+arr[:,0:2] #arr[行切片,列切片]
+```
+
+
+
+
+
+    array([[94, 45],
+           [11, 45],
+           [32, 14],
+           [34, 32],
+           [42, 90]])
+
+
+
+
+```python
+#切出前两行的前两列数据
+arr[0:2,0:2]
+```
+
+
+
+
+
+    array([[94, 45],
+           [11, 45]])
+
+
+
+
+```python
+#将数组的行倒置
+arr[::-1]
+```
+
+
+
+
+
+    array([[42, 90, 73, 51, 20, 56],
+           [34, 32, 47, 74, 81, 69],
+           [32, 14, 90, 27, 32, 73],
+           [11, 45, 70, 66, 94, 85],
+           [94, 45,  2, 65, 25, 61]])
+
+
+
+
+```python
+#将数组的列倒置
+arr[:,::-1]
+```
+
+
+
+
+
+    array([[61, 25, 65,  2, 45, 94],
+           [85, 94, 66, 70, 45, 11],
+           [73, 32, 27, 90, 14, 32],
+           [69, 81, 74, 47, 32, 34],
+           [56, 20, 51, 73, 90, 42]])
+
+
+
+
+```python
+#所有元素倒置
+arr[::-1,::-1]
+```
+
+
+
+
+
+    array([[56, 20, 51, 73, 90, 42],
+           [69, 81, 74, 47, 32, 34],
+           [73, 32, 27, 90, 14, 32],
+           [85, 94, 66, 70, 45, 11],
+           [61, 25, 65,  2, 45, 94]])
+
+
+
+
+```python
+#图片翻转前置准备
+img_arr = plt.imread("C:\\Users\\图片.jpg")
+plt.imshow(img_arr)
+```
+
+
+
+
+
+    <matplotlib.image.AxesImage at 0x2204d7a3690>
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/102e1b002235f61dc0fa7.png)
+    
+
+
+
+```python
+img_arr.shape
+```
+
+
+
+
+
+    (1024, 1024, 3)
+
+
+
+
+```python
+#将一张图片左右进行翻转操作
+plt.imshow(img_arr[:,::-1,:]) #img_arr[行，列，颜色]
+```
+
+
+
+
+
+    <matplotlib.image.AxesImage at 0x2204f886690>
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/f9f8c50aa0024f90b3153.png)
+    
+
+
+
+```python
+#将一张图片上下进行翻转操作
+plt.imshow(img_arr[::-1,:,:])
+```
+
+
+
+
+
+    <matplotlib.image.AxesImage at 0x2204f629a90>
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/25dba6ee787e0886fab10.png)
+    
+
+
+
+```python
+#图片裁剪的功能
+plt.imshow(img_arr[200:1000,250:800,:])
+```
+
+
+
+
+
+    <matplotlib.image.AxesImage at 0x2204fdc81d0>
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/23afcfc2068144d70d251.png)
+    
+
+
+## 变形reshape
+
+
+```python
+arr #原始arr是一个5行6列的二维数组
+```
+
+
+
+
+
+    array([[94, 45,  2, 65, 25, 61],
+           [11, 45, 70, 66, 94, 85],
+           [32, 14, 90, 27, 32, 73],
+           [34, 32, 47, 74, 81, 69],
+           [42, 90, 73, 51, 20, 56]])
+
+
+
+
+```python
+#将二维的数组变成1维
+arr_1 = arr.reshape((30,))
+```
+
+
+
+```python
+#将1维变形成多维
+arr_1.reshape((6,5))
+```
+
+
+
+
+
+    array([[94, 45,  2, 65, 25],
+           [61, 11, 45, 70, 66],
+           [94, 85, 32, 14, 90],
+           [27, 32, 73, 34, 32],
+           [47, 74, 81, 69, 42],
+           [90, 73, 51, 20, 56]])
+
+
+
+## 级联操作
+   - axis轴向的理解(将多个numpy数组进行横向或者纵向的拼接)
+       - 0：列
+       - 1：行
+   - 问题：
+       - 级联的两个数组维度一样，但是行列个数不一样会如何?(不行，链接的两个数组维度必须完全匹配)
+
+
+```python
+np.concatenate((arr,arr),axis=1)
+```
+
+
+
+
+
+    array([[94, 45,  2, 65, 25, 61, 94, 45,  2, 65, 25, 61],
+           [11, 45, 70, 66, 94, 85, 11, 45, 70, 66, 94, 85],
+           [32, 14, 90, 27, 32, 73, 32, 14, 90, 27, 32, 73],
+           [34, 32, 47, 74, 81, 69, 34, 32, 47, 74, 81, 69],
+           [42, 90, 73, 51, 20, 56, 42, 90, 73, 51, 20, 56]])
+
+
+
+
+```python
+arr3 = np.concatenate((img_arr,img_arr,img_arr),axis=0)
+plt.imshow(arr3)
+```
+
+
+
+
+
+    <matplotlib.image.AxesImage at 0x2205118d290>
+
+
+
+
+    
+![png](https://imgbed.kouseki.cn/file/2c816c6fc71cdd2203e0f.png)
+    
+
+
+## 常用的聚合操作
+   - sum,max,min,mean
+
+
+```python
+arr
+```
+
+
+
+
+
+    array([[94, 45,  2, 65, 25, 61],
+           [11, 45, 70, 66, 94, 85],
+           [32, 14, 90, 27, 32, 73],
+           [34, 32, 47, 74, 81, 69],
+           [42, 90, 73, 51, 20, 56]])
+
+
+
+
+```python
+arr.sum(axis=1)
+```
+
+
+
+
+
+    array([292, 371, 268, 337, 332])
+
+
+
+
+```python
+arr.max(axis=1)
+```
+
+
+
+
+
+    array([94, 94, 90, 81, 90])
+
+
+
+## 常用的数学函数
+   - Numpy提供了标准的三角函数：sin() cos() tan()
+   - numpy.around(a,decimals)函数返回指定数字的四舍五入值
+       - 参数说明：
+           - a：数组
+           - decimals：舍入的小数位数，默认值为0，如果为负，整数将四舍五入到小数点左侧的位置
+
+
+```python
+np.sin(arr)
+```
+
+
+
+
+
+    array([[-0.24525199,  0.85090352,  0.90929743,  0.82682868, -0.13235175,
+            -0.96611777],
+           [-0.99999021,  0.85090352,  0.77389068, -0.02655115, -0.24525199,
+            -0.17607562],
+           [ 0.55142668,  0.99060736,  0.89399666,  0.95637593,  0.55142668,
+            -0.67677196],
+           [ 0.52908269,  0.55142668,  0.12357312, -0.98514626, -0.62988799,
+            -0.11478481],
+           [-0.91652155,  0.89399666, -0.67677196,  0.67022918,  0.91294525,
+            -0.521551  ]])
+
+
+
+
+```python
+np.around(3.14,2)
+```
+
+
+
+
+
+    3.14
+
+
+
+## 常用的统计函数
+   - numpy.amin()和numpy.amax(),用于计算数组中的元素沿指定轴的最小、最大值
+   - numpy.ptp(),计算数组中元素最大值与最小值的差(最大值-最小值)
+   - numpy.median()函数用于计算数组a中元素的中位数(中值)
+   - 标准差std():标准差是一组数据平均分散程度的一种度量
+   - 方差var():统计中的方差(样本方差)是每个样本值与全体样本值的平均数之差的平方值的平均数，换句话说，标准差是方差的平方根
+
+
+```python
+np.ptp(arr,axis=0)
+```
+
+
+
+
+
+    array([83, 76, 88, 47, 74, 29])
+
+
+
+
+```python
+arr[1].std()
+```
+
+
+
+
+
+    27.455519582691487
+
+
+
+
+```python
+arr[1].var()
+```
+
+
+
+
+
+    753.8055555555557
+
+
+
+## 矩阵相关
+   - 矩阵库numpy.matlib
+   - numpy.matlib.identity()函数返回给定大小的单位矩阵
+
+
+```python
+#eye返回一个标准的对角矩阵
+np.eye(6)
+```
+
+
+
+
+
+    array([[1., 0., 0., 0., 0., 0.],
+           [0., 1., 0., 0., 0., 0.],
+           [0., 0., 1., 0., 0., 0.],
+           [0., 0., 0., 1., 0., 0.],
+           [0., 0., 0., 0., 1., 0.],
+           [0., 0., 0., 0., 0., 1.]])
+
+
+
+   - 转置矩阵 .T
+
+
+```python
+arr.T
+```
+
+
+
+
+
+    array([[94, 11, 32, 34, 42],
+           [45, 45, 14, 32, 90],
+           [ 2, 70, 90, 47, 73],
+           [65, 66, 27, 74, 51],
+           [25, 94, 32, 81, 20],
+           [61, 85, 73, 69, 56]])
+
+
+
+## 矩阵相乘
+   - numpy.dot(a,b,out=None)
+       - a:ndarray数组
+       - b:ndarray数组
+
+
+```python
+a1 = np.array([[2,1],[4,3]])
+a2 = np.array([[1,2],[1,0]])
+```
+
+
+
+```python
+np.dot(a1,a2)
+```
+
+
+
+
+
+    array([[3, 4],
+           [7, 8]])
+<!-- 阅读时长 12 分钟 · 状态 published · 导出时间 2026-11-24 -->
+
+---
+
+<!-- ===== 10771 ===== -->
+---
+title: Python数据分析：利用jupyter清洗处理csv
+summary: 数据清洗（data cleaning）是从记录集、数据库表或数据库中检测和纠正（或删除）损坏或不准确的记录的过程，是指识别数据的不完整、不正确、不准确或不相关部分，然后替换、修改、或删除脏数据或粗数据。数据清洗可以与数据加工工具交互执行，也…
+date: 2023-08-16T16:21:40.000Z
+category: python
+tags:
+  - python
+  - data-analysis
+cover: https://img.cent1pedee.top/img/python.png
+---
+
+## Python数据清洗
+
+## 什么是数据清洗
+
+    数据清洗（data cleaning）是从记录集、数据库表或数据库中检测和纠正（或删除）损坏或不准确的记录的过程，是指识别数据的不完整、不正确、不准确或不相关部分，然后替换、修改、或删除脏数据或粗数据。数据清洗可以与数据加工工具交互执行，也可以通过脚本进行批处理。
+
+    清洗后，一个数据集应该与系统中其他类似的数据集保持一致。 检测到或删除的不一致可能最初是由用户输入错误、传输或存储中的损坏或不同存储中类似实体的不同数据字典定义引起的。 数据清理与数据确认(data validation)的不同之处在于，数据确认几乎总是意味着数据在输入时被系统拒绝，并在输入时执行，而不是执行于批量数据。
+
+    数据清洗不仅仅更正错误，同样加强来自各个单独信息系统不同数据间的一致性。专门的数据清洗软件能够自动检测数据文件，更正错误数据，并用全企业一致的格式集成数据。
+
+info: [Wiki](https://zh.wikipedia.org/zh-cn/%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97)
+
+## 数据清洗流程
+
+### 数据读写
+
+#### 导入所需的库
+
+``` bash
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+%matplotlib inline
+```
+
+
+#### 读入文件
+
+``` bash
+#读入csv格式文件
+data=pd.read_csv("cs-training.csv",index_col=0)
+```
+
+
+### 数据探索
+
+#### 了解数据形状
+
+``` bash
+#返回元组
+data.shape
+```
+
+
+#### 了解数据结构
+通过了解结构可以看出指标的缺失情况
+
+``` bash
+#可以看出样本的整体情况、缺失状况
+data.info()
+```
+
+
+#### 了解数据描述性统计信息
+通过描述性统计可以初步判断是否存在异常值信息，比如下图中“age”年龄这个字段，最小值0岁明显不符合常理，可判断为异常值。
+
+``` bash
+data.describe().T
+```
+
+
+### 重复值处理
+
+#### 检查重复值
+python中可通过duplicated函数查找并显示数据表中的重复值
+这里需要注意的是：
+- 当两条记录中所有的数据都相等时duplicated函数才会判断为重复值；
+- duplicated支持从前向后(first)，和从后向前(last)两种重复值查找模式，即从第一行数据开始，第二行数据和第一行一样，从前向后就把第二行数据判断为重复值，从后向前就把第一行数据判断为重复值；
+- 默认是从前向后进行重复值的查找和判断，也就是后面的条目在重复值判断中显示为True；
+
+``` bash
+data.duplicated() #返回布尔型数据，告诉重复值的位置
+data.duplicated().sum()  #说明共有多少个重复值
+data[data.duplicated()]  #打印重复值
+data[data.duplicated()].index   #打印重复值索引
+```
+
+
+#### 删除重复值
+python中可通过drop_duplicates函数删除数据表中的重复值，判断标准和逻辑与duplicated函数一样
+
+``` bash
+data.drop_duplicates(inplace=True)   #inplace=True表示直接在源数据上进行操作
+data.index = range(data.shape[0])    #动过源数据就要进行索引重建
+```
+
+
+### 缺失值处理
+
+#### 删除缺失值
+python中可以用dropna函数删除缺失值
+
+``` bash
+#DataFrame.dropna(self, axis=0, how='any', thresh=None, subset=None, inplace=False)
+#删除数据表中含有空值的行,如果存在任何NA值，则删除该行或列。
+data.dropna(how='any')
+# 传入这个参数后将只丢弃全为缺失值的那些行
+data.dropna(how = 'all')    
+#丢弃有缺失值的列（一般不会这么做，这样会删掉一个特征）
+data.dropna(axis = 1)     
+# 丢弃全为缺失值的那些列
+data.dropna(axis=1,how="all")  
+# 丢弃‘AgMonthlyIncomee’和‘NumberOfDependents’这两列中有缺失值的行  
+data.dropna(axis=0,subset = ["MonthlyIncome", "NumberOfDependents"])   
+```
+
+
+#### 固定值填充
+选取某个固定值/默认值填充缺失值。
+
+``` bash
+data.fillna(-9999, inplace=True) # 填充 -1,-999,-9999
+```
+
+
+#### 统计变量填充
+1. 均值填补
+
+对每一列缺失值，填充当列的均值
+
+``` bash
+#对数据中每一列的缺失值，填充当列的均值
+data.fillna(data.mean(),inplace=True) 
+#可为数据中某一个指标缺失值都填充该指标均值
+data['MonthlyIncome'].fillna(data['MonthlyIncome'].mean(),inplace=True)
+```
+
+
+2. 中位数填补
+
+对每一列的缺失值，填充当列的中位数
+
+``` bash
+#对数据中每一列的缺失值，填充当列的中位数
+data.fillna(data.median(),inplace=True) 
+#可为数据中某一个指标缺失值都填充该指标中位数
+data['MonthlyIncome'].fillna(data['MonthlyIncome'].median(),inplace=True)
+```
+
+
+3. 众数填补
+
+对每一列的缺失值，填充当列的众数;但可能存在某列缺失值过多，众数为nan的情况，注意要取的是每列删除掉nan值后的众数。
+
+``` bash
+#对数据中每一列的缺失值，填充当列的众数
+data.fillna(data.mode(),inplace=True) 
+#可为数据中某一个指标缺失值都填充该指标众数
+data['MonthlyIncome'].fillna(data['MonthlyIncome'].mode(),inplace=True)
+```
+
+
+#### 向前填充/向后填充
+
+``` bash
+#可用axis修改填充的方向，默认为0
+data.fillna(method='ffill',inplace=True)   # pad/ffill用前一个非缺失值去填充该缺失值
+data.fillna(method='bfill',inplace=True)  # backfill/bfill用后一个非缺失值填充该缺失值
+```
+
+
+#### 模型填充法
+缺失值作为新的label，建立模型得到预测值，然后进行填充。这里选择某个缺失值数量适当的特征采用随机森林进行拟合
+
+``` bash
+from sklearn import ensemble
+from sklearn.preprocessing import LabelEncoder#标准化标签，标签专用，能够将分类转换为分类数值。
+def set_missing(df,estimate_list,miss_col):
+    """df要处理的数据帧，estimate_list用来估计缺失值的字段列表,miss_col缺失字段名称;会直接在原来的数据帧上修改"""
+    col_list=estimate_list
+    col_list.append(miss_col)   
+    process_df = df.loc[:,col_list]
+    class_le= LabelEncoder()
+    for i in col_list[:-1]:
+        process_df.loc[:,i]=class_le.fit_transform(process_df.loc[:,i].values)
+    # 分成已知该特征和未知该特征两部分
+    known=process_df[process_df[miss_col].notnull()].values
+    known[:, -1]=class_le.fit_transform(known[:, -1])
+    unknown = process_df[process_df[miss_col].isnull()].values
+    # X为特征属性值
+    X = known[:, :-1]
+    # y为结果标签值
+    y = known[:, -1]
+    # fit到RandomForestRegressor之中
+    rfr = ensemble.RandomForestRegressor(random_state=1, n_estimators=200,max_depth=4,n_jobs=-1)
+    rfr.fit(X,y)
+    # 用得到的模型进行未知特征值预测
+    predicted = rfr.predict(unknown[:, :-1]).round(0).astype(int)
+    predicted=class_le.inverse_transform(predicted)
+    # print(predicted)
+    # 用得到的预测结果填补原缺失数据
+    df.loc[(df[miss_col].isnull()), miss_col] = predicted
+    return df
+```
+
+
+#### 不处理
+保持数据原始信息，不对信息进行处理，而是直接将空值作为一种分类传入模型中进行分析。
+
+### 异常值处理
+异常值(outlier)为一组测定值中与平均值的偏差超过两倍标准差的测定值，与平均值的偏差超过三倍标准差的测定值，称为高度异常的异常值。在处理数据时，应剔除高度异常的异常值。
+
+#### 异常值来源
+1. 人为错误
+: 人为输入异常：数据收集，记录或输入过程中导致的错误
+故意异常值：人为造假
+数据处理错误：对数据操作或提取错误导致数据集中的异常值
+
+2. 机器错误
+: 实验误差：实验设计运用要素不统一
+测量误差：系统、机器故障导致错误的记录
+
+3. 偏离值
+: 特殊情形下真实数据值极大，远超一般数值水平：例如富豪的收入水平，销售冠军的销售额等
+
+#### 异常值识别
+1.简单统计分析
+: 结合经验对属性值进行一个描述性的统计，查看值的不合理性。例如年龄范围一般为0~100等
+
+2.3δ原则
+当数据服从正态分布：对于正态分布，距离平均值3δ之外的概率0.003 ，因此认定距离平均值大于3δ的样本样本为异常值；具体步骤为：
+: 1.计算需要检验的数据列的平均值和标准差；
+2.比较数据列的每个值与平均值的偏差是否超过3倍，如果超过3倍，则为异常值；
+
+``` bash
+#用3倍标准差,找出'DebtRatio'异常值
+sta=(data['DebtRatio']-data['DebtRatio'].mean())/data['DebtRatio'].std()
+sta.abs()>3                       #返回每个跟3比较的结果
+data[sta.abs()>3]                 #异常值
+delindex=data[sta.abs()>3].index  #异常值索引
+data.drop(delindex,inplace=True)  #删除异常值
+```
+
+
+- <u>当数据不服从正态分布：</u>可以通过远离平均距离多少倍的标准差进行判定。
+
+3.箱型图分析
+
+计算过程:
+: 1.计算上四分位数（Q3），中位数，下四分位数（Q1）
+2.计算上四分位数和下四分位数之间的差值，即四分位数差（IQR，interquartile range）Q3-Q1
+3.绘制箱线图的上下范围，上限为上四分位数，下限为下四分位数。在箱子内部中位数的位置绘制横线。
+4.大于上四分位数1.5倍四分位数差的值，或者小于下四分位数1.5倍四分位数差的值，划为异常值（outliers）。
+5.异常值之外，最靠近上边缘和下边缘的两个值处，画横线，作为箱线图的触须。
+6.极端异常值，即超出四分位数差3倍距离的异常值，用实心点表示；较为温和的异常值，即处于1.5倍-3倍四分位数差之间的异常值，用空心点表示。
+7.为箱线图添加名称，数轴等
+
+python中可用seaborn库的sns.boxplot()函数画箱型图，查看数值变量的取值范围，是否有异常值
+
+#### 异常值处理
+1. 删除
+
+直接将含有异常值的记录删除；
+
+2. 视为缺失值
+
+将异常值视为缺失值，利用缺失值处理的方法进行处理；
+
+3. 平均值修正
+
+可用前后两个观测值的平均值修正该异常值；
+
+4. 不处理
+
+直接在具有异常值的数据集上进行数据挖掘，由业务分析挖掘价值
+<!-- 阅读时长 12 分钟 · 状态 published · 导出时间 2026-11-24 -->
+
+---
+
+<!-- ===== 1c291ca3 ===== -->
+---
+title: Hello World!
+summary: Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex…
+date: 2023-08-01T15:00:00.000Z
+category: hello-world
+tags:
+    - hello-world
+    - hexo
+cover: https://img.cent1pedee.top/img/helloworld.jpg
+---
+
+Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+
+## Quick Start
+
+### Create a new post
+
+```bash
+$ hexo new "My New Post"
+```
+
+More info: [Writing](https://hexo.io/docs/writing.html)
+
+### Run server
+
+```bash
+$ hexo server
+```
+
+More info: [Server](https://hexo.io/docs/server.html)
+
+### Generate static files
+
+```bash
+$ hexo generate
+```
+
+More info: [Generating](https://hexo.io/docs/generating.html)
+
+### Deploy to remote sites
+
+```bash
+$ hexo deploy
+```
+
+More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+<!-- 阅读时长 1 分钟 · 状态 published · 导出时间 2026-11-24 -->

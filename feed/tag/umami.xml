@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>煮雪话河山 · Umami</title>
+    <link>https://blog.zhuux.cn/</link>
+    <description>记录前端工程、构建工具与内容系统的实践与取舍。文章偏长，代码可复制，结论尽量可复现。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 31 Aug 2024 21:26:00 GMT</lastBuildDate>
+    <managingEditor>62405816@qq.com (煮雪话河山)</managingEditor>
+    <atom:link href="https://blog.zhuux.cn/feed/tag/umami.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hexo零成本方案：搭建Umami统计工具</title>
+      <link>https://blog.zhuux.cn/posts/9374da7d</link>
+      <guid isPermaLink="true">https://blog.zhuux.cn/posts/9374da7d</guid>
+      <pubDate>Sat, 31 Aug 2024 21:26:00 GMT</pubDate>
+      <description>从早前的 LNMP 、OneinStack 到 XZ Utils ，再到现在的 Staticfile 、BootCDN ；供应链攻击总是让人猝不及防。七月中旬，糖果屋群突然就传来了51La被投毒的消息，而这也是我决定使用Umami的前提因素…</description>
+      <category>Hexo</category>
+      <category>Hexo</category>
+      <category>Umami</category>
+      <category>教程</category>
+    </item>
+  </channel>
+</rss>

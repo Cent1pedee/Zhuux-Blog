@@ -1,0 +1,278 @@
+---
+title: Git基础命令速查表：简明指南
+summary: Git部分基础知识转载自Microsoft DevOps 什么是Git? Git基础命令速查，以便后续快速使用Git命令 Git 已成为版本控制的全球标准。 那么，它到底是什么？ Git 是分布式版本控制系统，这意味着项目的本地克隆是完整的…
+date: 2023-09-25T23:53:30.000Z
+category: git
+tags:
+  - git
+  - tutorial
+  - repost
+cover: https://img.cent1pedee.top/img/git1.png
+featured: true
+---
+
+Git部分基础知识转载自[Microsoft DevOps 什么是Git?](https://learn.microsoft.com/zh-cn/devops/develop/git/what-is-git)
+
+Git基础命令速查，以便后续快速使用Git命令
+
+***
+
+## 什么是Git?
+
+Git 已成为版本控制的全球标准。 那么，它到底是什么？
+
+Git 是分布式版本控制系统，这意味着项目的本地克隆是完整的版本控制存储库。 通过这些功能齐全的本地存储库，无论脱机还是远程都能轻松工作。 开发人员在本地提交工作，然后将存储库的副本与服务器上的副本同步。 这种范例不同于集中式版本控制，后者要求客户端必须先与服务器同步代码，然后才能创建新版代码。
+
+Git 的灵活性和受欢迎程度使其成为任何团队的绝佳选择。 许多开发人员和大学毕业生已经知道如何使用 Git。 Git 的用户社区已创建资源来训练开发人员和 Git 的受欢迎程度，以便在需要时轻松获取帮助。 几乎每个开发环境都有 Git 支持和 Git 命令行工具在每个主要操作系统上实现。
+
+## Git基础知识
+
+每次保存工作时，Git 都会创建提交。 提交是某个时间点所有文件的快照。 如果文件未从一个提交更改为下一个提交，Git 将使用以前存储的文件。 此设计不同于存储文件的初始版本并随时间推移保留增量记录的其他系统。
+
+
+
+提交创建指向其他提交的链接，形成开发历史记录的图。 可以将代码还原到以前的提交，检查文件如何从一个提交更改为下一个提交，并查看更改的位置和时间等信息。 提交通过提交内容的唯一加密哈希在 Git 中标识。 由于所有内容都经过哈希处理，因此在未检测到 Git 的情况下无法进行更改、丢失信息或损坏文件。
+
+## 分支
+
+每个开发人员将更改保存到自己的本地代码存储库。 因此，根据同一提交，可能会进行许多不同的更改。 Git 提供了用于隔离更改并在以后将它们重新合并在一起的工具。 分支是用于工作的轻型指针，可管理此分离。 在分支中创建的工作完成后，可以合并回团队的主分支（或主干）。
+
+
+
+## 文件和提交
+
+Git 中的文件处于以下三种状态之一：已修改、暂存或提交。 首次修改文件时，更改仅存在于工作目录中。 它们尚不属于提交或开发历史记录。 开发人员必须 暂存 提交中要包含的已更改文件。 暂存区域包含下一个提交中要包括的所有更改。 开发人员对暂存文件感到满意后，文件将打包为 提交 ，其中包含描述更改的内容的消息。 此提交将成为开发历史记录的一部分。
+
+
+
+暂存允许开发人员选择要在提交中保存的文件更改，以便将大型更改分解为一系列较小的提交。 通过减少提交范围，可以更轻松地查看提交历史记录以查找特定文件更改。
+
+## Git的优势
+
+### 同时开发
+
+每个人都有自己的本地代码副本，并且可以在自己的分支上同时工作。 Git 脱机工作，因为几乎所有操作都是本地操作。
+
+### 更快的版本
+
+分支允许灵活且同时进行开发。 主分支包含发布的稳定、高质量的代码。 功能分支包含正在进行的工作，这些工作在完成后合并到主分支中。 通过将发布分支与正在进行的开发分开，可以更轻松地管理稳定的代码并更快地交付更新。
+
+### 内置集成
+
+由于它的受欢迎程度，Git 集成到大多数工具和产品中。 每个主要 IDE 都有内置的 Git 支持，许多工具都支持持续集成、持续部署、自动测试、工作项跟踪、指标和报告功能与 Git 集成。 此集成简化了日常工作流。
+
+### 强大的社区支持
+
+Git 是开源的，已成为版本控制的事实标准。 团队利用的工具和资源并不短缺。 与其他版本控制系统相比，社区对 Git 的支持量使得在需要时可以轻松获取帮助。
+
+### Git与任何团队合作
+
+通过鼓励协作、强制实施策略、自动化流程以及提高工作的可见性和可追溯性，将 Git 与源代码管理工具配合使用可以提高团队的工作效率。 团队可以针对各个工具进行版本控制、工作项跟踪以及持续集成和部署。 或者，他们可以选择一个解决方案，例如[GitHub](https://github.com/)或[Azure DevOps](https://azure.microsoft.com/zh-cn/products/devops/repos/) ，该解决方案支持所有这些任务。
+
+### 拉取请求
+
+在将代码更改合并到主分支之前，请使用[拉取请求](https://learn.microsoft.com/zh-cn/devops/develop/git/git-pull-requests)与团队讨论代码更改。 拉取请求中的讨论对于确保代码质量并提高团队的知识非常重要。 GitHub 和 Azure DevOps 等平台提供了丰富的拉取请求体验，开发人员可以浏览文件更改、留下批注、检查提交、查看生成和投票以批准代码。
+
+### 分支策略
+
+Teams 可以将 GitHub 和 Azure DevOps 配置为在整个团队中强制实施一致的工作流和流程。 他们可以设置[分支策略](https://learn.microsoft.com/zh-cn/azure/devops/repos/git/branch-policies?view=azure-devops&tabs=browser)，以确保拉取请求满足完成前的要求。 分支策略通过防止直接推送、要求审阅者并确保干净生成来保护重要分支。
+
+## 常用Git命令清单
+
+在开始使用Git之前，我们需要先安装Git软件。Git是一个分布式版本控制系统，支持在Linux/Unix、Solaris、Mac和Windows等多个平台上运行。
+
+你可以从git-scm.com/downloads这个网站下载适合你操作系统的Git安装包。如果你的系统是Windows，你可以访问npm.taobao.org/mirrors/git来下载安装Git。安装Git后，你还需要进行一些配置来使其正常工作。
+
+以上是使用Git前需要安装Git软件的概述，具体的安装和配置过程可以参考菜鸟教程（runoob.com）上的相关指南。
+
+以下Git命令转载自稀土掘金[**奇想派**](https://juejin.cn/post/7133507623399194661#heading-4)，侵权请联系站长删除。
+
+## 创建仓库命令
+
+- `git init`: 初始化仓库就是在当前目录下创建一个.git目录，用于存储Git所需的元数据和文件版本记录。该目录包含了objects、refs/head、refs/tags和模板文件等基本部分。
+
+- `git clone [url]`: 拷贝一份远程仓库，也就是下载一个项目和它的整个代码历史。
+
+## 配置
+
+- `git config --list`: 显示当前的Git配置
+
+- `git config -e [--global]`: 编辑Git配置文件
+
+- `git config [--global] user.name "[name]" / git config [--global] user.email "[email address]"`: 设置提交代码时的用户信息
+
+## 增加/删除文件
+
+- `git add [file1] [file2] ...`: 添加指定文件到暂存区
+
+- `git add [dir]`: 添加指定目录到暂存区，包括子目录
+
+- `git add .`: 添加当前目录的所有文件到暂存区
+
+- `git add -p`: 添加每个变化前，都会要求确认，对于同一个文件的多处变化，可以实现分次提交
+
+- `git rm [file1] [file2] ...`: 删除工作区文件，并且将这次删除放入暂存区
+
+- `git rm --cached [file]`: 停止追踪指定文件，但该文件会保留在工作区
+
+- `git mv [file-original] [file-renamed]`: 改名文件，并且将这个改名放入暂存区
+
+## 代码提交
+
+- `git commit -m [message]`: 提交暂存区到仓库区
+
+- `git commit [file1] [file2] ... -m [message]`: 提交暂存区的指定文件到仓库区
+
+- `git commit -a`: 提交工作区自上次commit之后的变化，直接到仓库区
+
+- `git commit -v`: 提交时显示所有diff信息
+
+- `git commit --amend -m [message]`: 使用一次新的commit，替代上一次提交。如果代码没有任何新变化，则用来改写上一次commit的提交信息
+
+- `git commit --amend [file1] [file2] ...`: 重做上一次commit，并包括指定文件的新变化
+
+## 分支
+
+- `git branch`: 列出所有本地分支
+
+- `git branch -r`: 列出所有远程分支
+
+- `git branch -a`: 列出所有本地分支和远程分支
+
+- `git branch [branch-name]`: 新建一个分支，但依然停留在当前分支
+
+- `git checkout -b [branch]`: 新建一个分支，并切换到该分支
+
+- `git branch [branch] [commit]`: 新建一个分支，指向指定commit
+
+- `git branch --track [branch] [remote-branch]`: 新建一个分支，与指定的远程分支建立追踪关系
+
+- `git checkout [branch-name]`: 切换到指定分支，并更新工作区
+
+- `git checkout -`: 切换到上一个分支
+
+- `git branch --set-upstream [branch] [remote-branch]`: 建立追踪关系，在现有分支与指定的远程分支之间
+
+- `git merge [branch]`: 合并指定分支到当前分支
+
+- `git cherry-pick [commit]`: 选择一个commit，合并进当前分支
+
+- `git branch -d [branch-name]`: 删除分支
+
+- `git push origin --delete [branch-name] 或 git branch -dr [remote/branch]`: 删除远程分支
+
+## 标签
+
+- `git tag`: 列出所有tag
+
+- `git tag [tag]`: 新建一个tag在当前commit
+
+- `git tag [tag] [commit]`: 新建一个tag在指定commit
+
+- `git tag -d [tag]`: 删除本地tag
+
+- `git push origin :refs/tags/[tagName]`: 删除远程tag
+
+- `git show [tag]`: 查看tag信息
+
+- `git push [remote] [tag]`: 提交指定tag
+
+- `git push [remote] --tags`: 	提交所有tag
+
+- `git checkout -b [branch] [tag]`: 新建一个分支，指向某个tag
+
+## 查看信息和历史
+
+- `git status`: 显示有变更的文件
+
+- `git log`: 显示当前分支的版本历史
+
+- `git log --stat`: 显示commit历史，以及每次commit发生变更的文件
+
+- `git log -S [keyword]`: 搜索提交历史，根据关键词
+
+- `git log [tag] HEAD --pretty=format:%s`: 显示某个commit之后的所有变动，每个commit占据一行
+
+- `git log [tag] HEAD --grep feature`: 显示某个commit之后的所有变动，其"提交说明"必须符合搜索条件
+
+- `git log --follow [file] 或 git whatchanged [file]`: 显示某个文件的版本历史，包括文件改名
+
+- `git log -p [file]`: 显示指定文件相关的每一次diff
+
+- `git log -5 --pretty --oneline`: 显示过去5次提交
+
+- `git shortlog -sn`: 显示所有提交过的用户，按提交次数排序
+
+- `git blame [file]`: 显示指定文件是什么人在什么时间修改过
+
+- `git diff`: 显示暂存区和工作区的差异
+
+- `git diff --cached [file]`: 显示暂存区和上一个commit的差异
+
+- `git diff HEAD`: 显示工作区与当前分支最新commit之间的差异
+
+- `git diff [first-branch]...[second-branch]`: 显示两次提交之间的差异
+
+- `git diff --shortstat "@{0 day ago}"`: 显示今天你写了多少行代码
+
+- `git show [commit]`: 显示某次提交的元数据和内容变化
+
+- `git show --name-only [commit]`: 显示某次提交发生变化的文件
+
+- `git show [commit]:[filename]`: 显示某次提交时，某个文件的内容
+
+- `git reflog`: 显示当前分支的最近几次提交
+
+## 远程同步
+
+- `git fetch [remote]`: 下载远程仓库的所有变动（远程新增或删除分支都能显示）
+
+- `git remote -v`: 显示所有远程仓库
+
+- `git config [--global] user.name "[name]" / git config [--global] user.email "[email address]"`: 设置提交代码时的用户信息
+
+- `git remote show [remote]`: 显示某个远程仓库的信息
+
+- `git remote add [shortname] [url]`: 增加一个新的远程仓库，并命名
+
+- `git pull [remote] [branch]`: 取回远程仓库的变化，并与本地分支合并
+
+- `git push [remote] [branch]`: 上传本地指定分支到远程仓库
+
+- `git push [remote] --force`: 强行推送当前分支到远程仓库，即使有冲突
+
+- `git push [remote] --all`: 推送所有分支到远程仓库
+
+## 撤销
+
+- `git checkout [file]`: 恢复暂存区的指定文件到工作区
+
+- `git checkout [commit] [file]`: 恢复某个commit的指定文件到暂存区和工作区
+
+- `git checkout .`: 恢复暂存区的所有文件到工作区
+
+- `git reset [file]`: 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变
+
+- `git reset --hard`: 重置暂存区与工作区，与上一次commit保持一致
+
+- `git reset [commit]`: 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变
+
+- `git reset --hard [commit]`: 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致
+
+- `git reset --keep [commit]`: 重置当前HEAD为指定commit，但保持暂存区和工作区不变
+
+- `git revert [commit]`: 新建一个commit，用来撤销指定commit。后者的所有变化都将被前者抵消，并且应用到当前分支
+
+- `git stash`: 暂时将未提交的变化移除，稍后再移入
+
+- `git stash pop`: 暂时将未提交的变化移除，稍后再移入
+
+## 其他
+
+- `git archive`: 生成一个可供发布的压缩包
+
+- `git repack`: 打包未归档文件
+
+- `git count-objects`: 计算解包的对象数量
+
+- `git help 或 git --help`: Git帮助，查看git相关命令，如果想看某个特定命令的具体细节，可使用git [命令] --help,如 git commit --help 表示查看提交相关命令的帮助

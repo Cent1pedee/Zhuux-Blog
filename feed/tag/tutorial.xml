@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>煮雪话河山 · 教程</title>
+    <link>https://blog.zhuux.cn/</link>
+    <description>记录前端工程、构建工具与内容系统的实践与取舍。文章偏长，代码可复制，结论尽量可复现。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 31 Aug 2024 21:26:00 GMT</lastBuildDate>
+    <managingEditor>62405816@qq.com (煮雪话河山)</managingEditor>
+    <atom:link href="https://blog.zhuux.cn/feed/tag/tutorial.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hexo零成本方案：搭建Umami统计工具</title>
+      <link>https://blog.zhuux.cn/posts/9374da7d</link>
+      <guid isPermaLink="true">https://blog.zhuux.cn/posts/9374da7d</guid>
+      <pubDate>Sat, 31 Aug 2024 21:26:00 GMT</pubDate>
+      <description>从早前的 LNMP 、OneinStack 到 XZ Utils ，再到现在的 Staticfile 、BootCDN ；供应链攻击总是让人猝不及防。七月中旬，糖果屋群突然就传来了51La被投毒的消息，而这也是我决定使用Umami的前提因素…</description>
+      <category>Hexo</category>
+      <category>Hexo</category>
+      <category>Umami</category>
+      <category>教程</category>
+    </item>
+    <item>
+      <title>Git基础命令速查表：简明指南</title>
+      <link>https://blog.zhuux.cn/posts/6e3d8d51</link>
+      <guid isPermaLink="true">https://blog.zhuux.cn/posts/6e3d8d51</guid>
+      <pubDate>Mon, 25 Sep 2023 23:53:30 GMT</pubDate>
+      <description>Git部分基础知识转载自Microsoft DevOps 什么是Git? Git基础命令速查，以便后续快速使用Git命令 Git 已成为版本控制的全球标准。 那么，它到底是什么？ Git 是分布式版本控制系统，这意味着项目的本地克隆是完整的…</description>
+      <category>Git</category>
+      <category>Git</category>
+      <category>教程</category>
+      <category>转载</category>
+    </item>
+    <item>
+      <title>快速部署AList到云服务器：Docker的最佳实践</title>
+      <link>https://blog.zhuux.cn/posts/c375037e</link>
+      <guid isPermaLink="true">https://blog.zhuux.cn/posts/c375037e</guid>
+      <pubDate>Tue, 12 Sep 2023 20:34:42 GMT</pubDate>
+      <description>AList是一个文件列表程序，支持多种存储，支持网页浏览和WebDAV，后端基于golang最好的http框架gin，前端使用vue和ant design。它可以将你的网盘挂载到一起，方便统一管理。 支持的网盘有：本地电脑磁盘、FTP、SF…</description>
+      <category>Docker</category>
+      <category>Docker</category>
+      <category>AList</category>
+      <category>教程</category>
+    </item>
+    <item>
+      <title>逐步学习Docker部署和容器管理</title>
+      <link>https://blog.zhuux.cn/posts/2b7ee90</link>
+      <guid isPermaLink="true">https://blog.zhuux.cn/posts/2b7ee90</guid>
+      <pubDate>Sat, 09 Sep 2023 11:33:52 GMT</pubDate>
+      <description>Docker 是一个开源平台，支持开发人员构建、部署、运行、更新和管理容器，这些容器是标准化的可执行组件，结合了应用源代码以及在任何环境中运行该代码所需的操作系统 (OS) 库和依赖项。 容器简化了分布式应用的部署和交付过程。 随着组织转向…</description>
+      <category>Docker</category>
+      <category>Docker</category>
+      <category>教程</category>
+    </item>
+  </channel>
+</rss>

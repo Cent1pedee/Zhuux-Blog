@@ -1,0 +1,416 @@
+---
+title: 快速部署AList到云服务器：Docker的最佳实践
+summary: AList是一个文件列表程序，支持多种存储，支持网页浏览和WebDAV，后端基于golang最好的http框架gin，前端使用vue和ant design。它可以将你的网盘挂载到一起，方便统一管理。 支持的网盘有：本地电脑磁盘、FTP、SF…
+date: 2023-09-12T20:34:42.000Z
+category: docker
+tags:
+  - docker
+  - alist
+  - tutorial
+cover: https://img.cent1pedee.top/img/docker1.jpg
+---
+
+## 什么是AList?
+
+AList是一个文件列表程序，支持多种存储，支持网页浏览和WebDAV，后端基于golang最好的http框架gin，前端使用vue和ant design。它可以将你的网盘挂载到一起，方便统一管理。
+
+支持的网盘有：本地电脑磁盘、FTP、SFTP、WebDAV、SMB、对象存储、115、123、百度、阿里云、MEGA、谷歌云盘、谷歌相册、移动、天翼、onedrive、pikpak、迅雷、夸克、蓝奏云、迅雷、Cloudreve等等。
+
+官网 [Home | AList Docs (nn.ci)](https://alist.nn.ci/zh/)
+
+***
+
+## AList部署方式
+
+为了方便使用直接搬运一份进博客里，个人使用的是云服务器进行部署，下文会有详细说明。
+AList部署方式来源[AList](https://alist.nn.ci/zh/guide/install/script.html)
+
+## 1.一键脚本
+
+仅适用于Linux amd64/arm64 平台
+
+### 安装
+
+```
+curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install
+```
+
+
+### 更新
+
+```
+curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s update
+```
+
+
+### 卸载
+
+```
+curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s uninstall
+```
+
+
+### 自定义路径
+
+默认安装在 `/opt/alist` 中。 自定义安装路径，将安装路径作为第二个参数添加，必须是绝对路径（如果路径以 alist 结尾，则直接安装到给定路径，否则会安装在给定路径 alist 目录下），如 安装到 `/root`：
+
+```
+# Install
+curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install /root
+# update
+curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s update /root
+# Uninstall
+curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s uninstall /root
+```
+
+- 启动: `systemctl start alist`
+- 关闭: `systemctl stop alist`
+- 状态: `systemctl status alist`
+- 重启: `systemctl restart alist`
+
+### 获取密码
+
+需要进入脚本安装AList的目录文件夹內执行如下命令
+
+#### 低于v3.25.0版本
+
+```
+./alist admin
+```
+
+
+#### 高于v3.25.0版本
+
+3.25.0以上版本将密码改成加密方式存储的hash值，无法直接反算出密码，如果忘记了密码只能通过重新`随机生成`或者`手动设置`
+
+```
+# 随机生成一个密码
+./alist admin random
+# 手动设置一个密码,`NEW_PASSWORD`是指你需要设置的密码
+./alist admin set NEW_PASSWORD
+```
+
+
+## 2.手动安装
+
+### 获取AList
+
+打开[AList Release](https://github.com/alist-org/alist/releases)下载待部署系统对应的文件。最新版的前端已经和后端打包好了，不用再下载前端文件了。
+
+xxxx 指的是不同系统/架构对应的名称，一般 Linux-x86/64 为 alist-linux-amd64。[如果你的 glibc 版本太低](https://alist.nn.ci/zh/faq/why.html#%E5%A6%82%E4%BD%95%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9)，建议下载 musl 版本
+
+当你看到`start server@0.0.0.0:5244`的输出，之后没有报错，说明操作成功。 第一次运行时会输出初始密码。程序默认监听 5244 端口。 现在打开`http://ip:5244`可以看到登录页面，WebDAV 请参阅[WebDav](https://alist.nn.ci/zh/guide/webdav.html)。
+
+### 手动运行
+
+v3.25.0以上版本将密码改成加密方式存储的hash值，无法直接反算出密码，如果忘记了密码只能通过重新`随机生成`或者`手动设置`
+
+
+
+<!-- tab Linux -->
+
+```
+# 解压下载的文件，得到可执行文件：
+tar -zxvf alist-xxxx.tar.gz
+# 授予程序执行权限：
+chmod +x alist
+# 运行程序
+./alist server
+
+# 获得管理员信息 以下两个不同版本，新版本也有随机生成和手动设置
+# 低于v3.25.0版本
+./alist admin
+
+# 高于v3.25.0版本
+# 随机生成一个密码
+./alist admin random
+# 手动设置一个密码 `NEW_PASSWORD`是指你需要设置的密码
+./alist admin set NEW_PASSWORD
+```
+
+
+<!-- endtab -->
+
+<!-- tab macOS -->
+
+```
+# 解压下载的文件，得到可执行文件：
+tar -zxvf alist-xxxx.tar.gz
+# 授予程序执行权限：
+chmod +x alist
+# 运行程序
+./alist server
+
+# 获得管理员信息 以下两个不同版本，新版本也有随机生成和手动设置
+# 低于v3.25.0版本
+./alist admin
+#高于v3.25.0版本
+# 随机生成一个密码
+./alist admin random
+# 手动设置一个密码 `NEW_PASSWORD`是指你需要设置的密码
+./alist admin set NEW_PASSWORD
+```
+
+
+<!-- endtab -->
+
+<!-- tab Windows -->
+
+```
+# 解压下载的文件，得到可执行文件：
+unzip alist-xxxx.zip
+# 运行程序
+.\alist.exe server
+
+# 获得管理员信息 以下两个不同版本，新版本也有随机生成和手动设置
+# 低于v3.25.0版本
+.\alist.exe admin
+
+# 高于v3.25.0版本
+# 随机生成一个密码
+.\alist.exe admin random
+# 手动设置一个密码 `NEW_PASSWORD`是指你需要设置的密码
+.\alist.exe admin set NEW_PASSWORD
+```
+
+
+<!-- endtab -->
+
+<!-- tab win(scoop) -->
+
+```
+# 安装
+scoop install alist
+# 运行
+alist server
+```
+
+
+<!-- endtab -->
+
+
+
+### 守护进程
+
+
+
+<!-- tab Linux -->
+使用任意方式编辑`/usr/lib/systemd/system/alist.service`并添加如下内容，其中 path_alist 为 AList 所在的路径
+
+```
+[Unit]
+Description=alist
+After=network.target
+ 
+[Service]
+Type=simple
+WorkingDirectory=path_alist
+ExecStart=path_alist/alist server
+Restart=on-failure
+ 
+[Install]
+WantedBy=multi-user.target
+```
+
+
+然后，执行`systemctl daemon-reload`重载配置，现在你可以使用这些命令来管理程序：
+- 启动:`systemctl start alist`
+- 关闭:`systemctl stop alist`
+- 配置开机自启:`systemctl enable alist`
+- 取消开机自启:`systemctl disable alist`
+- 状态:`systemctl status alist`
+- 重启:`systemctl restart alist`
+
+<!-- endtab -->
+
+<!-- tab macOS -->
+
+使用任意方式编辑`~/Library/LaunchAgents/ci.nn.alist.plist`并添加如下内容，修改`path_alist`为 AList 所在的路径，`path/to/working/dir`为 AList的工作路径
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>ci.nn.alist</string>
+        <key>KeepAlive</key>
+        <true/>
+        <key>ProcessType</key>
+        <string>Background</string>
+        <key>RunAtLoad</key>
+        <true/>
+        <key>WorkingDirectory</key>
+        <string>path/to/working/dir</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>path_alist/alist</string>
+            <string>server</string>
+        </array>
+    </dict>
+</plist>
+```
+
+
+执行`launchctl load ~/Library/LaunchAgents/ci.nn.alist.plist`加载配置，现在你可以使用这些命令来管理程序：
+- 开启:`launchctl start ~/Library/LaunchAgents/ci.nn.alist.plist`
+- 关闭:`launchctl stop ~/Library/LaunchAgents/ci.nn.alist.plist`
+- 卸载配置:`launchctl unload ~/Library/LaunchAgents/ci.nn.alist.plist`
+
+<!-- endtab -->
+
+<!-- tab Windows -->
+
+<h3>方法1</h3>
+
+1. 在 https://nssm.cc/download 下载最新版本的`nssm`；
+2. 在解压后的文件夹内按住 Shift 并右击空白处，选择“在此处打开 Powershell 窗口”；
+3. 在弹出的窗口中输入`.\nssm.exe install alist`；
+4. Path 选择 alist.exe 的路径，如`D:\alist\alist.exe`，Arguments 填`server`；
+5. Details 选项卡中可以自定义标题和描述，可以选择服务的自启动模式（自动|延迟启动|手动|禁用）；
+6. 在 I/O 选项卡为 Output (stdout) 和 Output (stderr) 各自指定一个日志文件的路径，如`D:\alist\stdout.log`，文件本身（`stdout.log`）可以不存在，但是指定的目录（`D:\alist`）必须存在；
+7. 点击“Install Service”即可。
+此后可以直接在服务中启动`alist`。
+
+<h3>方法2</h3>
+
+用`.VBS`脚本启动和停止，分别创建两个脚本 分别是 启动.vbs 和 停止.vbs
+
+直接在和Alist启动程序同级文件夹里面双击启动即可，不用担心没有反应 直接去 浏览器访问即可
+
+<div class="hexo-note">
+
+<h3>两个启动脚本</h3>
+<h4>启动.vbs</h4>
+
+```
+Dim ws
+Set ws = Wscript.CreateObject("Wscript.Shell")
+ws.run "alist.exe server",vbhide
+Wscript.quit
+```
+
+
+<h4>停止.vbs</h4>
+
+```
+Dim ws
+Set ws = Wscript.CreateObject("Wscript.Shell")
+ws.run "taskkill /f /im alist.exe",0
+Wscript.quit
+```
+
+
+</div>
+
+<!-- endtab -->
+
+
+
+<div class="hexo-note">
+
+<h3>相关信息</h3>
+<h4>对于所有平台，您可以使用以下命令来静默启动、停止和重新启动。 （v3.4.0 及更高版本）</h4>
+
+```
+# 携带`--force-bin-dir`参数启动服务
+alist start
+# 通过pid停止服务
+alist stop
+# 通过pid重启服务
+alist restart
+```
+
+
+</div>
+
+### 如何更新
+
+下载新版Alist，把之前的替换了即可。
+
+## 利用1panel快速部署AList
+
+### 1.安装1panel
+
+#### 在线安装
+
+##### 1.环境要求
+
+<div class="hexo-note">
+
+**安装前请确保您的系统符合安装条件：**
+- 操作系统：支持主流 Linux 发行版本（基于 Debian / RedHat，包括国产操作系统）；
+- 服务器架构：x86_64、aarch64、armv7l、ppc64le、s390x；
+- 内存要求：建议可用内存在 1GB 以上；
+- 浏览器要求：请使用 Chrome、FireFox、IE10+、Edge等现代浏览器；
+- 可访问互联网。
+
+</div>
+
+##### 2.安装部署
+
+<div class="hexo-note">
+
+GitHub release 链接: https://github.com/1Panel-dev/1Panel/releases
+
+</div>
+
+
+
+<!-- tab RedHat/CentOS -->
+
+```
+curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sh quick_start.sh
+```
+
+<!-- endtab -->
+
+<!-- tab Ubuntu -->
+
+```
+curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sudo bash quick_start.sh
+```
+
+<!-- endtab -->
+
+<!-- tab Debian -->
+
+```
+curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && bash quick_start.sh
+```
+
+<!-- endtab -->
+
+
+
+<div class="hexo-note">
+
+安装成功后，控制台会打印面板访问信息，可通过浏览器访问 1Panel：
+
+```
+http://目标服务器 IP 地址:目标端口/安全入口
+```
+
+- 如果使用的是云服务器，请至安全组开放目标端口。
+- ssh 登录 1Panel 服务器后，执行 1pctl user-info 命令可获取安全入口（entrance）
+
+</div>
+
+<div class="hexo-note">
+
+安装成功后，可使用 [1pctl](https://1panel.cn/docs/installation/cli/) 命令行工具来维护 1Panel
+
+</div>
+
+### 2.安装应用
+
+1. 登录之后，点击`应用商店`进入应用详情
+2. 下载`OpenResty`，`AList`以便后续操作(版本随意，我这里选择的是最新版本)
+3. 按顺序点击面板左侧的`网站`,`创建网站`,`反向代理`,并填写相关参数
+4. 申请免费SSL证书，按顺序点击`网站`,`网站设置`,`HTTPS`,启用HTTPS并填入相关证书
+5. 去域名提供商解析所需的二级域名
+6. 成功,访问解析的二级域名即可
+
+### 3.配置AList
+
+在设置完登录所需的账号密码之后,照着AList提供的文档进行[配置存储](https://alist.nn.ci/zh/guide/drivers/common.html)

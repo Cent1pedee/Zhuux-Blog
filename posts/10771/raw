@@ -1,0 +1,277 @@
+---
+title: Python数据分析：利用jupyter清洗处理csv
+summary: 数据清洗（data cleaning）是从记录集、数据库表或数据库中检测和纠正（或删除）损坏或不准确的记录的过程，是指识别数据的不完整、不正确、不准确或不相关部分，然后替换、修改、或删除脏数据或粗数据。数据清洗可以与数据加工工具交互执行，也…
+date: 2023-08-16T16:21:40.000Z
+category: python
+tags:
+  - python
+  - data-analysis
+cover: https://img.cent1pedee.top/img/python.png
+---
+
+## Python数据清洗
+
+## 什么是数据清洗
+
+    数据清洗（data cleaning）是从记录集、数据库表或数据库中检测和纠正（或删除）损坏或不准确的记录的过程，是指识别数据的不完整、不正确、不准确或不相关部分，然后替换、修改、或删除脏数据或粗数据。数据清洗可以与数据加工工具交互执行，也可以通过脚本进行批处理。
+
+    清洗后，一个数据集应该与系统中其他类似的数据集保持一致。 检测到或删除的不一致可能最初是由用户输入错误、传输或存储中的损坏或不同存储中类似实体的不同数据字典定义引起的。 数据清理与数据确认(data validation)的不同之处在于，数据确认几乎总是意味着数据在输入时被系统拒绝，并在输入时执行，而不是执行于批量数据。
+
+    数据清洗不仅仅更正错误，同样加强来自各个单独信息系统不同数据间的一致性。专门的数据清洗软件能够自动检测数据文件，更正错误数据，并用全企业一致的格式集成数据。
+
+info: [Wiki](https://zh.wikipedia.org/zh-cn/%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97)
+
+## 数据清洗流程
+
+### 数据读写
+
+#### 导入所需的库
+
+``` bash
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+%matplotlib inline
+```
+
+
+#### 读入文件
+
+``` bash
+#读入csv格式文件
+data=pd.read_csv("cs-training.csv",index_col=0)
+```
+
+
+### 数据探索
+
+#### 了解数据形状
+
+``` bash
+#返回元组
+data.shape
+```
+
+
+#### 了解数据结构
+通过了解结构可以看出指标的缺失情况
+
+``` bash
+#可以看出样本的整体情况、缺失状况
+data.info()
+```
+
+
+#### 了解数据描述性统计信息
+通过描述性统计可以初步判断是否存在异常值信息，比如下图中“age”年龄这个字段，最小值0岁明显不符合常理，可判断为异常值。
+
+``` bash
+data.describe().T
+```
+
+
+### 重复值处理
+
+#### 检查重复值
+python中可通过duplicated函数查找并显示数据表中的重复值
+这里需要注意的是：
+- 当两条记录中所有的数据都相等时duplicated函数才会判断为重复值；
+- duplicated支持从前向后(first)，和从后向前(last)两种重复值查找模式，即从第一行数据开始，第二行数据和第一行一样，从前向后就把第二行数据判断为重复值，从后向前就把第一行数据判断为重复值；
+- 默认是从前向后进行重复值的查找和判断，也就是后面的条目在重复值判断中显示为True；
+
+``` bash
+data.duplicated() #返回布尔型数据，告诉重复值的位置
+data.duplicated().sum()  #说明共有多少个重复值
+data[data.duplicated()]  #打印重复值
+data[data.duplicated()].index   #打印重复值索引
+```
+
+
+#### 删除重复值
+python中可通过drop_duplicates函数删除数据表中的重复值，判断标准和逻辑与duplicated函数一样
+
+``` bash
+data.drop_duplicates(inplace=True)   #inplace=True表示直接在源数据上进行操作
+data.index = range(data.shape[0])    #动过源数据就要进行索引重建
+```
+
+
+### 缺失值处理
+
+#### 删除缺失值
+python中可以用dropna函数删除缺失值
+
+``` bash
+#DataFrame.dropna(self, axis=0, how='any', thresh=None, subset=None, inplace=False)
+#删除数据表中含有空值的行,如果存在任何NA值，则删除该行或列。
+data.dropna(how='any')
+# 传入这个参数后将只丢弃全为缺失值的那些行
+data.dropna(how = 'all')    
+#丢弃有缺失值的列（一般不会这么做，这样会删掉一个特征）
+data.dropna(axis = 1)     
+# 丢弃全为缺失值的那些列
+data.dropna(axis=1,how="all")  
+# 丢弃‘AgMonthlyIncomee’和‘NumberOfDependents’这两列中有缺失值的行  
+data.dropna(axis=0,subset = ["MonthlyIncome", "NumberOfDependents"])   
+```
+
+
+#### 固定值填充
+选取某个固定值/默认值填充缺失值。
+
+``` bash
+data.fillna(-9999, inplace=True) # 填充 -1,-999,-9999
+```
+
+
+#### 统计变量填充
+1. 均值填补
+
+对每一列缺失值，填充当列的均值
+
+``` bash
+#对数据中每一列的缺失值，填充当列的均值
+data.fillna(data.mean(),inplace=True) 
+#可为数据中某一个指标缺失值都填充该指标均值
+data['MonthlyIncome'].fillna(data['MonthlyIncome'].mean(),inplace=True)
+```
+
+
+2. 中位数填补
+
+对每一列的缺失值，填充当列的中位数
+
+``` bash
+#对数据中每一列的缺失值，填充当列的中位数
+data.fillna(data.median(),inplace=True) 
+#可为数据中某一个指标缺失值都填充该指标中位数
+data['MonthlyIncome'].fillna(data['MonthlyIncome'].median(),inplace=True)
+```
+
+
+3. 众数填补
+
+对每一列的缺失值，填充当列的众数;但可能存在某列缺失值过多，众数为nan的情况，注意要取的是每列删除掉nan值后的众数。
+
+``` bash
+#对数据中每一列的缺失值，填充当列的众数
+data.fillna(data.mode(),inplace=True) 
+#可为数据中某一个指标缺失值都填充该指标众数
+data['MonthlyIncome'].fillna(data['MonthlyIncome'].mode(),inplace=True)
+```
+
+
+#### 向前填充/向后填充
+
+``` bash
+#可用axis修改填充的方向，默认为0
+data.fillna(method='ffill',inplace=True)   # pad/ffill用前一个非缺失值去填充该缺失值
+data.fillna(method='bfill',inplace=True)  # backfill/bfill用后一个非缺失值填充该缺失值
+```
+
+
+#### 模型填充法
+缺失值作为新的label，建立模型得到预测值，然后进行填充。这里选择某个缺失值数量适当的特征采用随机森林进行拟合
+
+``` bash
+from sklearn import ensemble
+from sklearn.preprocessing import LabelEncoder#标准化标签，标签专用，能够将分类转换为分类数值。
+def set_missing(df,estimate_list,miss_col):
+    """df要处理的数据帧，estimate_list用来估计缺失值的字段列表,miss_col缺失字段名称;会直接在原来的数据帧上修改"""
+    col_list=estimate_list
+    col_list.append(miss_col)   
+    process_df = df.loc[:,col_list]
+    class_le= LabelEncoder()
+    for i in col_list[:-1]:
+        process_df.loc[:,i]=class_le.fit_transform(process_df.loc[:,i].values)
+    # 分成已知该特征和未知该特征两部分
+    known=process_df[process_df[miss_col].notnull()].values
+    known[:, -1]=class_le.fit_transform(known[:, -1])
+    unknown = process_df[process_df[miss_col].isnull()].values
+    # X为特征属性值
+    X = known[:, :-1]
+    # y为结果标签值
+    y = known[:, -1]
+    # fit到RandomForestRegressor之中
+    rfr = ensemble.RandomForestRegressor(random_state=1, n_estimators=200,max_depth=4,n_jobs=-1)
+    rfr.fit(X,y)
+    # 用得到的模型进行未知特征值预测
+    predicted = rfr.predict(unknown[:, :-1]).round(0).astype(int)
+    predicted=class_le.inverse_transform(predicted)
+    # print(predicted)
+    # 用得到的预测结果填补原缺失数据
+    df.loc[(df[miss_col].isnull()), miss_col] = predicted
+    return df
+```
+
+
+#### 不处理
+保持数据原始信息，不对信息进行处理，而是直接将空值作为一种分类传入模型中进行分析。
+
+### 异常值处理
+异常值(outlier)为一组测定值中与平均值的偏差超过两倍标准差的测定值，与平均值的偏差超过三倍标准差的测定值，称为高度异常的异常值。在处理数据时，应剔除高度异常的异常值。
+
+#### 异常值来源
+1. 人为错误
+: 人为输入异常：数据收集，记录或输入过程中导致的错误
+故意异常值：人为造假
+数据处理错误：对数据操作或提取错误导致数据集中的异常值
+
+2. 机器错误
+: 实验误差：实验设计运用要素不统一
+测量误差：系统、机器故障导致错误的记录
+
+3. 偏离值
+: 特殊情形下真实数据值极大，远超一般数值水平：例如富豪的收入水平，销售冠军的销售额等
+
+#### 异常值识别
+1.简单统计分析
+: 结合经验对属性值进行一个描述性的统计，查看值的不合理性。例如年龄范围一般为0~100等
+
+2.3δ原则
+当数据服从正态分布：对于正态分布，距离平均值3δ之外的概率0.003 ，因此认定距离平均值大于3δ的样本样本为异常值；具体步骤为：
+: 1.计算需要检验的数据列的平均值和标准差；
+2.比较数据列的每个值与平均值的偏差是否超过3倍，如果超过3倍，则为异常值；
+
+``` bash
+#用3倍标准差,找出'DebtRatio'异常值
+sta=(data['DebtRatio']-data['DebtRatio'].mean())/data['DebtRatio'].std()
+sta.abs()>3                       #返回每个跟3比较的结果
+data[sta.abs()>3]                 #异常值
+delindex=data[sta.abs()>3].index  #异常值索引
+data.drop(delindex,inplace=True)  #删除异常值
+```
+
+
+- <u>当数据不服从正态分布：</u>可以通过远离平均距离多少倍的标准差进行判定。
+
+3.箱型图分析
+
+计算过程:
+: 1.计算上四分位数（Q3），中位数，下四分位数（Q1）
+2.计算上四分位数和下四分位数之间的差值，即四分位数差（IQR，interquartile range）Q3-Q1
+3.绘制箱线图的上下范围，上限为上四分位数，下限为下四分位数。在箱子内部中位数的位置绘制横线。
+4.大于上四分位数1.5倍四分位数差的值，或者小于下四分位数1.5倍四分位数差的值，划为异常值（outliers）。
+5.异常值之外，最靠近上边缘和下边缘的两个值处，画横线，作为箱线图的触须。
+6.极端异常值，即超出四分位数差3倍距离的异常值，用实心点表示；较为温和的异常值，即处于1.5倍-3倍四分位数差之间的异常值，用空心点表示。
+7.为箱线图添加名称，数轴等
+
+python中可用seaborn库的sns.boxplot()函数画箱型图，查看数值变量的取值范围，是否有异常值
+
+#### 异常值处理
+1. 删除
+
+直接将含有异常值的记录删除；
+
+2. 视为缺失值
+
+将异常值视为缺失值，利用缺失值处理的方法进行处理；
+
+3. 平均值修正
+
+可用前后两个观测值的平均值修正该异常值；
+
+4. 不处理
+
+直接在具有异常值的数据集上进行数据挖掘，由业务分析挖掘价值

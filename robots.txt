@@ -1,0 +1,10 @@
+User-Agent: *
+Allow: /
+Disallow: /search
+Disallow: /bookmarks
+Disallow: /subscribe/manage
+Disallow: /dashboard
+Disallow: /preview
+
+Host: https://blog.zhuux.cn
+Sitemap: https://blog.zhuux.cn/sitemap.xml

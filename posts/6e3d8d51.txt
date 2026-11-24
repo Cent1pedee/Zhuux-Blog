@@ -1,0 +1,416 @@
+1:"/_next/static/chunks/25pke5jhl9el4.js"
+2:"/_next/static/chunks/3b-t7q3l2es1a.js"
+3:"/_next/static/chunks/245nmefl0mjab.js"
+4:"/_next/static/chunks/2dy0hly1pjza2.js"
+5:"/_next/static/chunks/0m2dr-odktsc9.js"
+6:"/_next/static/chunks/3e7ftxxwzdybr.js"
+7:"/_next/static/chunks/0cf2c0fvjpqyz.js"
+8:"/_next/static/chunks/2f7_6q_09njv7.js"
+9:"LoadingBoundaryProvider"
+a:I[55666,["$1","$2","$3","$4","$5","$6","$7","$8"],"$9"]
+b:"$Sreact.fragment"
+e:I[55666,["$1","$2","$3","$4","$5","$6","$7","$8"],"default"]
+f:I[41798,["$1","$2","$3","$4","$5","$6","$7","$8"],"default"]
+14:I[38320,["$1","$2","$3","$4","$5","$6","$7","$8"],"OutletBoundary"]
+15:"$Sreact.suspense"
+17:"ViewportBoundary"
+18:I[38320,["$1","$2","$3","$4","$5","$6","$7","$8"],"$17"]
+1a:"MetadataBoundary"
+1b:I[38320,["$1","$2","$3","$4","$5","$6","$7","$8"],"$1a"]
+1d:"/_next/static/chunks/0q-1p8xmn23ao.js"
+1e:I[53348,["$1","$2","$3","$4","$5","$6","$7","$8","$1d"],"default"]
+:HL["/_next/static/chunks/177ypg3qqavan.css","style"]
+:HL["/_next/static/chunks/3lgc0u3t4ko8i.css","style"]
+:HL["/_next/static/media/GeistMono_Variable.p.0iy569vnmknd-.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/Geist_Variable-s.p.03oqkqkevsckn.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+10:X
+12:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$b","c",{"children":["$L13",[["$","script","script-0",{"src":"/_next/static/chunks/0s9808r35njuo.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/2k9smhrvlu7rz.js","async":true,"nonce":"$undefined"}]],["$","$L14",null,{"children":["$","$15",null,{"name":"Next.MetadataOutlet","children":"$@16"}]}]]}],"p":false,"v":null}}]]
+11:[["children",{"s":{"n":"slug","t":"d","k":"6e3d8d51","s":[]},"h":512,"d":{"r":["$","$b","c",{"children":[null,["$","$Le",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lf",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$10"},"c":"$Q12"}]]
+d:[["children",{"s":"posts","h":512,"d":{"r":["$","$b","c",{"children":[null,["$","$Le",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lf",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$10"},"c":"$Q11"}]]
+0:{"P":null,"c":["","posts","6e3d8d51"],"q":"","i":false,"t":{"t":{"s":"","h":532,"d":{"r":["$","$La",null,{"loading":[["$","div","l",{"className":"shell","role":"status","aria-live":"polite","aria-busy":"true","children":[["$","span",null,{"className":"sr-only","children":"正在加载"}],["$","div",null,{"children":[["$","div",null,{"className":"h-3 w-20 rounded-full bg-surface-strong"}],["$","div",null,{"className":"mt-4 h-8 w-2/3 max-w-md rounded-lg bg-surface-strong"}],["$","div",null,{"className":"mt-3 h-4 w-full max-w-xl rounded bg-surface"}],["$","div",null,{"className":"mt-2 h-4 w-4/5 max-w-lg rounded bg-surface"}],["$","div",null,{"className":"mt-8 grid gap-4 sm:grid-cols-2","children":[["$","div","0",{"className":"h-36 rounded-[var(--radius-card)] border border-hairline bg-surface"}],["$","div","1",{"className":"h-36 rounded-[var(--radius-card)] border border-hairline bg-surface"}],["$","div","2",{"className":"h-36 rounded-[var(--radius-card)] border border-hairline bg-surface"}],["$","div","3",{"className":"h-36 rounded-[var(--radius-card)] border border-hairline bg-surface"}]]}]]}]]}],[],null],"children":["$","$b","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/177ypg3qqavan.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/3lgc0u3t4ko8i.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/25pke5jhl9el4.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/3b-t7q3l2es1a.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/245nmefl0mjab.js","async":true,"nonce":"$undefined"}],["$","script","script-3",{"src":"/_next/static/chunks/2dy0hly1pjza2.js","async":true,"nonce":"$undefined"}],["$","script","script-4",{"src":"/_next/static/chunks/0m2dr-odktsc9.js","async":true,"nonce":"$undefined"}],["$","script","script-5",{"src":"/_next/static/chunks/3e7ftxxwzdybr.js","async":true,"nonce":"$undefined"}],["$","script","script-6",{"src":"/_next/static/chunks/0cf2c0fvjpqyz.js","async":true,"nonce":"$undefined"}],["$","script","script-7",{"src":"/_next/static/chunks/2f7_6q_09njv7.js","async":true,"nonce":"$undefined"}]],"$Lc"]}]}],"p":false,"v":null},"c":"$Qd"},"h":{"r":["$","$b","h",{"children":[null,["$","$L18",null,{"children":"$L19"}],["$","$L1b",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$15",null,{"name":"Next.Metadata","children":"$L1c"}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":false,"v":null}},"m":"$undefined","G":["$1e",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/177ypg3qqavan.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/3lgc0u3t4ko8i.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"NSfzR_EDzOtUGEfuEGKvr"}
+1f:I[46486,["$1","$2","$3","$4","$5","$6","$7","$8"],""]
+20:I[72584,["$1","$2","$3","$4","$5","$6","$7","$8"],"ToastProvider"]
+21:I[28231,["$1","$2","$3","$4","$5","$6","$7","$8"],"TooltipProvider"]
+22:I[28000,["$1","$2","$3","$4","$5","$6","$7","$8"],"CapsuleNav"]
+23:"/_next/static/chunks/3gm6wog5hhzi-.js"
+24:I[8821,["$1","$2","$3","$4","$5","$6","$7","$8","$23"],"default"]
+25:"/_next/static/chunks/0_2jwmj0un92c.js"
+26:I[98168,["$1","$2","$3","$4","$5","$6","$7","$8","$25"],"default"]
+27:"/_next/static/chunks/0s9808r35njuo.js"
+28:"/_next/static/chunks/2k9smhrvlu7rz.js"
+29:I[66151,["$1","$2","$3","$4","$5","$6","$7","$8","$27","$28"],""]
+10:C
+c:["$","html",null,{"lang":"zh-CN","data-scroll-behavior":"smooth","className":"Fv51ma_variable Qs755G_variable dark","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","$L1f",null,{"id":"theme-init","strategy":"beforeInteractive","children":"\n(function(){\n  try {\n    var t = localStorage.getItem('blog:theme');\n    var dark = t !== 'light';\n    document.documentElement.classList.toggle('dark', dark);\n    document.documentElement.style.colorScheme = dark ? 'dark' : 'light';\n    var r = localStorage.getItem('blog:reading');\n    if (r) {\n      var s = JSON.parse(r);\n      if (s.size) document.documentElement.dataset.readingSize = s.size;\n      if (s.leading) document.documentElement.dataset.readingLeading = s.leading;\n      if (typeof s.codeWrap === 'boolean') document.documentElement.dataset.codeWrap = s.codeWrap ? 'on' : 'off';\n    }\n  } catch (e) {}\n})();\n"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"(function(){document.documentElement.classList.add('reveal-js');document.addEventListener('error',function(e){var t=e.target;if(!t||t.tagName!=='IMG')return;var f=t.closest('.cover-frame');if(f)f.classList.add('is-broken');},true);})();"}}]]}],["$","body",null,{"className":"min-h-dvh antialiased","children":[["$","div",null,{"className":"aura-field","aria-hidden":true}],["$","a",null,{"href":"#main","className":"sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[200] focus:rounded-lg focus:bg-signal focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-[var(--on-signal)]","children":"跳到正文"}],["$","$L20",null,{"children":["$","$L21",null,{"delayDuration":240,"children":[["$","$L22",null,{"hotTerms":["Hexo","教程","美化","Python","数据分析","转载"],"siteName":"煮雪话河山","categories":[{"name":"Hexo","slug":"hexo","count":7,"description":"Hexo 相关文章。"},{"name":"Python","slug":"python","count":3,"description":"Python 相关文章。"},{"name":"转载","slug":"repost","count":3,"description":"转载 相关文章。"},{"name":"Docker","slug":"docker","count":2,"description":"Docker 相关文章。"},{"name":"Git","slug":"git","count":1,"description":"Git 相关文章。"},{"name":"Hello World!","slug":"hello-world","count":1,"description":"Hello World! 相关文章。"},{"name":"Tag Plugins","slug":"tag-plugins","count":1,"description":"Tag Plugins 相关文章。"},{"name":"Vue","slug":"vue","count":1,"description":"Vue 相关文章。"}],"recent":[{"title":"Vue项目准备工作","href":"/posts/517785ce","date":"01-08"},{"title":"Hexo美化：本站日志创建及配置","href":"/posts/bda0f2db","date":"10-29"},{"title":"Hexo零成本方案：搭建Umami统计工具","href":"/posts/9374da7d","date":"09-01"}]}],["$","main",null,{"id":"main","className":"pt-24","children":["$","$Le",null,{"parallelRouterKey":"children","error":"$24","errorStyles":[],"errorScripts":[["$","script","script-0",{"src":"/_next/static/chunks/3gm6wog5hhzi-.js","async":true,"nonce":"$undefined"}]],"template":["$","$L26",null,{"children":["$","$Lf",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0_2jwmj0un92c.js","async":true,"nonce":"$undefined"}]],"notFound":[["$","div",null,{"className":"shell relative","children":["$","div",null,{"className":"relative overflow-hidden rounded-[var(--radius-card)] border border-hairline bg-surface px-6 py-20 text-center backdrop-blur-xl","children":["$","div",null,{"className":"relative z-10 mx-auto max-w-md","children":[["$","p",null,{"className":"meta-label","children":"404 / Not Found"}],["$","h1",null,{"className":"mt-3 text-3xl font-semibold tracking-tight text-ink","children":"这个地址没有内容"}],["$","p",null,{"className":"mt-2 text-sm leading-relaxed text-muted","children":"可能是文章改名、合并了标签，或者链接拼错了。下面三个入口通常能找回你要的东西。"}],["$","div",null,{"className":"mt-6 flex flex-wrap items-center justify-center gap-2","children":[["$","$L29",null,{"href":"/posts","className":"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-[transform,background-color,border-color,color,box-shadow] duration-150 ease-[cubic-bezier(0.2,0,0,1)] disabled:pointer-events-none disabled:opacity-50 active:scale-[0.98] [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 outline-none focus-visible:ring-2 focus-visible:ring-signal/70 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas bg-signal text-[var(--on-signal)] hover:brightness-105 border border-transparent h-10 px-4 py-2 rounded-[10px]","children":["$L2a"," 全部文章"]}],"$L2b","$L2c"]}]]}]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],"$L2d"]}]}]]}]]}]
+2a:["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left size-4","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}]
+2b:["$","$L29",null,{"href":"/search","className":"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-[transform,background-color,border-color,color,box-shadow] duration-150 ease-[cubic-bezier(0.2,0,0,1)] disabled:pointer-events-none disabled:opacity-50 active:scale-[0.98] [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 outline-none focus-visible:ring-2 focus-visible:ring-signal/70 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas border border-hairline-strong bg-surface text-ink hover:bg-surface-strong backdrop-blur-xl h-10 px-4 py-2 rounded-[10px]","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-search size-4","aria-hidden":"true","children":[["$","path","14j7rj",{"d":"m21 21-4.34-4.34"}],["$","circle","4ej97u",{"cx":"11","cy":"11","r":"8"}],"$undefined"]}]," 搜索"]}]
+2c:["$","$L29",null,{"href":"/contact","className":"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-[transform,background-color,border-color,color,box-shadow] duration-150 ease-[cubic-bezier(0.2,0,0,1)] disabled:pointer-events-none disabled:opacity-50 active:scale-[0.98] [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 outline-none focus-visible:ring-2 focus-visible:ring-signal/70 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas text-muted hover:text-ink hover:bg-surface border border-transparent h-10 px-4 py-2 rounded-[10px]","children":"联系作者"}]
+2d:["$","footer",null,{"className":"mt-24 border-t border-hairline","children":["$","div",null,{"className":"shell py-12","children":[["$","div",null,{"className":"grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_repeat(3,1fr)]","children":[["$","div",null,{"className":"max-w-xs","children":[["$","div",null,{"className":"flex items-center gap-2","children":[["$","svg",null,{"viewBox":"0 0 64 64","className":"size-7 shrink-0","aria-hidden":"true","focusable":"false","role":"presentation","children":[["$","rect",null,{"width":"64","height":"64","rx":14,"fill":"#1C1C1A"}],["$","rect",null,{"x":"4.5","y":"4.5","width":"55","height":"55","rx":"11","fill":"none","stroke":"#3A3A36","strokeWidth":"1.5"}],["$","path",null,{"d":"M20.5 14L36 14L47 25L47 46.5A3.5 3.5 0 0 1 43.5 50L20.5 50A3.5 3.5 0 0 1 17 46.5L17 17.5A3.5 3.5 0 0 1 20.5 14Z","fill":"none","stroke":"#E8E5DE","strokeWidth":"4.2","strokeLinejoin":"miter"}],["$","path",null,{"d":"M36 14L47 25L36 25Z","fill":"#8B5CF6"}],["$","path",null,{"d":"M25 40H41","fill":"none","stroke":"#E8E5DE","strokeWidth":"5","strokeLinecap":"square"}]]}],["$","span",null,{"className":"text-sm font-semibold tracking-tight","children":"煮雪话河山"}]]}],["$","p",null,{"className":"mt-3 text-sm leading-relaxed text-muted","children":"记录前端工程、构建工具与内容系统的实践与取舍。文章偏长，代码可复制，结论尽量可复现。"}],["$","div",null,{"className":"mt-4 flex items-center gap-2","children":[["$","a",null,{"href":"/feed.xml","className":"inline-flex h-9 items-center gap-1.5 rounded-[6px] border border-hairline px-3 text-xs text-muted transition-colors hover:border-signal/40 hover:text-ink","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-rss size-3.5","aria-hidden":"true","children":[["$","path","pv89mb",{"d":"M4 11a9 9 0 0 1 9 9"}],["$","path","k0647b",{"d":"M4 4a16 16 0 0 1 16 16"}],["$","circle","bfqh0e",{"cx":"5","cy":"19","r":"1"}],"$undefined"]}]," RSS"]}],["$","a",null,{"href":"mailto:62405816@qq.com","className":"inline-flex h-9 items-center gap-1.5 rounded-[6px] border border-hairline px-3 text-xs text-muted transition-colors hover:border-signal/40 hover:text-ink","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-mail size-3.5","aria-hidden":"true","children":[["$","path","132q7q",{"d":"m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"}],["$","rect","izxlao",{"x":"2","y":"4","width":"20","height":"16","rx":"2"}],"$undefined"]}]," 邮件"]}]]}]]}],[["$","nav","浏览",{"aria-label":"浏览","children":[["$","p",null,{"className":"meta-label","children":"浏览"}],["$","ul",null,{"className":"mt-3 space-y-2","children":[["$","li","/posts",{"children":["$","$L29",null,{"href":"/posts","className":"group inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-ink","children":["全部文章",["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-up-right size-3 opacity-0 transition-opacity group-hover:opacity-100","aria-hidden":"true","children":[["$","path","1tivn9",{"d":"M7 7h10v10"}],["$","path","1vkiza",{"d":"M7 17 17 7"}],"$undefined"]}]]}]}],["$","li","/murmurs",{"children":["$","$L29",null,{"href":"/murmurs","className":"group inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-ink","children":["碎碎念",["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-up-right size-3 opacity-0 transition-opacity group-hover:opacity-100","aria-hidden":"true","children":[["$","path","1tivn9",{"d":"M7 7h10v10"}],["$","path","1vkiza",{"d":"M7 17 17 7"}],"$undefined"]}]]}]}],["$","li","/projects",{"children":["$","$L29",null,{"href":"/projects","className":"group inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-ink","children":["项目",["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-up-right size-3 opacity-0 transition-opacity group-hover:opacity-100","aria-hidden":"true","children":["$L2e","$L2f","$undefined"]}]]}]}],"$L30"]}]]}],"$L31","$L32"]]}],"$L33"]}]}]
+34:I[40919,["$1","$2","$3","$4","$5","$6","$7","$8","$27","$28"],"ScrollProgress"]
+35:I[15685,["$1","$2","$3","$4","$5","$6","$7","$8","$27","$28"],"ReadingPosition"]
+36:"ScrollToTopOnMount"
+37:I[99654,["$1","$2","$3","$4","$5","$6","$7","$8","$27","$28"],"$36"]
+38:"ArticleTextTransition"
+39:I[86057,["$1","$2","$3","$4","$5","$6","$7","$8","$27","$28"],"$38"]
+3a:"ReturnToPostsLink"
+3b:I[67788,["$1","$2","$3","$4","$5","$6","$7","$8","$27","$28"],"$3a"]
+3c:I[62015,["$1","$2","$3","$4","$5","$6","$7","$8","$27","$28"],"ArticleCover"]
+2e:["$","path","1tivn9",{"d":"M7 7h10v10"}]
+2f:["$","path","1vkiza",{"d":"M7 17 17 7"}]
+30:["$","li","/links",{"children":["$","$L29",null,{"href":"/links","className":"group inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-ink","children":["友联",["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-up-right size-3 opacity-0 transition-opacity group-hover:opacity-100","aria-hidden":"true","children":[["$","path","1tivn9",{"d":"M7 7h10v10"}],["$","path","1vkiza",{"d":"M7 17 17 7"}],"$undefined"]}]]}]}]
+31:["$","nav","跟进",{"aria-label":"跟进","children":[["$","p",null,{"className":"meta-label","children":"跟进"}],["$","ul",null,{"className":"mt-3 space-y-2","children":[["$","li","/feed.xml",{"children":["$","$L29",null,{"href":"/feed.xml","className":"group inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-ink","children":["RSS 订阅",["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-up-right size-3 opacity-0 transition-opacity group-hover:opacity-100","aria-hidden":"true","children":[["$","path","1tivn9",{"d":"M7 7h10v10"}],["$","path","1vkiza",{"d":"M7 17 17 7"}],"$undefined"]}]]}]}],["$","li","/subscribe",{"children":["$","$L29",null,{"href":"/subscribe","className":"group inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-ink","children":["邮件订阅",["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-up-right size-3 opacity-0 transition-opacity group-hover:opacity-100","aria-hidden":"true","children":[["$","path","1tivn9",{"d":"M7 7h10v10"}],["$","path","1vkiza",{"d":"M7 17 17 7"}],"$undefined"]}]]}]}],["$","li","/bookmarks",{"children":["$","$L29",null,{"href":"/bookmarks","className":"group inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-ink","children":["我的收藏",["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-up-right size-3 opacity-0 transition-opacity group-hover:opacity-100","aria-hidden":"true","children":[["$","path","1tivn9",{"d":"M7 7h10v10"}],["$","path","1vkiza",{"d":"M7 17 17 7"}],"$undefined"]}]]}]}]]}]]}]
+32:["$","nav","关于",{"aria-label":"关于","children":[["$","p",null,{"className":"meta-label","children":"关于"}],["$","ul",null,{"className":"mt-3 space-y-2","children":[["$","li","/about",{"children":["$","$L29",null,{"href":"/about","className":"group inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-ink","children":["关于作者",["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-up-right size-3 opacity-0 transition-opacity group-hover:opacity-100","aria-hidden":"true","children":[["$","path","1tivn9",{"d":"M7 7h10v10"}],["$","path","1vkiza",{"d":"M7 17 17 7"}],"$undefined"]}]]}]}],["$","li","/changelog",{"children":["$","$L29",null,{"href":"/changelog","className":"group inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-ink","children":["更新日志",["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-up-right size-3 opacity-0 transition-opacity group-hover:opacity-100","aria-hidden":"true","children":[["$","path","1tivn9",{"d":"M7 7h10v10"}],["$","path","1vkiza",{"d":"M7 17 17 7"}],"$undefined"]}]]}]}],["$","li","/contact",{"children":["$","$L29",null,{"href":"/contact","className":"group inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-ink","children":["联系与合作",["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-up-right size-3 opacity-0 transition-opacity group-hover:opacity-100","aria-hidden":"true","children":[["$","path","1tivn9",{"d":"M7 7h10v10"}],["$","path","1vkiza",{"d":"M7 17 17 7"}],"$undefined"]}]]}]}],["$","li","/privacy",{"children":["$","$L29",null,{"href":"/privacy","className":"group inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-ink","children":["隐私与数据",["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-up-right size-3 opacity-0 transition-opacity group-hover:opacity-100","aria-hidden":"true","children":[["$","path","1tivn9",{"d":"M7 7h10v10"}],["$","path","1vkiza",{"d":"M7 17 17 7"}],"$undefined"]}]]}]}],["$","li","/dashboard",{"children":["$","$L29",null,{"href":"/dashboard","className":"group inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-ink","children":["内容概览",["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-up-right size-3 opacity-0 transition-opacity group-hover:opacity-100","aria-hidden":"true","children":[["$","path","1tivn9",{"d":"M7 7h10v10"}],["$","path","1vkiza",{"d":"M7 17 17 7"}],"$undefined"]}]]}]}]]}]]}]
+33:["$","div",null,{"className":"mt-10 flex flex-col gap-2 border-t border-hairline pt-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," ","煮雪话河山"," · 内容按 CC BY-NC-SA 4.0 授权"]}],["$","p",null,{"className":"font-mono text-[11px] tracking-wide","children":"订阅链路处于演示模式 · 静态站点，无服务端"}]]}]
+13:[["$","$L34",null,{}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Git基础命令速查表：简明指南\",\"description\":\"Git部分基础知识转载自Microsoft DevOps 什么是Git? Git基础命令速查，以便后续快速使用Git命令 Git 已成为版本控制的全球标准。 那么，它到底是什么？ Git 是分布式版本控制系统，这意味着项目的本地克隆是完整的…\",\"datePublished\":\"2023-09-25T23:53:30.000Z\",\"dateModified\":\"2023-09-25T23:53:30.000Z\",\"author\":{\"@type\":\"Person\",\"name\":\"煮雪话河山\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"煮雪话河山\"},\"mainEntityOfPage\":\"https://blog.zhuux.cn/posts/6e3d8d51\",\"keywords\":\"git, tutorial, repost\",\"inLanguage\":\"zh-CN\"}"}}],["$","$L35",null,{"slug":"6e3d8d51"}],["$","$L37",null,{}],["$","$L39",null,{"slug":"6e3d8d51"}],["$","div",null,{"className":"shell","children":["$","div",null,{"className":"grid gap-10 lg:grid-cols-[minmax(0,1fr)_248px] lg:gap-12","children":[["$","article",null,{"className":"min-w-0","children":[["$","header",null,{"className":"border-b border-hairline pb-7","children":[["$","nav",null,{"aria-label":"面包屑","className":"flex flex-wrap items-center gap-1.5","children":[["$","$L3b",null,{"slug":"6e3d8d51","bookmarkChildren":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left size-4 transition-transform duration-200 group-hover:-translate-x-0.5","aria-hidden":true,"children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"我的收藏"],"className":"group inline-flex min-h-10 items-center gap-1.5 rounded-[9px] border border-hairline bg-surface px-3.5 text-[13px] font-medium text-ink transition-[background-color,border-color,transform] duration-200 hover:border-hairline-strong hover:bg-surface-strong active:scale-[0.98]","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left size-4 transition-transform duration-200 group-hover:-translate-x-0.5","aria-hidden":true,"children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"全部文章"]}],["$","span",null,{"aria-hidden":true,"className":"px-0.5 text-[12px] text-muted/40","children":"/"}],["$","$L29",null,{"href":"/posts?cat=git","className":"inline-flex min-h-10 items-center rounded-[9px] px-2.5 font-mono text-[13px] tracking-[0.01em] text-signal-ink transition-colors hover:bg-signal/[0.07]","children":"Git"}],false]}],["$","$L3c",null,{"src":"https://img.cent1pedee.top/img/git1.png","slug":"6e3d8d51","label":"Git","className":"mt-5 aspect-[1200/630] w-full rounded-[var(--radius-card)] border border-hairline object-cover"}],["$","h1",null,{"data-article-title":true,"className":"mt-4 max-w-[26ch] text-[clamp(1.75rem,4vw,2.5rem)] font-semibold leading-[1.15] tracking-[-0.02em] text-ink","children":"Git基础命令速查表：简明指南"}],["$","p",null,{"data-article-summary":true,"className":"mt-3.5 max-w-[62ch] text-[15px] leading-relaxed text-muted","children":"Git部分基础知识转载自Microsoft DevOps 什么是Git? Git基础命令速查，以便后续快速使用Git命令 Git 已成为版本控制的全球标准。 那么，它到底是什么？ Git 是分布式版本控制系统，这意味着项目的本地克隆是完整的…"}],["$","div",null,{"className":"mt-5 flex flex-wrap items-center gap-x-4 gap-y-2 text-[12px] text-muted","children":[["$","span",null,{"className":"inline-flex items-center gap-1.5","children":["$","span",null,{"className":"font-medium text-ink","children":"煮雪话河山"}]}],["$","span",null,{"className":"inline-flex items-center gap-1.5 font-mono","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-calendar-days size-3.5","aria-hidden":true,"children":[["$","path","1cmpym",{"d":"M8 2v4"}],["$","path","4m81vk",{"d":"M16 2v4"}],"$L3d","$L3e","$L3f","$L40","$L41","$L42","$L43","$L44","$undefined"]}],"2023-09-26"]}],"$L45","$undefined"]}],"$undefined","$L46","$L47"]}],false,null,"$L48","$L49","$L4a","$L4b","$L4c"]}],"$L4d"]}]}]]
+4e:I[42080,["$1","$2","$3","$4","$5","$6","$7","$8","$27","$28"],"TocMobile"]
+4f:I[67077,["$1","$2","$3","$4","$5","$6","$7","$8","$27","$28"],"ReadingSettings"]
+53:I[33883,["$1","$2","$3","$4","$5","$6","$7","$8","$27","$28"],"ArticleActions"]
+54:I[44664,["$1","$2","$3","$4","$5","$6","$7","$8","$27","$28"],"ArticleCardLink"]
+55:I[94735,["$1","$2","$3","$4","$5","$6","$7","$8","$27","$28"],"PostCard"]
+56:I[199,["$1","$2","$3","$4","$5","$6","$7","$8","$27","$28"],"FavoriteButton"]
+57:I[781,["$1","$2","$3","$4","$5","$6","$7","$8","$27","$28"],"Comments"]
+58:I[42080,["$1","$2","$3","$4","$5","$6","$7","$8","$27","$28"],"Toc"]
+59:I[92975,["$1","$2","$3","$4","$5","$6","$7","$8","$27","$28"],"SpotlightCard"]
+3d:["$","rect","1hopcy",{"width":"18","height":"18","x":"3","y":"4","rx":"2"}]
+3e:["$","path","8toen8",{"d":"M3 10h18"}]
+3f:["$","path","6423bh",{"d":"M8 14h.01"}]
+40:["$","path","1etili",{"d":"M12 14h.01"}]
+41:["$","path","1gbofw",{"d":"M16 14h.01"}]
+42:["$","path","lrp35t",{"d":"M8 18h.01"}]
+43:["$","path","mhygvu",{"d":"M12 18h.01"}]
+44:["$","path","kzsmim",{"d":"M16 18h.01"}]
+45:["$","span",null,{"className":"inline-flex items-center gap-1.5 font-mono","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-clock3 lucide-clock-3 size-3.5","aria-hidden":true,"children":[["$","path","135r8i",{"d":"M12 6v6h4"}],["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],"$undefined"]}],17," 分钟 · ",3366," 字"]}]
+46:["$","div",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","$L29","git",{"href":"/posts?tag=git","className":"rounded-full outline-none focus-visible:ring-2 focus-visible:ring-signal/70","children":["$","span",null,{"data-slot":"badge","className":"inline-flex items-center gap-1 border tracking-[0.01em] border-hairline bg-surface-sunken text-muted max-w-full rounded-full px-2.5 py-0.5 text-[11px] font-normal transition-colors hover:border-signal/40 hover:text-signal-ink","children":["#","Git"]}]}],["$","$L29","tutorial",{"href":"/posts?tag=tutorial","className":"rounded-full outline-none focus-visible:ring-2 focus-visible:ring-signal/70","children":["$","span",null,{"data-slot":"badge","className":"inline-flex items-center gap-1 border tracking-[0.01em] border-hairline bg-surface-sunken text-muted max-w-full rounded-full px-2.5 py-0.5 text-[11px] font-normal transition-colors hover:border-signal/40 hover:text-signal-ink","children":["#","教程"]}]}],["$","$L29","repost",{"href":"/posts?tag=repost","className":"rounded-full outline-none focus-visible:ring-2 focus-visible:ring-signal/70","children":["$","span",null,{"data-slot":"badge","className":"inline-flex items-center gap-1 border tracking-[0.01em] border-hairline bg-surface-sunken text-muted max-w-full rounded-full px-2.5 py-0.5 text-[11px] font-normal transition-colors hover:border-signal/40 hover:text-signal-ink","children":["#","转载"]}]}]]}]
+47:["$","div",null,{"className":"mt-5 flex flex-wrap items-center gap-2","children":[["$","$L4e",null,{"items":[{"id":"什么是git","text":"什么是Git?","level":2},{"id":"git基础知识","text":"Git基础知识","level":2},{"id":"分支","text":"分支","level":2},{"id":"文件和提交","text":"文件和提交","level":2},{"id":"git的优势","text":"Git的优势","level":2},{"id":"同时开发","text":"同时开发","level":3},{"id":"更快的版本","text":"更快的版本","level":3},{"id":"内置集成","text":"内置集成","level":3},{"id":"强大的社区支持","text":"强大的社区支持","level":3},{"id":"git与任何团队合作","text":"Git与任何团队合作","level":3},{"id":"拉取请求","text":"拉取请求","level":3},{"id":"分支策略","text":"分支策略","level":3},{"id":"常用git命令清单","text":"常用Git命令清单","level":2},{"id":"创建仓库命令","text":"创建仓库命令","level":2},{"id":"配置","text":"配置","level":2},{"id":"增加删除文件","text":"增加/删除文件","level":2},{"id":"代码提交","text":"代码提交","level":2},{"id":"分支-1","text":"分支","level":2},{"id":"标签","text":"标签","level":2},{"id":"查看信息和历史","text":"查看信息和历史","level":2},{"id":"远程同步","text":"远程同步","level":2},{"id":"撤销","text":"撤销","level":2},{"id":"其他","text":"其他","level":2}]}],["$","$L4f",null,{}],["$","$L29",null,{"href":"/contact","className":"inline-flex h-9 items-center gap-1.5 rounded-[10px] border border-hairline bg-surface px-3 text-xs text-muted backdrop-blur-xl transition-colors hover:text-ink","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-mail size-3.5","aria-hidden":"true","children":[["$","path","132q7q",{"d":"m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"}],["$","rect","izxlao",{"x":"2","y":"4","width":"20","height":"16","rx":"2"}],"$undefined"]}]," 反馈与纠错"]}]]}]
+50:T7ecd,<p>Git部分基础知识转载自<a href="https://learn.microsoft.com/zh-cn/devops/develop/git/what-is-git">Microsoft DevOps 什么是Git?</a></p>
+<p>Git基础命令速查，以便后续快速使用Git命令</p>
+<hr>
+<h2 id="什么是git"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#什么是git">#</a>什么是Git?</h2>
+<p>Git 已成为版本控制的全球标准。 那么，它到底是什么？</p>
+<p>Git 是分布式版本控制系统，这意味着项目的本地克隆是完整的版本控制存储库。 通过这些功能齐全的本地存储库，无论脱机还是远程都能轻松工作。 开发人员在本地提交工作，然后将存储库的副本与服务器上的副本同步。 这种范例不同于集中式版本控制，后者要求客户端必须先与服务器同步代码，然后才能创建新版代码。</p>
+<p>Git 的灵活性和受欢迎程度使其成为任何团队的绝佳选择。 许多开发人员和大学毕业生已经知道如何使用 Git。 Git 的用户社区已创建资源来训练开发人员和 Git 的受欢迎程度，以便在需要时轻松获取帮助。 几乎每个开发环境都有 Git 支持和 Git 命令行工具在每个主要操作系统上实现。</p>
+<h2 id="git基础知识"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#git基础知识">#</a>Git基础知识</h2>
+<p>每次保存工作时，Git 都会创建提交。 提交是某个时间点所有文件的快照。 如果文件未从一个提交更改为下一个提交，Git 将使用以前存储的文件。 此设计不同于存储文件的初始版本并随时间推移保留增量记录的其他系统。</p>
+<p>提交创建指向其他提交的链接，形成开发历史记录的图。 可以将代码还原到以前的提交，检查文件如何从一个提交更改为下一个提交，并查看更改的位置和时间等信息。 提交通过提交内容的唯一加密哈希在 Git 中标识。 由于所有内容都经过哈希处理，因此在未检测到 Git 的情况下无法进行更改、丢失信息或损坏文件。</p>
+<h2 id="分支"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#分支">#</a>分支</h2>
+<p>每个开发人员将更改保存到自己的本地代码存储库。 因此，根据同一提交，可能会进行许多不同的更改。 Git 提供了用于隔离更改并在以后将它们重新合并在一起的工具。 分支是用于工作的轻型指针，可管理此分离。 在分支中创建的工作完成后，可以合并回团队的主分支（或主干）。</p>
+<h2 id="文件和提交"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#文件和提交">#</a>文件和提交</h2>
+<p>Git 中的文件处于以下三种状态之一：已修改、暂存或提交。 首次修改文件时，更改仅存在于工作目录中。 它们尚不属于提交或开发历史记录。 开发人员必须 暂存 提交中要包含的已更改文件。 暂存区域包含下一个提交中要包括的所有更改。 开发人员对暂存文件感到满意后，文件将打包为 提交 ，其中包含描述更改的内容的消息。 此提交将成为开发历史记录的一部分。</p>
+<p>暂存允许开发人员选择要在提交中保存的文件更改，以便将大型更改分解为一系列较小的提交。 通过减少提交范围，可以更轻松地查看提交历史记录以查找特定文件更改。</p>
+<h2 id="git的优势"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#git的优势">#</a>Git的优势</h2>
+<h3 id="同时开发"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#同时开发">#</a>同时开发</h3>
+<p>每个人都有自己的本地代码副本，并且可以在自己的分支上同时工作。 Git 脱机工作，因为几乎所有操作都是本地操作。</p>
+<h3 id="更快的版本"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#更快的版本">#</a>更快的版本</h3>
+<p>分支允许灵活且同时进行开发。 主分支包含发布的稳定、高质量的代码。 功能分支包含正在进行的工作，这些工作在完成后合并到主分支中。 通过将发布分支与正在进行的开发分开，可以更轻松地管理稳定的代码并更快地交付更新。</p>
+<h3 id="内置集成"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#内置集成">#</a>内置集成</h3>
+<p>由于它的受欢迎程度，Git 集成到大多数工具和产品中。 每个主要 IDE 都有内置的 Git 支持，许多工具都支持持续集成、持续部署、自动测试、工作项跟踪、指标和报告功能与 Git 集成。 此集成简化了日常工作流。</p>
+<h3 id="强大的社区支持"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#强大的社区支持">#</a>强大的社区支持</h3>
+<p>Git 是开源的，已成为版本控制的事实标准。 团队利用的工具和资源并不短缺。 与其他版本控制系统相比，社区对 Git 的支持量使得在需要时可以轻松获取帮助。</p>
+<h3 id="git与任何团队合作"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#git与任何团队合作">#</a>Git与任何团队合作</h3>
+<p>通过鼓励协作、强制实施策略、自动化流程以及提高工作的可见性和可追溯性，将 Git 与源代码管理工具配合使用可以提高团队的工作效率。 团队可以针对各个工具进行版本控制、工作项跟踪以及持续集成和部署。 或者，他们可以选择一个解决方案，例如<a href="https://github.com/">GitHub</a>或<a href="https://azure.microsoft.com/zh-cn/products/devops/repos/">Azure DevOps</a> ，该解决方案支持所有这些任务。</p>
+<h3 id="拉取请求"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#拉取请求">#</a>拉取请求</h3>
+<p>在将代码更改合并到主分支之前，请使用<a href="https://learn.microsoft.com/zh-cn/devops/develop/git/git-pull-requests">拉取请求</a>与团队讨论代码更改。 拉取请求中的讨论对于确保代码质量并提高团队的知识非常重要。 GitHub 和 Azure DevOps 等平台提供了丰富的拉取请求体验，开发人员可以浏览文件更改、留下批注、检查提交、查看生成和投票以批准代码。</p>
+<h3 id="分支策略"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#分支策略">#</a>分支策略</h3>
+<p>Teams 可以将 GitHub 和 Azure DevOps 配置为在整个团队中强制实施一致的工作流和流程。 他们可以设置<a href="https://learn.microsoft.com/zh-cn/azure/devops/repos/git/branch-policies?view=azure-devops&#x26;tabs=browser">分支策略</a>，以确保拉取请求满足完成前的要求。 分支策略通过防止直接推送、要求审阅者并确保干净生成来保护重要分支。</p>
+<h2 id="常用git命令清单"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#常用git命令清单">#</a>常用Git命令清单</h2>
+<p>在开始使用Git之前，我们需要先安装Git软件。Git是一个分布式版本控制系统，支持在Linux/Unix、Solaris、Mac和Windows等多个平台上运行。</p>
+<p>你可以从git-scm.com/downloads这个网站下载适合你操作系统的Git安装包。如果你的系统是Windows，你可以访问npm.taobao.org/mirrors/git来下载安装Git。安装Git后，你还需要进行一些配置来使其正常工作。</p>
+<p>以上是使用Git前需要安装Git软件的概述，具体的安装和配置过程可以参考菜鸟教程（runoob.com）上的相关指南。</p>
+<p>以下Git命令转载自稀土掘金<a href="https://juejin.cn/post/7133507623399194661#heading-4"><strong>奇想派</strong></a>，侵权请联系站长删除。</p>
+<h2 id="创建仓库命令"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#创建仓库命令">#</a>创建仓库命令</h2>
+<ul>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git init</span></span></code></span>: 初始化仓库就是在当前目录下创建一个.git目录，用于存储Git所需的元数据和文件版本记录。该目录包含了objects、refs/head、refs/tags和模板文件等基本部分。</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git clone [url]</span></span></code></span>: 拷贝一份远程仓库，也就是下载一个项目和它的整个代码历史。</p>
+</li>
+</ul>
+<h2 id="配置"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#配置">#</a>配置</h2>
+<ul>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git config --list</span></span></code></span>: 显示当前的Git配置</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git config -e [--global]</span></span></code></span>: 编辑Git配置文件</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git config [--global] user.name "[name]" / git config [--global] user.email "[email address]"</span></span></code></span>: 设置提交代码时的用户信息</p>
+</li>
+</ul>
+<h2 id="增加删除文件"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#增加删除文件">#</a>增加/删除文件</h2>
+<ul>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git add [file1] [file2] ...</span></span></code></span>: 添加指定文件到暂存区</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git add [dir]</span></span></code></span>: 添加指定目录到暂存区，包括子目录</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git add .</span></span></code></span>: 添加当前目录的所有文件到暂存区</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git add -p</span></span></code></span>: 添加每个变化前，都会要求确认，对于同一个文件的多处变化，可以实现分次提交</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git rm [file1] [file2] ...</span></span></code></span>: 删除工作区文件，并且将这次删除放入暂存区</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git rm --cached [file]</span></span></code></span>: 停止追踪指定文件，但该文件会保留在工作区</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git mv [file-original] [file-renamed]</span></span></code></span>: 改名文件，并且将这个改名放入暂存区</p>
+</li>
+</ul>
+<h2 id="代码提交"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#代码提交">#</a>代码提交</h2>
+<ul>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git commit -m [message]</span></span></code></span>: 提交暂存区到仓库区</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git commit [file1] [file2] ... -m [message]</span></span></code></span>: 提交暂存区的指定文件到仓库区</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git commit -a</span></span></code></span>: 提交工作区自上次commit之后的变化，直接到仓库区</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git commit -v</span></span></code></span>: 提交时显示所有diff信息</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git commit --amend -m [message]</span></span></code></span>: 使用一次新的commit，替代上一次提交。如果代码没有任何新变化，则用来改写上一次commit的提交信息</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git commit --amend [file1] [file2] ...</span></span></code></span>: 重做上一次commit，并包括指定文件的新变化</p>
+</li>
+</ul>
+<h2 id="分支-1"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#分支-1">#</a>分支</h2>
+<ul>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git branch</span></span></code></span>: 列出所有本地分支</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git branch -r</span></span></code></span>: 列出所有远程分支</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git branch -a</span></span></code></span>: 列出所有本地分支和远程分支</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git branch [branch-name]</span></span></code></span>: 新建一个分支，但依然停留在当前分支</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git checkout -b [branch]</span></span></code></span>: 新建一个分支，并切换到该分支</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git branch [branch] [commit]</span></span></code></span>: 新建一个分支，指向指定commit</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git branch --track [branch] [remote-branch]</span></span></code></span>: 新建一个分支，与指定的远程分支建立追踪关系</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git checkout [branch-name]</span></span></code></span>: 切换到指定分支，并更新工作区</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git checkout -</span></span></code></span>: 切换到上一个分支</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git branch --set-upstream [branch] [remote-branch]</span></span></code></span>: 建立追踪关系，在现有分支与指定的远程分支之间</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git merge [branch]</span></span></code></span>: 合并指定分支到当前分支</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git cherry-pick [commit]</span></span></code></span>: 选择一个commit，合并进当前分支</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git branch -d [branch-name]</span></span></code></span>: 删除分支</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git push origin --delete [branch-name] 或 git branch -dr [remote/branch]</span></span></code></span>: 删除远程分支</p>
+</li>
+</ul>
+<h2 id="标签"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#标签">#</a>标签</h2>
+<ul>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git tag</span></span></code></span>: 列出所有tag</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git tag [tag]</span></span></code></span>: 新建一个tag在当前commit</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git tag [tag] [commit]</span></span></code></span>: 新建一个tag在指定commit</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git tag -d [tag]</span></span></code></span>: 删除本地tag</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git push origin :refs/tags/[tagName]</span></span></code></span>: 删除远程tag</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git show [tag]</span></span></code></span>: 查看tag信息</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git push [remote] [tag]</span></span></code></span>: 提交指定tag</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git push [remote] --tags</span></span></code></span>: 	提交所有tag</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git checkout -b [branch] [tag]</span></span></code></span>: 新建一个分支，指向某个tag</p>
+</li>
+</ul>
+<h2 id="查看信息和历史"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#查看信息和历史">#</a>查看信息和历史</h2>
+<ul>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git status</span></span></code></span>: 显示有变更的文件</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git log</span></span></code></span>: 显示当前分支的版本历史</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git log --stat</span></span></code></span>: 显示commit历史，以及每次commit发生变更的文件</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git log -S [keyword]</span></span></code></span>: 搜索提交历史，根据关键词</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git log [tag] HEAD --pretty=format:%s</span></span></code></span>: 显示某个commit之后的所有变动，每个commit占据一行</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git log [tag] HEAD --grep feature</span></span></code></span>: 显示某个commit之后的所有变动，其"提交说明"必须符合搜索条件</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git log --follow [file] 或 git whatchanged [file]</span></span></code></span>: 显示某个文件的版本历史，包括文件改名</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git log -p [file]</span></span></code></span>: 显示指定文件相关的每一次diff</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git log -5 --pretty --oneline</span></span></code></span>: 显示过去5次提交</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git shortlog -sn</span></span></code></span>: 显示所有提交过的用户，按提交次数排序</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git blame [file]</span></span></code></span>: 显示指定文件是什么人在什么时间修改过</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git diff</span></span></code></span>: 显示暂存区和工作区的差异</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git diff --cached [file]</span></span></code></span>: 显示暂存区和上一个commit的差异</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git diff HEAD</span></span></code></span>: 显示工作区与当前分支最新commit之间的差异</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git diff [first-branch]...[second-branch]</span></span></code></span>: 显示两次提交之间的差异</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git diff --shortstat "@{0 day ago}"</span></span></code></span>: 显示今天你写了多少行代码</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git show [commit]</span></span></code></span>: 显示某次提交的元数据和内容变化</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git show --name-only [commit]</span></span></code></span>: 显示某次提交发生变化的文件</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git show [commit]:[filename]</span></span></code></span>: 显示某次提交时，某个文件的内容</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git reflog</span></span></code></span>: 显示当前分支的最近几次提交</p>
+</li>
+</ul>
+<h2 id="远程同步"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#远程同步">#</a>远程同步</h2>
+<ul>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git fetch [remote]</span></span></code></span>: 下载远程仓库的所有变动（远程新增或删除分支都能显示）</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git remote -v</span></span></code></span>: 显示所有远程仓库</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git config [--global] user.name "[name]" / git config [--global] user.email "[email address]"</span></span></code></span>: 设置提交代码时的用户信息</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git remote show [remote]</span></span></code></span>: 显示某个远程仓库的信息</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git remote add [shortname] [url]</span></span></code></span>: 增加一个新的远程仓库，并命名</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git pull [remote] [branch]</span></span></code></span>: 取回远程仓库的变化，并与本地分支合并</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git push [remote] [branch]</span></span></code></span>: 上传本地指定分支到远程仓库</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git push [remote] --force</span></span></code></span>: 强行推送当前分支到远程仓库，即使有冲突</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git push [remote] --all</span></span></code></span>: 推送所有分支到远程仓库</p>
+</li>
+</ul>
+<h2 id="撤销"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#撤销">#</a>撤销</h2>
+<ul>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git checkout [file]</span></span></code></span>: 恢复暂存区的指定文件到工作区</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git checkout [commit] [file]</span></span></code></span>: 恢复某个commit的指定文件到暂存区和工作区</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git checkout .</span></span></code></span>: 恢复暂存区的所有文件到工作区</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git reset [file]</span></span></code></span>: 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git reset --hard</span></span></code></span>: 重置暂存区与工作区，与上一次commit保持一致</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git reset [commit]</span></span></code></span>: 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git reset --hard [commit]</span></span></code></span>: 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git reset --keep [commit]</span></span></code></span>: 重置当前HEAD为指定commit，但保持暂存区和工作区不变</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git revert [commit]</span></span></code></span>: 新建一个commit，用来撤销指定commit。后者的所有变化都将被前者抵消，并且应用到当前分支</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git stash</span></span></code></span>: 暂时将未提交的变化移除，稍后再移入</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git stash pop</span></span></code></span>: 暂时将未提交的变化移除，稍后再移入</p>
+</li>
+</ul>
+<h2 id="其他"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#其他">#</a>其他</h2>
+<ul>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git archive</span></span></code></span>: 生成一个可供发布的压缩包</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git repack</span></span></code></span>: 打包未归档文件</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git count-objects</span></span></code></span>: 计算解包的对象数量</p>
+</li>
+<li>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>git help 或 git --help</span></span></code></span>: Git帮助，查看git相关命令，如果想看某个特定命令的具体细节，可使用git [命令] --help,如 git commit --help 表示查看提交相关命令的帮助</p>
+</li>
+</ul>48:["$","div",null,{"className":"mt-8","children":[["$","div",null,{"id":"article-root","className":"prose-editorial","dangerouslySetInnerHTML":{"__html":"$50"}}],"$L51","$L52"]}]
+49:["$","div",null,{"className":"mt-10","children":["$","$L53",null,{"slug":"6e3d8d51","title":"Git基础命令速查表：简明指南","summary":"Git部分基础知识转载自Microsoft DevOps 什么是Git? Git基础命令速查，以便后续快速使用Git命令 Git 已成为版本控制的全球标准。 那么，它到底是什么？ Git 是分布式版本控制系统，这意味着项目的本地克隆是完整的…"}]}]
+4a:["$","nav",null,{"aria-label":"相邻文章","className":"mt-8 grid gap-3 sm:grid-cols-2","children":[["$","$L29",null,{"href":"/posts/c375037e","className":"group project-card flex flex-col justify-between gap-2 rounded-[var(--radius-card)] p-4 outline-none focus-visible:ring-2 focus-visible:ring-signal/70","children":[["$","span",null,{"aria-hidden":true,"className":"project-card-sheen"}],["$","span",null,{"className":"relative inline-flex items-center gap-1.5 font-mono text-[10.5px] text-muted","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left size-3 transition-transform duration-200 group-hover:-translate-x-0.5 group-hover:text-signal-ink","aria-hidden":true,"children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"上一篇 · ","2023-09-13"]}],["$","span",null,{"className":"relative line-clamp-2 text-[14px] font-medium leading-snug text-ink transition-colors group-hover:text-signal-ink","children":"快速部署AList到云服务器：Docker的最佳实践"}]]}],["$","$L29",null,{"href":"/posts/f730aac1","className":"group project-card flex flex-col justify-between gap-2 rounded-[var(--radius-card)] p-4 text-right outline-none focus-visible:ring-2 focus-visible:ring-signal/70","children":[["$","span",null,{"aria-hidden":true,"className":"project-card-sheen"}],["$","span",null,{"className":"relative inline-flex items-center justify-end gap-1.5 font-mono text-[10.5px] text-muted","children":["下一篇 · ","2023-10-21",["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right size-3 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:text-signal-ink","aria-hidden":true,"children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"relative line-clamp-2 text-[14px] font-medium leading-snug text-ink transition-colors group-hover:text-signal-ink","children":"Hexo美化：自适应切换渐进式加载首页图"}]]}]]}]
+4b:["$","section",null,{"aria-labelledby":"related-title","className":"mt-14","children":[["$","div",null,{"className":"flex items-center gap-3","children":[["$","h2",null,{"id":"related-title","className":"inline-flex items-center","children":["$","span",null,{"data-slot":"badge","className":"inline-flex items-center gap-1 border tracking-[0.01em] transition-colors border-signal/45 bg-signal/10 text-signal-ink rounded-full px-3 py-0.5 text-[11px]","children":"接着读"}]}],["$","span",null,{"aria-hidden":true,"className":"h-px flex-1 bg-gradient-to-r from-hairline-strong via-hairline to-transparent"}],["$","span",null,{"className":"font-mono text-[10.5px] uppercase tracking-[0.14em] text-muted/75","children":"RELATED · 相关推荐"}]]}],["$","div",null,{"className":"mt-4 grid gap-4 sm:grid-cols-2","children":[["$","$L54","9374da7d",{"slug":"9374da7d","label":"Hexo","className":"h-full","children":["$","$L55",null,{"headingLevel":3,"post":{"slug":"9374da7d","title":"Hexo零成本方案：搭建Umami统计工具","summary":"从早前的 LNMP 、OneinStack 到 XZ Utils ，再到现在的 Staticfile 、BootCDN ；供应链攻击总是让人猝不及防。七月中旬，糖果屋群突然就传来了51La被投毒的消息，而这也是我决定使用Umami的前提因素…","date":"2024-08-31T21:26:00.000Z","updated":"$undefined","updateNote":"$undefined","readingMinutes":3,"category":{"slug":"hexo","name":"Hexo"},"tags":[{"slug":"hexo","name":"Hexo"},{"slug":"umami","name":"Umami"},{"slug":"tutorial","name":"教程"}],"archived":false,"seriesTitle":"$undefined","seriesOrder":"$undefined","cover":"https://icdn.amarea.cn/upload/2022/04/625f01b68d30d.jpg","featured":false,"views":null},"reason":"同标签 · 教程","className":"h-full","footerExtra":["$","$L56",null,{"slug":"9374da7d","title":"Hexo零成本方案：搭建Umami统计工具"}]}]}],["$","$L54","c375037e",{"slug":"c375037e","label":"Docker","className":"h-full","children":["$","$L55",null,{"headingLevel":3,"post":{"slug":"c375037e","title":"快速部署AList到云服务器：Docker的最佳实践","summary":"AList是一个文件列表程序，支持多种存储，支持网页浏览和WebDAV，后端基于golang最好的http框架gin，前端使用vue和ant design。它可以将你的网盘挂载到一起，方便统一管理。 支持的网盘有：本地电脑磁盘、FTP、SF…","date":"2023-09-12T20:34:42.000Z","updated":"$undefined","updateNote":"$undefined","readingMinutes":11,"category":{"slug":"docker","name":"Docker"},"tags":[{"slug":"docker","name":"Docker"},{"slug":"alist","name":"AList"},{"slug":"tutorial","name":"教程"}],"archived":false,"seriesTitle":"$undefined","seriesOrder":"$undefined","cover":"https://img.cent1pedee.top/img/docker1.jpg","featured":false,"views":null},"reason":"同标签 · 教程","className":"h-full","footerExtra":["$","$L56",null,{"slug":"c375037e","title":"快速部署AList到云服务器：Docker的最佳实践"}]}]}],["$","$L54","2b7ee90",{"slug":"2b7ee90","label":"Docker","className":"h-full","children":["$","$L55",null,{"headingLevel":3,"post":{"slug":"2b7ee90","title":"逐步学习Docker部署和容器管理","summary":"Docker 是一个开源平台，支持开发人员构建、部署、运行、更新和管理容器，这些容器是标准化的可执行组件，结合了应用源代码以及在任何环境中运行该代码所需的操作系统 (OS) 库和依赖项。 容器简化了分布式应用的部署和交付过程。 随着组织转向…","date":"2023-09-09T11:33:52.000Z","updated":"$undefined","updateNote":"$undefined","readingMinutes":15,"category":{"slug":"docker","name":"Docker"},"tags":[{"slug":"docker","name":"Docker"},{"slug":"tutorial","name":"教程"}],"archived":false,"seriesTitle":"$undefined","seriesOrder":"$undefined","cover":"https://img.cent1pedee.top/img/docker5.jpg","featured":false,"views":null},"reason":"同标签 · 教程","className":"h-full","footerExtra":["$","$L56",null,{"slug":"2b7ee90","title":"逐步学习Docker部署和容器管理"}]}]}],["$","$L54","4e8dad09",{"slug":"4e8dad09","label":"转载","className":"h-full","children":["$","$L55",null,{"headingLevel":3,"post":{"slug":"4e8dad09","title":"垃圾代码书写准则","summary":"垃圾代码书写准则","date":"2023-09-02T01:45:23.000Z","updated":"$undefined","updateNote":"$undefined","readingMinutes":7,"category":{"slug":"repost","name":"转载"},"tags":[{"slug":"repost","name":"转载"}],"archived":false,"seriesTitle":"$undefined","seriesOrder":"$undefined","cover":"https://img.cent1pedee.top/img/shitcode.png","featured":false,"views":null},"reason":"同标签 · 转载","className":"h-full","footerExtra":["$","$L56",null,{"slug":"4e8dad09","title":"垃圾代码书写准则"}]}]}]]}]]}]
+4c:["$","$L57",null,{"enabled":true,"repo":"","repoId":"","category":"Announcements","categoryId":"","degradedText":"评论服务未配置（Giscus 需要仓库名与分类 ID）。当前为只读模式，正文、目录与分享不受影响。"}]
+4d:["$","aside",null,{"className":"hidden lg:block","children":["$","div",null,{"className":"sticky top-24 space-y-5","children":[["$","$L58",null,{"items":"$47:props:children:0:props:items"}],["$","$L59",null,{"as":"div","className":"project-panel overflow-hidden rounded-[var(--radius-card)] p-4.5","children":[["$","span",null,{"aria-hidden":true,"className":"project-card-sheen"}],["$","p",null,{"className":"relative font-mono text-[10.5px] uppercase tracking-[0.14em] text-muted","children":"CONTACT · 反馈与联系"}],["$","p",null,{"className":"relative mt-2.5 text-xs leading-relaxed text-muted","children":"文中错误、版本失效或合作意向，都可以直接发消息。"}],["$","$L29",null,{"href":"/contact","className":"relative mt-3.5 inline-flex h-8 items-center gap-1.5 rounded-full bg-signal px-3.5 text-xs font-medium text-[var(--on-signal)] shadow-[0_6px_16px_-8px_var(--signal)] transition-[filter,transform] duration-200 hover:-translate-y-px hover:brightness-105","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-mail size-3.5","aria-hidden":true,"children":[["$","path","132q7q",{"d":"m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"}],["$","rect","izxlao",{"x":"2","y":"4","width":"20","height":"16","rx":"2"}],"$undefined"]}]," 发送消息"]}]]}]]}]}]
+5a:I[88147,["$1","$2","$3","$4","$5","$6","$7","$8","$27","$28"],"ArticleEnhancer"]
+5b:I[99563,["$1","$2","$3","$4","$5","$6","$7","$8","$27","$28"],"SelectionShare"]
+51:["$","$L5a",null,{"slug":"6e3d8d51"}]
+52:["$","$L5b",null,{"slug":"6e3d8d51"}]
+19:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#08090c","media":"(prefers-color-scheme: dark)"}],["$","meta","3",{"name":"theme-color","content":"#ededea","media":"(prefers-color-scheme: light)"}]]
+5c:I[43595,["$1","$2","$3","$4","$5","$6","$7","$8"],"IconMark"]
+16:null
+1c:[["$","title","0",{"children":"Git基础命令速查表：简明指南 · 煮雪话河山"}],["$","meta","1",{"name":"description","content":"Git部分基础知识转载自Microsoft DevOps 什么是Git? Git基础命令速查，以便后续快速使用Git命令 Git 已成为版本控制的全球标准。 那么，它到底是什么？ Git 是分布式版本控制系统，这意味着项目的本地克隆是完整的…"}],["$","meta","2",{"name":"author","content":"煮雪话河山"}],["$","meta","3",{"name":"robots","content":"index, follow"}],["$","link","4",{"rel":"canonical","href":"https://blog.zhuux.cn/posts/6e3d8d51"}],["$","meta","5",{"property":"og:title","content":"Git基础命令速查表：简明指南"}],["$","meta","6",{"property":"og:description","content":"Git部分基础知识转载自Microsoft DevOps 什么是Git? Git基础命令速查，以便后续快速使用Git命令 Git 已成为版本控制的全球标准。 那么，它到底是什么？ Git 是分布式版本控制系统，这意味着项目的本地克隆是完整的…"}],["$","meta","7",{"property":"og:url","content":"https://blog.zhuux.cn/posts/6e3d8d51"}],["$","meta","8",{"property":"og:image","content":"https://img.cent1pedee.top/img/git1.png"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"property":"article:published_time","content":"2023-09-25T23:53:30.000Z"}],["$","meta","11",{"property":"article:modified_time","content":"2023-09-25T23:53:30.000Z"}],["$","meta","12",{"property":"article:author","content":"煮雪话河山"}],["$","meta","13",{"property":"article:tag","content":"git"}],["$","meta","14",{"property":"article:tag","content":"tutorial"}],["$","meta","15",{"property":"article:tag","content":"repost"}],["$","meta","16",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","17",{"name":"twitter:title","content":"Git基础命令速查表：简明指南"}],["$","meta","18",{"name":"twitter:description","content":"Git部分基础知识转载自Microsoft DevOps 什么是Git? Git基础命令速查，以便后续快速使用Git命令 Git 已成为版本控制的全球标准。 那么，它到底是什么？ Git 是分布式版本控制系统，这意味着项目的本地克隆是完整的…"}],["$","meta","19",{"name":"twitter:image","content":"https://img.cent1pedee.top/img/git1.png"}],["$","link","20",{"rel":"icon","href":"/icon.svg?icon.2z_nhvg-dnpec.svg","sizes":"any","type":"image/svg+xml"}],["$","$L5c","21",{}]]

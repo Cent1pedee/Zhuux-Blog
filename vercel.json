@@ -1,0 +1,22 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "headers": [
+    {
+      "source": "/search",
+      "headers": [{ "key": "x-robots-tag", "value": "noindex, nofollow" }]
+    },
+    {
+      "source": "/bookmarks",
+      "headers": [{ "key": "x-robots-tag", "value": "noindex, nofollow" }]
+    },
+    {
+      "source": "/dashboard",
+      "headers": [{ "key": "x-robots-tag", "value": "noindex, nofollow" }]
+    },
+    {
+      "source": "/subscribe/manage",
+      "headers": [{ "key": "x-robots-tag", "value": "noindex, nofollow" }]
+    }
+  ]
+}

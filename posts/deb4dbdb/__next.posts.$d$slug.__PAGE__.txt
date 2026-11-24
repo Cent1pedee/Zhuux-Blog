@@ -1,0 +1,2309 @@
+2:"$Sreact.fragment"
+3:"/_next/static/chunks/25pke5jhl9el4.js"
+4:"/_next/static/chunks/3b-t7q3l2es1a.js"
+5:"/_next/static/chunks/245nmefl0mjab.js"
+6:"/_next/static/chunks/2dy0hly1pjza2.js"
+7:"/_next/static/chunks/0m2dr-odktsc9.js"
+8:"/_next/static/chunks/3e7ftxxwzdybr.js"
+9:"/_next/static/chunks/0cf2c0fvjpqyz.js"
+a:"/_next/static/chunks/2f7_6q_09njv7.js"
+b:I[55666,["$3","$4","$5","$6","$7","$8","$9","$a"],"default"]
+c:I[41798,["$3","$4","$5","$6","$7","$8","$9","$a"],"default"]
+13:"/_next/static/chunks/0s9808r35njuo.js"
+14:"/_next/static/chunks/2k9smhrvlu7rz.js"
+15:I[40919,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ScrollProgress"]
+16:I[15685,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ReadingPosition"]
+17:"ScrollToTopOnMount"
+18:I[99654,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"$17"]
+19:"ArticleTextTransition"
+1a:I[86057,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"$19"]
+1b:"ReturnToPostsLink"
+1c:I[67788,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"$1b"]
+1d:I[66151,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],""]
+1e:I[62015,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ArticleCover"]
+36:"ViewportBoundary"
+37:I[38320,["$3","$4","$5","$6","$7","$8","$9","$a"],"$36"]
+38:"MetadataBoundary"
+39:I[38320,["$3","$4","$5","$6","$7","$8","$9","$a"],"$38"]
+3a:"$Sreact.suspense"
+3b:I[43595,["$3","$4","$5","$6","$7","$8","$9","$a"],"IconMark"]
+e:X
+e:C
+f:X
+12:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$2","c",{"children":[[["$","$L15",null,{}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"安知鱼主题标签 Tag Plugins\",\"description\":\"添加大量外挂标签样式。\",\"datePublished\":\"2023-08-31T15:54:27.000Z\",\"dateModified\":\"2023-08-31T15:54:27.000Z\",\"author\":{\"@type\":\"Person\",\"name\":\"煮雪话河山\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"煮雪话河山\"},\"mainEntityOfPage\":\"https://blog.zhuux.cn/posts/deb4dbdb\",\"keywords\":\"tag-plugins, hexo, repost\",\"inLanguage\":\"zh-CN\"}"}}],["$","$L16",null,{"slug":"deb4dbdb"}],["$","$L18",null,{}],["$","$L1a",null,{"slug":"deb4dbdb"}],["$","div",null,{"className":"shell","children":["$","div",null,{"className":"grid gap-10 lg:grid-cols-[minmax(0,1fr)_248px] lg:gap-12","children":[["$","article",null,{"className":"min-w-0","children":[["$","header",null,{"className":"border-b border-hairline pb-7","children":[["$","nav",null,{"aria-label":"面包屑","className":"flex flex-wrap items-center gap-1.5","children":[["$","$L1c",null,{"slug":"deb4dbdb","bookmarkChildren":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left size-4 transition-transform duration-200 group-hover:-translate-x-0.5","aria-hidden":true,"children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"我的收藏"],"className":"group inline-flex min-h-10 items-center gap-1.5 rounded-[9px] border border-hairline bg-surface px-3.5 text-[13px] font-medium text-ink transition-[background-color,border-color,transform] duration-200 hover:border-hairline-strong hover:bg-surface-strong active:scale-[0.98]","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left size-4 transition-transform duration-200 group-hover:-translate-x-0.5","aria-hidden":true,"children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"全部文章"]}],["$","span",null,{"aria-hidden":true,"className":"px-0.5 text-[12px] text-muted/40","children":"/"}],["$","$L1d",null,{"href":"/posts?cat=tag-plugins","className":"inline-flex min-h-10 items-center rounded-[9px] px-2.5 font-mono text-[13px] tracking-[0.01em] text-signal-ink transition-colors hover:bg-signal/[0.07]","children":"Tag Plugins"}],false]}],["$","$L1e",null,{"src":"https://img.cent1pedee.top/img/tag-plugins.png","slug":"deb4dbdb","label":"Tag Plugins","className":"mt-5 aspect-[1200/630] w-full rounded-[var(--radius-card)] border border-hairline object-cover"}],["$","h1",null,{"data-article-title":true,"className":"mt-4 max-w-[26ch] text-[clamp(1.75rem,4vw,2.5rem)] font-semibold leading-[1.15] tracking-[-0.02em] text-ink","children":"安知鱼主题标签 Tag Plugins"}],["$","p",null,{"data-article-summary":true,"className":"mt-3.5 max-w-[62ch] text-[15px] leading-relaxed text-muted","children":"添加大量外挂标签样式。"}],["$","div",null,{"className":"mt-5 flex flex-wrap items-center gap-x-4 gap-y-2 text-[12px] text-muted","children":[["$","span",null,{"className":"inline-flex items-center gap-1.5","children":["$","span",null,{"className":"font-medium text-ink","children":"煮雪话河山"}]}],["$","span",null,{"className":"inline-flex items-center gap-1.5 font-mono","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-calendar-days size-3.5","aria-hidden":true,"children":["$L1f","$L20","$L21","$L22","$L23","$L24","$L25","$L26","$L27","$L28","$undefined"]}],"2023-08-31"]}],"$L29","$undefined"]}],"$undefined","$L2a","$L2b"]}],false,null,"$L2c","$L2d","$L2e","$L2f","$L30"]}],"$L31"]}]}]],["$L32","$L33"],"$L34"]}],"p":"$@35","v":null,"s":"$f"}}]]
+10:[["children",{"s":{"n":"slug","t":"d","k":"deb4dbdb","s":[]},"h":96,"d":{"r":["$","$2","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}]}]]}],"p":"$@11","v":"$e","s":"$f"},"c":"$Q12"}]]
+1:[["children",{"s":"posts","h":64,"d":{"r":["$","$2","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}]}]]}],"p":"$@d","v":"$e","s":"$f"},"c":"$Q10"}]]
+0:{"t":{"t":{"s":"","h":20,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[null,["$","$L37",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#08090c","media":"(prefers-color-scheme: dark)"}],["$","meta","3",{"name":"theme-color","content":"#ededea","media":"(prefers-color-scheme: light)"}]]}],["$","$L39",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$3a",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"安知鱼主题标签 Tag Plugins · 煮雪话河山"}],["$","meta","1",{"name":"description","content":"添加大量外挂标签样式。"}],["$","meta","2",{"name":"author","content":"煮雪话河山"}],["$","meta","3",{"name":"robots","content":"index, follow"}],["$","link","4",{"rel":"canonical","href":"https://blog.zhuux.cn/posts/deb4dbdb"}],["$","meta","5",{"property":"og:title","content":"安知鱼主题标签 Tag Plugins"}],["$","meta","6",{"property":"og:description","content":"添加大量外挂标签样式。"}],["$","meta","7",{"property":"og:url","content":"https://blog.zhuux.cn/posts/deb4dbdb"}],["$","meta","8",{"property":"og:image","content":"https://img.cent1pedee.top/img/tag-plugins.png"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"property":"article:published_time","content":"2023-08-31T15:54:27.000Z"}],["$","meta","11",{"property":"article:modified_time","content":"2023-08-31T15:54:27.000Z"}],["$","meta","12",{"property":"article:author","content":"煮雪话河山"}],["$","meta","13",{"property":"article:tag","content":"tag-plugins"}],["$","meta","14",{"property":"article:tag","content":"hexo"}],["$","meta","15",{"property":"article:tag","content":"repost"}],["$","meta","16",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","17",{"name":"twitter:title","content":"安知鱼主题标签 Tag Plugins"}],["$","meta","18",{"name":"twitter:description","content":"添加大量外挂标签样式。"}],["$","meta","19",{"name":"twitter:image","content":"https://img.cent1pedee.top/img/tag-plugins.png"}],["$","link","20",{"rel":"icon","href":"/icon.svg?icon.2z_nhvg-dnpec.svg","sizes":"any","type":"image/svg+xml"}],["$","$L3b","21",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@3c","v":null,"s":"$f"}},"a":"$@3d","u":"$@3e","b":"NSfzR_EDzOtUGEfuEGKvr"}
+3f:I[42080,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"TocMobile"]
+40:I[67077,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ReadingSettings"]
+44:I[33883,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ArticleActions"]
+45:I[44664,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ArticleCardLink"]
+46:I[94735,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"PostCard"]
+47:I[199,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"FavoriteButton"]
+48:I[781,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"Comments"]
+49:I[42080,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"Toc"]
+4a:I[92975,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"SpotlightCard"]
+4b:I[38320,["$3","$4","$5","$6","$7","$8","$9","$a"],"OutletBoundary"]
+1f:["$","path","1cmpym",{"d":"M8 2v4"}]
+20:["$","path","4m81vk",{"d":"M16 2v4"}]
+21:["$","rect","1hopcy",{"width":"18","height":"18","x":"3","y":"4","rx":"2"}]
+22:["$","path","8toen8",{"d":"M3 10h18"}]
+23:["$","path","6423bh",{"d":"M8 14h.01"}]
+24:["$","path","1etili",{"d":"M12 14h.01"}]
+25:["$","path","1gbofw",{"d":"M16 14h.01"}]
+26:["$","path","lrp35t",{"d":"M8 18h.01"}]
+27:["$","path","mhygvu",{"d":"M12 18h.01"}]
+28:["$","path","kzsmim",{"d":"M16 18h.01"}]
+29:["$","span",null,{"className":"inline-flex items-center gap-1.5 font-mono","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-clock3 lucide-clock-3 size-3.5","aria-hidden":true,"children":[["$","path","135r8i",{"d":"M12 6v6h4"}],["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],"$undefined"]}],52," 分钟 · ",10367," 字"]}]
+2a:["$","div",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","$L1d","tag-plugins",{"href":"/posts?tag=tag-plugins","className":"rounded-full outline-none focus-visible:ring-2 focus-visible:ring-signal/70","children":["$","span",null,{"data-slot":"badge","className":"inline-flex items-center gap-1 border tracking-[0.01em] border-hairline bg-surface-sunken text-muted max-w-full rounded-full px-2.5 py-0.5 text-[11px] font-normal transition-colors hover:border-signal/40 hover:text-signal-ink","children":["#","Tag Plugins"]}]}],["$","$L1d","hexo",{"href":"/posts?tag=hexo","className":"rounded-full outline-none focus-visible:ring-2 focus-visible:ring-signal/70","children":["$","span",null,{"data-slot":"badge","className":"inline-flex items-center gap-1 border tracking-[0.01em] border-hairline bg-surface-sunken text-muted max-w-full rounded-full px-2.5 py-0.5 text-[11px] font-normal transition-colors hover:border-signal/40 hover:text-signal-ink","children":["#","Hexo"]}]}],["$","$L1d","repost",{"href":"/posts?tag=repost","className":"rounded-full outline-none focus-visible:ring-2 focus-visible:ring-signal/70","children":["$","span",null,{"data-slot":"badge","className":"inline-flex items-center gap-1 border tracking-[0.01em] border-hairline bg-surface-sunken text-muted max-w-full rounded-full px-2.5 py-0.5 text-[11px] font-normal transition-colors hover:border-signal/40 hover:text-signal-ink","children":["#","转载"]}]}]]}]
+2b:["$","div",null,{"className":"mt-5 flex flex-wrap items-center gap-2","children":[["$","$L3f",null,{"items":[{"id":"段落文本-p","text":"段落文本 p","level":2},{"id":"行内文本-span","text":"行内文本 span","level":2},{"id":"行内文本样式-text","text":"行内文本样式 text","level":2},{"id":"分栏-tab","text":"分栏 tab","level":2},{"id":"按钮-btns","text":"按钮 btns","level":2},{"id":"按钮-btn","text":"按钮 btn","level":2},{"id":"网站卡片-sites","text":"网站卡片 sites","level":2},{"id":"单张图片-image","text":"单张图片 image","level":2},{"id":"inlineimg-行内图片","text":"inlineImg 行内图片","level":2},{"id":"行内图片-inlineimage","text":"行内图片 inlineimage","level":2},{"id":"label-标签","text":"label 标签","level":2},{"id":"timeline","text":"timeline","level":2},{"id":"flink-友链标签","text":"flink 友链标签","level":2},{"id":"mermaid-图","text":"mermaid 图","level":2},{"id":"复选列表-checkbox","text":"复选列表 checkbox","level":2},{"id":"dogeplayer-多吉云播放器","text":"dogeplayer 多吉云播放器","level":2},{"id":"折叠框-folding","text":"折叠框 folding","level":2},{"id":"gallery-相册图库","text":"Gallery 相册图库","level":2},{"id":"tag-hide","text":"tag-hide","level":2},{"id":"链接卡片-link","text":"链接卡片 link","level":2},{"id":"单选列表-radio","text":"单选列表 radio","level":2},{"id":"上标标签-tip","text":"上标标签 tip","level":2},{"id":"note-bootstrap-callout","text":"Note (Bootstrap Callout)","level":2},{"id":"音频-audio","text":"音频 audio","level":2},{"id":"视频-video","text":"视频 video","level":2}]}],["$","$L40",null,{}],["$","$L1d",null,{"href":"/contact","className":"inline-flex h-9 items-center gap-1.5 rounded-[10px] border border-hairline bg-surface px-3 text-xs text-muted backdrop-blur-xl transition-colors hover:text-ink","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-mail size-3.5","aria-hidden":"true","children":[["$","path","132q7q",{"d":"m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"}],["$","rect","izxlao",{"x":"2","y":"4","width":"20","height":"16","rx":"2"}],"$undefined"]}]," 反馈与纠错"]}]]}]
+41:T2ca42,<div class="hexo-note">
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>AnZhiYu主题</span></span></code></span>中大部分标签移植于<a href="https://akilar.top/">店长</a>的<a href="https://www.npmjs.com/package/hexo-butterfly-tag-plugins-plus">hexo-butterfly-tag-plugins-plus</a>，转载请注明来自<a href="https://blog.anheyu.com/posts/d50a.html">安知鱼</a></p>
+</div>
+<h2 id="段落文本-p"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#段落文本-p">#</a>段落文本 p</h2>
+<!-- tab 标签语法 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% p 样式参数(参数以空格划分), 文本内容 %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 配置参数 -->
+<ol>
+<li>字体: logo, code</li>
+<li>颜色: red,yellow,green,cyan,blue,gray</li>
+<li>大小: small, h4, h3, h2, h1, large, huge, ultra</li>
+<li>对齐方向: left, center, right
+<!-- endtab -->
+<!-- tab 样式预览 -->
+</li>
+</ol>
+<ul>
+<li>
+<p>彩色文字
+在一段话中方便插入各种颜色的标签，包括：、、、、、。</p>
+</li>
+<li>
+<p>超大号文字
+文档「开始」页面中的标题部分就是超大号文字。</p>
+<!-- endtab -->
+<!-- tab 示例源码 -->
+</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">-</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> 彩色文字</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  在一段话中方便插入各种颜色的标签，包括：{% p red, 红色 %}、{% p yellow, 黄色 %}、{% p green, 绿色 %}、{% p cyan, 青色 %}、{% p blue, 蓝色 %}、{% p gray, 灰色 %}。</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">-</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> 超大号文字</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  文档「开始」页面中的标题部分就是超大号文字。</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  {% p center logo large, Volantis %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  {% p center small, A Wonderful Theme for Hexo %}</span></span></code></pre></figure>
+<!-- endtab -->
+<h2 id="行内文本-span"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#行内文本-span">#</a>行内文本 span</h2>
+<!-- tab 标签语法 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% span 样式参数(参数以空格划分), 文本内容 %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 配置参数 -->
+<ol>
+<li>字体: logo, code</li>
+<li>颜色: red,yellow,green,cyan,blue,gray</li>
+<li>大小: small, h4, h3, h2, h1, large, huge, ultra</li>
+<li>对齐方向: left, center, right
+<!-- endtab -->
+<!-- tab 样式预览 -->
+</li>
+</ol>
+<ul>
+<li>彩色文字
+在一段话中方便插入各种颜色的标签，包括：红色、黄色、绿色、青色、蓝色、灰色。</li>
+<li>超大号文字
+文档「开始」页面中的标题部分就是超大号文字。
+Volantis
+A Wonderful Theme for Hexo
+<!-- endtab -->
+<!-- tab 示例源码 -->
+</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">-</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> 彩色文字</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  在一段话中方便插入各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">-</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> 超大号文字</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  文档「开始」页面中的标题部分就是超大号文字。</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  {% span center logo large, Volantis %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  {% span center small, A Wonderful Theme for Hexo %}</span></span></code></pre></figure>
+<!-- endtab -->
+<h2 id="行内文本样式-text"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#行内文本样式-text">#</a>行内文本样式 text</h2>
+<!-- tab 标签语法 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% u 文本内容 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% emp 文本内容 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% wavy 文本内容 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% del 文本内容 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% kbd 文本内容 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% psw 文本内容 %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 样式预览 -->
+<ol>
+<li>带 <u>下划线</u> 的文本</li>
+<li>带  的文本</li>
+<li>带 波浪线 的文本</li>
+<li>带  的文本</li>
+<li>键盘样式的文本  +</li>
+<li>密码样式的文本：
+<!-- endtab -->
+<!-- tab 示例源码 -->
+</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">1.</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> 带 {% u 下划线 %} 的文本</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">2.</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> 带 {% emp 着重号 %} 的文本</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">3.</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> 带 {% wavy 波浪线 %} 的文本</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">4.</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> 带 {% del 删除线 %} 的文本</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">5.</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> 键盘样式的文本 {% kbd command %} + {% kbd D %}</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">6.</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> 密码样式的文本：{% psw 这里没有验证码 %}</span></span></code></pre></figure>
+<!-- endtab -->
+<h2 id="分栏-tab"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#分栏-tab">#</a>分栏 tab</h2>
+<div class="hexo-note">
+<p>分栏支持内置阿里图标，如果开启了 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>fontawesome</span></span></code></span>可以使用 fontawesome 的图标，否则只能使用默内置阿里图标</p>
+</div>
+<!-- tab 标签语法 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% tabs Unique name, [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">index</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- tab [Tab caption] [@icon] --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">Any content (support inline tags too).</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- endtab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endtabs %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 配置参数 -->
+<ol>
+<li>Unique name :
+<ul>
+<li>选项卡块标签的唯一名称，不带逗号。</li>
+<li>将在#id 中用作每个标签及其索引号的前缀。</li>
+<li>如果名称中包含空格，则对于生成#id，所有空格将由破折号代替。</li>
+<li>仅当前帖子/页面的 URL 必须是唯一的！</li>
+</ul>
+</li>
+<li>[index]:
+<ul>
+<li>活动选项卡的索引号。</li>
+<li>如果未指定，将选择第一个标签（1）。</li>
+<li>如果 index 为-1，则不会选择任何选项卡。</li>
+<li>可选参数。</li>
+</ul>
+</li>
+<li>[Tab caption]:
+<ul>
+<li>当前选项卡的标题。</li>
+<li>如果未指定标题，则带有制表符索引后缀的唯一名称将用作制表符的标题。</li>
+<li>如果未指定标题，但指定了图标，则标题将为空。</li>
+<li>可选参数。</li>
+</ul>
+</li>
+<li>[@icon]: - FontAwesome 图标名称（全名，看起来像“ fas fa-font”） - 可以指定带空格或不带空格； - 例如'Tab caption @icon' 和 'Tab caption@icon'. - 可选参数。
+<!-- endtab -->
+<!-- tab 样式预览 -->
+</li>
+</ol>
+<div class="hexo-note">
+<p>Demo 1 - 预设选择第一个【默认】</p>
+</div>
+<!-- tab -->
+<p><strong>This is Tab 1.</strong></p>
+<!-- endtab -->
+<!-- tab -->
+<p><strong>This is Tab 2.</strong></p>
+<!-- endtab -->
+<!-- tab -->
+<p><strong>This is Tab 3.</strong></p>
+<!-- endtab -->
+<div class="hexo-note">
+<p>Demo 2 - 预设选择 tabs</p>
+</div>
+<!-- tab -->
+<p><strong>This is Tab 1.</strong></p>
+<!-- endtab -->
+<!-- tab -->
+<p><strong>This is Tab 2.</strong></p>
+<!-- endtab -->
+<!-- tab -->
+<p><strong>This is Tab 3.</strong></p>
+<!-- endtab -->
+<div class="hexo-note">
+<p>Demo 3 - 没有预设值</p>
+</div>
+<!-- tab -->
+<p><strong>This is Tab 1.</strong></p>
+<!-- endtab -->
+<!-- tab -->
+<p><strong>This is Tab 2.</strong></p>
+<!-- endtab -->
+<!-- tab -->
+<p><strong>This is Tab 3.</strong></p>
+<!-- endtab -->
+<div class="hexo-note">
+<p>Demo 4 - 自定义 Tab 名 + 只有 icon + icon 和 Tab 名</p>
+</div>
+<!-- tab 第一个Tab -->
+<p><strong>tab 名字为第一个 Tab</strong></p>
+<!-- endtab -->
+<!-- tab @anzhiyufont anzhiyu-icon-oranges -->
+<p><strong>只有图标 没有 Tab 名字</strong></p>
+<!-- endtab -->
+<!-- tab 炸弹@anzhiyufont anzhiyu-icon-oranges -->
+<p><strong>名字+icon</strong></p>
+<!-- endtab -->
+<!-- endtab -->
+<!-- tab 示例源码 -->
+<div class="hexo-note">
+<p>Demo 1 - 预设选择第一个【默认】</p>
+</div>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% tabs test1 %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- tab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-light-font-weight:bold;--shiki-dark:#E6EDF3;--shiki-dark-font-weight:bold">**This is Tab 1.**</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- endtab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- tab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-light-font-weight:bold;--shiki-dark:#E6EDF3;--shiki-dark-font-weight:bold">**This is Tab 2.**</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- endtab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- tab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-light-font-weight:bold;--shiki-dark:#E6EDF3;--shiki-dark-font-weight:bold">**This is Tab 3.**</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- endtab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endtabs %}</span></span></code></pre></figure>
+<div class="hexo-note">
+<p>Demo 2 - 预设选择 tabs</p>
+</div>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% tabs test2, 3 %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- tab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-light-font-weight:bold;--shiki-dark:#E6EDF3;--shiki-dark-font-weight:bold">**This is Tab 1.**</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- endtab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- tab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-light-font-weight:bold;--shiki-dark:#E6EDF3;--shiki-dark-font-weight:bold">**This is Tab 2.**</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- endtab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- tab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-light-font-weight:bold;--shiki-dark:#E6EDF3;--shiki-dark-font-weight:bold">**This is Tab 3.**</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- endtab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endtabs %}</span></span></code></pre></figure>
+<div class="hexo-note">
+<p>Demo 3 - 没有预设值</p>
+</div>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% tabs test3, -1 %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- tab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-light-font-weight:bold;--shiki-dark:#E6EDF3;--shiki-dark-font-weight:bold">**This is Tab 1.**</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- endtab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- tab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-light-font-weight:bold;--shiki-dark:#E6EDF3;--shiki-dark-font-weight:bold">**This is Tab 2.**</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- endtab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- tab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-light-font-weight:bold;--shiki-dark:#E6EDF3;--shiki-dark-font-weight:bold">**This is Tab 3.**</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- endtab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endtabs %}</span></span></code></pre></figure>
+<div class="hexo-note">
+<p>Demo 4 - 自定义 Tab 名 + 只有 icon + icon 和 Tab 名</p>
+</div>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% tabs test4 %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- tab 第一个Tab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-light-font-weight:bold;--shiki-dark:#E6EDF3;--shiki-dark-font-weight:bold">**tab 名字为第一个 Tab**</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- endtab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- tab @fab fa-apple-pay --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-light-font-weight:bold;--shiki-dark:#E6EDF3;--shiki-dark-font-weight:bold">**只有图标 没有 Tab 名字**</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- endtab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- tab 炸弹@fas fa-bomb --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-light-font-weight:bold;--shiki-dark:#E6EDF3;--shiki-dark-font-weight:bold">**名字+icon**</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- endtab --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endtabs %}</span></span></code></pre></figure>
+<!-- endtab -->
+<h2 id="按钮-btns"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#按钮-btns">#</a>按钮 btns</h2>
+<!-- tab 标签语法 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% btns 样式参数 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% cell 标题, 链接, 图片或者图标 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% cell 标题, 链接, 图片或者图标 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endbtns %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 参数配置 -->
+<ol>
+<li>圆角样式：rounded, circle</li>
+<li>增加文字样式：可以在容器内增加 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>&#x3C;b>标题&#x3C;/b> </span></span></code></span>和<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span> &#x3C;p>描述文字&#x3C;/p></span></span></code></span></li>
+<li>布局方式：
+默认为自动宽度，适合视野内只有一两个的情况。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">wide</td>
+<td align="left">宽一点的按钮</td>
+</tr>
+<tr>
+<td align="left">fill</td>
+<td align="left">填充布局，自动铺满至少一行，多了会换行</td>
+</tr>
+<tr>
+<td align="left">center</td>
+<td align="left">居中，按钮之间是固定间距</td>
+</tr>
+<tr>
+<td align="left">around</td>
+<td align="left">居中分散</td>
+</tr>
+<tr>
+<td align="left">grid2</td>
+<td align="left">等宽最多 2 列，屏幕变窄会适当减少列数</td>
+</tr>
+<tr>
+<td align="left">grid3</td>
+<td align="left">等宽最多 3 列，屏幕变窄会适当减少列数</td>
+</tr>
+<tr>
+<td align="left">grid4</td>
+<td align="left">等宽最多 4 列，屏幕变窄会适当减少列数</td>
+</tr>
+<tr>
+<td align="left">grid5</td>
+<td align="left">等宽最多 5 列，屏幕变窄会适当减少列数</td>
+</tr>
+</tbody>
+</table>
+<!-- endtab -->
+<!-- tab 样式预览 -->
+<ol>
+<li>如果需要显示类似「团队成员」之类的一组含有头像的链接：</li>
+</ol>
+<p><a href="https://xaoxuu.com">xaoxuu</a>
+<a href="https://xaoxuu.com">xaoxuu</a>
+<a href="https://xaoxuu.com">xaoxuu</a>
+<a href="https://xaoxuu.com">xaoxuu</a>
+<a href="https://xaoxuu.com">xaoxuu</a></p>
+<ol start="2">
+<li>或者含有图标的按钮：</li>
+</ol>
+<p><a href="/">下载源码</a>
+<a href="/">查看文档</a></p>
+<ol start="3">
+<li>圆形图标 + 标题 + 描述 + 图片 + 网格 5 列 + 居中</li>
+</ol>
+<a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1' class="no-text-decoration">
+<i class='anzhiyufont anzhiyu-icon-heartbeat'></i>
+<b>心率管家</b>
+<img src='https://cdn1.tianli0.top/gh/xaoxuu/cdn-assets/qrcode/heartmate_pro.png'>
+</a>
+<a href='https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1' class="no-text-decoration">
+<i class='anzhiyufont anzhiyu-icon-heartbeat'></i>
+<b>心率管家</b>
+<img src='https://cdn1.tianli0.top/gh/xaoxuu/cdn-assets/qrcode/heartmate_lite.png'>
+</a>
+<!-- endtab -->
+<!-- tab 示例源码 -->
+<ol>
+<li>如果需要显示类似「团队成员」之类的一组含有头像的链接：</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% btns circle grid5 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% cell xaoxuu, https://xaoxuu.com, https://bu.dusays.com/2023/06/01/64787e6a5816d.png %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% cell xaoxuu, https://xaoxuu.com, https://bu.dusays.com/2023/06/01/64787e6a5816d.png %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% cell xaoxuu, https://xaoxuu.com, https://bu.dusays.com/2023/06/01/64787e6a5816d.png %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% cell xaoxuu, https://xaoxuu.com, https://bu.dusays.com/2023/06/01/64787e6a5816d.png %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% cell xaoxuu, https://xaoxuu.com, https://bu.dusays.com/2023/06/01/64787e6a5816d.png %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endbtns %}</span></span></code></pre></figure>
+<ol start="2">
+<li>或者含有图标的按钮：</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% btns rounded grid5 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% cell 下载源码, /, anzhiyufont anzhiyu-icon-bolt %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% cell 查看文档, /, anzhiyufont anzhiyu-icon-book %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endbtns %}</span></span></code></pre></figure>
+<ol start="3">
+<li>圆形图标 + 标题 + 描述 + 图片 + 网格 5 列 + 居中</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% btns circle center grid5 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">&#x3C;</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">a</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> href</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">'https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1'</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> class</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"no-text-decoration"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">&#x3C;</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">i</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> class</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">'anzhiyufont anzhiyu-icon-heartbeat'</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">>&#x3C;/</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">i</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">&#x3C;</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">b</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">>心率管家&#x3C;/</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">b</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% p red, 专业版 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">&#x3C;</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">img</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> src</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">'https://bu.dusays.com/2023/06/01/64787e2a1347c.png'</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">&#x3C;/</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">a</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">&#x3C;</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">a</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> href</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">'https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1'</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> class</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"no-text-decoration"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">&#x3C;</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">i</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> class</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">'anzhiyufont anzhiyu-icon-heartbeat'</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">>&#x3C;/</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">i</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">&#x3C;</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">b</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">>心率管家&#x3C;/</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">b</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% p green, 免费版 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">&#x3C;</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">img</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> src</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">'https://bu.dusays.com/2023/06/01/64787e515e261.png'</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">&#x3C;/</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">a</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endbtns %}</span></span></code></pre></figure>
+<!-- endtab -->
+<h2 id="按钮-btn"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#按钮-btn">#</a>按钮 btn</h2>
+<!-- tab 标签语法 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% btn [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">url</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">],[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">text</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">],[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">icon</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">],[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">color</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">style</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">layout</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">position</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">size</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">url</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] : 链接</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">text</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] : 按钮文字</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">icon</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] : [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">可选</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] 图标</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">color</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] : [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">可选</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] 按钮背景顔色(默认 style 时）</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">按钮字体和边框顔色(outline 时)</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">default/blue/pink/red/purple/orange/green</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">style</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] : [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">可选</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] 按钮样式 默认实心</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">outline/留空</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">layout</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] : [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">可选</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] 按钮佈局 默认为 line</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">block/留空</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">position</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] : [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">可选</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] 按钮位置 前提是设置了 layout 为 block 默认为左边</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">center/right/留空</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">size</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] : [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">可选</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] 按钮大小</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">larger/留空</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 参数配置 -->
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="left">链接</td>
+</tr>
+<tr>
+<td align="left">text</td>
+<td align="left">按钮文字</td>
+</tr>
+<tr>
+<td align="left">icon</td>
+<td align="left">[可选] 图标，如果开启了 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>fontawesome</span></span></code></span>可以使用 fontawesome 的图标，否则只能使用默内置图标</td>
+</tr>
+<tr>
+<td align="left">color</td>
+<td align="left">[可选] 按钮背景顔色(默认 style 时）按钮字体和边框顔色(outline 时)default/blue/pink/red/purple/orange/green</td>
+</tr>
+<tr>
+<td align="left">style</td>
+<td align="left">[可选] 按钮样式 默认实心数，outline/留空</td>
+</tr>
+<tr>
+<td align="left">layout</td>
+<td align="left">[可选] 按钮佈局 默认为 line block/留空</td>
+</tr>
+<tr>
+<td align="left">position</td>
+<td align="left">[可选] 按钮位置 前提是设置了 layout 为 block 默认为左边 center/right/留空数</td>
+</tr>
+<tr>
+<td align="left">size</td>
+<td align="left">[可选] 按钮大小 larger/留空</td>
+</tr>
+</tbody>
+</table>
+<!-- endtab -->
+<!-- tab 样式预览 -->
+<ol>
+<li>一组按钮</li>
+</ol>
+<p>This is my website, click the button <a href="https://anheyu.com/">AnZhiYu</a>
+This is my website, click the button <a href="https://anheyu.com/">AnZhiYu</a>
+This is my website, click the button <a href="https://anheyu.com/">AnZhiYu</a>
+This is my website, click the button <a href="https://anheyu.com/">AnZhiYu</a>
+This is my website, click the button <a href="https://anheyu.com/">AnZhiYu</a></p>
+<ol start="2">
+<li>调整位置/大小</li>
+</ol>
+<p><a href="https://anheyu.com/">AnZhiYu</a>
+<a href="https://anheyu.com/">AnZhiYu</a>
+<a href="https://anheyu.com/">AnZhiYu</a></p>
+<ol start="3">
+<li>more than one button in center</li>
+</ol>
+<span>
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+</span>
+<ol start="4">
+<li>居中按钮</li>
+</ol>
+<div class="btn-center">
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+[AnZhiYu](https://anheyu.com/)
+</div>
+<!-- endtab -->
+<!-- tab 示例源码 -->
+<ol>
+<li>一组按钮</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">This is my website, click the button {% btn 'https://anheyu.com/',AnZhiYu %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">This is my website, click the button {% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">This is my website, click the button {% btn 'https://anheyu.com/',AnZhiYu,,outline %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">This is my website, click the button {% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">This is my website, click the button {% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,larger %}</span></span></code></pre></figure>
+<ol start="2">
+<li>调整位置/大小</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,block %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,block center larger %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,block right outline larger %}</span></span></code></pre></figure>
+<ol start="3">
+<li>more than one button in center</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">&#x3C;</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">span</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,larger %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,blue larger %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,pink larger %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,red larger %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,purple larger %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,orange larger %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,green larger %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">&#x3C;/</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">span</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span></code></pre></figure>
+<ol start="4">
+<li>居中按钮</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">&#x3C;</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">div</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> class</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"btn-center"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline larger %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline blue larger %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline pink larger %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline red larger %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline purple larger %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline orange larger %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% btn 'https://anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline green larger %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">&#x3C;/</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">div</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span></code></pre></figure>
+<!-- endtab -->
+<h2 id="网站卡片-sites"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#网站卡片-sites">#</a>网站卡片 sites</h2>
+<!-- tab 标签语法 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% sitegroup %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% site 标题, url=链接, screenshot=截图链接, avatar=头像链接（可选）, description=描述（可选） %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% site 标题, url=链接, screenshot=截图链接, avatar=头像链接（可选）, description=描述（可选） %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endsitegroup %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 样式预览 -->
+<!-- endtab -->
+<!-- tab 示例源码 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% sitegroup %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% site xaoxuu, url=https://xaoxuu.com, screenshot=https://bu.dusays.com/2023/06/01/6478965ce6557.webp, avatar=https://cdn1.tianli0.top/gh/xaoxuu/cdn-assets/avatar/avatar.png, description=简约风格 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% site Colsrch, url=https://colsrch.top, screenshot=https://i.loli.net/2020/08/22/dFRWXm52OVu8qfK.png, avatar=https://cdn1.tianli0.top/gh/Colsrch/images/Colsrch/avatar.jpg, description=这是一段关于这个网站的描述文字 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% site Linhk1606, url=https://linhk1606.github.io, screenshot=https://bu.dusays.com/2023/06/01/6478963584621.png, avatar=https://bu.dusays.com/2023/06/01/6478968743368.png, description=这是一段关于这个网站的描述文字 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endsitegroup %}</span></span></code></pre></figure>
+<!-- endtab -->
+<h2 id="单张图片-image"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#单张图片-image">#</a>单张图片 image</h2>
+<!-- tab 标签语法 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% image 链接, width=宽度（可选）, height=高度（可选）, alt=描述（可选）, bg=占位颜色（可选） %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 参数配置 -->
+<ol>
+<li>
+<p>图片宽度高度：width=300px, height=32px</p>
+</li>
+<li>
+<p>图片描述：alt=图片描述（butterfly 需要在主题配置文件中开启图片描述）</p>
+</li>
+<li>
+<p>占位背景色：bg=#f2f2f2</p>
+<!-- endtab -->
+<!-- tab 样式预览 -->
+</li>
+<li>
+<p>添加描述：</p>
+</li>
+<li>
+<p>指定宽度：</p>
+</li>
+<li>
+<p>指定宽度并添加描述：</p>
+</li>
+<li>
+<p>设置占位背景色：</p>
+</li>
+</ol>
+<!-- endtab -->
+<!-- tab 示例源码 -->
+<ol>
+<li>添加描述：</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% image https://bu.dusays.com/2023/06/01/6478937d7de6f.webp, alt=每天下课回宿舍的路，没有什么故事。 %}</span></span></code></pre></figure>
+<ol start="2">
+<li>指定宽度：</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% image https://bu.dusays.com/2023/06/01/6478937d7de6f.webp, width=400px %}</span></span></code></pre></figure>
+<ol start="3">
+<li>指定宽度并添加描述：</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% image https://bu.dusays.com/2023/06/01/6478937d7de6f.webp, width=400px, alt=每天下课回宿舍的路，没有什么故事。 %}</span></span></code></pre></figure>
+<ol start="4">
+<li>设置占位背景色：</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% image https://bu.dusays.com/2023/06/01/6478937d7de6f.webp, width=400px, bg=#1D0C04, alt=优化不同宽度浏览的观感 %}</span></span></code></pre></figure>
+<!-- endtab -->
+<h2 id="inlineimg-行内图片"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#inlineimg-行内图片">#</a>inlineImg 行内图片</h2>
+<!-- tab 标签语法 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% inlineImg [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">src</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">height</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">src</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] : 图片链接</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">height</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] ： 图片高度限制【可选】</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 参数配置 -->
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">src</td>
+<td align="left">图片链接</td>
+</tr>
+<tr>
+<td align="left">height</td>
+<td align="left">图片高度限制【可选】</td>
+</tr>
+</tbody>
+</table>
+<!-- endtab -->
+<!-- tab 样式预览 -->
+<p>你看我长得漂亮不</p>
+<p><img src="https://bu.dusays.com/2023/06/01/64787ded2ca1c.webp" alt=""></p>
+<p>我觉得很漂亮</p>
+<!-- endtab -->
+<!-- tab 示例源码 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>你看我长得漂亮不</span></span>
+<span data-line=""> </span>
+<span data-line=""><span>![](https://i.loli.net/2021/03/19/2P6ivUGsdaEXSFI.png)</span></span>
+<span data-line=""> </span>
+<span data-line=""><span>我觉得很漂亮 {% inlineImg https://i.loli.net/2021/03/19/5M4jUB3ynq7ePgw.png 150px %}</span></span></code></pre></figure>
+<!-- endtab -->
+<h2 id="行内图片-inlineimage"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#行内图片-inlineimage">#</a>行内图片 inlineimage</h2>
+<!-- tab 标签语法 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% inlineimage 图片链接, height=高度（可选） %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 参数配置 -->
+<ol>
+<li>高度：height=20px</li>
+</ol>
+<!-- endtab -->
+<!-- tab 样式预览 -->
+<p>这是  一段话。</p>
+<p>这又是  一段话。</p>
+<!-- endtab -->
+<!-- tab 示例源码 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">这是 {% inlineimage https://bu.dusays.com/2023/06/01/647895232e5d5.webp %} 一段话。</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">这又是 {% inlineimage https://bu.dusays.com/2022/05/19/6285328a83ca7.gif, height=40px %} 一段话。</span></span></code></pre></figure>
+<!-- endtab -->
+<h2 id="label-标签"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#label-标签">#</a>label 标签</h2>
+<!-- tab 标签语法 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% label text color %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 参数配置 -->
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">text</td>
+<td align="left">文字</td>
+</tr>
+<tr>
+<td align="left">color</td>
+<td align="left">【可选】背景颜色，默认为 default，default/blue/pink/red/purple/orange/green</td>
+</tr>
+</tbody>
+</table>
+<!-- endtab -->
+<!-- tab 样式预览 -->
+<p>臣亮言：创业未半，而。今天下三分，，此诚也！然侍衞之臣，不懈于内；，忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气；不宜妄自菲薄，引喻失义，以塞忠谏之路也。
+宫中、府中，俱为一体；陟罚臧否，不宜异同。若有、，及为忠善者，宜付有司，论其刑赏，以昭陛下平明之治；不宜偏私，使内外异法也。</p>
+<!-- endtab -->
+<!-- tab 示例源码 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>臣亮言：{% label 先帝 %}创业未半，而{% label 中道崩殂 blue %}。今天下三分，{% label 益州疲敝 pink %}，此诚{% label 危急存亡之秋 red %}也！然侍衞之臣，不懈于内；{% label 忠志之士 purple %}，忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气；不宜妄自菲薄，引喻失义，以塞忠谏之路也。</span></span>
+<span data-line=""><span>宫中、府中，俱为一体；陟罚臧否，不宜异同。若有{% label 作奸 orange %}、{% label 犯科 green %}，及为忠善者，宜付有司，论其刑赏，以昭陛下平明之治；不宜偏私，使内外异法也。</span></span></code></pre></figure>
+<!-- endtab -->
+<h2 id="timeline"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#timeline">#</a>timeline</h2>
+<!-- tab 标签语法 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% timeline title,color %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- timeline title --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">xxxxx</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- endtimeline --></span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- timeline title --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">xxxxx</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">&#x3C;!-- endtimeline --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endtimeline %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 参数配置 -->
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">title</td>
+<td align="left">标题/时间线</td>
+</tr>
+<tr>
+<td align="left">color</td>
+<td align="left">timeline 颜色，default(留空) / blue / pink / red / purple / orange / green</td>
+</tr>
+</tbody>
+</table>
+<!-- endtab -->
+<!-- tab 样式预览 -->
+<ol>
+<li>
+<p>默认颜色</p>
+<!-- timeline 01-02 -->
+<p>这是测试页面</p>
+<!-- endtimeline -->
+</li>
+<li>
+<p>blue</p>
+<!-- timeline 01-02 -->
+<p>这是测试页面</p>
+<!-- endtimeline -->
+</li>
+<li>
+<p>pink</p>
+<!-- timeline 01-02 -->
+<p>这是测试页面</p>
+<!-- endtimeline -->
+</li>
+<li>
+<p>red</p>
+<!-- timeline 01-02 -->
+<p>这是测试页面</p>
+<!-- endtimeline -->
+</li>
+<li>
+<p>purple</p>
+<!-- timeline 01-02 -->
+<p>这是测试页面</p>
+<!-- endtimeline -->
+</li>
+<li>
+<p>orange</p>
+<!-- timeline 01-02 -->
+<p>这是测试页面</p>
+<!-- endtimeline -->
+</li>
+<li>
+<p>green</p>
+<!-- timeline 01-02 -->
+<p>这是测试页面</p>
+<!-- endtimeline -->
+</li>
+</ol>
+<!-- endtab -->
+<!-- tab 示例源码 -->
+<ol>
+<li>默认颜色</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>   {% timeline 2022 %}</span></span>
+<span data-line=""><span>   &#x3C;!-- timeline 01-02 --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span>   这是测试页面</span></span>
+<span data-line=""><span>   &#x3C;!-- endtimeline --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span>   {% endtimeline %}</span></span></code></pre></figure>
+<ol start="2">
+<li>blue</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>   {% timeline 2022,blue %}</span></span>
+<span data-line=""><span>   &#x3C;!-- timeline 01-02 --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span>   这是测试页面</span></span>
+<span data-line=""><span>   &#x3C;!-- endtimeline --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span>   {% endtimeline %}</span></span></code></pre></figure>
+<ol start="3">
+<li>pink</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>   {% timeline 2022,pink %}</span></span>
+<span data-line=""><span>   &#x3C;!-- timeline 01-02 --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span>   这是测试页面</span></span>
+<span data-line=""><span>   &#x3C;!-- endtimeline --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span>   {% endtimeline %}</span></span></code></pre></figure>
+<ol start="4">
+<li>red</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>   {% timeline 2022,red %}</span></span>
+<span data-line=""><span>   &#x3C;!-- timeline 01-02 --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span>   这是测试页面</span></span>
+<span data-line=""><span>   &#x3C;!-- endtimeline --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span>   {% endtimeline %}</span></span></code></pre></figure>
+<ol start="5">
+<li>purple</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>   {% timeline 2022,purple %}</span></span>
+<span data-line=""><span>   &#x3C;!-- timeline 01-02 --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span>   这是测试页面</span></span>
+<span data-line=""><span>   &#x3C;!-- endtimeline --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span>   {% endtimeline %}</span></span></code></pre></figure>
+<ol start="6">
+<li>orange</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>   {% timeline 2022,orange %}</span></span>
+<span data-line=""><span>   &#x3C;!-- timeline 01-02 --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span>   这是测试页面</span></span>
+<span data-line=""><span>   &#x3C;!-- endtimeline --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span>   {% endtimeline %}</span></span></code></pre></figure>
+<ol start="7">
+<li>green</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>   {% timeline 2022,green %}</span></span>
+<span data-line=""><span>   &#x3C;!-- timeline 01-02 --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span>   这是测试页面</span></span>
+<span data-line=""><span>   &#x3C;!-- endtimeline --></span></span>
+<span data-line=""> </span>
+<span data-line=""><span>   {% endtimeline %}</span></span></code></pre></figure>
+<!-- endtab -->
+<h2 id="flink-友链标签"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#flink-友链标签">#</a>flink 友链标签</h2>
+<div class="hexo-note">
+<p>可在任何界面插入类似<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>友情链接</span></span></code></span>列表效果，内容格式与友情链接界面一样，支持 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>yml 格式</span></span></code></span>,注意<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>yml数据</span></span></code></span>具有格式要求，请注意格式对齐，防止被编辑器格式化导致格式错误从而报错。</p>
+</div>
+<!-- tab 标签语法 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% flink %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">xxxxxx</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endflink %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 参数配置 -->
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">class_name</td>
+<td align="left">h2标题</td>
+</tr>
+<tr>
+<td align="left">flink_style</td>
+<td align="left">【可选】友链样式，默认为 flexcard，flexcard/anzhiyu</td>
+</tr>
+<tr>
+<td align="left">link_list</td>
+<td align="left">【可选】友链样式，默认为 flexcard，flexcard/anzhiyu</td>
+</tr>
+</tbody>
+</table>
+<!-- endtab -->
+<!-- tab 样式预览 -->
+<ul>
+<li>
+<p>class_name: 推荐博客
+flink_style: flexcard
+link_list:</p>
+<ul>
+<li>name: 安知鱼
+link: <a href="https://anheyu.com/">https://anheyu.com/</a>
+avatar: <a href="https://img02.anheyu.com/adminuploads/1/2022/09/15/63232b7d91d22.jpg">https://img02.anheyu.com/adminuploads/1/2022/09/15/63232b7d91d22.jpg</a>
+descr: 生活明朗，万物可爱
+siteshot: <a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/anheyu.com.jpg">https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/anheyu.com.jpg</a></li>
+</ul>
+</li>
+<li>
+<p>class_name: 网站
+class_desc: 值得推荐的网站
+flink_style: anzhiyu
+link_list:</p>
+<ul>
+<li>name: Youtube
+link: <a href="https://www.youtube.com/">https://www.youtube.com/</a>
+avatar: <a href="https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png">https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png</a>
+descr: 视频网站</li>
+<li>name: Weibo
+link: <a href="https://www.weibo.com/">https://www.weibo.com/</a>
+avatar: <a href="https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png">https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png</a>
+descr: 中国最大社交分享平台</li>
+<li>name: Twitter
+link: <a href="https://twitter.com/">https://twitter.com/</a>
+avatar: <a href="https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png">https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png</a>
+descr: 社交分享平台</li>
+</ul>
+</li>
+</ul>
+<!-- endtab -->
+<!-- tab 示例源码 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% flink %}</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">-</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> class_name: 推荐博客</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  flink_style: flexcard</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  link_list:</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">    -</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> name: 安知鱼</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">      link: https://anheyu.com/</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">      avatar: https://img02.anheyu.com/adminuploads/1/2022/09/15/63232b7d91d22.jpg</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">      descr: 生活明朗，万物可爱</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">      siteshot: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/anheyu.com.jpg</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">-</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> class_name: 网站</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  class_desc: 值得推荐的网站</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  flink_style: anzhiyu</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  link_list:</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">    -</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> name: Youtube</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">      link: https://www.youtube.com/</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">      avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">      descr: 视频网站</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">    -</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> name: Weibo</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">      link: https://www.weibo.com/</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">      avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">      descr: 中国最大社交分享平台</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">    -</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> name: Twitter</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">      link: https://twitter.com/</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">      avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">      descr: 社交分享平台</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endflink %}</span></span></code></pre></figure>
+<!-- endtab -->
+<h2 id="mermaid-图"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#mermaid-图">#</a>mermaid 图</h2>
+<div class="hexo-note">
+<p>使用<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>mermaid标签</span></span></code></span>可以绘制Flowchart（流程图）、Sequence diagram（时序图 ）、Class Diagram（类别图）、State Diagram（状态图）、Gantt（甘特图）和Pie Chart（圆形图），具体可以查看<a href="https://mermaid.js.org/#/">mermaid文档</a></p>
+</div>
+<p>修改 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>主题配置文件</span></span></code></span></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="yml" data-theme="github-light-default github-dark-default"><code data-language="yml" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E"># mermaid</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E"># see https://github.com/mermaid-js/mermaid</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">mermaid</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">:</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">  enable</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">true</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">  # built-in themes: default/forest/dark/neutral</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">  theme</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">:</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">    light</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">default</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">    dark</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">dark</span></span></code></pre></figure>
+<!-- tab 标签语法 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% mermaid %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">内容</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endmermaid %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 样式预览 -->
+<p><img src="https://bu.dusays.com/2023/06/01/647889d3a16f8.png" alt="mermaid"></p>
+<!-- endtab -->
+<!-- tab 示例源码 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>{% mermaid %}</span></span>
+<span data-line=""><span>pie</span></span>
+<span data-line=""><span>    title Key elements in Product X</span></span>
+<span data-line=""><span>    "Calcium" : 42.96</span></span>
+<span data-line=""><span>    "Potassium" : 50.05</span></span>
+<span data-line=""><span>    "Magnesium" : 10.01</span></span>
+<span data-line=""><span>    "Iron" :  5</span></span>
+<span data-line=""><span>{% endmermaid %}</span></span></code></pre></figure>
+<!-- endtab -->
+<h2 id="复选列表-checkbox"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#复选列表-checkbox">#</a>复选列表 checkbox</h2>
+<!-- tab 标签语法 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% checkbox 样式参数（可选）, 文本（支持简单md） %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 配置参数 -->
+<ol>
+<li>
+<p>样式: plus, minus, times</p>
+</li>
+<li>
+<p>颜色: red,yellow,green,cyan,blue,gray</p>
+</li>
+<li>
+<p>选中状态: checked</p>
+<!-- endtab -->
+<!-- tab 样式预览 -->
+<!-- endtab -->
+<!-- tab 示例源码 -->
+</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% checkbox 纯文本测试 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% checkbox checked, 支持简单的 [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">markdown</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">](</span><span style="--shiki-light:#1F2328;--shiki-light-text-decoration:underline;--shiki-dark:#E6EDF3;--shiki-dark-text-decoration:underline">https://guides.github.com/features/mastering-markdown/</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">) 语法 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% checkbox red, 支持自定义颜色 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% checkbox green checked, 绿色 + 默认选中 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% checkbox yellow checked, 黄色 + 默认选中 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% checkbox cyan checked, 青色 + 默认选中 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% checkbox blue checked, 蓝色 + 默认选中 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% checkbox plus green checked, 增加 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% checkbox minus yellow checked, 减少 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% checkbox times red checked, 叉 %}</span></span></code></pre></figure>
+<!-- endtab -->
+<h2 id="dogeplayer-多吉云播放器"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#dogeplayer-多吉云播放器">#</a>dogeplayer 多吉云播放器</h2>
+<div class="hexo-note">
+<p>快捷引入<a href="https://console.dogecloud.com/vod/overview">多吉云视频</a></p>
+</div>
+<!-- tab 标签语法 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% dogeplayer 4945 ebb742fd1f0b5a7b %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 参数配置 -->
+<p>获取<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>userId</span></span></code></span>与<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>vcode</span></span></code></span></p>
+<p><img src="https://bu.dusays.com/2023/06/01/64788b5bad729.webp" alt=""></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">userId</td>
+<td align="left">多吉云userId</td>
+</tr>
+<tr>
+<td align="left">vcode</td>
+<td align="left">视频vcode</td>
+</tr>
+</tbody>
+</table>
+<!-- endtab -->
+<!-- tab 样式预览 -->
+<p><img src="https://bu.dusays.com/2023/06/01/64788c12883b8.webp" alt=""></p>
+<!-- endtab -->
+<!-- tab 示例源码 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>{% dogeplayer 4945 ebb742fd1f0b5a7b %}</span></span></code></pre></figure>
+<!-- endtab -->
+<h2 id="折叠框-folding"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#折叠框-folding">#</a>折叠框 folding</h2>
+<div class="hexo-note">
+<p>折叠框folding</p>
+</div>
+<!-- tab 标签语法 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% folding 参数（可选）, 标题 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">![](</span><span style="--shiki-light:#1F2328;--shiki-light-text-decoration:underline;--shiki-dark:#E6EDF3;--shiki-dark-text-decoration:underline">https://bu.dusays.com/2023/06/01/64788d71c832d.webp</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endfolding %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 配置参数 -->
+<ol>
+<li>颜色：blue, cyan, green, yellow, red</li>
+<li>状态：状态填写 open 代表默认打开。
+<!-- endtab -->
+<!-- tab 样式预览 -->
+</li>
+</ol>
+<p><img src="https://bu.dusays.com/2023/06/01/64788d71c832d.webp" alt=""></p>
+<p>这是一个默认打开的折叠框。</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">![](</span><span style="--shiki-light:#1F2328;--shiki-light-text-decoration:underline;--shiki-dark:#E6EDF3;--shiki-dark-text-decoration:underline">https://bu.dusays.com/2023/06/01/64788d71c832d.webp</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span></code></pre></figure>
+<ul>
+<li>haha</li>
+<li>hehe</li>
+</ul>
+<p>hahaha <span><img src='https://bu.dusays.com/2023/06/01/64788cd5a356b.png' style='height:24px'></span></p>
+<!-- endtab -->
+<!-- tab 示例源码 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% folding 查看图片测试 %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">![](</span><span style="--shiki-light:#1F2328;--shiki-light-text-decoration:underline;--shiki-dark:#E6EDF3;--shiki-dark-text-decoration:underline">https://bu.dusays.com/2023/06/01/64788d71c832d.webp</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endfolding %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% folding cyan open, 查看默认打开的折叠框 %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">这是一个默认打开的折叠框。</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endfolding %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% folding green, 查看代码测试 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">假装这里有代码块（代码块没法嵌套代码块）</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endfolding %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% folding yellow, 查看列表测试 %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">-</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> haha</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">-</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> hehe</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endfolding %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% folding red, 查看嵌套测试 %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% folding blue, 查看嵌套测试2 %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% folding 查看嵌套测试3 %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">hahaha &#x3C;</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">span</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">>&#x3C;</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">img</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> src</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">'https://bu.dusays.com/2023/06/01/64788cd5a356b.png'</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> style</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">'height:24px'</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">>&#x3C;/</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">span</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endfolding %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endfolding %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endfolding %}</span></span></code></pre></figure>
+<!-- endtab -->
+<h2 id="gallery-相册图库"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#gallery-相册图库">#</a>Gallery 相册图库</h2>
+<p>一个图库集合。</p>
+<!-- tab 标签语法 -->
+<ol>
+<li>
+<p>gallerygroup 相册图库</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">&#x3C;</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">div</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> class</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"gallery-group-main"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% galleryGroup name description link img-url %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% galleryGroup name description link img-url %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% galleryGroup name description link img-url %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">&#x3C;/</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">div</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span></code></pre></figure>
+</li>
+<li>
+<p>gallery 相册</p>
+</li>
+</ol>
+<!-- tab 本地 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% gallery %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">markdown 图片格式</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endgallery %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% gallery true,220,10 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">markdown 图片格式</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endgallery %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% gallery true,,10 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">markdown 图片格式</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endgallery %}</span></span></code></pre></figure>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>释义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lazyload</td>
+<td>【可选】点击按钮加载更多图片，填写 true/false。默认为 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>false</span></span></code></span>。</td>
+</tr>
+<tr>
+<td>rowHeight</td>
+<td>【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>220</span></span></code></span>。</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>【可选】每次加载多少张照片。默认为 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>10</span></span></code></span>。</td>
+</tr>
+</tbody>
+</table>
+<!-- endtab -->
+<!-- tab 远程 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% gallery url,[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">link</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">],[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">lazyload</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">],[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">rowHeight</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">],[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">limit</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endgallery %}</span></span></code></pre></figure>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>释义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>url</td>
+<td>【必须】 识别词</td>
+</tr>
+<tr>
+<td>link</td>
+<td>【必须】远程的 json 链接</td>
+</tr>
+<tr>
+<td>lazyload</td>
+<td>【可选】点击按钮加载更多图片，填写 true/false。默认为 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>false</span></span></code></span>。</td>
+</tr>
+<tr>
+<td>rowHeight</td>
+<td>【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>220</span></span></code></span>。</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>【可选】每次加载多少张照片。默认为 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>10</span></span></code></span>。</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>远程链接 Json 的例子</p>
+</blockquote>
+<p>有三个参数，<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>url</span></span></code></span>是必须存在的，<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>alt</span></span></code></span> 和 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>title</span></span></code></span> 可有，也可没有。</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="json" data-theme="github-light-default github-dark-default"><code data-language="json" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">[</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  {</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">    "url"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0556.jpg"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">    "alt"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"IMG_0556.jpg"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">    "title"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"这是title"</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  },</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  {</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">    "url"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0472.jpg"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">    "alt"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"IMG_0472.jpg"</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  },</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  {</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">    "url"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0453.jpg"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">    "alt"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">""</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  },</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  {</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">    "url"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0931.jpg"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">    "alt"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">""</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  }</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">]</span></span></code></pre></figure>
+<blockquote>
+<p>示例</p>
+</blockquote>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% gallery url,https://xxxx.com/sss.json %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endgallery %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% gallery url,https://xxxx.com/sss.json,true,220,10 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endgallery %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% gallery url,https://xxxx.com/sss.json,true,,10 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endgallery %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- endtab -->
+<!-- tab 参数配置 -->
+<ul>
+<li>
+<p>gallerygroup 相册图库</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数名</th>
+<th align="left">释义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">name</td>
+<td align="left">图库名字</td>
+</tr>
+<tr>
+<td align="left">description</td>
+<td align="left">图库描述</td>
+</tr>
+<tr>
+<td align="left">link</td>
+<td align="left">链接到对应相册的地址</td>
+</tr>
+<tr>
+<td align="left">img-url</td>
+<td align="left">图库封面</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<div class="hexo-note">
+<p>思维拓展一下，相册图库的实质其实就是个快捷方式，可以自定义添加描述、封面、链接。那么我们未必要把它当做一个相册，完全可以作为一个链接卡片，链接到视频、QQ、友链都是不错的选择。</p>
+</div>
+<ul>
+<li>gallery 相册
+区别于旧版的 Gallery 相册,新的 Gallery 相册会自动根据图片长度进行排版，书写也更加方便，与 markdown 格式一样。可根据需要插入到相应的 md。无需再自己配置长宽。<strong>建议在粘贴时故意使用长短、大小、横竖不一的图片</strong>，会有更好的效果。（尺寸完全相同的图片只会平铺输出，效果很糟糕）</li>
+</ul>
+<!-- tab 本地 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% gallery %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">markdown 图片格式</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endgallery %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% gallery true,220,10 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">markdown 图片格式</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endgallery %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% gallery true,,10 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">markdown 图片格式</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endgallery %}</span></span></code></pre></figure>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>释义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lazyload</td>
+<td>【可选】点击按钮加载更多图片，填写 true/false。默认为 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>false</span></span></code></span>。</td>
+</tr>
+<tr>
+<td>rowHeight</td>
+<td>【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>220</span></span></code></span>。</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>【可选】每次加载多少张照片。默认为 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>10</span></span></code></span>。</td>
+</tr>
+</tbody>
+</table>
+<!-- endtab -->
+<!-- tab 远程 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% gallery url,[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">link</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">],[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">lazyload</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">],[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">rowHeight</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">],[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">limit</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endgallery %}</span></span></code></pre></figure>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>释义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>url</td>
+<td>【必须】 识别词</td>
+</tr>
+<tr>
+<td>link</td>
+<td>【必须】远程的 json 链接</td>
+</tr>
+<tr>
+<td>lazyload</td>
+<td>【可选】点击按钮加载更多图片，填写 true/false。默认为 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>false</span></span></code></span>。</td>
+</tr>
+<tr>
+<td>rowHeight</td>
+<td>【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>220</span></span></code></span>。</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>【可选】每次加载多少张照片。默认为 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>10</span></span></code></span>。</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>远程链接 Json 的例子</p>
+</blockquote>
+<p>有三个参数，<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>url</span></span></code></span>是必须存在的，<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>alt</span></span></code></span> 和 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>title</span></span></code></span> 可有，也可没有。</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="json" data-theme="github-light-default github-dark-default"><code data-language="json" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">[</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  {</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">    "url"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0556.jpg"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">    "alt"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"IMG_0556.jpg"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">    "title"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"这是title"</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  },</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  {</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">    "url"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0472.jpg"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">    "alt"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"IMG_0472.jpg"</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  },</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  {</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">    "url"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0453.jpg"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">    "alt"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">""</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  },</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  {</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">    "url"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0931.jpg"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">    "alt"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">""</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  }</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">]</span></span></code></pre></figure>
+<blockquote>
+<p>示例</p>
+</blockquote>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% gallery url,https://xxxx.com/sss.json %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endgallery %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% gallery url,https://xxxx.com/sss.json,true,220,10 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endgallery %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% gallery url,https://xxxx.com/sss.json,true,,10 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endgallery %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- endtab -->
+<!-- tab 样式预览 -->
+<ul>
+<li>gallerygroup 相册图库</li>
+</ul>
+<div class="gallery-group-main">
+</div>
+<ul>
+<li>gallery 相册</li>
+</ul>
+<p><img src="https://bu.dusays.com/2023/06/01/647896b15759c.jpg" alt="">
+<img src="https://bu.dusays.com/2023/06/01/647896cabde59.jpg" alt="">
+<img src="https://bu.dusays.com/2023/06/01/647896eb0f3ea.jpg" alt="">
+<img src="https://bu.dusays.com/2023/06/01/647896ed810b3.jpg" alt="">
+<img src="https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg" alt="">
+<img src="https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg" alt="">
+<img src="https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg" alt="">
+<img src="https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg" alt=""></p>
+<!-- endtab -->
+<!-- tab 示例源码 -->
+<div class="hexo-note">
+<p>对于很多同学提问的<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>gallerygroup</span></span></code></span>和<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>gallery</span></span></code></span>相册页的链接问题。这里说下我个人的使用习惯。
+一般使用相册图库的话，可以在导航栏加一个 gallery 的 page(<strong>使用指令<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>hexo new page gallery</span></span></code></span>添加</strong>)，里面放相册图库作为封面。然后在<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>[Blogroot]/source/gallery/</span></span></code></span>下面建立相应的文件夹，例如若按照这里的示例，若欲使用<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>/gallery/MC/</span></span></code></span>路径访问 MC 相册，则需要新建<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>[Blogroot]/source/gallery/MC/index.md</span></span></code></span>，并在里面填入<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>gallery</span></span></code></span>相册内容。</p>
+<p>注意 ⚠️：本站相册集为单独优化，可参考<a href="https://anheyu.com/posts/220c.html">配置相册页面</a>。</p>
+</div>
+<ol>
+<li>
+<p>gallerygroup 相册图库</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">&#x3C;</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">div</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> class</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"gallery-group-main"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> {% galleryGroup MC 在Rikkaの六花服务器里留下的足迹 '/wordScenery/' https://bu.dusays.com/2023/06/01/64788f24d05bd.webp %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> {% galleryGroup Gundam 哦咧哇gundam哒！ '/thousand/' https://bu.dusays.com/2023/06/01/64788f456fc3d.webp %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> {% galleryGroup I-am-Akilar 某种意义上也算自拍吧 '/wallpaper/' https://bu.dusays.com/2023/06/01/64788f83e5fa1.webp %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">&#x3C;/</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">div</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span></code></pre></figure>
+</li>
+<li>
+<p>gallery 相册</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% gallery true,,2 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">![](</span><span style="--shiki-light:#1F2328;--shiki-light-text-decoration:underline;--shiki-dark:#E6EDF3;--shiki-dark-text-decoration:underline">https://bu.dusays.com/2023/06/01/647896b15759c.jpg</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">![](</span><span style="--shiki-light:#1F2328;--shiki-light-text-decoration:underline;--shiki-dark:#E6EDF3;--shiki-dark-text-decoration:underline">https://bu.dusays.com/2023/06/01/647896cabde59.jpg</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">![](</span><span style="--shiki-light:#1F2328;--shiki-light-text-decoration:underline;--shiki-dark:#E6EDF3;--shiki-dark-text-decoration:underline">https://bu.dusays.com/2023/06/01/647896eb0f3ea.jpg</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">![](</span><span style="--shiki-light:#1F2328;--shiki-light-text-decoration:underline;--shiki-dark:#E6EDF3;--shiki-dark-text-decoration:underline">https://bu.dusays.com/2023/06/01/647890012b1ec.webp</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">![](</span><span style="--shiki-light:#1F2328;--shiki-light-text-decoration:underline;--shiki-dark:#E6EDF3;--shiki-dark-text-decoration:underline">https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">![](</span><span style="--shiki-light:#1F2328;--shiki-light-text-decoration:underline;--shiki-dark:#E6EDF3;--shiki-dark-text-decoration:underline">https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">![](</span><span style="--shiki-light:#1F2328;--shiki-light-text-decoration:underline;--shiki-dark:#E6EDF3;--shiki-dark-text-decoration:underline">https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">![](</span><span style="--shiki-light:#1F2328;--shiki-light-text-decoration:underline;--shiki-dark:#E6EDF3;--shiki-dark-text-decoration:underline">https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endgallery %}</span></span></code></pre></figure>
+</li>
+</ol>
+<!-- endtab -->
+<h2 id="tag-hide"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#tag-hide">#</a>tag-hide</h2>
+<div class="hexo-note">
+<p>如果你想把一些文字、内容隐藏起来，并提供按钮让用户点击显示。可以使用这个标签外挂。
+请注意，tag-hide内的标签外挂content内都不建议有h1 - h6 等标题。因为Toc会把隐藏内容标题也显示出来，而且当滚动屏幕时，如果隐藏内容没有显示出来，会导致Toc的滚动出现异常。</p>
+</div>
+<!-- tab inline -->
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>inline</span></span></code></span> 在文本里面添加按钮隐藏内容，只限文字</p>
+<p>( content不能包含英文逗号，可用<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>&#x26;sbquo;</span></span></code></span>)</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% hideInline content,display,bg,color %}</span></span></code></pre></figure>
+<ul>
+<li>
+<p>content: 文本内容</p>
+</li>
+<li>
+<p>display: 按钮显示的文字(可选)</p>
+</li>
+<li>
+<p>bg: 按钮的背景颜色(可选)</p>
+</li>
+<li>
+<p>color: 按钮文字的颜色(可选)</p>
+</li>
+</ul>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">哪个英文字母最酷？ {% hideInline 因为西装裤(C装酷),查看答案,#FF7242,#fff %}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">门里站着一个人? {% hideInline 闪 %}</span></span></code></pre></figure>
+<p>哪个英文字母最酷？</p>
+<p>门里站着一个人?</p>
+<!-- endtab -->
+<!-- tab Block -->
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>block</span></span></code></span>独立的block隐藏内容，可以隐藏很多内容，包括图片，代码块等等</p>
+<p>( display 不能包含英文逗号，可用<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>&#x26;sbquo;</span></span></code></span>)</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% hideBlock display,bg,color %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">content</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endhideBlock %}</span></span></code></pre></figure>
+<ul>
+<li>
+<p>content: 文本内容</p>
+</li>
+<li>
+<p>display: 按钮显示的文字(可选)</p>
+</li>
+<li>
+<p>bg: 按钮的背景颜色(可选)</p>
+</li>
+<li>
+<p>color: 按钮文字的颜色(可选)</p>
+</li>
+</ul>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">查看答案</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% hideBlock 查看答案 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">傻子，怎么可能有答案</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endhideBlock %}</span></span></code></pre></figure>
+<p>查看答案</p>
+<p>傻子，怎么可能有答案</p>
+<!-- endtab -->
+<!-- tab Toggle -->
+<p>如果你需要展示的内容太多，可以把它隐藏在收缩框里，需要时再把它展开。</p>
+<p>( display 不能包含英文逗号，可用<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>&#x26;sbquo;</span></span></code></span>)</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% hideToggle display,bg,color %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">content</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endhideToggle %}</span></span></code></pre></figure>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+<p>在你的博客根目录里</p>
+<p>git clone -b master <a href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git">https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git</a> themes/anzhiyu</p>
+<p>如果想要安装比较新的dev分支，可以</p>
+<p>git clone -b dev <a href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git">https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git</a> themes/anzhiyu</p>
+<!-- endtab -->
+<h2 id="链接卡片-link"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#链接卡片-link">#</a>链接卡片 link</h2>
+<!-- tab 标签语法 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% link 标题, 站点描述, 链接, 图片链接（可选） %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 样式预览 -->
+<!-- endtab -->
+<!-- tab 示例源码 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% link 获取网站的Favicon图标并显示在你的网页上,owen0o0,https://github.com/owen0o0/getFavicon %}</span></span></code></pre></figure>
+<!-- endtab -->
+<h2 id="单选列表-radio"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#单选列表-radio">#</a>单选列表 radio</h2>
+<!-- tab 标签语法 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% radio 样式参数（可选）, 文本（支持简单md） %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 配置参数 -->
+<ol>
+<li>
+<p>颜色: red,yellow,green,cyan,blue,gray</p>
+</li>
+<li>
+<p>选中状态: checked</p>
+<!-- endtab -->
+<!-- tab 样式预览 -->
+<!-- endtab -->
+<!-- tab 示例源码 -->
+</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% radio 纯文本测试 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% radio checked, 支持简单的 [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">markdown</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">](</span><span style="--shiki-light:#1F2328;--shiki-light-text-decoration:underline;--shiki-dark:#E6EDF3;--shiki-dark-text-decoration:underline">https://guides.github.com/features/mastering-markdown/</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">) 语法 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% radio red, 支持自定义颜色 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% radio green, 绿色 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% radio yellow, 黄色 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% radio cyan, 青色 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% radio blue, 蓝色 %}</span></span></code></pre></figure>
+<!-- endtab -->
+<h2 id="上标标签-tip"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#上标标签-tip">#</a>上标标签 tip</h2>
+<div class="hexo-note">
+<p>主要样式参考自<a href="https://www.antmoe.com/posts/3b43914f/">小康的 butterfly 渐变背景标签</a></p>
+</div>
+<!-- tab 标签语法 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% tip [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">参数，可选</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] %}文本内容{% endtip %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 配置参数 -->
+<ol>
+<li>样式: success,error,warning,bolt,ban,home,sync,cogs,key,bell</li>
+<li>自定义图标: 支持 fontawesome。
+<!-- endtab -->
+</li>
+</ol>
+<!-- tab 样式预览 -->
+<div class="hexo-note">
+<p>default</p>
+</div>
+<div class="hexo-note">
+<p>info</p>
+</div>
+<div class="hexo-note">
+<p>success</p>
+</div>
+<div class="hexo-note">
+<p>error</p>
+</div>
+<div class="hexo-note">
+<p>warning</p>
+</div>
+<div class="hexo-note">
+<p>bolt</p>
+</div>
+<div class="hexo-note">
+<p>ban</p>
+</div>
+<div class="hexo-note">
+<p>home</p>
+</div>
+<div class="hexo-note">
+<p>sync</p>
+</div>
+<div class="hexo-note">
+<p>cogs</p>
+</div>
+<div class="hexo-note">
+<p>key</p>
+</div>
+<div class="hexo-note">
+<p>bell</p>
+</div>
+<div class="hexo-note">
+<p>自定义 font awesome 图标</p>
+</div>
+<!-- endtab -->
+<!-- tab 示例源码 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% tip %}default{% endtip %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% tip info %}info{% endtip %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% tip success %}success{% endtip %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% tip error %}error{% endtip %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% tip warning %}warning{% endtip %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% tip bolt %}bolt{% endtip %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% tip ban %}ban{% endtip %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% tip home %}home{% endtip %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% tip sync %}sync{% endtip %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% tip cogs %}cogs{% endtip %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% tip key %}key{% endtip %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% tip bell %}bell{% endtip %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% tip fa-atom %}自定义 font awesome 图标{% endtip %}</span></span></code></pre></figure>
+<!-- endtab -->
+<h2 id="note-bootstrap-callout"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#note-bootstrap-callout">#</a>Note (Bootstrap Callout)</h2>
+<!-- tab 通用配置 -->
+<p>修改主题配置文件</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="yml" data-theme="github-light-default github-dark-default"><code data-language="yml" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">note</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">:</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">  # Note tag style values:</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">  #  - simple    bs-callout old alert style. Default.</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">  #  - modern    bs-callout new (v2-v3) alert style.</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">  #  - disabled  disable all CSS styles import of note tag.</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">  style</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">simple</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">  icons</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">false</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">  border_radius</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">3</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">  # Offset also applied to label tag variables. This option can work with disabled note tag.</span></span>
+<span data-line=""><span style="--shiki-light:#116329;--shiki-dark:#7EE787">  light_bg_offset</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">0</span></span></code></pre></figure>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>Note</span></span></code></span>标签外挂有两种用法。<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>icons</span></span></code></span>和<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>light_bg_offset</span></span></code></span>只对方法一生效。</p>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>fontawesome</span></span></code></span>图标需开启主题配置文件中<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>icons.fontawesome</span></span></code></span></p>
+<!-- endtab -->
+<!-- tab 语法格式 -->
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>方法一</span></span></code></span></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">class</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">no-icon</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">style</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">Any content (support inline tags too.io).</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endnote %}</span></span></code></pre></figure>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>方法二</span></span></code></span></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">color</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">icon</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">style</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">Any content (support inline tags too.io).</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endnote %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 配置参数 -->
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>方法一</span></span></code></span></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">class</td>
+<td align="left">【可选】标识，不同的标识有不同的配色<br>（ default / primary / success / info / warning / danger ）</td>
+</tr>
+<tr>
+<td align="left">no-icon</td>
+<td align="left">【可选】不显示 icon</td>
+</tr>
+<tr>
+<td align="left">style</td>
+<td align="left">【可选】可以覆盖配置中的 style<br>（simple/modern/flat/disabled）</td>
+</tr>
+</tbody>
+</table>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>方法二</span></span></code></span></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">class</td>
+<td align="left">【可选】标识，不同的标识有不同的配色<br>（ default / blue / pink / red / purple / orange / green ）</td>
+</tr>
+<tr>
+<td align="left">no-icon</td>
+<td align="left">【可选】可配置自定义 icon (支持 fontawesome 图标和主题内置的阿里图标,<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>fontawesome</span></span></code></span>图标需开启主题配置文件中<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>icons.fontawesome</span></span></code></span>, 也可以配置 no-icon )</td>
+</tr>
+<tr>
+<td align="left">style</td>
+<td align="left">【可选】可以覆盖配置中的 style<br>（simple/modern/flat/disabled）</td>
+</tr>
+</tbody>
+</table>
+<!-- endtab -->
+<!-- tab 样式预览 -->
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>方法一</span></span></code></span></p>
+<ol>
+<li><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>simple</span></span></code></span>样式</li>
+</ol>
+<div class="hexo-note">
+<p>默认 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>default 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>primary 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>success 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>info 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>warning 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>danger 提示块标签</p>
+</div>
+<ol start="2">
+<li><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>modern</span></span></code></span>样式</li>
+</ol>
+<div class="hexo-note">
+<p>默认 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>default 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>primary 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>success 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>info 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>warning 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>danger 提示块标签</p>
+</div>
+<ol start="3">
+<li><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>flat</span></span></code></span>样式</li>
+</ol>
+<div class="hexo-note">
+<p>默认 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>default 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>primary 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>success 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>info 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>warning 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>danger 提示块标签</p>
+</div>
+<ol start="4">
+<li><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>disabled</span></span></code></span>样式</li>
+</ol>
+<div class="hexo-note">
+<p>默认 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>default 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>primary 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>success 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>info 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>warning 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>danger 提示块标签</p>
+</div>
+<ol start="5">
+<li><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>no-icon</span></span></code></span>样式</li>
+</ol>
+<div class="hexo-note">
+<p>默认 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>default 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>primary 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>success 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>info 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>warning 提示块标签</p>
+</div>
+<div class="hexo-note">
+<p>danger 提示块标签</p>
+</div>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>方法二</span></span></code></span></p>
+<p>图标支持 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>fontawesome</span></span></code></span> 和 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>主题内置的阿里图标</span></span></code></span>，使用方法为加上对应的类名，<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>fontawesome</span></span></code></span>图标需开启主题配置文件中<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>icons.fontawesome</span></span></code></span>，默认未开启 fontawesome</p>
+<ol>
+<li>simple 样式</li>
+</ol>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>主题内置阿里图标</span></span></code></span></p>
+<div class="hexo-note">
+<p>你是刷 Visa 还是 UnionPay</p>
+</div>
+<div class="hexo-note">
+<p>2022 年快到了....</p>
+</div>
+<div class="hexo-note">
+<p>小心开车 安全至上</p>
+</div>
+<div class="hexo-note">
+<p>这是三片呢？还是四片？</p>
+</div>
+<div class="hexo-note">
+<p>你是刷 Visa 还是 UnionPay</p>
+</div>
+<div class="hexo-note">
+<p>剪刀石头布</p>
+</div>
+<div class="hexo-note">
+<p>前端最讨厌的浏览器</p>
+</div>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>fontawesome 图标</span></span></code></span>，开启主题配置文件中的<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>icons.fontawesome</span></span></code></span>为<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>true</span></span></code></span>后可见</p>
+<div class="hexo-note">
+<p>你是刷 Visa 还是 UnionPay</p>
+</div>
+<div class="hexo-note">
+<p>2022 年快到了....</p>
+</div>
+<div class="hexo-note">
+<p>小心开车 安全至上</p>
+</div>
+<div class="hexo-note">
+<p>这是三片呢？还是四片？</p>
+</div>
+<div class="hexo-note">
+<p>你是刷 Visa 还是 UnionPay</p>
+</div>
+<div class="hexo-note">
+<p>剪刀石头布</p>
+</div>
+<div class="hexo-note">
+<p>前端最讨厌的浏器</p>
+</div>
+<ol start="2">
+<li>modern 样式</li>
+</ol>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>主题内置阿里图标</span></span></code></span></p>
+<div class="hexo-note">
+<p>你是刷 Visa 还是 UnionPay</p>
+</div>
+<div class="hexo-note">
+<p>2022 年快到了....</p>
+</div>
+<div class="hexo-note">
+<p>小心开车 安全至上</p>
+</div>
+<div class="hexo-note">
+<p>这是三片呢？还是四片？</p>
+</div>
+<div class="hexo-note">
+<p>你是刷 Visa 还是 UnionPay</p>
+</div>
+<div class="hexo-note">
+<p>剪刀石头布</p>
+</div>
+<div class="hexo-note">
+<p>前端最讨厌的浏览器</p>
+</div>
+<p><code>fontawesome 图标</code>，开启主题配置文件中的<code>icons.fontawesome</code>为<code>true</code>后可见</p>
+<div class="hexo-note">
+<p>你是刷 Visa 还是 UnionPay</p>
+</div>
+<div class="hexo-note">
+<p>2021 年快到了....</p>
+</div>
+<div class="hexo-note">
+<p>小心开车 安全至上</p>
+</div>
+<div class="hexo-note">
+<p>这是三片呢？还是四片？</p>
+</div>
+<div class="hexo-note">
+<p>你是刷 Visa 还是 UnionPay</p>
+</div>
+<div class="hexo-note">
+<p>剪刀石头布</p>
+</div>
+<div class="hexo-note">
+<p>前端最讨厌的浏览器</p>
+</div>
+<ol start="3">
+<li>flat 样式</li>
+</ol>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>主题内置阿里图标</span></span></code></span></p>
+<div class="hexo-note">
+<p>你是刷 Visa 还是 UnionPay</p>
+</div>
+<div class="hexo-note">
+<p>2022 年快到了....</p>
+</div>
+<div class="hexo-note">
+<p>小心开车 安全至上</p>
+</div>
+<div class="hexo-note">
+<p>这是三片呢？还是四片？</p>
+</div>
+<div class="hexo-note">
+<p>你是刷 Visa 还是 UnionPay</p>
+</div>
+<div class="hexo-note">
+<p>剪刀石头布</p>
+</div>
+<div class="hexo-note">
+<p>前端最讨厌的浏览器</p>
+</div>
+<p><code>fontawesome 图标</code>，开启主题配置文件中的<code>icons.fontawesome</code>为<code>true</code>后可见</p>
+<div class="hexo-note">
+<p>你是刷 Visa 还是 UnionPay</p>
+</div>
+<div class="hexo-note">
+<p>2021 年快到了....</p>
+</div>
+<div class="hexo-note">
+<p>小心开车 安全至上</p>
+</div>
+<div class="hexo-note">
+<p>这是三片呢？还是四片？</p>
+</div>
+<div class="hexo-note">
+<p>你是刷 Visa 还是 UnionPay</p>
+</div>
+<div class="hexo-note">
+<p>剪刀石头布</p>
+</div>
+<div class="hexo-note">
+<p>前端最讨厌的浏览器</p>
+</div>
+<ol start="4">
+<li>disabled 样式</li>
+</ol>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>主题内置阿里图标</span></span></code></span></p>
+<div class="hexo-note">
+<p>你是刷 Visa 还是 UnionPay</p>
+</div>
+<div class="hexo-note">
+<p>2022 年快到了....</p>
+</div>
+<div class="hexo-note">
+<p>小心开车 安全至上</p>
+</div>
+<div class="hexo-note">
+<p>这是三片呢？还是四片？</p>
+</div>
+<div class="hexo-note">
+<p>你是刷 Visa 还是 UnionPay</p>
+</div>
+<div class="hexo-note">
+<p>剪刀石头布</p>
+</div>
+<div class="hexo-note">
+<p>前端最讨厌的浏览器</p>
+</div>
+<p><code>fontawesome 图标</code>，开启主题配置文件中的<code>icons.fontawesome</code>为<code>true</code>后可见</p>
+<div class="hexo-note">
+<p>你是刷 Visa 还是 UnionPay</p>
+</div>
+<div class="hexo-note">
+<p>2021 年快到了....</p>
+</div>
+<div class="hexo-note">
+<p>小心开车 安全至上</p>
+</div>
+<div class="hexo-note">
+<p>这是三片呢？还是四片？</p>
+</div>
+<div class="hexo-note">
+<p>你是刷 Visa 还是 UnionPay</p>
+</div>
+<div class="hexo-note">
+<p>剪刀石头布</p>
+</div>
+<div class="hexo-note">
+<p>前端最讨厌的浏览器</p>
+</div>
+<ol start="5">
+<li>no-icon 样式</li>
+</ol>
+<div class="hexo-note">
+<p>你是刷 Visa 还是 UnionPay</p>
+</div>
+<div class="hexo-note">
+<p>2021 年快到了....</p>
+</div>
+<div class="hexo-note">
+<p>小心开车 安全至上</p>
+</div>
+<div class="hexo-note">
+<p>这是三片呢？还是四片？</p>
+</div>
+<div class="hexo-note">
+<p>你是刷 Visa 还是 UnionPay</p>
+</div>
+<div class="hexo-note">
+<p>剪刀石头布</p>
+</div>
+<div class="hexo-note">
+<p>前端最讨厌的浏览器</p>
+</div>
+<!-- endtab -->
+<!-- tab 示例源码 -->
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>方法一</span></span></code></span></p>
+<ol>
+<li><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>simple</span></span></code></span>样式</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note simple %}默认 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note default simple %}default 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note primary simple %}primary 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note success simple %}success 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note info simple %}info 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note warning simple %}warning 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note danger simple %}danger 提示块标签{% endnote %}</span></span></code></pre></figure>
+<ol start="2">
+<li><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>modern</span></span></code></span>样式</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note modern %}默认 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note default modern %}default 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note primary modern %}primary 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note success modern %}success 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note info modern %}info 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note warning modern %}warning 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note danger modern %}danger 提示块标签{% endnote %}</span></span></code></pre></figure>
+<ol start="3">
+<li><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>flat</span></span></code></span>样式</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note flat %}默认 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note default flat %}default 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note primary flat %}primary 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note success flat %}success 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note info flat %}info 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note warning flat %}warning 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note danger flat %}danger 提示块标签{% endnote %}</span></span></code></pre></figure>
+<ol start="4">
+<li><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>disabled</span></span></code></span>样式</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note disabled %}默认 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note default disabled %}default 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note primary disabled %}primary 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note success disabled %}success 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note info disabled %}info 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note warning disabled %}warning 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note danger disabled %}danger 提示块标签{% endnote %}</span></span></code></pre></figure>
+<ol start="5">
+<li><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>no-icon</span></span></code></span>样式</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note no-icon %}默认 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note default no-icon %}default 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note primary no-icon %}primary 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note success no-icon %}success 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note info no-icon %}info 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note warning no-icon %}warning 提示块标签{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note danger no-icon %}danger 提示块标签{% endnote %}</span></span></code></pre></figure>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>方法二</span></span></code></span></p>
+<p>图标支持 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>fontawesome</span></span></code></span> 和 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>主题内置的阿里图标</span></span></code></span>，使用方法为加上对应的类名，<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>fontawesome</span></span></code></span>图标需开启主题配置文件中<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>icons.fontawesome</span></span></code></span>，默认未开启 fontawesome</p>
+<ol>
+<li>
+<p>simple 样式
+<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>主题内置阿里图标</span></span></code></span></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note 'anzhiyufont anzhiyu-icon-rocket' simple %}你是刷 Visa 还是 UnionPay{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note blue 'anzhiyufont anzhiyu-icon-bullhorn' simple %}2022 年快到了....{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note pink 'anzhiyufont anzhiyu-icon-instagram' simple %}小心开车 安全至上{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note red 'anzhiyufont anzhiyu-icon-fan' simple%}这是三片呢？还是四片？{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note orange 'anzhiyufont anzhiyu-icon-dengpao' simple %}你是刷 Visa 还是 UnionPay{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note purple 'anzhiyufont anzhiyu-icon-sanmingzhi' simple %}剪刀石头布{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note green 'anzhiyufont anzhiyu-icon-ic_train' simple %}前端最讨厌的浏览器{% endnote %}</span></span></code></pre></figure>
+<p><code>fontawesome 图标</code>，开启主题配置文件中的<code>icons.fontawesome</code>为<code>true</code>后可见</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note 'fab fa-cc-visa' simple %}你是刷 Visa 还是 UnionPay{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note blue 'fas fa-bullhorn' simple %}2022 年快到了....{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note pink 'fas fa-car-crash' simple %}小心开车 安全至上{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note red 'icon-fan' simple%}这是三片呢？还是四片？{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note orange 'fas fa-battery-half' simple %}你是刷 Visa 还是 UnionPay{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note purple 'far fa-hand-scissors' simple %}剪刀石头布{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note green 'fab fa-internet-explorer' simple %}前端最讨厌的浏览器{% endnote %}</span></span></code></pre></figure>
+</li>
+<li>
+<p>modern 样式
+<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>主题内置阿里图标</span></span></code></span></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note 'anzhiyufont anzhiyu-icon-rocket' modern %}你是刷 Visa 还是 UnionPay{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note blue 'anzhiyufont anzhiyu-icon-bullhorn' modern %}2022 年快到了....{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note pink 'anzhiyufont anzhiyu-icon-instagram' modern %}小心开车 安全至上{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note red 'anzhiyufont anzhiyu-icon-fan' modern%}这是三片呢？还是四片？{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note orange 'anzhiyufont anzhiyu-icon-dengpao' modern %}你是刷 Visa 还是 UnionPay{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note purple 'anzhiyufont anzhiyu-icon-sanmingzhi' modern %}剪刀石头布{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note green 'anzhiyufont anzhiyu-icon-ic_train' modern %}前端最讨厌的浏览器{% endnote %}</span></span></code></pre></figure>
+<p><code>fontawesome 图标</code>，开启主题配置文件中的<code>icons.fontawesome</code>为<code>true</code>后可见</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note 'fab fa-cc-visa' modern %}你是刷 Visa 还是 UnionPay{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note blue 'fas fa-bullhorn' modern %}2021 年快到了....{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note pink 'fas fa-car-crash' modern %}小心开车 安全至上{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note red 'icon-fan' modern%}这是三片呢？还是四片？{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note orange 'fas fa-battery-half' modern %}你是刷 Visa 还是 UnionPay{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note purple 'far fa-hand-scissors' modern %}剪刀石头布{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note green 'fab fa-internet-explorer' modern %}前端最讨厌的浏览器{% endnote %}</span></span></code></pre></figure>
+</li>
+<li>
+<p>flat 样式
+<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>主题内置阿里图标</span></span></code></span></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note 'anzhiyufont anzhiyu-icon-rocket' flat %}你是刷 Visa 还是 UnionPay{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note blue 'anzhiyufont anzhiyu-icon-bullhorn' flat %}2022 年快到了....{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note pink 'anzhiyufont anzhiyu-icon-instagram' flat %}小心开车 安全至上{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note red 'anzhiyufont anzhiyu-icon-fan' flat%}这是三片呢？还是四片？{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note orange 'anzhiyufont anzhiyu-icon-dengpao' flat %}你是刷 Visa 还是 UnionPay{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note purple 'anzhiyufont anzhiyu-icon-sanmingzhi' flat %}剪刀石头布{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note green 'anzhiyufont anzhiyu-icon-ic_train' flat %}前端最讨厌的浏览器{% endnote %}</span></span></code></pre></figure>
+<p><code>fontawesome 图标</code>，开启主题配置文件中的<code>icons.fontawesome</code>为<code>true</code>后可见</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note 'fab fa-cc-visa' flat %}你是刷 Visa 还是 UnionPay{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note blue 'fas fa-bullhorn' flat %}2021 年快到了....{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note pink 'fas fa-car-crash' flat %}小心开车 安全至上{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note red 'icon-fan' flat%}这是三片呢？还是四片？{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note orange 'fas fa-battery-half' flat %}你是刷 Visa 还是 UnionPay{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note purple 'far fa-hand-scissors' flat %}剪刀石头布{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note green 'fab fa-internet-explorer' flat %}前端最讨厌的浏览器{% endnote %}</span></span></code></pre></figure>
+</li>
+<li>
+<p>disabled 样式
+<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>主题内置阿里图标</span></span></code></span></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note 'anzhiyufont anzhiyu-icon-rocket' disabled %}你是刷 Visa 还是 UnionPay{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note blue 'anzhiyufont anzhiyu-icon-bullhorn' disabled %}2022 年快到了....{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note pink 'anzhiyufont anzhiyu-icon-instagram' disabled %}小心开车 安全至上{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note red 'anzhiyufont anzhiyu-icon-fan' disabled%}这是三片呢？还是四片？{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note orange 'anzhiyufont anzhiyu-icon-dengpao' disabled %}你是刷 Visa 还是 UnionPay{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note purple 'anzhiyufont anzhiyu-icon-sanmingzhi' disabled %}剪刀石头布{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note green 'anzhiyufont anzhiyu-icon-ic_train' disabled %}前端最讨厌的浏览器{% endnote %}</span></span></code></pre></figure>
+<p><code>fontawesome 图标</code>，开启主题配置文件中的<code>icons.fontawesome</code>为<code>true</code>后可见</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note 'fab fa-cc-visa' disabled %}你是刷 Visa 还是 UnionPay{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note blue 'fas fa-bullhorn' disabled %}2021 年快到了....{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note pink 'fas fa-car-crash' disabled %}小心开车 安全至上{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note red 'icon-fan' disabled %}这是三片呢？还是四片？{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note orange 'fas fa-battery-half' disabled %}你是刷 Visa 还是 UnionPay{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note purple 'far fa-hand-scissors' disabled %}剪刀石头布{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note green 'fab fa-internet-explorer' disabled %}前端最讨厌的浏览器{% endnote %}</span></span></code></pre></figure>
+</li>
+<li>
+<p>no-icon 样式</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note no-icon %}你是刷 Visa 还是 UnionPay{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note blue no-icon %}2021 年快到了....{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note pink no-icon %}小心开车 安全至上{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note red no-icon %}这是三片呢？还是四片？{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note orange no-icon %}你是刷 Visa 还是 UnionPay{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note purple no-icon %}剪刀石头布{% endnote %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% note green no-icon %}前端最讨厌的浏览器{% endnote %}</span></span></code></pre></figure>
+</li>
+</ol>
+<!-- endtab -->
+<h2 id="音频-audio"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#音频-audio">#</a>音频 audio</h2>
+<!-- tab 标签语法 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% audio 音频链接 %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 样式预览 -->
+<!-- endtab -->
+<!-- tab 示例源码 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% audio https://npm.elemecdn.com/anzhiyu-music@1.0.4/%E9%9D%92%E8%8A%B1%E7%93%B7/%E9%9D%92%E8%8A%B1%E7%93%B7.mp3 %}</span></span></code></pre></figure>
+<!-- endtab -->
+<h2 id="视频-video"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#视频-video">#</a>视频 video</h2>
+<!-- tab 标签语法 -->
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% video 视频链接 %}</span></span></code></pre></figure>
+<!-- endtab -->
+<!-- tab 参数配置 -->
+<ol>
+<li>对其方向：left, center, right</li>
+<li>列数：逗号后面直接写列数，支持 1 ～ 4 列。
+<!-- endtab -->
+<!-- tab 样式预览 -->
+</li>
+<li>100%宽度</li>
+</ol>
+<p><img src="https://bu.dusays.com/2023/06/01/6478a1eeb1386.png" alt="100%宽度"></p>
+<ol start="2">
+<li>50%宽度</li>
+</ol>
+<p><img src="https://bu.dusays.com/2023/06/01/6478a20a5f242.png" alt="50%宽度"></p>
+<ol start="3">
+<li>25%宽度</li>
+</ol>
+<p><img src="https://bu.dusays.com/2023/06/01/6478a22b26088.png" alt="25%宽度"></p>
+<!-- endtab -->
+<!-- tab 示例源码 -->
+<ol>
+<li>100%宽度</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}</span></span></code></pre></figure>
+<ol start="2">
+<li>50%宽度</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% videos, 2 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endvideos %}</span></span></code></pre></figure>
+<ol start="3">
+<li>25%宽度</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-default github-dark-default"><code data-language="markdown" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% videos, 4 %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{% endvideos %}</span></span></code></pre></figure>
+<!-- endtab -->2c:["$","div",null,{"className":"mt-8","children":[["$","div",null,{"id":"article-root","className":"prose-editorial","dangerouslySetInnerHTML":{"__html":"$41"}}],"$L42","$L43"]}]
+2d:["$","div",null,{"className":"mt-10","children":["$","$L44",null,{"slug":"deb4dbdb","title":"安知鱼主题标签 Tag Plugins","summary":"添加大量外挂标签样式。"}]}]
+2e:["$","nav",null,{"aria-label":"相邻文章","className":"mt-8 grid gap-3 sm:grid-cols-2","children":[["$","$L1d",null,{"href":"/posts/443e71ba","className":"group project-card flex flex-col justify-between gap-2 rounded-[var(--radius-card)] p-4 outline-none focus-visible:ring-2 focus-visible:ring-signal/70","children":[["$","span",null,{"aria-hidden":true,"className":"project-card-sheen"}],["$","span",null,{"className":"relative inline-flex items-center gap-1.5 font-mono text-[10.5px] text-muted","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left size-3 transition-transform duration-200 group-hover:-translate-x-0.5 group-hover:text-signal-ink","aria-hidden":true,"children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"上一篇 · ","2023-08-22"]}],["$","span",null,{"className":"relative line-clamp-2 text-[14px] font-medium leading-snug text-ink transition-colors group-hover:text-signal-ink","children":"Python数据可视化：Matplotlib常用操作(基础篇)"}]]}],["$","$L1d",null,{"href":"/posts/4e8dad09","className":"group project-card flex flex-col justify-between gap-2 rounded-[var(--radius-card)] p-4 text-right outline-none focus-visible:ring-2 focus-visible:ring-signal/70","children":[["$","span",null,{"aria-hidden":true,"className":"project-card-sheen"}],["$","span",null,{"className":"relative inline-flex items-center justify-end gap-1.5 font-mono text-[10.5px] text-muted","children":["下一篇 · ","2023-09-02",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right size-3 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:text-signal-ink","aria-hidden":true,"children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"relative line-clamp-2 text-[14px] font-medium leading-snug text-ink transition-colors group-hover:text-signal-ink","children":"垃圾代码书写准则"}]]}]]}]
+2f:["$","section",null,{"aria-labelledby":"related-title","className":"mt-14","children":[["$","div",null,{"className":"flex items-center gap-3","children":[["$","h2",null,{"id":"related-title","className":"inline-flex items-center","children":["$","span",null,{"data-slot":"badge","className":"inline-flex items-center gap-1 border tracking-[0.01em] transition-colors border-signal/45 bg-signal/10 text-signal-ink rounded-full px-3 py-0.5 text-[11px]","children":"接着读"}]}],["$","span",null,{"aria-hidden":true,"className":"h-px flex-1 bg-gradient-to-r from-hairline-strong via-hairline to-transparent"}],["$","span",null,{"className":"font-mono text-[10.5px] uppercase tracking-[0.14em] text-muted/75","children":"RELATED · 相关推荐"}]]}],["$","div",null,{"className":"mt-4 grid gap-4 sm:grid-cols-2","children":[["$","$L45","bda0f2db",{"slug":"bda0f2db","label":"Hexo","className":"h-full","children":["$","$L46",null,{"headingLevel":3,"post":{"slug":"bda0f2db","title":"Hexo美化：本站日志创建及配置","summary":"最近在鱼塘水群，有些萌萌哒新人问到了怎么实现 本站日志 这个功能。 本站日志 的目的正是为了记录我在学习和开发过程中所做的每一项尝试与成就。这不仅是对自己努力的见证，也是希望能为其他开发者提供灵感和参考。通过这份日志，我希望能与大家共同探讨…","date":"2024-10-28T20:37:27.000Z","readingMinutes":3,"category":{"slug":"hexo","name":"Hexo"},"tags":[{"slug":"hexo","name":"Hexo"},{"slug":"beautify","name":"美化"},{"slug":"log","name":"日志"}],"archived":false,"cover":"https://img.cent1pedee.top/img/update.jpg","featured":true,"views":null},"reason":"同标签 · Hexo","className":"h-full","footerExtra":["$","$L47",null,{"slug":"bda0f2db","title":"Hexo美化：本站日志创建及配置"}]}]}],["$","$L45","9374da7d",{"slug":"9374da7d","label":"Hexo","className":"h-full","children":["$","$L46",null,{"headingLevel":3,"post":{"slug":"9374da7d","title":"Hexo零成本方案：搭建Umami统计工具","summary":"从早前的 LNMP 、OneinStack 到 XZ Utils ，再到现在的 Staticfile 、BootCDN ；供应链攻击总是让人猝不及防。七月中旬，糖果屋群突然就传来了51La被投毒的消息，而这也是我决定使用Umami的前提因素…","date":"2024-08-31T21:26:00.000Z","readingMinutes":3,"category":{"slug":"hexo","name":"Hexo"},"tags":[{"slug":"hexo","name":"Hexo"},{"slug":"umami","name":"Umami"},{"slug":"tutorial","name":"教程"}],"archived":false,"cover":"https://icdn.amarea.cn/upload/2022/04/625f01b68d30d.jpg","featured":false,"views":null},"reason":"同标签 · Hexo","className":"h-full","footerExtra":["$","$L47",null,{"slug":"9374da7d","title":"Hexo零成本方案：搭建Umami统计工具"}]}]}],["$","$L45","c57f6a8e",{"slug":"c57f6a8e","label":"Hexo","className":"h-full","children":["$","$L46",null,{"headingLevel":3,"post":{"slug":"c57f6a8e","title":"Hexo美化：个性化鼠标指针样式","summary":"该方法通过外部引入，无需修改主题源文件 当我们使用电脑进行日常操作时，鼠标指针是我们与计算机界面直接交互的关键元素之一。然而，在大多数情况下，我们使用的鼠标指针样式都是统一的，这往往会导致视觉疲劳和操作困难。因此，个性化鼠标指针样式的重要性…","date":"2023-11-21T11:30:27.000Z","readingMinutes":2,"category":{"slug":"hexo","name":"Hexo"},"tags":[{"slug":"hexo","name":"Hexo"},{"slug":"beautify","name":"美化"},{"slug":"cursor","name":"指针"}],"archived":false,"cover":"https://img.cent1pedee.top/img/cursor.png","featured":false,"views":null},"reason":"同标签 · Hexo","className":"h-full","footerExtra":["$","$L47",null,{"slug":"c57f6a8e","title":"Hexo美化：个性化鼠标指针样式"}]}]}],["$","$L45","576038b4",{"slug":"576038b4","label":"Hexo","className":"h-full","children":["$","$L46",null,{"headingLevel":3,"post":{"slug":"576038b4","title":"Hexo美化：个性化主题加载页设计方案","summary":"该方法需要对源码进行一定程度上的修改，在修改代码前请务必备份一份在本地 Hexo是一款快速、简洁且高效的静态博客框架，它的加载页是展示个人品牌和风格的重要组成部分。通过定制加载页，你可以为你的网站增添个性化的风格，提升用户体验，以及传达特定…","date":"2023-11-13T09:06:01.000Z","readingMinutes":12,"category":{"slug":"hexo","name":"Hexo"},"tags":[{"slug":"hexo","name":"Hexo"},{"slug":"beautify","name":"美化"},{"slug":"loading","name":"加载页"}],"archived":false,"cover":"https://img.cent1pedee.top/img/loading.jpg","featured":false,"views":null},"reason":"同标签 · Hexo","className":"h-full","footerExtra":["$","$L47",null,{"slug":"576038b4","title":"Hexo美化：个性化主题加载页设计方案"}]}]}]]}]]}]
+30:["$","$L48",null,{"enabled":true,"repo":"","repoId":"","category":"Announcements","categoryId":"","degradedText":"评论服务未配置（Giscus 需要仓库名与分类 ID）。当前为只读模式，正文、目录与分享不受影响。"}]
+31:["$","aside",null,{"className":"hidden lg:block","children":["$","div",null,{"className":"sticky top-24 space-y-5","children":[["$","$L49",null,{"items":"$2b:props:children:0:props:items"}],["$","$L4a",null,{"as":"div","className":"project-panel overflow-hidden rounded-[var(--radius-card)] p-4.5","children":[["$","span",null,{"aria-hidden":true,"className":"project-card-sheen"}],["$","p",null,{"className":"relative font-mono text-[10.5px] uppercase tracking-[0.14em] text-muted","children":"CONTACT · 反馈与联系"}],["$","p",null,{"className":"relative mt-2.5 text-xs leading-relaxed text-muted","children":"文中错误、版本失效或合作意向，都可以直接发消息。"}],["$","$L1d",null,{"href":"/contact","className":"relative mt-3.5 inline-flex h-8 items-center gap-1.5 rounded-full bg-signal px-3.5 text-xs font-medium text-[var(--on-signal)] shadow-[0_6px_16px_-8px_var(--signal)] transition-[filter,transform] duration-200 hover:-translate-y-px hover:brightness-105","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-mail size-3.5","aria-hidden":true,"children":[["$","path","132q7q",{"d":"m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"}],["$","rect","izxlao",{"x":"2","y":"4","width":"20","height":"16","rx":"2"}],"$undefined"]}]," 发送消息"]}]]}]]}]}]
+32:["$","script","script-0",{"src":"/_next/static/chunks/0s9808r35njuo.js","async":true}]
+33:["$","script","script-1",{"src":"/_next/static/chunks/2k9smhrvlu7rz.js","async":true}]
+34:["$","$L4b",null,{"children":["$","$3a",null,{"name":"Next.MetadataOutlet","children":"$@4c"}]}]
+3e:true
+4d:I[88147,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ArticleEnhancer"]
+4e:I[99563,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"SelectionShare"]
+f:300
+42:["$","$L4d",null,{"slug":"deb4dbdb"}]
+43:["$","$L4e",null,{"slug":"deb4dbdb"}]
+4c:null
+f:C
+3d:0
+11:"$undefined"
+d:"$undefined"
+3c:"$undefined"
+35:"$undefined"

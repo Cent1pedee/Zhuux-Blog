@@ -1,0 +1,53 @@
+---
+title: Hexo美化：个性化鼠标指针样式
+summary: 该方法通过外部引入，无需修改主题源文件 当我们使用电脑进行日常操作时，鼠标指针是我们与计算机界面直接交互的关键元素之一。然而，在大多数情况下，我们使用的鼠标指针样式都是统一的，这往往会导致视觉疲劳和操作困难。因此，个性化鼠标指针样式的重要性…
+date: 2023-11-21T11:30:27.000Z
+category: hexo
+tags:
+  - hexo
+  - beautify
+  - cursor
+cover: https://img.cent1pedee.top/img/cursor.png
+---
+
+<div class="hexo-note">
+
+该方法通过外部引入，无需修改主题源文件
+
+</div>
+
+## 前言
+
+当我们使用电脑进行日常操作时，鼠标指针是我们与计算机界面直接交互的关键元素之一。然而，在大多数情况下，我们使用的鼠标指针样式都是统一的，这往往会导致视觉疲劳和操作困难。因此，个性化鼠标指针样式的重要性愈发凸显。定制化的鼠标指针不仅可以提升用户体验，也能够在繁忙的工作中带来更高的效率和愉悦感。随着个性化需求的不断增长，个性化鼠标指针样式已经成为了提升用户体验的重要途径之一。
+
+文以本站使用的主题 `anzhiyu` 为例，我将用最易操作的方式更改本站鼠标指针样式。
+
+## 样式预览
+
+
+
+![](https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201071208706.cur)
+
+![](https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201071205091.cur)
+
+
+
+## 实现方式
+
+- 在`themes/anzhiyu/source/_layout/`里，新建文件cursor.styl，内容如下
+
+```stylus
+body {
+	cursor: url(https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201071208706.cur), auto;
+}
+a {
+	cursor: url(https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201071205091.cur), auto!important;
+}
+```
+
+
+## 大功告成
+
+到这时候，如果你的文件路径正确，可以执行Hexo的三连命令来查看效果了！
+
+- 部分教程链接：

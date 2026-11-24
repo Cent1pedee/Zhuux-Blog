@@ -1,0 +1,264 @@
+2:"$Sreact.fragment"
+3:"/_next/static/chunks/25pke5jhl9el4.js"
+4:"/_next/static/chunks/3b-t7q3l2es1a.js"
+5:"/_next/static/chunks/245nmefl0mjab.js"
+6:"/_next/static/chunks/2dy0hly1pjza2.js"
+7:"/_next/static/chunks/0m2dr-odktsc9.js"
+8:"/_next/static/chunks/3e7ftxxwzdybr.js"
+9:"/_next/static/chunks/0cf2c0fvjpqyz.js"
+a:"/_next/static/chunks/2f7_6q_09njv7.js"
+b:I[55666,["$3","$4","$5","$6","$7","$8","$9","$a"],"default"]
+c:I[41798,["$3","$4","$5","$6","$7","$8","$9","$a"],"default"]
+13:"/_next/static/chunks/0s9808r35njuo.js"
+14:"/_next/static/chunks/2k9smhrvlu7rz.js"
+15:I[40919,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ScrollProgress"]
+16:I[15685,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ReadingPosition"]
+17:"ScrollToTopOnMount"
+18:I[99654,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"$17"]
+19:"ArticleTextTransition"
+1a:I[86057,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"$19"]
+1b:"ReturnToPostsLink"
+1c:I[67788,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"$1b"]
+1d:I[66151,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],""]
+1e:I[62015,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ArticleCover"]
+35:"ViewportBoundary"
+36:I[38320,["$3","$4","$5","$6","$7","$8","$9","$a"],"$35"]
+37:"MetadataBoundary"
+38:I[38320,["$3","$4","$5","$6","$7","$8","$9","$a"],"$37"]
+39:"$Sreact.suspense"
+3a:I[43595,["$3","$4","$5","$6","$7","$8","$9","$a"],"IconMark"]
+e:X
+e:C
+f:X
+12:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$2","c",{"children":[[["$","$L15",null,{}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Python数据分析：利用jupyter清洗处理csv\",\"description\":\"数据清洗（data cleaning）是从记录集、数据库表或数据库中检测和纠正（或删除）损坏或不准确的记录的过程，是指识别数据的不完整、不正确、不准确或不相关部分，然后替换、修改、或删除脏数据或粗数据。数据清洗可以与数据加工工具交互执行，也…\",\"datePublished\":\"2023-08-16T16:21:40.000Z\",\"dateModified\":\"2023-08-16T16:21:40.000Z\",\"author\":{\"@type\":\"Person\",\"name\":\"煮雪话河山\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"煮雪话河山\"},\"mainEntityOfPage\":\"https://blog.zhuux.cn/posts/10771\",\"keywords\":\"python, data-analysis\",\"inLanguage\":\"zh-CN\"}"}}],["$","$L16",null,{"slug":"10771"}],["$","$L18",null,{}],["$","$L1a",null,{"slug":"10771"}],["$","div",null,{"className":"shell","children":["$","div",null,{"className":"grid gap-10 lg:grid-cols-[minmax(0,1fr)_248px] lg:gap-12","children":[["$","article",null,{"className":"min-w-0","children":[["$","header",null,{"className":"border-b border-hairline pb-7","children":[["$","nav",null,{"aria-label":"面包屑","className":"flex flex-wrap items-center gap-1.5","children":[["$","$L1c",null,{"slug":"10771","bookmarkChildren":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left size-4 transition-transform duration-200 group-hover:-translate-x-0.5","aria-hidden":true,"children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"我的收藏"],"className":"group inline-flex min-h-10 items-center gap-1.5 rounded-[9px] border border-hairline bg-surface px-3.5 text-[13px] font-medium text-ink transition-[background-color,border-color,transform] duration-200 hover:border-hairline-strong hover:bg-surface-strong active:scale-[0.98]","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left size-4 transition-transform duration-200 group-hover:-translate-x-0.5","aria-hidden":true,"children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"全部文章"]}],["$","span",null,{"aria-hidden":true,"className":"px-0.5 text-[12px] text-muted/40","children":"/"}],["$","$L1d",null,{"href":"/posts?cat=python","className":"inline-flex min-h-10 items-center rounded-[9px] px-2.5 font-mono text-[13px] tracking-[0.01em] text-signal-ink transition-colors hover:bg-signal/[0.07]","children":"Python"}],false]}],["$","$L1e",null,{"src":"https://img.cent1pedee.top/img/python.png","slug":"10771","label":"Python","className":"mt-5 aspect-[1200/630] w-full rounded-[var(--radius-card)] border border-hairline object-cover"}],["$","h1",null,{"data-article-title":true,"className":"mt-4 max-w-[26ch] text-[clamp(1.75rem,4vw,2.5rem)] font-semibold leading-[1.15] tracking-[-0.02em] text-ink","children":"Python数据分析：利用jupyter清洗处理csv"}],["$","p",null,{"data-article-summary":true,"className":"mt-3.5 max-w-[62ch] text-[15px] leading-relaxed text-muted","children":"数据清洗（data cleaning）是从记录集、数据库表或数据库中检测和纠正（或删除）损坏或不准确的记录的过程，是指识别数据的不完整、不正确、不准确或不相关部分，然后替换、修改、或删除脏数据或粗数据。数据清洗可以与数据加工工具交互执行，也…"}],["$","div",null,{"className":"mt-5 flex flex-wrap items-center gap-x-4 gap-y-2 text-[12px] text-muted","children":[["$","span",null,{"className":"inline-flex items-center gap-1.5","children":["$","span",null,{"className":"font-medium text-ink","children":"煮雪话河山"}]}],["$","span",null,{"className":"inline-flex items-center gap-1.5 font-mono","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-calendar-days size-3.5","aria-hidden":true,"children":["$L1f","$L20","$L21","$L22","$L23","$L24","$L25","$L26","$L27","$L28","$undefined"]}],"2023-08-17"]}],"$L29","$undefined"]}],"$undefined","$L2a","$L2b"]}],false,null,"$L2c","$L2d","$L2e",false,"$L2f"]}],"$L30"]}]}]],["$L31","$L32"],"$L33"]}],"p":"$@34","v":null,"s":"$f"}}]]
+10:[["children",{"s":{"n":"slug","t":"d","k":"10771","s":[]},"h":96,"d":{"r":["$","$2","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}]}]]}],"p":"$@11","v":"$e","s":"$f"},"c":"$Q12"}]]
+1:[["children",{"s":"posts","h":64,"d":{"r":["$","$2","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}]}]]}],"p":"$@d","v":"$e","s":"$f"},"c":"$Q10"}]]
+0:{"t":{"t":{"s":"","h":20,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[null,["$","$L36",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#08090c","media":"(prefers-color-scheme: dark)"}],["$","meta","3",{"name":"theme-color","content":"#ededea","media":"(prefers-color-scheme: light)"}]]}],["$","$L38",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$39",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Python数据分析：利用jupyter清洗处理csv · 煮雪话河山"}],["$","meta","1",{"name":"description","content":"数据清洗（data cleaning）是从记录集、数据库表或数据库中检测和纠正（或删除）损坏或不准确的记录的过程，是指识别数据的不完整、不正确、不准确或不相关部分，然后替换、修改、或删除脏数据或粗数据。数据清洗可以与数据加工工具交互执行，也…"}],["$","meta","2",{"name":"author","content":"煮雪话河山"}],["$","meta","3",{"name":"robots","content":"index, follow"}],["$","link","4",{"rel":"canonical","href":"https://blog.zhuux.cn/posts/10771"}],["$","meta","5",{"property":"og:title","content":"Python数据分析：利用jupyter清洗处理csv"}],["$","meta","6",{"property":"og:description","content":"数据清洗（data cleaning）是从记录集、数据库表或数据库中检测和纠正（或删除）损坏或不准确的记录的过程，是指识别数据的不完整、不正确、不准确或不相关部分，然后替换、修改、或删除脏数据或粗数据。数据清洗可以与数据加工工具交互执行，也…"}],["$","meta","7",{"property":"og:url","content":"https://blog.zhuux.cn/posts/10771"}],["$","meta","8",{"property":"og:image","content":"https://img.cent1pedee.top/img/python.png"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"property":"article:published_time","content":"2023-08-16T16:21:40.000Z"}],["$","meta","11",{"property":"article:modified_time","content":"2023-08-16T16:21:40.000Z"}],["$","meta","12",{"property":"article:author","content":"煮雪话河山"}],["$","meta","13",{"property":"article:tag","content":"python"}],["$","meta","14",{"property":"article:tag","content":"data-analysis"}],["$","meta","15",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","16",{"name":"twitter:title","content":"Python数据分析：利用jupyter清洗处理csv"}],["$","meta","17",{"name":"twitter:description","content":"数据清洗（data cleaning）是从记录集、数据库表或数据库中检测和纠正（或删除）损坏或不准确的记录的过程，是指识别数据的不完整、不正确、不准确或不相关部分，然后替换、修改、或删除脏数据或粗数据。数据清洗可以与数据加工工具交互执行，也…"}],["$","meta","18",{"name":"twitter:image","content":"https://img.cent1pedee.top/img/python.png"}],["$","link","19",{"rel":"icon","href":"/icon.svg?icon.2z_nhvg-dnpec.svg","sizes":"any","type":"image/svg+xml"}],["$","$L3a","20",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@3b","v":null,"s":"$f"}},"a":"$@3c","u":"$@3d","b":"NSfzR_EDzOtUGEfuEGKvr"}
+3e:I[42080,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"TocMobile"]
+3f:I[67077,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ReadingSettings"]
+43:I[33883,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ArticleActions"]
+44:I[781,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"Comments"]
+45:I[42080,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"Toc"]
+46:I[92975,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"SpotlightCard"]
+47:I[38320,["$3","$4","$5","$6","$7","$8","$9","$a"],"OutletBoundary"]
+1f:["$","path","1cmpym",{"d":"M8 2v4"}]
+20:["$","path","4m81vk",{"d":"M16 2v4"}]
+21:["$","rect","1hopcy",{"width":"18","height":"18","x":"3","y":"4","rx":"2"}]
+22:["$","path","8toen8",{"d":"M3 10h18"}]
+23:["$","path","6423bh",{"d":"M8 14h.01"}]
+24:["$","path","1etili",{"d":"M12 14h.01"}]
+25:["$","path","1gbofw",{"d":"M16 14h.01"}]
+26:["$","path","lrp35t",{"d":"M8 18h.01"}]
+27:["$","path","mhygvu",{"d":"M12 18h.01"}]
+28:["$","path","kzsmim",{"d":"M16 18h.01"}]
+29:["$","span",null,{"className":"inline-flex items-center gap-1.5 font-mono","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-clock3 lucide-clock-3 size-3.5","aria-hidden":true,"children":[["$","path","135r8i",{"d":"M12 6v6h4"}],["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],"$undefined"]}],12," 分钟 · ",2416," 字"]}]
+2a:["$","div",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","$L1d","python",{"href":"/posts?tag=python","className":"rounded-full outline-none focus-visible:ring-2 focus-visible:ring-signal/70","children":["$","span",null,{"data-slot":"badge","className":"inline-flex items-center gap-1 border tracking-[0.01em] border-hairline bg-surface-sunken text-muted max-w-full rounded-full px-2.5 py-0.5 text-[11px] font-normal transition-colors hover:border-signal/40 hover:text-signal-ink","children":["#","Python"]}]}],["$","$L1d","data-analysis",{"href":"/posts?tag=data-analysis","className":"rounded-full outline-none focus-visible:ring-2 focus-visible:ring-signal/70","children":["$","span",null,{"data-slot":"badge","className":"inline-flex items-center gap-1 border tracking-[0.01em] border-hairline bg-surface-sunken text-muted max-w-full rounded-full px-2.5 py-0.5 text-[11px] font-normal transition-colors hover:border-signal/40 hover:text-signal-ink","children":["#","数据分析"]}]}]]}]
+2b:["$","div",null,{"className":"mt-5 flex flex-wrap items-center gap-2","children":[["$","$L3e",null,{"items":[{"id":"python数据清洗","text":"Python数据清洗","level":2},{"id":"什么是数据清洗","text":"什么是数据清洗","level":2},{"id":"数据清洗流程","text":"数据清洗流程","level":2},{"id":"数据读写","text":"数据读写","level":3},{"id":"数据探索","text":"数据探索","level":3},{"id":"重复值处理","text":"重复值处理","level":3},{"id":"缺失值处理","text":"缺失值处理","level":3},{"id":"异常值处理","text":"异常值处理","level":3}]}],["$","$L3f",null,{}],["$","$L1d",null,{"href":"/contact","className":"inline-flex h-9 items-center gap-1.5 rounded-[10px] border border-hairline bg-surface px-3 text-xs text-muted backdrop-blur-xl transition-colors hover:text-ink","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-mail size-3.5","aria-hidden":"true","children":[["$","path","132q7q",{"d":"m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"}],["$","rect","izxlao",{"x":"2","y":"4","width":"20","height":"16","rx":"2"}],"$undefined"]}]," 反馈与纠错"]}]]}]
+40:T975c,<h2 id="python数据清洗"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#python数据清洗">#</a>Python数据清洗</h2>
+<h2 id="什么是数据清洗"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#什么是数据清洗">#</a>什么是数据清洗</h2>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>数据清洗（data cleaning）是从记录集、数据库表或数据库中检测和纠正（或删除）损坏或不准确的记录的过程，是指识别数据的不完整、不正确、不准确或不相关部分，然后替换、修改、或删除脏数据或粗数据。数据清洗可以与数据加工工具交互执行，也可以通过脚本进行批处理。</span></span>
+<span data-line=""> </span>
+<span data-line=""><span>清洗后，一个数据集应该与系统中其他类似的数据集保持一致。 检测到或删除的不一致可能最初是由用户输入错误、传输或存储中的损坏或不同存储中类似实体的不同数据字典定义引起的。 数据清理与数据确认(data validation)的不同之处在于，数据确认几乎总是意味着数据在输入时被系统拒绝，并在输入时执行，而不是执行于批量数据。</span></span>
+<span data-line=""> </span>
+<span data-line=""><span>数据清洗不仅仅更正错误，同样加强来自各个单独信息系统不同数据间的一致性。专门的数据清洗软件能够自动检测数据文件，更正错误数据，并用全企业一致的格式集成数据。</span></span></code></pre></figure>
+<p>info: <a href="https://zh.wikipedia.org/zh-cn/%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97">Wiki</a></p>
+<h2 id="数据清洗流程"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#数据清洗流程">#</a>数据清洗流程</h2>
+<h3 id="数据读写"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#数据读写">#</a>数据读写</h3>
+<h4 id="导入所需的库"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#导入所需的库">#</a>导入所需的库</h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">import</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> numpy</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> as</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> np</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">import</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> pandas</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> as</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> pd</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">import</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> matplotlib.pyplot</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> as</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> plt</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">import</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> seaborn</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> as</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> sns</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">%matplotlib</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> inline</span></span></code></pre></figure>
+<h4 id="读入文件"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#读入文件">#</a>读入文件</h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#读入csv格式文件</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">data</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">pd.read_csv</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">"cs-training.csv"</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">,index_col</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">=0</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span></code></pre></figure>
+<h3 id="数据探索"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#数据探索">#</a>数据探索</h3>
+<h4 id="了解数据形状"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#了解数据形状">#</a>了解数据形状</h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#返回元组</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">data.shape</span></span></code></pre></figure>
+<h4 id="了解数据结构"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#了解数据结构">#</a>了解数据结构</h4>
+<p>通过了解结构可以看出指标的缺失情况</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#可以看出样本的整体情况、缺失状况</span></span>
+<span data-line=""><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">data.info</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">()</span></span></code></pre></figure>
+<h4 id="了解数据描述性统计信息"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#了解数据描述性统计信息">#</a>了解数据描述性统计信息</h4>
+<p>通过描述性统计可以初步判断是否存在异常值信息，比如下图中“age”年龄这个字段，最小值0岁明显不符合常理，可判断为异常值。</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">data.describe</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">().T</span></span></code></pre></figure>
+<h3 id="重复值处理"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#重复值处理">#</a>重复值处理</h3>
+<h4 id="检查重复值"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#检查重复值">#</a>检查重复值</h4>
+<p>python中可通过duplicated函数查找并显示数据表中的重复值
+这里需要注意的是：</p>
+<ul>
+<li>当两条记录中所有的数据都相等时duplicated函数才会判断为重复值；</li>
+<li>duplicated支持从前向后(first)，和从后向前(last)两种重复值查找模式，即从第一行数据开始，第二行数据和第一行一样，从前向后就把第二行数据判断为重复值，从后向前就把第一行数据判断为重复值；</li>
+<li>默认是从前向后进行重复值的查找和判断，也就是后面的条目在重复值判断中显示为True；</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">data.duplicated</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">() #返回布尔型数据，告诉重复值的位置</span></span>
+<span data-line=""><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">data.duplicated</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">()</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">.sum</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">()  </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#说明共有多少个重复值</span></span>
+<span data-line=""><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">data[data.duplicated</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">()]  </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#打印重复值</span></span>
+<span data-line=""><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">data[data.duplicated</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">()].index   </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#打印重复值索引</span></span></code></pre></figure>
+<h4 id="删除重复值"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#删除重复值">#</a>删除重复值</h4>
+<p>python中可通过drop_duplicates函数删除数据表中的重复值，判断标准和逻辑与duplicated函数一样</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">data.drop_duplicates(inplace</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">=True</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)   </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#inplace=True表示直接在源数据上进行操作</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">data.index</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> =</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> range</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">data.shape[0]</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)    </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#动过源数据就要进行索引重建</span></span></code></pre></figure>
+<h3 id="缺失值处理"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#缺失值处理">#</a>缺失值处理</h3>
+<h4 id="删除缺失值"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#删除缺失值">#</a>删除缺失值</h4>
+<p>python中可以用dropna函数删除缺失值</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#DataFrame.dropna(self, axis=0, how='any', thresh=None, subset=None, inplace=False)</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#删除数据表中含有空值的行,如果存在任何NA值，则删除该行或列。</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">data.dropna(how</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">=</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">'any'</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E"># 传入这个参数后将只丢弃全为缺失值的那些行</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">data.dropna(how</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> =</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> 'all'</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)    </span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#丢弃有缺失值的列（一般不会这么做，这样会删掉一个特征）</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">data.dropna(axis</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> =</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> 1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)     </span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E"># 丢弃全为缺失值的那些列</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">data.dropna(axis</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">=1,how=</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">"all"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)  </span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E"># 丢弃‘AgMonthlyIncomee’和‘NumberOfDependents’这两列中有缺失值的行  </span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">data.dropna(axis</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">=0,subset</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> =</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"MonthlyIncome"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">, </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"NumberOfDependents"]</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)   </span></span></code></pre></figure>
+<h4 id="固定值填充"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#固定值填充">#</a>固定值填充</h4>
+<p>选取某个固定值/默认值填充缺失值。</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">data.fillna(-9999,</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> inplace=True</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">) </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E"># 填充 -1,-999,-9999</span></span></code></pre></figure>
+<h4 id="统计变量填充"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#统计变量填充">#</a>统计变量填充</h4>
+<ol>
+<li>均值填补</li>
+</ol>
+<p>对每一列缺失值，填充当列的均值</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#对数据中每一列的缺失值，填充当列的均值</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">data.fillna(data.mean(</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">),inplace=True) </span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#可为数据中某一个指标缺失值都填充该指标均值</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">data[</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">'MonthlyIncome'</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">].fillna(data[</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">'MonthlyIncome'</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">].mean(</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">),inplace=True)</span></span></code></pre></figure>
+<ol start="2">
+<li>中位数填补</li>
+</ol>
+<p>对每一列的缺失值，填充当列的中位数</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#对数据中每一列的缺失值，填充当列的中位数</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">data.fillna(data.median(</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">),inplace=True) </span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#可为数据中某一个指标缺失值都填充该指标中位数</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">data[</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">'MonthlyIncome'</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">].fillna(data[</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">'MonthlyIncome'</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">].median(</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">),inplace=True)</span></span></code></pre></figure>
+<ol start="3">
+<li>众数填补</li>
+</ol>
+<p>对每一列的缺失值，填充当列的众数;但可能存在某列缺失值过多，众数为nan的情况，注意要取的是每列删除掉nan值后的众数。</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#对数据中每一列的缺失值，填充当列的众数</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">data.fillna(data.mode(</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">),inplace=True) </span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#可为数据中某一个指标缺失值都填充该指标众数</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">data[</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">'MonthlyIncome'</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">].fillna(data[</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">'MonthlyIncome'</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">].mode(</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">),inplace=True)</span></span></code></pre></figure>
+<h4 id="向前填充向后填充"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#向前填充向后填充">#</a>向前填充/向后填充</h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#可用axis修改填充的方向，默认为0</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">data.fillna(method</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">=</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">'ffill'</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">,inplace</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">=True</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)   </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E"># pad/ffill用前一个非缺失值去填充该缺失值</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">data.fillna(method</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">=</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">'bfill'</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">,inplace</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">=True</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)  </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E"># backfill/bfill用后一个非缺失值填充该缺失值</span></span></code></pre></figure>
+<h4 id="模型填充法"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#模型填充法">#</a>模型填充法</h4>
+<p>缺失值作为新的label，建立模型得到预测值，然后进行填充。这里选择某个缺失值数量适当的特征采用随机森林进行拟合</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">from</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> sklearn</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> import</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> ensemble</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">from</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> sklearn.preprocessing</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> import</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> LabelEncoder#标准化标签，标签专用，能够将分类转换为分类数值。</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">def</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> set_missing</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">df,estimate_list,miss_col</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">:</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">    """df要处理的数据帧，estimate_list用来估计缺失值的字段列表,miss_col缺失字段名称;会直接在原来的数据帧上修改"""</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">    col_list</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">estimate_list</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">    col_list.append(miss_col</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)   </span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">    process_df</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> =</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> df.loc[:,col_list]</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">    class_le</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657"> LabelEncoder(</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">    for</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> i </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">in</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> col_list[:-1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">]:</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">        process_df.loc[:,i]</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">=class_le.fit_transform</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">process_df.loc[</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">:</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">,i].values</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">    # 分成已知该特征和未知该特征两部分</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">    known</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">process_df[process_df[miss_col</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">].notnull</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">()].values</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">    known[:,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> -1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">]=class_le.fit_transform(</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">known[:,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> -1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">])</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">    unknown</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> =</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> process_df[process_df[miss_col].isnull</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">()</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">].values</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">    # X为特征属性值</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">    X</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> =</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> known[:,</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> :-1]</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">    # y为结果标签值</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">    y</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> =</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> known[:,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> -1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">]</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">    # fit到RandomForestRegressor之中</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">    rfr</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> =</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> ensemble.RandomForestRegressor</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(random_state</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">1,</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> n_estimators</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">200,</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">max_depth</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">4,</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">n_jobs</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">-1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">    rfr.fit(X,y</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">    # 用得到的模型进行未知特征值预测</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">    predicted</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> =</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> rfr.predict</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">unknown[:,</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> :-1]</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">.round</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">0</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">.astype</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">int</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">    predicted</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">class_le.inverse_transform</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">predicted</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">    # print(predicted)</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">    # 用得到的预测结果填补原缺失数据</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">    df.loc[(df[miss_col].isnull(</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)), miss_col] = predicted</span></span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">    return</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> df</span></span></code></pre></figure>
+<h4 id="不处理"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#不处理">#</a>不处理</h4>
+<p>保持数据原始信息，不对信息进行处理，而是直接将空值作为一种分类传入模型中进行分析。</p>
+<h3 id="异常值处理"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#异常值处理">#</a>异常值处理</h3>
+<p>异常值(outlier)为一组测定值中与平均值的偏差超过两倍标准差的测定值，与平均值的偏差超过三倍标准差的测定值，称为高度异常的异常值。在处理数据时，应剔除高度异常的异常值。</p>
+<h4 id="异常值来源"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#异常值来源">#</a>异常值来源</h4>
+<ol>
+<li>
+<p>人为错误
+: 人为输入异常：数据收集，记录或输入过程中导致的错误
+故意异常值：人为造假
+数据处理错误：对数据操作或提取错误导致数据集中的异常值</p>
+</li>
+<li>
+<p>机器错误
+: 实验误差：实验设计运用要素不统一
+测量误差：系统、机器故障导致错误的记录</p>
+</li>
+<li>
+<p>偏离值
+: 特殊情形下真实数据值极大，远超一般数值水平：例如富豪的收入水平，销售冠军的销售额等</p>
+</li>
+</ol>
+<h4 id="异常值识别"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#异常值识别">#</a>异常值识别</h4>
+<p>1.简单统计分析
+: 结合经验对属性值进行一个描述性的统计，查看值的不合理性。例如年龄范围一般为0~100等</p>
+<p>2.3δ原则
+当数据服从正态分布：对于正态分布，距离平均值3δ之外的概率0.003 ，因此认定距离平均值大于3δ的样本样本为异常值；具体步骤为：
+: 1.计算需要检验的数据列的平均值和标准差；
+2.比较数据列的每个值与平均值的偏差是否超过3倍，如果超过3倍，则为异常值；</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#用3倍标准差,找出'DebtRatio'异常值</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">sta</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">data</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">'DebtRatio'</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">]</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">-data</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">'DebtRatio'</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">]</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">.mean</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">())/data[</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">'DebtRatio'</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">]</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">.std</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">()</span></span>
+<span data-line=""><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">sta.abs</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">()</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">></span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">3                       </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#返回每个跟3比较的结果</span></span>
+<span data-line=""><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">data[sta.abs</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">()</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">></span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">3]                 </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#异常值</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">delindex</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">data[sta.abs</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">()</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">></span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">3</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">].index  </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#异常值索引</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">data.drop(delindex,inplace</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">=True</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)  </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#删除异常值</span></span></code></pre></figure>
+<ul>
+<li><u>当数据不服从正态分布：</u>可以通过远离平均距离多少倍的标准差进行判定。</li>
+</ul>
+<p>3.箱型图分析</p>
+<p>计算过程:
+: 1.计算上四分位数（Q3），中位数，下四分位数（Q1）
+2.计算上四分位数和下四分位数之间的差值，即四分位数差（IQR，interquartile range）Q3-Q1
+3.绘制箱线图的上下范围，上限为上四分位数，下限为下四分位数。在箱子内部中位数的位置绘制横线。
+4.大于上四分位数1.5倍四分位数差的值，或者小于下四分位数1.5倍四分位数差的值，划为异常值（outliers）。
+5.异常值之外，最靠近上边缘和下边缘的两个值处，画横线，作为箱线图的触须。
+6.极端异常值，即超出四分位数差3倍距离的异常值，用实心点表示；较为温和的异常值，即处于1.5倍-3倍四分位数差之间的异常值，用空心点表示。
+7.为箱线图添加名称，数轴等</p>
+<p>python中可用seaborn库的sns.boxplot()函数画箱型图，查看数值变量的取值范围，是否有异常值</p>
+<h4 id="异常值处理-1"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#异常值处理-1">#</a>异常值处理</h4>
+<ol>
+<li>删除</li>
+</ol>
+<p>直接将含有异常值的记录删除；</p>
+<ol start="2">
+<li>视为缺失值</li>
+</ol>
+<p>将异常值视为缺失值，利用缺失值处理的方法进行处理；</p>
+<ol start="3">
+<li>平均值修正</li>
+</ol>
+<p>可用前后两个观测值的平均值修正该异常值；</p>
+<ol start="4">
+<li>不处理</li>
+</ol>
+<p>直接在具有异常值的数据集上进行数据挖掘，由业务分析挖掘价值</p>2c:["$","div",null,{"className":"mt-8","children":[["$","div",null,{"id":"article-root","className":"prose-editorial","dangerouslySetInnerHTML":{"__html":"$40"}}],"$L41","$L42"]}]
+2d:["$","div",null,{"className":"mt-10","children":["$","$L43",null,{"slug":"10771","title":"Python数据分析：利用jupyter清洗处理csv","summary":"数据清洗（data cleaning）是从记录集、数据库表或数据库中检测和纠正（或删除）损坏或不准确的记录的过程，是指识别数据的不完整、不正确、不准确或不相关部分，然后替换、修改、或删除脏数据或粗数据。数据清洗可以与数据加工工具交互执行，也…"}]}]
+2e:["$","nav",null,{"aria-label":"相邻文章","className":"mt-8 grid gap-3 sm:grid-cols-2","children":[["$","$L1d",null,{"href":"/posts/1c291ca3","className":"group project-card flex flex-col justify-between gap-2 rounded-[var(--radius-card)] p-4 outline-none focus-visible:ring-2 focus-visible:ring-signal/70","children":[["$","span",null,{"aria-hidden":true,"className":"project-card-sheen"}],["$","span",null,{"className":"relative inline-flex items-center gap-1.5 font-mono text-[10.5px] text-muted","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left size-3 transition-transform duration-200 group-hover:-translate-x-0.5 group-hover:text-signal-ink","aria-hidden":true,"children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"上一篇 · ","2023-08-01"]}],["$","span",null,{"className":"relative line-clamp-2 text-[14px] font-medium leading-snug text-ink transition-colors group-hover:text-signal-ink","children":"Hello World!"}]]}],["$","$L1d",null,{"href":"/posts/2b53089b","className":"group project-card flex flex-col justify-between gap-2 rounded-[var(--radius-card)] p-4 text-right outline-none focus-visible:ring-2 focus-visible:ring-signal/70","children":[["$","span",null,{"aria-hidden":true,"className":"project-card-sheen"}],["$","span",null,{"className":"relative inline-flex items-center justify-end gap-1.5 font-mono text-[10.5px] text-muted","children":["下一篇 · ","2023-08-20",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right size-3 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:text-signal-ink","aria-hidden":true,"children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"relative line-clamp-2 text-[14px] font-medium leading-snug text-ink transition-colors group-hover:text-signal-ink","children":"Python数据清洗：Numpy常用操作"}]]}]]}]
+2f:["$","$L44",null,{"enabled":true,"repo":"","repoId":"","category":"Announcements","categoryId":"","degradedText":"评论服务未配置（Giscus 需要仓库名与分类 ID）。当前为只读模式，正文、目录与分享不受影响。"}]
+30:["$","aside",null,{"className":"hidden lg:block","children":["$","div",null,{"className":"sticky top-24 space-y-5","children":[["$","$L45",null,{"items":"$2b:props:children:0:props:items"}],["$","$L46",null,{"as":"div","className":"project-panel overflow-hidden rounded-[var(--radius-card)] p-4.5","children":[["$","span",null,{"aria-hidden":true,"className":"project-card-sheen"}],["$","p",null,{"className":"relative font-mono text-[10.5px] uppercase tracking-[0.14em] text-muted","children":"CONTACT · 反馈与联系"}],["$","p",null,{"className":"relative mt-2.5 text-xs leading-relaxed text-muted","children":"文中错误、版本失效或合作意向，都可以直接发消息。"}],["$","$L1d",null,{"href":"/contact","className":"relative mt-3.5 inline-flex h-8 items-center gap-1.5 rounded-full bg-signal px-3.5 text-xs font-medium text-[var(--on-signal)] shadow-[0_6px_16px_-8px_var(--signal)] transition-[filter,transform] duration-200 hover:-translate-y-px hover:brightness-105","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-mail size-3.5","aria-hidden":true,"children":[["$","path","132q7q",{"d":"m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"}],["$","rect","izxlao",{"x":"2","y":"4","width":"20","height":"16","rx":"2"}],"$undefined"]}]," 发送消息"]}]]}]]}]}]
+31:["$","script","script-0",{"src":"/_next/static/chunks/0s9808r35njuo.js","async":true}]
+32:["$","script","script-1",{"src":"/_next/static/chunks/2k9smhrvlu7rz.js","async":true}]
+33:["$","$L47",null,{"children":["$","$39",null,{"name":"Next.MetadataOutlet","children":"$@48"}]}]
+3d:true
+49:I[88147,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ArticleEnhancer"]
+4a:I[99563,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"SelectionShare"]
+f:300
+41:["$","$L49",null,{"slug":"10771"}]
+42:["$","$L4a",null,{"slug":"10771"}]
+48:null
+f:C
+3c:0
+11:"$undefined"
+d:"$undefined"
+3b:"$undefined"
+34:"$undefined"

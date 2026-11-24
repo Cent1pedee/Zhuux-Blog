@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>煮雪话河山 · 数据分析</title>
+    <link>https://blog.zhuux.cn/</link>
+    <description>记录前端工程、构建工具与内容系统的实践与取舍。文章偏长，代码可复制，结论尽量可复现。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 21 Aug 2023 17:35:57 GMT</lastBuildDate>
+    <managingEditor>62405816@qq.com (煮雪话河山)</managingEditor>
+    <atom:link href="https://blog.zhuux.cn/feed/tag/data-analysis.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python数据可视化：Matplotlib常用操作(基础篇)</title>
+      <link>https://blog.zhuux.cn/posts/443e71ba</link>
+      <guid isPermaLink="true">https://blog.zhuux.cn/posts/443e71ba</guid>
+      <pubDate>Mon, 21 Aug 2023 17:35:57 GMT</pubDate>
+      <description>Matplotlib介绍 Matplotlib是一个Python 2D绘图库，它以多种硬拷贝格式和跨平台的交互式环境生成出版物质量的图形。 Matplotlib可用于Python脚本，Python和IPython Shell、Jupyter…</description>
+      <category>Python</category>
+      <category>Python</category>
+      <category>数据分析</category>
+      <category>数据可视化</category>
+    </item>
+    <item>
+      <title>Python数据清洗：Numpy常用操作</title>
+      <link>https://blog.zhuux.cn/posts/2b53089b</link>
+      <guid isPermaLink="true">https://blog.zhuux.cn/posts/2b53089b</guid>
+      <pubDate>Sun, 20 Aug 2023 01:39:06 GMT</pubDate>
+      <description>我为什么要用NumPy? 对于同样的数值计算任务，使用NumPy要比直接编写Python代码便捷得多； NumPy中的数组的存储效率和输入输出性能均远远优于Python中等价的基本数据结构，且其能够提升的性能是与数组中的元素成比例的； Nu…</description>
+      <category>Python</category>
+      <category>Python</category>
+      <category>数据分析</category>
+      <category>数据清洗</category>
+    </item>
+    <item>
+      <title>Python数据分析：利用jupyter清洗处理csv</title>
+      <link>https://blog.zhuux.cn/posts/10771</link>
+      <guid isPermaLink="true">https://blog.zhuux.cn/posts/10771</guid>
+      <pubDate>Wed, 16 Aug 2023 16:21:40 GMT</pubDate>
+      <description>数据清洗（data cleaning）是从记录集、数据库表或数据库中检测和纠正（或删除）损坏或不准确的记录的过程，是指识别数据的不完整、不正确、不准确或不相关部分，然后替换、修改、或删除脏数据或粗数据。数据清洗可以与数据加工工具交互执行，也…</description>
+      <category>Python</category>
+      <category>Python</category>
+      <category>数据分析</category>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>煮雪话河山 · Git</title>
+    <link>https://blog.zhuux.cn/</link>
+    <description>记录前端工程、构建工具与内容系统的实践与取舍。文章偏长，代码可复制，结论尽量可复现。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 25 Sep 2023 23:53:30 GMT</lastBuildDate>
+    <managingEditor>62405816@qq.com (煮雪话河山)</managingEditor>
+    <atom:link href="https://blog.zhuux.cn/feed/tag/git.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git基础命令速查表：简明指南</title>
+      <link>https://blog.zhuux.cn/posts/6e3d8d51</link>
+      <guid isPermaLink="true">https://blog.zhuux.cn/posts/6e3d8d51</guid>
+      <pubDate>Mon, 25 Sep 2023 23:53:30 GMT</pubDate>
+      <description>Git部分基础知识转载自Microsoft DevOps 什么是Git? Git基础命令速查，以便后续快速使用Git命令 Git 已成为版本控制的全球标准。 那么，它到底是什么？ Git 是分布式版本控制系统，这意味着项目的本地克隆是完整的…</description>
+      <category>Git</category>
+      <category>Git</category>
+      <category>教程</category>
+      <category>转载</category>
+    </item>
+  </channel>
+</rss>

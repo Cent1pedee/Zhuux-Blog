@@ -1,0 +1,428 @@
+---
+title: Vue项目准备工作
+summary: 在一个新的Vue项目开始之前，有一些准备工作是十分必要的，一个清晰、易于扩展的项目结构能帮助团队协作，并确保随着项目增大，不会出现难以维护的混乱代码。 Vue.js依赖于Node.js和npm（Node包管理器）。你可以从Node.js官网…
+date: 2025-01-08T15:41:28.000Z
+category: vue
+tags:
+  - vue
+  - study-notes
+cover: https://imgbed.kouseki.cn/file/1736322513326.jpg
+---
+
+## Vue项目准备工作
+
+在一个新的Vue项目开始之前，有一些准备工作是十分必要的，一个清晰、易于扩展的项目结构能帮助团队协作，并确保随着项目增大，不会出现难以维护的混乱代码。
+
+## 安装创建项目
+
+### 1. 安装Node.js
+
+Vue.js依赖于Node.js和npm（Node包管理器）。你可以从[Node.js官网](https://nodejs.org/zh-cn)下载并安装最新版本的Node.js，这将同时安装npm。
+
+```bash
+# 检查Node.js版本
+node -v
+
+# 检查npm版本
+npm -v
+```
+
+
+推荐使用`pnpm`进行后续步骤的安装以及使用，pnpm 本质上就是一个包管理器，这一点跟 npm/yarn 没有区别，但它有两个很关键的优势：
+
+- 包安装速度极快
+- 磁盘空间利用非常高效
+
+它的安装也非常简单：
+
+```bash
+npm i -g pnpm
+```
+
+
+### 2. 创建一个Vue应用
+
+确保你安装了最新版本的 [Node.js](https://nodejs.org/zh-cn)，并且你的当前工作目录正是打算创建项目的目录。在命令行中运行以下命令：
+
+```bash
+pnpm create vue@latest
+```
+
+
+这一指令将会安装并执行 [create-vue](https://github.com/vuejs/create-vue)，它是 Vue 官方的项目脚手架工具。你将会看到一些诸如 [TypeScript](https://www.tslang.cn/) 和测试支持之类的可选功能提示：
+
+```
+✔ Project name: … <your-project-name>
+✔ Add TypeScript? … No / Yes
+✔ Add JSX Support? … No / Yes
+✔ Add Vue Router for Single Page Application development? … No / Yes
+✔ Add Pinia for state management? … No / Yes
+✔ Add Vitest for Unit testing? … No / Yes
+✔ Add an End-to-End Testing Solution? … No / Cypress / Nightwatch / Playwright
+✔ Add ESLint for code quality? … No / Yes
+✔ Add Prettier for code formatting? … No / Yes
+✔ Add Vue DevTools 7 extension for debugging? (experimental) … No / Yes
+
+Scaffolding project in ./<your-project-name>...
+Done.
+```
+
+
+在项目被创建后，通过以下步骤安装依赖并启动开发服务器：
+
+```bash
+cd <your-project-name>
+pnpm install
+pnpm run dev
+```
+
+
+### 3. 项目结构
+
+```
+my-project
+├── node_modules/    # 项目依赖
+├── public/          # 公共资源
+├── src/             # 源代码
+│   ├── api/         # 接口api
+│   ├── assets/      # 静态资源
+│   ├── router/      # Vue路由
+│   ├── components/  # Vue组件
+│   ├── utils/       # 全局工具函数
+│   ├── views/       # 视图文件
+│   ├── App.vue      # 根组件
+│   ├── main.js      # 入口文件
+├── .gitignore       # Git忽略文件
+├── package.json     # 项目配置文件
+├── README.md        # 项目说明文件
+```
+
+
+## 项目配置
+
+### 1. 调整项目目录
+
+默认生成的目录结构不满足我们的开发需求，因此需要做一些自定义改动。主要是两个工作：
+
+- 删除初始化的默认文件
+- 修改剩余代码内容
+- 新增调整我们需要的目录结构
+- 拷贝初始化资源文件，安装预处理器插件
+
+#### 1.1 删除多余文件
+
+#### 1.2 修改文件内容
+
+`src/router/index.js`
+
+```js
+import { createRouter, createWebHistory } from 'vue-router'
+
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: []
+})
+
+export default router
+```
+
+
+`src/App.vue`
+
+```vue
+<script setup></script>
+
+<template>
+  <div>
+    <router-view></router-view>
+  </div>
+</template>
+
+<style scoped></style>
+```
+
+
+`src/main.js`
+
+```js
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
+
+import App from './App.vue'
+import router from './router'
+
+const app = createApp(App)
+
+app.use(createPinia())
+app.use(router)
+app.mount('#app')
+```
+
+
+#### 1.3 新增目录 /api /utils
+
+#### 1.4 引入样式
+
+将项目需要的全局样式 和 图片文件，复制到 assets 文件夹中,  并将全局样式在main.js中引入
+
+```js
+import '@/assets/main.scss'
+```
+
+
+### 2. 选择并配置代码风格与规范
+
+为了确保团队中的每个开发者都有一致的代码风格，避免低质量代码和不一致的代码格式，配置 *ESlint* 来检查代码质量并使用 *Prittier* 自动格式化代码，使用 *Husky* 来自动触发 Git 提交前的检查。
+
+#### 2.1 ESLint & Prettier 配置代码风格
+
+**环境同步：**
+
+1. **安装了插件 ESlint，开启保存自动修复**
+2. **禁用了插件 Prettier，并关闭保存自动格式化**
+
+```jsx
+// ESlint插件 + Vscode配置 实现自动格式化修复
+"editor.codeActionsOnSave": {
+    "source.fixAll": 'always'
+},
+"editor.formatOnSave": false,
+```
+
+
+**配置文件 eslint.config.js**
+
+1. Prettier 风格配置 [https://prettier.io](https://prettier.io/docs/en/options.html )
+
+   - 单引号
+   - 不使用分号
+   - 每行宽度至多80字符
+   - 不加对象|数组最后逗号
+   - 换行符号不限制（win mac 不一致）
+
+2. vue组件名称多单词组成（忽略index.vue）
+
+3. props解构（关闭）
+
+```jsx
+    rules: {
+      'prettier/prettier': [
+        'warn',
+        {
+          singleQuote: true, // 单引号
+          semi: false, // 无分号
+          printWidth: 100, // 每行宽度至多 100 字符
+          trailingComma: 'none', // 不加对象/数组最后的逗号
+          endOfLine: 'auto' // 换行符自动检测（Windows 和 Unix 系统兼容）
+        }
+      ],
+      'vue/multi-word-component-names': [
+        'warn',
+        {
+          ignores: ['index'] // 忽略 index.vue 的多词名称校验
+        }
+      ],
+      'vue/no-setup-props-destructure': 'off', // 允许 props 解构
+      'no-undef': 'error' // 未定义变量报错
+    }
+```
+
+
+
+
+#### 2.2 基于 husky 的代码检查工作流
+
+husky 是一个 git hooks 工具  ( git的钩子工具，可以在特定时机执行特定的命令 )
+
+**husky 配置**
+
+1. git初始化 git init
+
+2. 初始化 husky 工具配置  https://typicode.github.io/husky/
+
+```bash
+pnpm dlx husky-init && pnpm install
+```
+
+
+3. 修改 .husky/pre-commit 文件
+
+```bash
+pnpm lint
+```
+
+
+**问题：** 默认进行的是全量检查，耗时问题，历史问题。
+
+#### 2.3 lint-staged 配置
+
+1. 安装
+
+```bash
+pnpm i lint-staged -D
+```
+
+
+2. 配置 `package.json`
+
+```jsx
+{
+  // ... 省略 ...
+  "lint-staged": {
+    "*.{js,ts,vue}": [
+      "eslint --fix"
+    ]
+  }
+}
+
+{
+  "scripts": {
+    // ... 省略 ...
+    "lint-staged": "lint-staged"
+  }
+}
+```
+
+
+3. 修改 .husky/pre-commit 文件
+
+```bash
+pnpm lint-staged
+```
+
+### 3. Pinia - 构建用户仓库和持久化
+
+`官方文档`：https://prazdevs.github.io/pinia-plugin-persistedstate/zh/
+
+#### 3.1 安装使用配置插件
+
+- 安装插件 pinia-plugin-persistedstate
+
+```bash
+pnpm add pinia-plugin-persistedstate -D
+```
+
+
+- 使用 main.js
+
+```js
+import persist from 'pinia-plugin-persistedstate'
+...
+app.use(createPinia().use(persist))
+```
+
+
+- 配置 stores/user.js （这里以用户Token为例子）
+
+```js
+import { defineStore } from 'pinia'
+import { ref } from 'vue'
+
+// 用户模块
+export const useUserStore = defineStore(
+  'big-user',
+  () => {
+    const token = ref('') // 定义 token
+    const setToken = (t) => (token.value = t) // 设置 token
+
+    return { token, setToken }
+  },
+  {
+    persist: true // 持久化
+  }
+)
+```
+
+
+#### 3.2 配置仓库统一管理
+
+将所有的`Pinia模块`集中在`store/index.js`中，可以作为状态管理的入口文件。通过这种方式，可以快速找到所有的状态管理逻辑，提高代码的可维护性和清晰度。
+
+- `src/main.js`:
+
+```js
+import { createApp } from 'vue'
+
+import App from './App.vue'
+import router from './router'
+
+import pinia from '@/stores/index'
+
+import '@/assets/main.scss'
+
+const app = createApp(App)
+
+app.use(pinia)
+app.use(router)
+
+app.mount('#app')
+```
+
+
+- `src/stores/index.js`
+
+```js
+import { createPinia } from 'pinia'
+import persist from 'pinia-plugin-persistedstate'
+
+const pinia = createPinia()
+pinia.use(persist)
+
+export default pinia
+
+//接收模块的所有按需导出
+//等价于
+// import { useUserStore } from './modules/user'
+// export { useUserStore }
+export * from './modules/user'
+```
+
+
+至此，您已经完成了Pinia仓库的统一管理，现在由`stores/index.js`统一导出，导入路径统一`./stores`，仓库维护在 `src/stores/modules`中
+
+### 4. Axios - 数据交互
+
+大多数情况下都会使用`axios`来请求后端接口，一般都会对axios进行一些配置（比如：配置基础地址等等），一般项目开发中，对axios进行基本的二次封装，单独封装到一个模块中，便于使用
+
+- 1.安装`axios`
+
+```bash
+pnpm add axios
+```
+
+
+- 2.新建`utils/request.js`封装`axios`模块
+
+利用[`axios.create`](http://www.axios-js.com/zh-cn/docs/#axios-create-config)来创建一个自定义的`axios`来使用：
+
+```js
+import axios from 'axios'
+
+const baseURL = 'api基地址'
+
+const instance = axios.create({
+  // TODO 1. 基础地址，超时时间
+})
+
+instance.interceptors.request.use(
+  (config) => {
+    // TODO 2. 携带token
+    return config
+  },
+  (err) => Promise.reject(err)
+)
+
+instance.interceptors.response.use(
+  (res) => {
+    // TODO 3. 处理业务失败
+    // TODO 4. 摘取核心响应数据
+    return res
+  },
+  (err) => {
+    // TODO 5. 处理401错误
+    return Promise.reject(err)
+  }
+)
+
+export default instance
+```

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>煮雪话河山 · Vue</title>
+    <link>https://blog.zhuux.cn/</link>
+    <description>记录前端工程、构建工具与内容系统的实践与取舍。文章偏长，代码可复制，结论尽量可复现。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 08 Jan 2025 15:41:28 GMT</lastBuildDate>
+    <managingEditor>62405816@qq.com (煮雪话河山)</managingEditor>
+    <atom:link href="https://blog.zhuux.cn/feed/cat/vue.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vue项目准备工作</title>
+      <link>https://blog.zhuux.cn/posts/517785ce</link>
+      <guid isPermaLink="true">https://blog.zhuux.cn/posts/517785ce</guid>
+      <pubDate>Wed, 08 Jan 2025 15:41:28 GMT</pubDate>
+      <description>在一个新的Vue项目开始之前，有一些准备工作是十分必要的，一个清晰、易于扩展的项目结构能帮助团队协作，并确保随着项目增大，不会出现难以维护的混乱代码。 Vue.js依赖于Node.js和npm（Node包管理器）。你可以从Node.js官网…</description>
+      <category>Vue</category>
+      <category>Vue</category>
+      <category>学习笔记</category>
+    </item>
+  </channel>
+</rss>

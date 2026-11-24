@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>煮雪话河山 · 日志</title>
+    <link>https://blog.zhuux.cn/</link>
+    <description>记录前端工程、构建工具与内容系统的实践与取舍。文章偏长，代码可复制，结论尽量可复现。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 28 Oct 2024 20:37:27 GMT</lastBuildDate>
+    <managingEditor>62405816@qq.com (煮雪话河山)</managingEditor>
+    <atom:link href="https://blog.zhuux.cn/feed/tag/log.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hexo美化：本站日志创建及配置</title>
+      <link>https://blog.zhuux.cn/posts/bda0f2db</link>
+      <guid isPermaLink="true">https://blog.zhuux.cn/posts/bda0f2db</guid>
+      <pubDate>Mon, 28 Oct 2024 20:37:27 GMT</pubDate>
+      <description>最近在鱼塘水群，有些萌萌哒新人问到了怎么实现 本站日志 这个功能。 本站日志 的目的正是为了记录我在学习和开发过程中所做的每一项尝试与成就。这不仅是对自己努力的见证，也是希望能为其他开发者提供灵感和参考。通过这份日志，我希望能与大家共同探讨…</description>
+      <category>Hexo</category>
+      <category>Hexo</category>
+      <category>美化</category>
+      <category>日志</category>
+    </item>
+  </channel>
+</rss>

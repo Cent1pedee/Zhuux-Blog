@@ -1,0 +1,453 @@
+2:"$Sreact.fragment"
+3:"/_next/static/chunks/25pke5jhl9el4.js"
+4:"/_next/static/chunks/3b-t7q3l2es1a.js"
+5:"/_next/static/chunks/245nmefl0mjab.js"
+6:"/_next/static/chunks/2dy0hly1pjza2.js"
+7:"/_next/static/chunks/0m2dr-odktsc9.js"
+8:"/_next/static/chunks/3e7ftxxwzdybr.js"
+9:"/_next/static/chunks/0cf2c0fvjpqyz.js"
+a:"/_next/static/chunks/2f7_6q_09njv7.js"
+b:I[55666,["$3","$4","$5","$6","$7","$8","$9","$a"],"default"]
+c:I[41798,["$3","$4","$5","$6","$7","$8","$9","$a"],"default"]
+13:"/_next/static/chunks/0s9808r35njuo.js"
+14:"/_next/static/chunks/2k9smhrvlu7rz.js"
+15:I[40919,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ScrollProgress"]
+16:I[15685,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ReadingPosition"]
+17:"ScrollToTopOnMount"
+18:I[99654,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"$17"]
+19:"ArticleTextTransition"
+1a:I[86057,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"$19"]
+1b:"ReturnToPostsLink"
+1c:I[67788,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"$1b"]
+1d:I[66151,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],""]
+1e:I[62015,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ArticleCover"]
+2c:"ViewportBoundary"
+2d:I[38320,["$3","$4","$5","$6","$7","$8","$9","$a"],"$2c"]
+2e:"MetadataBoundary"
+2f:I[38320,["$3","$4","$5","$6","$7","$8","$9","$a"],"$2e"]
+30:"$Sreact.suspense"
+31:I[43595,["$3","$4","$5","$6","$7","$8","$9","$a"],"IconMark"]
+e:X
+e:C
+f:X
+12:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$2","c",{"children":[[["$","$L15",null,{}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Python数据清洗：Numpy常用操作\",\"description\":\"我为什么要用NumPy? 对于同样的数值计算任务，使用NumPy要比直接编写Python代码便捷得多； NumPy中的数组的存储效率和输入输出性能均远远优于Python中等价的基本数据结构，且其能够提升的性能是与数组中的元素成比例的； Nu…\",\"datePublished\":\"2023-08-20T01:39:06.000Z\",\"dateModified\":\"2023-08-20T01:39:06.000Z\",\"author\":{\"@type\":\"Person\",\"name\":\"煮雪话河山\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"煮雪话河山\"},\"mainEntityOfPage\":\"https://blog.zhuux.cn/posts/2b53089b\",\"keywords\":\"python, data-analysis, data-cleaning\",\"inLanguage\":\"zh-CN\"}"}}],["$","$L16",null,{"slug":"2b53089b"}],["$","$L18",null,{}],["$","$L1a",null,{"slug":"2b53089b"}],["$","div",null,{"className":"shell","children":["$","div",null,{"className":"grid gap-10 lg:grid-cols-[minmax(0,1fr)_248px] lg:gap-12","children":[["$","article",null,{"className":"min-w-0","children":[["$","header",null,{"className":"border-b border-hairline pb-7","children":[["$","nav",null,{"aria-label":"面包屑","className":"flex flex-wrap items-center gap-1.5","children":[["$","$L1c",null,{"slug":"2b53089b","bookmarkChildren":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left size-4 transition-transform duration-200 group-hover:-translate-x-0.5","aria-hidden":true,"children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"我的收藏"],"className":"group inline-flex min-h-10 items-center gap-1.5 rounded-[9px] border border-hairline bg-surface px-3.5 text-[13px] font-medium text-ink transition-[background-color,border-color,transform] duration-200 hover:border-hairline-strong hover:bg-surface-strong active:scale-[0.98]","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left size-4 transition-transform duration-200 group-hover:-translate-x-0.5","aria-hidden":true,"children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"全部文章"]}],["$","span",null,{"aria-hidden":true,"className":"px-0.5 text-[12px] text-muted/40","children":"/"}],["$","$L1d",null,{"href":"/posts?cat=python","className":"inline-flex min-h-10 items-center rounded-[9px] px-2.5 font-mono text-[13px] tracking-[0.01em] text-signal-ink transition-colors hover:bg-signal/[0.07]","children":"Python"}],false]}],["$","$L1e",null,{"src":"https://img.cent1pedee.top/img/python-numpy.jpg","slug":"2b53089b","label":"Python","className":"mt-5 aspect-[1200/630] w-full rounded-[var(--radius-card)] border border-hairline object-cover"}],["$","h1",null,{"data-article-title":true,"className":"mt-4 max-w-[26ch] text-[clamp(1.75rem,4vw,2.5rem)] font-semibold leading-[1.15] tracking-[-0.02em] text-ink","children":"Python数据清洗：Numpy常用操作"}],["$","p",null,{"data-article-summary":true,"className":"mt-3.5 max-w-[62ch] text-[15px] leading-relaxed text-muted","children":"我为什么要用NumPy? 对于同样的数值计算任务，使用NumPy要比直接编写Python代码便捷得多； NumPy中的数组的存储效率和输入输出性能均远远优于Python中等价的基本数据结构，且其能够提升的性能是与数组中的元素成比例的； Nu…"}],["$","div",null,{"className":"mt-5 flex flex-wrap items-center gap-x-4 gap-y-2 text-[12px] text-muted","children":[["$","span",null,{"className":"inline-flex items-center gap-1.5","children":["$","span",null,{"className":"font-medium text-ink","children":"煮雪话河山"}]}],["$","span",null,{"className":"inline-flex items-center gap-1.5 font-mono","children":["$L1f","2023-08-20"]}],"$L20","$undefined"]}],"$undefined","$L21","$L22"]}],false,null,"$L23","$L24","$L25",false,"$L26"]}],"$L27"]}]}]],["$L28","$L29"],"$L2a"]}],"p":"$@2b","v":null,"s":"$f"}}]]
+10:[["children",{"s":{"n":"slug","t":"d","k":"2b53089b","s":[]},"h":96,"d":{"r":["$","$2","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}]}]]}],"p":"$@11","v":"$e","s":"$f"},"c":"$Q12"}]]
+1:[["children",{"s":"posts","h":64,"d":{"r":["$","$2","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}]}]]}],"p":"$@d","v":"$e","s":"$f"},"c":"$Q10"}]]
+0:{"t":{"t":{"s":"","h":20,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[null,["$","$L2d",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#08090c","media":"(prefers-color-scheme: dark)"}],["$","meta","3",{"name":"theme-color","content":"#ededea","media":"(prefers-color-scheme: light)"}]]}],["$","$L2f",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$30",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Python数据清洗：Numpy常用操作 · 煮雪话河山"}],["$","meta","1",{"name":"description","content":"我为什么要用NumPy? 对于同样的数值计算任务，使用NumPy要比直接编写Python代码便捷得多； NumPy中的数组的存储效率和输入输出性能均远远优于Python中等价的基本数据结构，且其能够提升的性能是与数组中的元素成比例的； Nu…"}],["$","meta","2",{"name":"author","content":"煮雪话河山"}],["$","meta","3",{"name":"robots","content":"index, follow"}],["$","link","4",{"rel":"canonical","href":"https://blog.zhuux.cn/posts/2b53089b"}],["$","meta","5",{"property":"og:title","content":"Python数据清洗：Numpy常用操作"}],["$","meta","6",{"property":"og:description","content":"我为什么要用NumPy? 对于同样的数值计算任务，使用NumPy要比直接编写Python代码便捷得多； NumPy中的数组的存储效率和输入输出性能均远远优于Python中等价的基本数据结构，且其能够提升的性能是与数组中的元素成比例的； Nu…"}],["$","meta","7",{"property":"og:url","content":"https://blog.zhuux.cn/posts/2b53089b"}],["$","meta","8",{"property":"og:image","content":"https://img.cent1pedee.top/img/python-numpy.jpg"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"property":"article:published_time","content":"2023-08-20T01:39:06.000Z"}],["$","meta","11",{"property":"article:modified_time","content":"2023-08-20T01:39:06.000Z"}],["$","meta","12",{"property":"article:author","content":"煮雪话河山"}],["$","meta","13",{"property":"article:tag","content":"python"}],["$","meta","14",{"property":"article:tag","content":"data-analysis"}],["$","meta","15",{"property":"article:tag","content":"data-cleaning"}],["$","meta","16",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","17",{"name":"twitter:title","content":"Python数据清洗：Numpy常用操作"}],["$","meta","18",{"name":"twitter:description","content":"我为什么要用NumPy? 对于同样的数值计算任务，使用NumPy要比直接编写Python代码便捷得多； NumPy中的数组的存储效率和输入输出性能均远远优于Python中等价的基本数据结构，且其能够提升的性能是与数组中的元素成比例的； Nu…"}],["$","meta","19",{"name":"twitter:image","content":"https://img.cent1pedee.top/img/python-numpy.jpg"}],["$","link","20",{"rel":"icon","href":"/icon.svg?icon.2z_nhvg-dnpec.svg","sizes":"any","type":"image/svg+xml"}],["$","$L31","21",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@32","v":null,"s":"$f"}},"a":"$@33","u":"$@34","b":"NSfzR_EDzOtUGEfuEGKvr"}
+35:I[42080,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"TocMobile"]
+36:I[67077,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ReadingSettings"]
+3a:I[33883,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ArticleActions"]
+3b:I[781,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"Comments"]
+3c:I[42080,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"Toc"]
+3d:I[92975,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"SpotlightCard"]
+3e:I[38320,["$3","$4","$5","$6","$7","$8","$9","$a"],"OutletBoundary"]
+1f:["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-calendar-days size-3.5","aria-hidden":true,"children":[["$","path","1cmpym",{"d":"M8 2v4"}],["$","path","4m81vk",{"d":"M16 2v4"}],["$","rect","1hopcy",{"width":"18","height":"18","x":"3","y":"4","rx":"2"}],["$","path","8toen8",{"d":"M3 10h18"}],["$","path","6423bh",{"d":"M8 14h.01"}],["$","path","1etili",{"d":"M12 14h.01"}],["$","path","1gbofw",{"d":"M16 14h.01"}],["$","path","lrp35t",{"d":"M8 18h.01"}],["$","path","mhygvu",{"d":"M12 18h.01"}],["$","path","kzsmim",{"d":"M16 18h.01"}],"$undefined"]}]
+20:["$","span",null,{"className":"inline-flex items-center gap-1.5 font-mono","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-clock3 lucide-clock-3 size-3.5","aria-hidden":true,"children":[["$","path","135r8i",{"d":"M12 6v6h4"}],["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],"$undefined"]}],12," 分钟 · ",2384," 字"]}]
+21:["$","div",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","$L1d","python",{"href":"/posts?tag=python","className":"rounded-full outline-none focus-visible:ring-2 focus-visible:ring-signal/70","children":["$","span",null,{"data-slot":"badge","className":"inline-flex items-center gap-1 border tracking-[0.01em] border-hairline bg-surface-sunken text-muted max-w-full rounded-full px-2.5 py-0.5 text-[11px] font-normal transition-colors hover:border-signal/40 hover:text-signal-ink","children":["#","Python"]}]}],["$","$L1d","data-analysis",{"href":"/posts?tag=data-analysis","className":"rounded-full outline-none focus-visible:ring-2 focus-visible:ring-signal/70","children":["$","span",null,{"data-slot":"badge","className":"inline-flex items-center gap-1 border tracking-[0.01em] border-hairline bg-surface-sunken text-muted max-w-full rounded-full px-2.5 py-0.5 text-[11px] font-normal transition-colors hover:border-signal/40 hover:text-signal-ink","children":["#","数据分析"]}]}],["$","$L1d","data-cleaning",{"href":"/posts?tag=data-cleaning","className":"rounded-full outline-none focus-visible:ring-2 focus-visible:ring-signal/70","children":["$","span",null,{"data-slot":"badge","className":"inline-flex items-center gap-1 border tracking-[0.01em] border-hairline bg-surface-sunken text-muted max-w-full rounded-full px-2.5 py-0.5 text-[11px] font-normal transition-colors hover:border-signal/40 hover:text-signal-ink","children":["#","数据清洗"]}]}]]}]
+22:["$","div",null,{"className":"mt-5 flex flex-wrap items-center gap-2","children":[["$","$L35",null,{"items":[{"id":"什么是numpy基础篇","text":"什么是NumPy?(基础篇)","level":2},{"id":"numpy的安装","text":"NumPy的安装","level":2},{"id":"numpy的使用以及应用","text":"Numpy的使用以及应用","level":2},{"id":"numpy的常用属性","text":"numpy的常用属性","level":2},{"id":"numpy的索引和切片操作重点","text":"numpy的索引和切片操作(重点)","level":2},{"id":"变形reshape","text":"变形reshape","level":2},{"id":"级联操作","text":"级联操作","level":2},{"id":"常用的聚合操作","text":"常用的聚合操作","level":2},{"id":"常用的数学函数","text":"常用的数学函数","level":2},{"id":"常用的统计函数","text":"常用的统计函数","level":2},{"id":"矩阵相关","text":"矩阵相关","level":2},{"id":"矩阵相乘","text":"矩阵相乘","level":2}]}],["$","$L36",null,{}],["$","$L1d",null,{"href":"/contact","className":"inline-flex h-9 items-center gap-1.5 rounded-[10px] border border-hairline bg-surface px-3 text-xs text-muted backdrop-blur-xl transition-colors hover:text-ink","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-mail size-3.5","aria-hidden":"true","children":[["$","path","132q7q",{"d":"m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"}],["$","rect","izxlao",{"x":"2","y":"4","width":"20","height":"16","rx":"2"}],"$undefined"]}]," 反馈与纠错"]}]]}]
+37:T10f8b,<p><strong>我为什么要用NumPy?</strong></p>
+<ul>
+<li>对于同样的数值计算任务，使用NumPy要比直接编写Python代码便捷得多；</li>
+<li>NumPy中的数组的存储效率和输入输出性能均远远优于Python中等价的基本数据结构，且其能够提升的性能是与数组中的元素成比例的；</li>
+<li>NumPy的大部分代码都是用C语言写的，其底层算法在设计时就有着优异的性能，这使得NumPy比纯Python代码高效得多</li>
+<li>当然，NumPy也有其不足之处，由于NumPy使用内存映射文件以达到最优的数据读写性能，而内存的大小限制了其对TB级大文件的处理；此外，NumPy数组的通用性不及Python提供的list容器。因此，在科学计算之外的领域，NumPy的优势也就不那么明显。</li>
+</ul>
+<p>关于Python Numpy矩阵的用法总结请参考博文：<a href="https://www.cnblogs.com/wj-1314/p/10244807.html">https://www.cnblogs.com/wj-1314/p/10244807.html</a></p>
+<hr>
+<h2 id="什么是numpy基础篇"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#什么是numpy基础篇">#</a>什么是NumPy?(基础篇)</h2>
+<p>NumPy是一个功能强大的Python库，主要用于对多维数组执行计算。NumPy这个词来源于两个单词-- 和。NumPy提供了大量的库函数和操作，可以帮助程序员轻松地进行数值计算。这类数值计算广泛用于以下任务：</p>
+<ul>
+<li>
+<p><strong>机器学习模型</strong>：在编写机器学习算法时，需要对矩阵进行各种数值计算。例如矩阵乘法、换位、加法等。NumPy提供了一个非常好的库，用于简单(在编写代码方面)和快速(在速度方面)计算。NumPy数组用于存储训练数据和机器学习模型的参数。</p>
+</li>
+<li>
+<p><strong>图像处理和计算机图形学</strong>：计算机中的图像表示为多维数字数组。NumPy成为同样情况下最自然的选择。实际上，NumPy提供了一些优秀的库函数来快速处理图像。例如，镜像图像、按特定角度旋转图像等。</p>
+</li>
+<li>
+<p><strong>数学任务</strong>：NumPy对于执行各种数学任务非常有用，如数值积分、微分、内插、外推等。因此，当涉及到数学任务时，它形成了一种基于Python的MATLAB的快速替代。</p>
+</li>
+</ul>
+<h2 id="numpy的安装"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#numpy的安装">#</a>NumPy的安装</h2>
+<p>在你的计算机上安装NumPy的最快也是最简单的方法是在shell上使用以下命令：<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>pip install numpy</span></span></code></span>。</p>
+<p>这将在你的计算机上安装最新/最稳定的NumPy版本。通过PIP安装是安装任何Python软件包的最简单方法。现在让我们来谈谈NumPy中最重要的概念，NumPy数组。</p>
+<h2 id="numpy的使用以及应用"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#numpy的使用以及应用">#</a>Numpy的使用以及应用</h2>
+<ul>
+<li>
+<p>导入Numpy模块</p>
+</li>
+<li>
+<p>使用np.array()创建</p>
+</li>
+<li>
+<p>使用plt 创建</p>
+</li>
+<li>
+<p>使用np的routines函数创建</p>
+</li>
+<li>
+<p>使用array()创建一个一维数组</p>
+</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">import</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> numpy </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">as</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> np</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> np.array([</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">2</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">3</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">])</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([1, 2, 3])</span></span></code></pre></figure>
+<ul>
+<li>使用array()创建一个多维数组</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> np.array([[</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">2</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">3</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">],[</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">4</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">5</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">6</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">]])</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([[1, 2, 3],</span></span>
+<span data-line=""><span>       [4, 5, 6]])</span></span></code></pre></figure>
+<ul>
+<li>数组和列表的区别是什么？
+<ul>
+<li>数组中存储的数据元素类型必须是统一类型</li>
+<li>优先级：
+<ul>
+<li>字符串 > 浮点型 > 整型</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> np.array([</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">2.2</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"three"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">])</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array(['1', '2.2', 'three'], dtype='&#x3C;U32')</span></span></code></pre></figure>
+<ul>
+<li>将外部的一张图片读取加载到numpy数组中，然后尝试改变数组元素的数值查看对原始图片的影响</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">import</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> matplotlib.pyplot </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">as</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> plt</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">img_arr </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> plt.imread(</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"C:</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">\\</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">Users</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">\\</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">图片.jpg"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">) </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#返回的数组，数组中装载的就是图片内容</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">plt.imshow(img_arr)</span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#将numpy数组进行可视化展示</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>&#x3C;matplotlib.image.AxesImage at 0x2204a526cd0></span></span>
+<span data-line=""> </span>
+<span data-line=""> </span>
+<span data-line=""> </span>
+<span data-line=""> </span></code></pre></figure>
+<p><img src="https://imgbed.kouseki.cn/file/803b1e000d92f5b4d6dc4.png" alt="png"></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">img_arr </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> img_arr </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">-</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> 100</span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E"> #将每一个数组元素都减去100</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">plt.imshow(img_arr)</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>&#x3C;matplotlib.image.AxesImage at 0x2204d86c690></span></span>
+<span data-line=""> </span>
+<span data-line=""> </span>
+<span data-line=""> </span>
+<span data-line=""> </span></code></pre></figure>
+<p><img src="https://imgbed.kouseki.cn/file/875edb3a27cef78116d17.png" alt="png"></p>
+<ul>
+<li>zero()</li>
+<li>ones()</li>
+<li>linespace()</li>
+<li>arange()</li>
+<li>random系列</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">np.ones(</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">shape</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">3</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">4</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">))</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([[1., 1., 1., 1.],</span></span>
+<span data-line=""><span>       [1., 1., 1., 1.],</span></span>
+<span data-line=""><span>       [1., 1., 1., 1.]])</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">np.linspace(</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">0</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">100</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">num</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">20</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#一维的等差数列数组</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([  0.        ,   5.26315789,  10.52631579,  15.78947368,</span></span>
+<span data-line=""><span>        21.05263158,  26.31578947,  31.57894737,  36.84210526,</span></span>
+<span data-line=""><span>        42.10526316,  47.36842105,  52.63157895,  57.89473684,</span></span>
+<span data-line=""><span>        63.15789474,  68.42105263,  73.68421053,  78.94736842,</span></span>
+<span data-line=""><span>        84.21052632,  89.47368421,  94.73684211, 100.        ])</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">np.arange(</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">10</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">50</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">step</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">2</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#一维等差数列</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42,</span></span>
+<span data-line=""><span>       44, 46, 48])</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">np.random.randint(</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">0</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">100</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">size</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">5</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">3</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">))</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([[93, 62, 92],</span></span>
+<span data-line=""><span>       [13, 20, 45],</span></span>
+<span data-line=""><span>       [ 7, 65, 87],</span></span>
+<span data-line=""><span>       [98, 23, 74],</span></span>
+<span data-line=""><span>       [69, 18, 37]])</span></span></code></pre></figure>
+<h2 id="numpy的常用属性"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#numpy的常用属性">#</a>numpy的常用属性</h2>
+<ul>
+<li>shape</li>
+<li>ndim</li>
+<li>size</li>
+<li>dtype</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> np.random.randint(</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">0</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">100</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">size</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">5</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">6</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">))</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([[78, 21, 12, 74, 84, 52],</span></span>
+<span data-line=""><span>       [84, 57, 31, 61, 42, 10],</span></span>
+<span data-line=""><span>       [60, 52, 95, 45, 19, 35],</span></span>
+<span data-line=""><span>       [18, 31, 23, 21, 66, 21],</span></span>
+<span data-line=""><span>       [89, 40, 84,  5, 47, 13]])</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr.shape </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#返回的是数组的形状</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>(5, 6)</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr.ndim </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#返回的是数组的维度</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>2</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr.size </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#返回数组元素的个数</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>30</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr.dtype </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#返回的是数组元素的类型</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>dtype('int32')</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">type</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(arr) </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#数组的数据类型</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>numpy.ndarray</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> np.array([</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">2</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">3</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">])</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr.dtype</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>dtype('int32')</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#创建一个数组，指定数组元素类型为int64</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> np.array([</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">2</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">3</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">],</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">dtype</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"int64"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr.dtype</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>dtype('int64')</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr.dtype </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> "uint8"</span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E"> #修改数组的元素类型</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr.dtype</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>dtype('uint8')</span></span></code></pre></figure>
+<h2 id="numpy的索引和切片操作重点"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#numpy的索引和切片操作重点">#</a>numpy的索引和切片操作(重点)</h2>
+<ul>
+<li>索引操作和列表同理</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> np.random.randint(</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">100</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">size</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">5</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">6</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">))</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([[94, 45,  2, 65, 25, 61],</span></span>
+<span data-line=""><span>       [11, 45, 70, 66, 94, 85],</span></span>
+<span data-line=""><span>       [32, 14, 90, 27, 32, 73],</span></span>
+<span data-line=""><span>       [34, 32, 47, 74, 81, 69],</span></span>
+<span data-line=""><span>       [42, 90, 73, 51, 20, 56]])</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr[</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#取出了numpy数组中的下标为1的行数据</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([11, 45, 70, 66, 94, 85])</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr[[</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">3</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">4</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">]] </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#取出多行</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([[11, 45, 70, 66, 94, 85],</span></span>
+<span data-line=""><span>       [34, 32, 47, 74, 81, 69],</span></span>
+<span data-line=""><span>       [42, 90, 73, 51, 20, 56]])</span></span></code></pre></figure>
+<ul>
+<li>切片操作
+<ul>
+<li>切出前两行数据</li>
+<li>切出前两列数据</li>
+<li>切出前两行的前两列数据</li>
+<li>数组数据翻转</li>
+<li>练习：将一张图片上下左右进行翻转操作</li>
+<li>练习：将图片进行指定区域的裁剪</li>
+</ul>
+</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#切出arr数组的前两行的数据</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr[</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">0</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">:</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">2</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#arr[行切片]</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([[94, 45,  2, 65, 25, 61],</span></span>
+<span data-line=""><span>       [11, 45, 70, 66, 94, 85]])</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#切出arr数组的前两列数据</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr[:,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">0</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">:</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">2</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#arr[行切片,列切片]</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([[94, 45],</span></span>
+<span data-line=""><span>       [11, 45],</span></span>
+<span data-line=""><span>       [32, 14],</span></span>
+<span data-line=""><span>       [34, 32],</span></span>
+<span data-line=""><span>       [42, 90]])</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#切出前两行的前两列数据</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr[</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">0</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">:</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">2</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">0</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">:</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">2</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">]</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([[94, 45],</span></span>
+<span data-line=""><span>       [11, 45]])</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#将数组的行倒置</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr[::</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">-</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">]</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([[42, 90, 73, 51, 20, 56],</span></span>
+<span data-line=""><span>       [34, 32, 47, 74, 81, 69],</span></span>
+<span data-line=""><span>       [32, 14, 90, 27, 32, 73],</span></span>
+<span data-line=""><span>       [11, 45, 70, 66, 94, 85],</span></span>
+<span data-line=""><span>       [94, 45,  2, 65, 25, 61]])</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#将数组的列倒置</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr[:,::</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">-</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">]</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([[61, 25, 65,  2, 45, 94],</span></span>
+<span data-line=""><span>       [85, 94, 66, 70, 45, 11],</span></span>
+<span data-line=""><span>       [73, 32, 27, 90, 14, 32],</span></span>
+<span data-line=""><span>       [69, 81, 74, 47, 32, 34],</span></span>
+<span data-line=""><span>       [56, 20, 51, 73, 90, 42]])</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#所有元素倒置</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr[::</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">-</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,::</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">-</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">]</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([[56, 20, 51, 73, 90, 42],</span></span>
+<span data-line=""><span>       [69, 81, 74, 47, 32, 34],</span></span>
+<span data-line=""><span>       [73, 32, 27, 90, 14, 32],</span></span>
+<span data-line=""><span>       [85, 94, 66, 70, 45, 11],</span></span>
+<span data-line=""><span>       [61, 25, 65,  2, 45, 94]])</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#图片翻转前置准备</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">img_arr </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> plt.imread(</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"C:</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">\\</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">Users</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">\\</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">图片.jpg"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">plt.imshow(img_arr)</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>&#x3C;matplotlib.image.AxesImage at 0x2204d7a3690></span></span>
+<span data-line=""> </span>
+<span data-line=""> </span>
+<span data-line=""> </span>
+<span data-line=""> </span></code></pre></figure>
+<p><img src="https://imgbed.kouseki.cn/file/102e1b002235f61dc0fa7.png" alt="png"></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">img_arr.shape</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>(1024, 1024, 3)</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#将一张图片左右进行翻转操作</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">plt.imshow(img_arr[:,::</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">-</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,:]) </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#img_arr[行，列，颜色]</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>&#x3C;matplotlib.image.AxesImage at 0x2204f886690></span></span>
+<span data-line=""> </span>
+<span data-line=""> </span>
+<span data-line=""> </span>
+<span data-line=""> </span></code></pre></figure>
+<p><img src="https://imgbed.kouseki.cn/file/f9f8c50aa0024f90b3153.png" alt="png"></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#将一张图片上下进行翻转操作</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">plt.imshow(img_arr[::</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">-</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,:,:])</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>&#x3C;matplotlib.image.AxesImage at 0x2204f629a90></span></span>
+<span data-line=""> </span>
+<span data-line=""> </span>
+<span data-line=""> </span>
+<span data-line=""> </span></code></pre></figure>
+<p><img src="https://imgbed.kouseki.cn/file/25dba6ee787e0886fab10.png" alt="png"></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#图片裁剪的功能</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">plt.imshow(img_arr[</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">200</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">:</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1000</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">250</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">:</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">800</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,:])</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>&#x3C;matplotlib.image.AxesImage at 0x2204fdc81d0></span></span>
+<span data-line=""> </span>
+<span data-line=""> </span>
+<span data-line=""> </span>
+<span data-line=""> </span></code></pre></figure>
+<p><img src="https://imgbed.kouseki.cn/file/23afcfc2068144d70d251.png" alt="png"></p>
+<h2 id="变形reshape"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#变形reshape">#</a>变形reshape</h2>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#原始arr是一个5行6列的二维数组</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([[94, 45,  2, 65, 25, 61],</span></span>
+<span data-line=""><span>       [11, 45, 70, 66, 94, 85],</span></span>
+<span data-line=""><span>       [32, 14, 90, 27, 32, 73],</span></span>
+<span data-line=""><span>       [34, 32, 47, 74, 81, 69],</span></span>
+<span data-line=""><span>       [42, 90, 73, 51, 20, 56]])</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#将二维的数组变成1维</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr_1 </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> arr.reshape((</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">30</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,))</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#将1维变形成多维</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr_1.reshape((</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">6</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">5</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">))</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([[94, 45,  2, 65, 25],</span></span>
+<span data-line=""><span>       [61, 11, 45, 70, 66],</span></span>
+<span data-line=""><span>       [94, 85, 32, 14, 90],</span></span>
+<span data-line=""><span>       [27, 32, 73, 34, 32],</span></span>
+<span data-line=""><span>       [47, 74, 81, 69, 42],</span></span>
+<span data-line=""><span>       [90, 73, 51, 20, 56]])</span></span></code></pre></figure>
+<h2 id="级联操作"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#级联操作">#</a>级联操作</h2>
+<ul>
+<li>axis轴向的理解(将多个numpy数组进行横向或者纵向的拼接)
+<ul>
+<li>0：列</li>
+<li>1：行</li>
+</ul>
+</li>
+<li>问题：
+<ul>
+<li>级联的两个数组维度一样，但是行列个数不一样会如何?(不行，链接的两个数组维度必须完全匹配)</li>
+</ul>
+</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">np.concatenate((arr,arr),</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">axis</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([[94, 45,  2, 65, 25, 61, 94, 45,  2, 65, 25, 61],</span></span>
+<span data-line=""><span>       [11, 45, 70, 66, 94, 85, 11, 45, 70, 66, 94, 85],</span></span>
+<span data-line=""><span>       [32, 14, 90, 27, 32, 73, 32, 14, 90, 27, 32, 73],</span></span>
+<span data-line=""><span>       [34, 32, 47, 74, 81, 69, 34, 32, 47, 74, 81, 69],</span></span>
+<span data-line=""><span>       [42, 90, 73, 51, 20, 56, 42, 90, 73, 51, 20, 56]])</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr3 </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> np.concatenate((img_arr,img_arr,img_arr),</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">axis</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">0</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">plt.imshow(arr3)</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>&#x3C;matplotlib.image.AxesImage at 0x2205118d290></span></span>
+<span data-line=""> </span>
+<span data-line=""> </span>
+<span data-line=""> </span>
+<span data-line=""> </span></code></pre></figure>
+<p><img src="https://imgbed.kouseki.cn/file/2c816c6fc71cdd2203e0f.png" alt="png"></p>
+<h2 id="常用的聚合操作"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#常用的聚合操作">#</a>常用的聚合操作</h2>
+<ul>
+<li>sum,max,min,mean</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([[94, 45,  2, 65, 25, 61],</span></span>
+<span data-line=""><span>       [11, 45, 70, 66, 94, 85],</span></span>
+<span data-line=""><span>       [32, 14, 90, 27, 32, 73],</span></span>
+<span data-line=""><span>       [34, 32, 47, 74, 81, 69],</span></span>
+<span data-line=""><span>       [42, 90, 73, 51, 20, 56]])</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr.sum(</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">axis</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([292, 371, 268, 337, 332])</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr.max(</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">axis</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([94, 94, 90, 81, 90])</span></span></code></pre></figure>
+<h2 id="常用的数学函数"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#常用的数学函数">#</a>常用的数学函数</h2>
+<ul>
+<li>Numpy提供了标准的三角函数：sin() cos() tan()</li>
+<li>numpy.around(a,decimals)函数返回指定数字的四舍五入值
+<ul>
+<li>参数说明：
+<ul>
+<li>a：数组</li>
+<li>decimals：舍入的小数位数，默认值为0，如果为负，整数将四舍五入到小数点左侧的位置</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">np.sin(arr)</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([[-0.24525199,  0.85090352,  0.90929743,  0.82682868, -0.13235175,</span></span>
+<span data-line=""><span>        -0.96611777],</span></span>
+<span data-line=""><span>       [-0.99999021,  0.85090352,  0.77389068, -0.02655115, -0.24525199,</span></span>
+<span data-line=""><span>        -0.17607562],</span></span>
+<span data-line=""><span>       [ 0.55142668,  0.99060736,  0.89399666,  0.95637593,  0.55142668,</span></span>
+<span data-line=""><span>        -0.67677196],</span></span>
+<span data-line=""><span>       [ 0.52908269,  0.55142668,  0.12357312, -0.98514626, -0.62988799,</span></span>
+<span data-line=""><span>        -0.11478481],</span></span>
+<span data-line=""><span>       [-0.91652155,  0.89399666, -0.67677196,  0.67022918,  0.91294525,</span></span>
+<span data-line=""><span>        -0.521551  ]])</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">np.around(</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">3.14</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">2</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>3.14</span></span></code></pre></figure>
+<h2 id="常用的统计函数"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#常用的统计函数">#</a>常用的统计函数</h2>
+<ul>
+<li>numpy.amin()和numpy.amax(),用于计算数组中的元素沿指定轴的最小、最大值</li>
+<li>numpy.ptp(),计算数组中元素最大值与最小值的差(最大值-最小值)</li>
+<li>numpy.median()函数用于计算数组a中元素的中位数(中值)</li>
+<li>标准差std():标准差是一组数据平均分散程度的一种度量</li>
+<li>方差var():统计中的方差(样本方差)是每个样本值与全体样本值的平均数之差的平方值的平均数，换句话说，标准差是方差的平方根</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">np.ptp(arr,</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">axis</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">0</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([83, 76, 88, 47, 74, 29])</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr[</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">].std()</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>27.455519582691487</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr[</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">].var()</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>753.8055555555557</span></span></code></pre></figure>
+<h2 id="矩阵相关"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#矩阵相关">#</a>矩阵相关</h2>
+<ul>
+<li>矩阵库numpy.matlib</li>
+<li>numpy.matlib.identity()函数返回给定大小的单位矩阵</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">#eye返回一个标准的对角矩阵</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">np.eye(</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">6</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([[1., 0., 0., 0., 0., 0.],</span></span>
+<span data-line=""><span>       [0., 1., 0., 0., 0., 0.],</span></span>
+<span data-line=""><span>       [0., 0., 1., 0., 0., 0.],</span></span>
+<span data-line=""><span>       [0., 0., 0., 1., 0., 0.],</span></span>
+<span data-line=""><span>       [0., 0., 0., 0., 1., 0.],</span></span>
+<span data-line=""><span>       [0., 0., 0., 0., 0., 1.]])</span></span></code></pre></figure>
+<ul>
+<li>转置矩阵 .T</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">arr.T</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([[94, 11, 32, 34, 42],</span></span>
+<span data-line=""><span>       [45, 45, 14, 32, 90],</span></span>
+<span data-line=""><span>       [ 2, 70, 90, 47, 73],</span></span>
+<span data-line=""><span>       [65, 66, 27, 74, 51],</span></span>
+<span data-line=""><span>       [25, 94, 32, 81, 20],</span></span>
+<span data-line=""><span>       [61, 85, 73, 69, 56]])</span></span></code></pre></figure>
+<h2 id="矩阵相乘"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#矩阵相乘">#</a>矩阵相乘</h2>
+<ul>
+<li>numpy.dot(a,b,out=None)
+<ul>
+<li>a:ndarray数组</li>
+<li>b:ndarray数组</li>
+</ul>
+</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">a1 </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> np.array([[</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">2</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">],[</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">4</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">3</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">]])</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">a2 </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> np.array([[</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">2</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">],[</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">1</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">0</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">]])</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-default github-dark-default"><code data-language="python" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">np.dot(a1,a2)</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>array([[3, 4],</span></span>
+<span data-line=""><span>       [7, 8]])</span></span></code></pre></figure>23:["$","div",null,{"className":"mt-8","children":[["$","div",null,{"id":"article-root","className":"prose-editorial","dangerouslySetInnerHTML":{"__html":"$37"}}],"$L38","$L39"]}]
+24:["$","div",null,{"className":"mt-10","children":["$","$L3a",null,{"slug":"2b53089b","title":"Python数据清洗：Numpy常用操作","summary":"我为什么要用NumPy? 对于同样的数值计算任务，使用NumPy要比直接编写Python代码便捷得多； NumPy中的数组的存储效率和输入输出性能均远远优于Python中等价的基本数据结构，且其能够提升的性能是与数组中的元素成比例的； Nu…"}]}]
+25:["$","nav",null,{"aria-label":"相邻文章","className":"mt-8 grid gap-3 sm:grid-cols-2","children":[["$","$L1d",null,{"href":"/posts/10771","className":"group project-card flex flex-col justify-between gap-2 rounded-[var(--radius-card)] p-4 outline-none focus-visible:ring-2 focus-visible:ring-signal/70","children":[["$","span",null,{"aria-hidden":true,"className":"project-card-sheen"}],["$","span",null,{"className":"relative inline-flex items-center gap-1.5 font-mono text-[10.5px] text-muted","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left size-3 transition-transform duration-200 group-hover:-translate-x-0.5 group-hover:text-signal-ink","aria-hidden":true,"children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"上一篇 · ","2023-08-17"]}],["$","span",null,{"className":"relative line-clamp-2 text-[14px] font-medium leading-snug text-ink transition-colors group-hover:text-signal-ink","children":"Python数据分析：利用jupyter清洗处理csv"}]]}],["$","$L1d",null,{"href":"/posts/443e71ba","className":"group project-card flex flex-col justify-between gap-2 rounded-[var(--radius-card)] p-4 text-right outline-none focus-visible:ring-2 focus-visible:ring-signal/70","children":[["$","span",null,{"aria-hidden":true,"className":"project-card-sheen"}],["$","span",null,{"className":"relative inline-flex items-center justify-end gap-1.5 font-mono text-[10.5px] text-muted","children":["下一篇 · ","2023-08-22",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right size-3 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:text-signal-ink","aria-hidden":true,"children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"relative line-clamp-2 text-[14px] font-medium leading-snug text-ink transition-colors group-hover:text-signal-ink","children":"Python数据可视化：Matplotlib常用操作(基础篇)"}]]}]]}]
+26:["$","$L3b",null,{"enabled":true,"repo":"","repoId":"","category":"Announcements","categoryId":"","degradedText":"评论服务未配置（Giscus 需要仓库名与分类 ID）。当前为只读模式，正文、目录与分享不受影响。"}]
+27:["$","aside",null,{"className":"hidden lg:block","children":["$","div",null,{"className":"sticky top-24 space-y-5","children":[["$","$L3c",null,{"items":"$22:props:children:0:props:items"}],["$","$L3d",null,{"as":"div","className":"project-panel overflow-hidden rounded-[var(--radius-card)] p-4.5","children":[["$","span",null,{"aria-hidden":true,"className":"project-card-sheen"}],["$","p",null,{"className":"relative font-mono text-[10.5px] uppercase tracking-[0.14em] text-muted","children":"CONTACT · 反馈与联系"}],["$","p",null,{"className":"relative mt-2.5 text-xs leading-relaxed text-muted","children":"文中错误、版本失效或合作意向，都可以直接发消息。"}],["$","$L1d",null,{"href":"/contact","className":"relative mt-3.5 inline-flex h-8 items-center gap-1.5 rounded-full bg-signal px-3.5 text-xs font-medium text-[var(--on-signal)] shadow-[0_6px_16px_-8px_var(--signal)] transition-[filter,transform] duration-200 hover:-translate-y-px hover:brightness-105","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-mail size-3.5","aria-hidden":true,"children":[["$","path","132q7q",{"d":"m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"}],["$","rect","izxlao",{"x":"2","y":"4","width":"20","height":"16","rx":"2"}],"$undefined"]}]," 发送消息"]}]]}]]}]}]
+28:["$","script","script-0",{"src":"/_next/static/chunks/0s9808r35njuo.js","async":true}]
+29:["$","script","script-1",{"src":"/_next/static/chunks/2k9smhrvlu7rz.js","async":true}]
+2a:["$","$L3e",null,{"children":["$","$30",null,{"name":"Next.MetadataOutlet","children":"$@3f"}]}]
+34:true
+40:I[88147,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ArticleEnhancer"]
+41:I[99563,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"SelectionShare"]
+f:300
+38:["$","$L40",null,{"slug":"2b53089b"}]
+39:["$","$L41",null,{"slug":"2b53089b"}]
+3f:null
+f:C
+33:0
+11:"$undefined"
+d:"$undefined"
+32:"$undefined"
+2b:"$undefined"

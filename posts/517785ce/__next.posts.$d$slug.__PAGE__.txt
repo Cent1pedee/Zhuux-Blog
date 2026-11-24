@@ -1,0 +1,380 @@
+2:"$Sreact.fragment"
+3:"/_next/static/chunks/25pke5jhl9el4.js"
+4:"/_next/static/chunks/3b-t7q3l2es1a.js"
+5:"/_next/static/chunks/245nmefl0mjab.js"
+6:"/_next/static/chunks/2dy0hly1pjza2.js"
+7:"/_next/static/chunks/0m2dr-odktsc9.js"
+8:"/_next/static/chunks/3e7ftxxwzdybr.js"
+9:"/_next/static/chunks/0cf2c0fvjpqyz.js"
+a:"/_next/static/chunks/2f7_6q_09njv7.js"
+b:I[55666,["$3","$4","$5","$6","$7","$8","$9","$a"],"default"]
+c:I[41798,["$3","$4","$5","$6","$7","$8","$9","$a"],"default"]
+13:"/_next/static/chunks/0s9808r35njuo.js"
+14:"/_next/static/chunks/2k9smhrvlu7rz.js"
+15:I[40919,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ScrollProgress"]
+16:I[15685,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ReadingPosition"]
+17:"ScrollToTopOnMount"
+18:I[99654,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"$17"]
+19:"ArticleTextTransition"
+1a:I[86057,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"$19"]
+1b:"ReturnToPostsLink"
+1c:I[67788,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"$1b"]
+1d:I[66151,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],""]
+1e:I[62015,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ArticleCover"]
+35:"ViewportBoundary"
+36:I[38320,["$3","$4","$5","$6","$7","$8","$9","$a"],"$35"]
+37:"MetadataBoundary"
+38:I[38320,["$3","$4","$5","$6","$7","$8","$9","$a"],"$37"]
+39:"$Sreact.suspense"
+3a:I[43595,["$3","$4","$5","$6","$7","$8","$9","$a"],"IconMark"]
+e:X
+e:C
+f:X
+12:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$2","c",{"children":[[["$","$L15",null,{}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Vue项目准备工作\",\"description\":\"在一个新的Vue项目开始之前，有一些准备工作是十分必要的，一个清晰、易于扩展的项目结构能帮助团队协作，并确保随着项目增大，不会出现难以维护的混乱代码。 Vue.js依赖于Node.js和npm（Node包管理器）。你可以从Node.js官网…\",\"datePublished\":\"2025-01-08T15:41:28.000Z\",\"dateModified\":\"2025-01-08T15:41:28.000Z\",\"author\":{\"@type\":\"Person\",\"name\":\"煮雪话河山\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"煮雪话河山\"},\"mainEntityOfPage\":\"https://blog.zhuux.cn/posts/517785ce\",\"keywords\":\"vue, study-notes\",\"inLanguage\":\"zh-CN\"}"}}],["$","$L16",null,{"slug":"517785ce"}],["$","$L18",null,{}],["$","$L1a",null,{"slug":"517785ce"}],["$","div",null,{"className":"shell","children":["$","div",null,{"className":"grid gap-10 lg:grid-cols-[minmax(0,1fr)_248px] lg:gap-12","children":[["$","article",null,{"className":"min-w-0","children":[["$","header",null,{"className":"border-b border-hairline pb-7","children":[["$","nav",null,{"aria-label":"面包屑","className":"flex flex-wrap items-center gap-1.5","children":[["$","$L1c",null,{"slug":"517785ce","bookmarkChildren":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left size-4 transition-transform duration-200 group-hover:-translate-x-0.5","aria-hidden":true,"children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"我的收藏"],"className":"group inline-flex min-h-10 items-center gap-1.5 rounded-[9px] border border-hairline bg-surface px-3.5 text-[13px] font-medium text-ink transition-[background-color,border-color,transform] duration-200 hover:border-hairline-strong hover:bg-surface-strong active:scale-[0.98]","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left size-4 transition-transform duration-200 group-hover:-translate-x-0.5","aria-hidden":true,"children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"全部文章"]}],["$","span",null,{"aria-hidden":true,"className":"px-0.5 text-[12px] text-muted/40","children":"/"}],["$","$L1d",null,{"href":"/posts?cat=vue","className":"inline-flex min-h-10 items-center rounded-[9px] px-2.5 font-mono text-[13px] tracking-[0.01em] text-signal-ink transition-colors hover:bg-signal/[0.07]","children":"Vue"}],false]}],["$","$L1e",null,{"src":"https://imgbed.kouseki.cn/file/1736322513326.jpg","slug":"517785ce","label":"Vue","className":"mt-5 aspect-[1200/630] w-full rounded-[var(--radius-card)] border border-hairline object-cover"}],["$","h1",null,{"data-article-title":true,"className":"mt-4 max-w-[26ch] text-[clamp(1.75rem,4vw,2.5rem)] font-semibold leading-[1.15] tracking-[-0.02em] text-ink","children":"Vue项目准备工作"}],["$","p",null,{"data-article-summary":true,"className":"mt-3.5 max-w-[62ch] text-[15px] leading-relaxed text-muted","children":"在一个新的Vue项目开始之前，有一些准备工作是十分必要的，一个清晰、易于扩展的项目结构能帮助团队协作，并确保随着项目增大，不会出现难以维护的混乱代码。 Vue.js依赖于Node.js和npm（Node包管理器）。你可以从Node.js官网…"}],["$","div",null,{"className":"mt-5 flex flex-wrap items-center gap-x-4 gap-y-2 text-[12px] text-muted","children":[["$","span",null,{"className":"inline-flex items-center gap-1.5","children":["$","span",null,{"className":"font-medium text-ink","children":"煮雪话河山"}]}],["$","span",null,{"className":"inline-flex items-center gap-1.5 font-mono","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-calendar-days size-3.5","aria-hidden":true,"children":["$L1f","$L20","$L21","$L22","$L23","$L24","$L25","$L26","$L27","$L28","$undefined"]}],"2025-01-08"]}],"$L29","$undefined"]}],"$undefined","$L2a","$L2b"]}],false,null,"$L2c","$L2d","$L2e",false,"$L2f"]}],"$L30"]}]}]],["$L31","$L32"],"$L33"]}],"p":"$@34","v":null,"s":"$f"}}]]
+10:[["children",{"s":{"n":"slug","t":"d","k":"517785ce","s":[]},"h":96,"d":{"r":["$","$2","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}]}]]}],"p":"$@11","v":"$e","s":"$f"},"c":"$Q12"}]]
+1:[["children",{"s":"posts","h":64,"d":{"r":["$","$2","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}]}]]}],"p":"$@d","v":"$e","s":"$f"},"c":"$Q10"}]]
+0:{"t":{"t":{"s":"","h":20,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[null,["$","$L36",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#08090c","media":"(prefers-color-scheme: dark)"}],["$","meta","3",{"name":"theme-color","content":"#ededea","media":"(prefers-color-scheme: light)"}]]}],["$","$L38",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$39",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Vue项目准备工作 · 煮雪话河山"}],["$","meta","1",{"name":"description","content":"在一个新的Vue项目开始之前，有一些准备工作是十分必要的，一个清晰、易于扩展的项目结构能帮助团队协作，并确保随着项目增大，不会出现难以维护的混乱代码。 Vue.js依赖于Node.js和npm（Node包管理器）。你可以从Node.js官网…"}],["$","meta","2",{"name":"author","content":"煮雪话河山"}],["$","meta","3",{"name":"robots","content":"index, follow"}],["$","link","4",{"rel":"canonical","href":"https://blog.zhuux.cn/posts/517785ce"}],["$","meta","5",{"property":"og:title","content":"Vue项目准备工作"}],["$","meta","6",{"property":"og:description","content":"在一个新的Vue项目开始之前，有一些准备工作是十分必要的，一个清晰、易于扩展的项目结构能帮助团队协作，并确保随着项目增大，不会出现难以维护的混乱代码。 Vue.js依赖于Node.js和npm（Node包管理器）。你可以从Node.js官网…"}],["$","meta","7",{"property":"og:url","content":"https://blog.zhuux.cn/posts/517785ce"}],["$","meta","8",{"property":"og:image","content":"https://imgbed.kouseki.cn/file/1736322513326.jpg"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"property":"article:published_time","content":"2025-01-08T15:41:28.000Z"}],["$","meta","11",{"property":"article:modified_time","content":"2025-01-08T15:41:28.000Z"}],["$","meta","12",{"property":"article:author","content":"煮雪话河山"}],["$","meta","13",{"property":"article:tag","content":"vue"}],["$","meta","14",{"property":"article:tag","content":"study-notes"}],["$","meta","15",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","16",{"name":"twitter:title","content":"Vue项目准备工作"}],["$","meta","17",{"name":"twitter:description","content":"在一个新的Vue项目开始之前，有一些准备工作是十分必要的，一个清晰、易于扩展的项目结构能帮助团队协作，并确保随着项目增大，不会出现难以维护的混乱代码。 Vue.js依赖于Node.js和npm（Node包管理器）。你可以从Node.js官网…"}],["$","meta","18",{"name":"twitter:image","content":"https://imgbed.kouseki.cn/file/1736322513326.jpg"}],["$","link","19",{"rel":"icon","href":"/icon.svg?icon.2z_nhvg-dnpec.svg","sizes":"any","type":"image/svg+xml"}],["$","$L3a","20",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@3b","v":null,"s":"$f"}},"a":"$@3c","u":"$@3d","b":"NSfzR_EDzOtUGEfuEGKvr"}
+3e:I[42080,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"TocMobile"]
+3f:I[67077,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ReadingSettings"]
+43:I[33883,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ArticleActions"]
+44:I[781,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"Comments"]
+45:I[42080,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"Toc"]
+46:I[92975,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"SpotlightCard"]
+47:I[38320,["$3","$4","$5","$6","$7","$8","$9","$a"],"OutletBoundary"]
+1f:["$","path","1cmpym",{"d":"M8 2v4"}]
+20:["$","path","4m81vk",{"d":"M16 2v4"}]
+21:["$","rect","1hopcy",{"width":"18","height":"18","x":"3","y":"4","rx":"2"}]
+22:["$","path","8toen8",{"d":"M3 10h18"}]
+23:["$","path","6423bh",{"d":"M8 14h.01"}]
+24:["$","path","1etili",{"d":"M12 14h.01"}]
+25:["$","path","1gbofw",{"d":"M16 14h.01"}]
+26:["$","path","lrp35t",{"d":"M8 18h.01"}]
+27:["$","path","mhygvu",{"d":"M12 18h.01"}]
+28:["$","path","kzsmim",{"d":"M16 18h.01"}]
+29:["$","span",null,{"className":"inline-flex items-center gap-1.5 font-mono","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-clock3 lucide-clock-3 size-3.5","aria-hidden":true,"children":[["$","path","135r8i",{"d":"M12 6v6h4"}],["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],"$undefined"]}],9," 分钟 · ",1813," 字"]}]
+2a:["$","div",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","$L1d","vue",{"href":"/posts?tag=vue","className":"rounded-full outline-none focus-visible:ring-2 focus-visible:ring-signal/70","children":["$","span",null,{"data-slot":"badge","className":"inline-flex items-center gap-1 border tracking-[0.01em] border-hairline bg-surface-sunken text-muted max-w-full rounded-full px-2.5 py-0.5 text-[11px] font-normal transition-colors hover:border-signal/40 hover:text-signal-ink","children":["#","Vue"]}]}],["$","$L1d","study-notes",{"href":"/posts?tag=study-notes","className":"rounded-full outline-none focus-visible:ring-2 focus-visible:ring-signal/70","children":["$","span",null,{"data-slot":"badge","className":"inline-flex items-center gap-1 border tracking-[0.01em] border-hairline bg-surface-sunken text-muted max-w-full rounded-full px-2.5 py-0.5 text-[11px] font-normal transition-colors hover:border-signal/40 hover:text-signal-ink","children":["#","学习笔记"]}]}]]}]
+2b:["$","div",null,{"className":"mt-5 flex flex-wrap items-center gap-2","children":[["$","$L3e",null,{"items":[{"id":"vue项目准备工作","text":"Vue项目准备工作","level":2},{"id":"安装创建项目","text":"安装创建项目","level":2},{"id":"1-安装nodejs","text":"1. 安装Node.js","level":3},{"id":"2-创建一个vue应用","text":"2. 创建一个Vue应用","level":3},{"id":"3-项目结构","text":"3. 项目结构","level":3},{"id":"项目配置","text":"项目配置","level":2},{"id":"1-调整项目目录","text":"1. 调整项目目录","level":3},{"id":"2-选择并配置代码风格与规范","text":"2. 选择并配置代码风格与规范","level":3},{"id":"3-pinia---构建用户仓库和持久化","text":"3. Pinia - 构建用户仓库和持久化","level":3},{"id":"4-axios---数据交互","text":"4. Axios - 数据交互","level":3}]}],["$","$L3f",null,{}],["$","$L1d",null,{"href":"/contact","className":"inline-flex h-9 items-center gap-1.5 rounded-[10px] border border-hairline bg-surface px-3 text-xs text-muted backdrop-blur-xl transition-colors hover:text-ink","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-mail size-3.5","aria-hidden":"true","children":[["$","path","132q7q",{"d":"m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"}],["$","rect","izxlao",{"x":"2","y":"4","width":"20","height":"16","rx":"2"}],"$undefined"]}]," 反馈与纠错"]}]]}]
+40:Tcf51,<h2 id="vue项目准备工作"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#vue项目准备工作">#</a>Vue项目准备工作</h2>
+<p>在一个新的Vue项目开始之前，有一些准备工作是十分必要的，一个清晰、易于扩展的项目结构能帮助团队协作，并确保随着项目增大，不会出现难以维护的混乱代码。</p>
+<h2 id="安装创建项目"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#安装创建项目">#</a>安装创建项目</h2>
+<h3 id="1-安装nodejs"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#1-安装nodejs">#</a>1. 安装Node.js</h3>
+<p>Vue.js依赖于Node.js和npm（Node包管理器）。你可以从<a href="https://nodejs.org/zh-cn">Node.js官网</a>下载并安装最新版本的Node.js，这将同时安装npm。</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E"># 检查Node.js版本</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">node</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> -v</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E"># 检查npm版本</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">npm</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> -v</span></span></code></pre></figure>
+<p>推荐使用<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>pnpm</span></span></code></span>进行后续步骤的安装以及使用，pnpm 本质上就是一个包管理器，这一点跟 npm/yarn 没有区别，但它有两个很关键的优势：</p>
+<ul>
+<li>包安装速度极快</li>
+<li>磁盘空间利用非常高效</li>
+</ul>
+<p>它的安装也非常简单：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">npm</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> i</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> -g</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> pnpm</span></span></code></pre></figure>
+<h3 id="2-创建一个vue应用"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#2-创建一个vue应用">#</a>2. 创建一个Vue应用</h3>
+<p>确保你安装了最新版本的 <a href="https://nodejs.org/zh-cn">Node.js</a>，并且你的当前工作目录正是打算创建项目的目录。在命令行中运行以下命令：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">pnpm</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> create</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> vue@latest</span></span></code></pre></figure>
+<p>这一指令将会安装并执行 <a href="https://github.com/vuejs/create-vue">create-vue</a>，它是 Vue 官方的项目脚手架工具。你将会看到一些诸如 <a href="https://www.tslang.cn/">TypeScript</a> 和测试支持之类的可选功能提示：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>✔ Project name: … &#x3C;your-project-name></span></span>
+<span data-line=""><span>✔ Add TypeScript? … No / Yes</span></span>
+<span data-line=""><span>✔ Add JSX Support? … No / Yes</span></span>
+<span data-line=""><span>✔ Add Vue Router for Single Page Application development? … No / Yes</span></span>
+<span data-line=""><span>✔ Add Pinia for state management? … No / Yes</span></span>
+<span data-line=""><span>✔ Add Vitest for Unit testing? … No / Yes</span></span>
+<span data-line=""><span>✔ Add an End-to-End Testing Solution? … No / Cypress / Nightwatch / Playwright</span></span>
+<span data-line=""><span>✔ Add ESLint for code quality? … No / Yes</span></span>
+<span data-line=""><span>✔ Add Prettier for code formatting? … No / Yes</span></span>
+<span data-line=""><span>✔ Add Vue DevTools 7 extension for debugging? (experimental) … No / Yes</span></span>
+<span data-line=""> </span>
+<span data-line=""><span>Scaffolding project in ./&#x3C;your-project-name>...</span></span>
+<span data-line=""><span>Done.</span></span></code></pre></figure>
+<p>在项目被创建后，通过以下步骤安装依赖并启动开发服务器：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">cd</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72"> &#x3C;</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">your-project-nam</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">e</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">></span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">pnpm</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> install</span></span>
+<span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">pnpm</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> run</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> dev</span></span></code></pre></figure>
+<h3 id="3-项目结构"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#3-项目结构">#</a>3. 项目结构</h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-default github-dark-default"><code data-language="text" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span>my-project</span></span>
+<span data-line=""><span>├── node_modules/    # 项目依赖</span></span>
+<span data-line=""><span>├── public/          # 公共资源</span></span>
+<span data-line=""><span>├── src/             # 源代码</span></span>
+<span data-line=""><span>│   ├── api/         # 接口api</span></span>
+<span data-line=""><span>│   ├── assets/      # 静态资源</span></span>
+<span data-line=""><span>│   ├── router/      # Vue路由</span></span>
+<span data-line=""><span>│   ├── components/  # Vue组件</span></span>
+<span data-line=""><span>│   ├── utils/       # 全局工具函数</span></span>
+<span data-line=""><span>│   ├── views/       # 视图文件</span></span>
+<span data-line=""><span>│   ├── App.vue      # 根组件</span></span>
+<span data-line=""><span>│   ├── main.js      # 入口文件</span></span>
+<span data-line=""><span>├── .gitignore       # Git忽略文件</span></span>
+<span data-line=""><span>├── package.json     # 项目配置文件</span></span>
+<span data-line=""><span>├── README.md        # 项目说明文件</span></span></code></pre></figure>
+<h2 id="项目配置"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#项目配置">#</a>项目配置</h2>
+<h3 id="1-调整项目目录"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#1-调整项目目录">#</a>1. 调整项目目录</h3>
+<p>默认生成的目录结构不满足我们的开发需求，因此需要做一些自定义改动。主要是两个工作：</p>
+<ul>
+<li>删除初始化的默认文件</li>
+<li>修改剩余代码内容</li>
+<li>新增调整我们需要的目录结构</li>
+<li>拷贝初始化资源文件，安装预处理器插件</li>
+</ul>
+<h4 id="11-删除多余文件"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#11-删除多余文件">#</a>1.1 删除多余文件</h4>
+<h4 id="12-修改文件内容"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#12-修改文件内容">#</a>1.2 修改文件内容</h4>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>src/router/index.js</span></span></code></span></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="js" data-theme="github-light-default github-dark-default"><code data-language="js" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">import</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> { createRouter, createWebHistory } </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">from</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> 'vue-router'</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">const</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> router</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72"> =</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF"> createRouter</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">({</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  history: </span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">createWebHistory</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">import</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">.</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">meta</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">.env.</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">BASE_URL</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">),</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  routes: []</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">})</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">export</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72"> default</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> router</span></span></code></pre></figure>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>src/App.vue</span></span></code></span></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="vue" data-theme="github-light-default github-dark-default"><code data-language="vue" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">&#x3C;</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">script</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> setup</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">>&#x3C;/</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">script</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">&#x3C;</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">template</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  &#x3C;</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">div</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">    &#x3C;</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">router-view</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">>&#x3C;/</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">router-view</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  &#x3C;/</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">div</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">&#x3C;/</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">template</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">&#x3C;</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">style</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> scoped</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">>&#x3C;/</span><span style="--shiki-light:#116329;--shiki-dark:#7EE787">style</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">></span></span></code></pre></figure>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>src/main.js</span></span></code></span></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="js" data-theme="github-light-default github-dark-default"><code data-language="js" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">import</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> { createApp } </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">from</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> 'vue'</span></span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">import</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> { createPinia } </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">from</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> 'pinia'</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">import</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> App </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">from</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> './App.vue'</span></span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">import</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> router </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">from</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> './router'</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">const</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> app</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72"> =</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF"> createApp</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(App)</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">app.</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">use</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">createPinia</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">())</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">app.</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">use</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(router)</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">app.</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">mount</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">'#app'</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span></code></pre></figure>
+<h4 id="13-新增目录-api-utils"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#13-新增目录-api-utils">#</a>1.3 新增目录 /api /utils</h4>
+<h4 id="14-引入样式"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#14-引入样式">#</a>1.4 引入样式</h4>
+<p>将项目需要的全局样式 和 图片文件，复制到 assets 文件夹中,  并将全局样式在main.js中引入</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="js" data-theme="github-light-default github-dark-default"><code data-language="js" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">import</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> '@/assets/main.scss'</span></span></code></pre></figure>
+<h3 id="2-选择并配置代码风格与规范"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#2-选择并配置代码风格与规范">#</a>2. 选择并配置代码风格与规范</h3>
+<p>为了确保团队中的每个开发者都有一致的代码风格，避免低质量代码和不一致的代码格式，配置 <em>ESlint</em> 来检查代码质量并使用 <em>Prittier</em> 自动格式化代码，使用 <em>Husky</em> 来自动触发 Git 提交前的检查。</p>
+<h4 id="21-eslint--prettier-配置代码风格"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#21-eslint--prettier-配置代码风格">#</a>2.1 ESLint &#x26; Prettier 配置代码风格</h4>
+<p><strong>环境同步：</strong></p>
+<ol>
+<li><strong>安装了插件 ESlint，开启保存自动修复</strong></li>
+<li><strong>禁用了插件 Prettier，并关闭保存自动格式化</strong></li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-default github-dark-default"><code data-language="jsx" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">// ESlint插件 + Vscode配置 实现自动格式化修复</span></span>
+<span data-line=""><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"editor.codeActionsOnSave"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: {</span></span>
+<span data-line=""><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">    "source.fixAll"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">'always'</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">},</span></span>
+<span data-line=""><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"editor.formatOnSave"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">false</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span></span></code></pre></figure>
+<p><strong>配置文件 eslint.config.js</strong></p>
+<ol>
+<li>
+<p>Prettier 风格配置 <a href="https://prettier.io/docs/en/options.html">https://prettier.io</a></p>
+<ul>
+<li>单引号</li>
+<li>不使用分号</li>
+<li>每行宽度至多80字符</li>
+<li>不加对象|数组最后逗号</li>
+<li>换行符号不限制（win mac 不一致）</li>
+</ul>
+</li>
+<li>
+<p>vue组件名称多单词组成（忽略index.vue）</p>
+</li>
+<li>
+<p>props解构（关闭）</p>
+</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-default github-dark-default"><code data-language="jsx" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">    rules</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: {</span></span>
+<span data-line=""><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">      'prettier/prettier'</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: [</span></span>
+<span data-line=""><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">        'warn'</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">        {</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">          singleQuote: </span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">true</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">, </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">// 单引号</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">          semi: </span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">false</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">, </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">// 无分号</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">          printWidth: </span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">100</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">, </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">// 每行宽度至多 100 字符</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">          trailingComma: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">'none'</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">, </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">// 不加对象/数组最后的逗号</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">          endOfLine: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">'auto'</span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E"> // 换行符自动检测（Windows 和 Unix 系统兼容）</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">        }</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">      ],</span></span>
+<span data-line=""><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">      'vue/multi-word-component-names'</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: [</span></span>
+<span data-line=""><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">        'warn'</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">        {</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">          ignores: [</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">'index'</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">] </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">// 忽略 index.vue 的多词名称校验</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">        }</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">      ],</span></span>
+<span data-line=""><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">      'vue/no-setup-props-destructure'</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">'off'</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">, </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">// 允许 props 解构</span></span>
+<span data-line=""><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">      'no-undef'</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">'error'</span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E"> // 未定义变量报错</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">    }</span></span></code></pre></figure>
+<h4 id="22-基于-husky-的代码检查工作流"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#22-基于-husky-的代码检查工作流">#</a>2.2 基于 husky 的代码检查工作流</h4>
+<p>husky 是一个 git hooks 工具  ( git的钩子工具，可以在特定时机执行特定的命令 )</p>
+<p><strong>husky 配置</strong></p>
+<ol>
+<li>
+<p>git初始化 git init</p>
+</li>
+<li>
+<p>初始化 husky 工具配置  <a href="https://typicode.github.io/husky/">https://typicode.github.io/husky/</a></p>
+</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">pnpm</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> dlx</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> husky-init</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> &#x26;&#x26; </span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">pnpm</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> install</span></span></code></pre></figure>
+<ol start="3">
+<li>修改 .husky/pre-commit 文件</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">pnpm</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> lint</span></span></code></pre></figure>
+<p><strong>问题：</strong> 默认进行的是全量检查，耗时问题，历史问题。</p>
+<h4 id="23-lint-staged-配置"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#23-lint-staged-配置">#</a>2.3 lint-staged 配置</h4>
+<ol>
+<li>安装</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">pnpm</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> i</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> lint-staged</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> -D</span></span></code></pre></figure>
+<ol start="2">
+<li>配置 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>package.json</span></span></code></span></li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-default github-dark-default"><code data-language="jsx" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">  // ... 省略 ...</span></span>
+<span data-line=""><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">  "lint-staged"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: {</span></span>
+<span data-line=""><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">    "*.{js,ts,vue}"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: [</span></span>
+<span data-line=""><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">      "eslint --fix"</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">    ]</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  }</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">{</span></span>
+<span data-line=""><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">  "scripts"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: {</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">    // ... 省略 ...</span></span>
+<span data-line=""><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">    "lint-staged"</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">: </span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">"lint-staged"</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  }</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">}</span></span></code></pre></figure>
+<ol start="3">
+<li>修改 .husky/pre-commit 文件</li>
+</ol>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">pnpm</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> lint-staged</span></span></code></pre></figure>
+<h3 id="3-pinia---构建用户仓库和持久化"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#3-pinia---构建用户仓库和持久化">#</a>3. Pinia - 构建用户仓库和持久化</h3>
+<p><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>官方文档</span></span></code></span>：<a href="https://prazdevs.github.io/pinia-plugin-persistedstate/zh/">https://prazdevs.github.io/pinia-plugin-persistedstate/zh/</a></p>
+<h4 id="31-安装使用配置插件"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#31-安装使用配置插件">#</a>3.1 安装使用配置插件</h4>
+<ul>
+<li>安装插件 pinia-plugin-persistedstate</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">pnpm</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> add</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> pinia-plugin-persistedstate</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> -D</span></span></code></pre></figure>
+<ul>
+<li>使用 main.js</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="js" data-theme="github-light-default github-dark-default"><code data-language="js" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">import</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> persist </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">from</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> 'pinia-plugin-persistedstate'</span></span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">...</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">app.</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">use</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">createPinia</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">().</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">use</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(persist))</span></span></code></pre></figure>
+<ul>
+<li>配置 stores/user.js （这里以用户Token为例子）</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="js" data-theme="github-light-default github-dark-default"><code data-language="js" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">import</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> { defineStore } </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">from</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> 'pinia'</span></span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">import</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> { ref } </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">from</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> 'vue'</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">// 用户模块</span></span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">export</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72"> const</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> useUserStore</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72"> =</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF"> defineStore</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(</span></span>
+<span data-line=""><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">  'big-user'</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  () </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=></span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> {</span></span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">    const</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> token</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72"> =</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF"> ref</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">''</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">) </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">// 定义 token</span></span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">    const</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF"> setToken</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72"> =</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> (</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">t</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">) </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=></span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> (token.value </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> t) </span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">// 设置 token</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">    return</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> { token, setToken }</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  },</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  {</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">    persist: </span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF">true</span><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E"> // 持久化</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  }</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span></code></pre></figure>
+<h4 id="32-配置仓库统一管理"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#32-配置仓库统一管理">#</a>3.2 配置仓库统一管理</h4>
+<p>将所有的<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>Pinia模块</span></span></code></span>集中在<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>store/index.js</span></span></code></span>中，可以作为状态管理的入口文件。通过这种方式，可以快速找到所有的状态管理逻辑，提高代码的可维护性和清晰度。</p>
+<ul>
+<li><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>src/main.js</span></span></code></span>:</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="js" data-theme="github-light-default github-dark-default"><code data-language="js" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">import</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> { createApp } </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">from</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> 'vue'</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">import</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> App </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">from</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> './App.vue'</span></span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">import</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> router </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">from</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> './router'</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">import</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> pinia </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">from</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> '@/stores/index'</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">import</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> '@/assets/main.scss'</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">const</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> app</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72"> =</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF"> createApp</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(App)</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">app.</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">use</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(pinia)</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">app.</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">use</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(router)</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">app.</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">mount</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF">'#app'</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span></code></pre></figure>
+<ul>
+<li><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>src/stores/index.js</span></span></code></span></li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="js" data-theme="github-light-default github-dark-default"><code data-language="js" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">import</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> { createPinia } </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">from</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> 'pinia'</span></span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">import</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> persist </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">from</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> 'pinia-plugin-persistedstate'</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">const</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> pinia</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72"> =</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF"> createPinia</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">()</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">pinia.</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">use</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(persist)</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">export</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72"> default</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> pinia</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">//接收模块的所有按需导出</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">//等价于</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">// import { useUserStore } from './modules/user'</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">// export { useUserStore }</span></span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">export</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> *</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72"> from</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> './modules/user'</span></span></code></pre></figure>
+<p>至此，您已经完成了Pinia仓库的统一管理，现在由<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>stores/index.js</span></span></code></span>统一导出，导入路径统一<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>./stores</span></span></code></span>，仓库维护在 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>src/stores/modules</span></span></code></span>中</p>
+<h3 id="4-axios---数据交互"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#4-axios---数据交互">#</a>4. Axios - 数据交互</h3>
+<p>大多数情况下都会使用<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>axios</span></span></code></span>来请求后端接口，一般都会对axios进行一些配置（比如：配置基础地址等等），一般项目开发中，对axios进行基本的二次封装，单独封装到一个模块中，便于使用</p>
+<ul>
+<li>1.安装<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>axios</span></span></code></span></li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-default github-dark-default"><code data-language="bash" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#953800;--shiki-dark:#FFA657">pnpm</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> add</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> axios</span></span></code></pre></figure>
+<ul>
+<li>2.新建<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>utils/request.js</span></span></code></span>封装<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>axios</span></span></code></span>模块</li>
+</ul>
+<p>利用<a href="http://www.axios-js.com/zh-cn/docs/#axios-create-config"><span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>axios.create</span></span></code></span></a>来创建一个自定义的<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>axios</span></span></code></span>来使用：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="js" data-theme="github-light-default github-dark-default"><code data-language="js" data-theme="github-light-default github-dark-default" style="display: grid;"><span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">import</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> axios </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">from</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> 'axios'</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">const</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> baseURL</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72"> =</span><span style="--shiki-light:#0A3069;--shiki-dark:#A5D6FF"> 'api基地址'</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">const</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> instance</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72"> =</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> axios.</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">create</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">({</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">  // TODO 1. 基础地址，超时时间</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">})</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">instance.interceptors.request.</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">use</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  (</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">config</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">) </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=></span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> {</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">    // TODO 2. 携带token</span></span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">    return</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> config</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  },</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  (</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">err</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">) </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=></span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> Promise</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">.</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">reject</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(err)</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">instance.interceptors.response.</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">use</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  (</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">res</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">) </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=></span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> {</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">    // TODO 3. 处理业务失败</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">    // TODO 4. 摘取核心响应数据</span></span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">    return</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> res</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  },</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  (</span><span style="--shiki-light:#953800;--shiki-dark:#FFA657">err</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">) </span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">=></span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> {</span></span>
+<span data-line=""><span style="--shiki-light:#6E7781;--shiki-dark:#8B949E">    // TODO 5. 处理401错误</span></span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">    return</span><span style="--shiki-light:#0550AE;--shiki-dark:#79C0FF"> Promise</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">.</span><span style="--shiki-light:#8250DF;--shiki-dark:#D2A8FF">reject</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">(err)</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">  }</span></span>
+<span data-line=""><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3">)</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72">export</span><span style="--shiki-light:#CF222E;--shiki-dark:#FF7B72"> default</span><span style="--shiki-light:#1F2328;--shiki-dark:#E6EDF3"> instance</span></span></code></pre></figure>2c:["$","div",null,{"className":"mt-8","children":[["$","div",null,{"id":"article-root","className":"prose-editorial","dangerouslySetInnerHTML":{"__html":"$40"}}],"$L41","$L42"]}]
+2d:["$","div",null,{"className":"mt-10","children":["$","$L43",null,{"slug":"517785ce","title":"Vue项目准备工作","summary":"在一个新的Vue项目开始之前，有一些准备工作是十分必要的，一个清晰、易于扩展的项目结构能帮助团队协作，并确保随着项目增大，不会出现难以维护的混乱代码。 Vue.js依赖于Node.js和npm（Node包管理器）。你可以从Node.js官网…"}]}]
+2e:["$","nav",null,{"aria-label":"相邻文章","className":"mt-8 grid gap-3 sm:grid-cols-2","children":[["$","$L1d",null,{"href":"/posts/bda0f2db","className":"group project-card flex flex-col justify-between gap-2 rounded-[var(--radius-card)] p-4 outline-none focus-visible:ring-2 focus-visible:ring-signal/70","children":[["$","span",null,{"aria-hidden":true,"className":"project-card-sheen"}],["$","span",null,{"className":"relative inline-flex items-center gap-1.5 font-mono text-[10.5px] text-muted","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left size-3 transition-transform duration-200 group-hover:-translate-x-0.5 group-hover:text-signal-ink","aria-hidden":true,"children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"上一篇 · ","2024-10-29"]}],["$","span",null,{"className":"relative line-clamp-2 text-[14px] font-medium leading-snug text-ink transition-colors group-hover:text-signal-ink","children":"Hexo美化：本站日志创建及配置"}]]}],["$","div",null,{"className":"hidden sm:block","aria-hidden":true}]]}]
+2f:["$","$L44",null,{"enabled":true,"repo":"","repoId":"","category":"Announcements","categoryId":"","degradedText":"评论服务未配置（Giscus 需要仓库名与分类 ID）。当前为只读模式，正文、目录与分享不受影响。"}]
+30:["$","aside",null,{"className":"hidden lg:block","children":["$","div",null,{"className":"sticky top-24 space-y-5","children":[["$","$L45",null,{"items":"$2b:props:children:0:props:items"}],["$","$L46",null,{"as":"div","className":"project-panel overflow-hidden rounded-[var(--radius-card)] p-4.5","children":[["$","span",null,{"aria-hidden":true,"className":"project-card-sheen"}],["$","p",null,{"className":"relative font-mono text-[10.5px] uppercase tracking-[0.14em] text-muted","children":"CONTACT · 反馈与联系"}],["$","p",null,{"className":"relative mt-2.5 text-xs leading-relaxed text-muted","children":"文中错误、版本失效或合作意向，都可以直接发消息。"}],["$","$L1d",null,{"href":"/contact","className":"relative mt-3.5 inline-flex h-8 items-center gap-1.5 rounded-full bg-signal px-3.5 text-xs font-medium text-[var(--on-signal)] shadow-[0_6px_16px_-8px_var(--signal)] transition-[filter,transform] duration-200 hover:-translate-y-px hover:brightness-105","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-mail size-3.5","aria-hidden":true,"children":[["$","path","132q7q",{"d":"m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"}],["$","rect","izxlao",{"x":"2","y":"4","width":"20","height":"16","rx":"2"}],"$undefined"]}]," 发送消息"]}]]}]]}]}]
+31:["$","script","script-0",{"src":"/_next/static/chunks/0s9808r35njuo.js","async":true}]
+32:["$","script","script-1",{"src":"/_next/static/chunks/2k9smhrvlu7rz.js","async":true}]
+33:["$","$L47",null,{"children":["$","$39",null,{"name":"Next.MetadataOutlet","children":"$@48"}]}]
+3d:true
+49:I[88147,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"ArticleEnhancer"]
+4a:I[99563,["$3","$4","$5","$6","$7","$8","$9","$a","$13","$14"],"SelectionShare"]
+f:300
+41:["$","$L49",null,{"slug":"517785ce"}]
+42:["$","$L4a",null,{"slug":"517785ce"}]
+48:null
+f:C
+3c:0
+11:"$undefined"
+d:"$undefined"
+3b:"$undefined"
+34:"$undefined"

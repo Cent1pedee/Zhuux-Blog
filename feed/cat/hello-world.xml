@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>煮雪话河山 · Hello World!</title>
+    <link>https://blog.zhuux.cn/</link>
+    <description>记录前端工程、构建工具与内容系统的实践与取舍。文章偏长，代码可复制，结论尽量可复现。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 01 Aug 2023 15:00:00 GMT</lastBuildDate>
+    <managingEditor>62405816@qq.com (煮雪话河山)</managingEditor>
+    <atom:link href="https://blog.zhuux.cn/feed/cat/hello-world.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World!</title>
+      <link>https://blog.zhuux.cn/posts/1c291ca3</link>
+      <guid isPermaLink="true">https://blog.zhuux.cn/posts/1c291ca3</guid>
+      <pubDate>Tue, 01 Aug 2023 15:00:00 GMT</pubDate>
+      <description>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex…</description>
+      <category>Hello World!</category>
+      <category>Hello World!</category>
+      <category>Hexo</category>
+    </item>
+  </channel>
+</rss>

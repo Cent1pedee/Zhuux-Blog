@@ -1,0 +1,78 @@
+2:"$Sreact.fragment"
+3:"/_next/static/chunks/25pke5jhl9el4.js"
+4:"/_next/static/chunks/3b-t7q3l2es1a.js"
+5:"/_next/static/chunks/245nmefl0mjab.js"
+6:"/_next/static/chunks/2dy0hly1pjza2.js"
+7:"/_next/static/chunks/0m2dr-odktsc9.js"
+8:"/_next/static/chunks/3e7ftxxwzdybr.js"
+9:"/_next/static/chunks/0cf2c0fvjpqyz.js"
+a:"/_next/static/chunks/2f7_6q_09njv7.js"
+b:I[55666,["$3","$4","$5","$6","$7","$8","$9","$a"],"default"]
+c:I[41798,["$3","$4","$5","$6","$7","$8","$9","$a"],"default"]
+13:"/_next/static/chunks/1fm7xqvu_86p0.js"
+14:I[66151,["$3","$4","$5","$6","$7","$8","$9","$a","$13"],""]
+15:I[46627,["$3","$4","$5","$6","$7","$8","$9","$a","$13"],"BlurFade"]
+16:I[92975,["$3","$4","$5","$6","$7","$8","$9","$a","$13"],"SpotlightCard"]
+17:I[8027,["$3","$4","$5","$6","$7","$8","$9","$a","$13"],"Particles"]
+20:"ViewportBoundary"
+21:I[38320,["$3","$4","$5","$6","$7","$8","$9","$a"],"$20"]
+22:"MetadataBoundary"
+23:I[38320,["$3","$4","$5","$6","$7","$8","$9","$a"],"$22"]
+24:"$Sreact.suspense"
+25:I[43595,["$3","$4","$5","$6","$7","$8","$9","$a"],"IconMark"]
+e:X
+e:C
+f:X
+12:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$2","c",{"children":[["$","div",null,{"className":"shell pb-16 sm:pb-20","children":[["$","nav",null,{"aria-label":"面包屑","className":"mb-5","children":["$","$L14",null,{"href":"/projects","className":"group inline-flex min-h-10 items-center gap-1.5 rounded-[10px] border border-hairline bg-surface px-3.5 text-[13px] font-medium text-ink backdrop-blur-xl transition-[background-color,border-color,transform] duration-200 hover:border-hairline-strong hover:bg-surface-strong active:scale-[0.98]","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left size-4 transition-transform duration-200 group-hover:-translate-x-0.5","aria-hidden":true,"children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"全部项目"]}]}],["$","$L15",null,{"inView":false,"delay":0,"yOffset":10,"duration":0.42,"children":["$","$L16",null,{"as":"header","className":"project-panel overflow-hidden rounded-[var(--radius-card)] p-6 sm:p-8","children":[["$","span",null,{"aria-hidden":true,"className":"project-card-sheen"}],["$","div",null,{"aria-hidden":true,"className":"pointer-events-none absolute inset-0 hidden opacity-75 dark:block [mask-image:radial-gradient(85%_95%_at_92%_10%,#000_0%,transparent_74%)]","children":["$","$L17",null,{"quantity":24,"size":1.25,"speed":3.5,"accentRatio":0.3}]}],["$","span",null,{"aria-hidden":true,"className":"pointer-events-none absolute -right-24 -top-24 size-72 rounded-full bg-signal/[0.11] blur-3xl"}],["$","span",null,{"aria-hidden":true,"className":"pointer-events-none absolute inset-0 project-grid-bg opacity-90"}],["$","span",null,{"aria-hidden":true,"className":"pointer-events-none absolute left-3 top-3 size-2.5 border-l border-t border-hairline-strong/60"}],["$","span",null,{"aria-hidden":true,"className":"pointer-events-none absolute right-3 top-3 size-2.5 border-r border-t border-hairline-strong/60"}],["$","div",null,{"className":"relative","children":[["$","div",null,{"className":"flex flex-wrap items-center gap-2","children":[["$","span",null,{"data-slot":"badge","className":"inline-flex items-center gap-1 rounded-[6px] border px-2 py-0.5 text-[11px] tracking-[0.01em] transition-colors border-signal/45 bg-signal/10 text-signal-ink","children":"活跃"}],["$","span",null,{"data-slot":"badge","className":"inline-flex items-center gap-1 rounded-[6px] border px-2 py-0.5 text-[11px] tracking-[0.01em] transition-colors border-hairline bg-surface-sunken text-muted","children":"个人项目"}],["$","span",null,{"data-slot":"badge","className":"inline-flex items-center gap-1 rounded-[6px] border px-2 py-0.5 text-[11px] tracking-[0.01em] transition-colors border-signal/45 bg-signal/10 text-signal-ink","children":"置顶"}]]}],["$","h1",null,{"className":"mt-4 text-[clamp(1.8rem,4vw,2.5rem)] font-semibold leading-[1.12] tracking-[-0.02em] text-ink","children":"个人技术博客"}],["$","p",null,{"className":"mt-2.5 max-w-2xl text-[15px] leading-relaxed text-muted","children":"一个只靠构建期数据运转的静态博客，玻璃拟态界面，零服务端依赖。"}],["$","div",null,{"className":"mt-5 flex flex-wrap gap-1.5","children":[["$","span","Next.js 16",{"className":"inline-flex items-center gap-0.5 rounded-full border border-hairline bg-surface-strong/75 px-2.5 py-0.5 text-[11px] text-ink/78","children":[["$","span",null,{"aria-hidden":true,"className":"font-mono text-[10px] text-muted/65","children":"#"}],"Next.js 16"]}],["$","span","React 19",{"className":"inline-flex items-center gap-0.5 rounded-full border border-hairline bg-surface-strong/75 px-2.5 py-0.5 text-[11px] text-ink/78","children":[["$","span",null,{"aria-hidden":true,"className":"font-mono text-[10px] text-muted/65","children":"#"}],"React 19"]}],"$L18","$L19","$L1a"]}],"$L1b"]}]]}]}],"$L1c",false]}],["$L1d"],"$L1e"]}],"p":"$@1f","v":null,"s":"$f"}}]]
+10:[["children",{"s":{"n":"slug","t":"d","k":"personal-blog","s":[]},"h":96,"d":{"r":["$","$2","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}]}]]}],"p":"$@11","v":"$e","s":"$f"},"c":"$Q12"}]]
+1:[["children",{"s":"projects","h":64,"d":{"r":["$","$2","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}]}]]}],"p":"$@d","v":"$e","s":"$f"},"c":"$Q10"}]]
+0:{"t":{"t":{"s":"","h":20,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[null,["$","$L21",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#08090c","media":"(prefers-color-scheme: dark)"}],["$","meta","3",{"name":"theme-color","content":"#ededea","media":"(prefers-color-scheme: light)"}]]}],["$","$L23",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$24",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"个人技术博客 · 煮雪话河山"}],["$","meta","1",{"name":"description","content":"一个只靠构建期数据运转的静态博客，玻璃拟态界面，零服务端依赖。"}],["$","meta","2",{"name":"author","content":"煮雪话河山"}],["$","meta","3",{"name":"robots","content":"index, follow"}],["$","link","4",{"rel":"canonical","href":"https://blog.zhuux.cn/projects/personal-blog"}],["$","meta","5",{"property":"og:title","content":"煮雪话河山 · 一个野人的构建笔记"}],["$","meta","6",{"property":"og:description","content":"记录前端工程、构建工具与内容系统的实践与取舍。文章偏长，代码可复制，结论尽量可复现。"}],["$","meta","7",{"property":"og:url","content":"https://blog.zhuux.cn"}],["$","meta","8",{"property":"og:site_name","content":"煮雪话河山"}],["$","meta","9",{"property":"og:locale","content":"zh-CN"}],["$","meta","10",{"property":"og:type","content":"website"}],["$","meta","11",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","12",{"name":"twitter:title","content":"煮雪话河山 · 一个野人的构建笔记"}],["$","meta","13",{"name":"twitter:description","content":"记录前端工程、构建工具与内容系统的实践与取舍。文章偏长，代码可复制，结论尽量可复现。"}],["$","link","14",{"rel":"icon","href":"/icon.svg?icon.2z_nhvg-dnpec.svg","sizes":"any","type":"image/svg+xml"}],["$","$L25","15",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@26","v":null,"s":"$f"}},"a":"$@27","u":"$@28","b":"NSfzR_EDzOtUGEfuEGKvr"}
+2e:I[38320,["$3","$4","$5","$6","$7","$8","$9","$a"],"OutletBoundary"]
+18:["$","span","TypeScript",{"className":"inline-flex items-center gap-0.5 rounded-full border border-hairline bg-surface-strong/75 px-2.5 py-0.5 text-[11px] text-ink/78","children":[["$","span",null,{"aria-hidden":true,"className":"font-mono text-[10px] text-muted/65","children":"#"}],"TypeScript"]}]
+19:["$","span","Tailwind CSS v4",{"className":"inline-flex items-center gap-0.5 rounded-full border border-hairline bg-surface-strong/75 px-2.5 py-0.5 text-[11px] text-ink/78","children":[["$","span",null,{"aria-hidden":true,"className":"font-mono text-[10px] text-muted/65","children":"#"}],"Tailwind CSS v4"]}]
+1a:["$","span","Motion",{"className":"inline-flex items-center gap-0.5 rounded-full border border-hairline bg-surface-strong/75 px-2.5 py-0.5 text-[11px] text-ink/78","children":[["$","span",null,{"aria-hidden":true,"className":"font-mono text-[10px] text-muted/65","children":"#"}],"Motion"]}]
+1b:["$","div",null,{"className":"mt-6 flex flex-wrap items-center gap-2.5","children":[null,null,["$","p",null,{"className":"rounded-full border border-hairline/80 bg-surface-sunken/70 px-3 py-1 text-xs text-muted","children":"该项目暂无可公开访问的入口，未生成空按钮。"}]]}]
+29:Td16,<h2 id="背景与目标"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#背景与目标">#</a>背景与目标</h2>
+<p>长期使用的博客跑在一套需要数据库的 CMS 上：文章、标签、评论、点赞全在服务端。维护成本不在写代码，而在每次想改一个字段都要发版、迁移、备份。</p>
+<p>目标很明确：<strong>内容就是文件，发布就是 push</strong>。文章、项目、友链、站点配置全部是仓库里的 Markdown 与 JSON，构建一次得到完整站点，不需要任何运行时服务。</p>
+<h2 id="我负责什么"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#我负责什么">#</a>我负责什么</h2>
+<p>个人项目，从信息架构到实现全部由我完成：</p>
+<ul>
+<li>功能范围与验收标准（16 项功能、7 项横切要求）</li>
+<li>设计令牌与拟态玻璃的视觉实现</li>
+<li>内容层：frontmatter 校验、Markdown 渲染、代码高亮、目录提取</li>
+<li>交互层：胶囊导航、搜索面板、阅读设置、分享与收藏</li>
+</ul>
+<h2 id="关键难点"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#关键难点">#</a>关键难点</h2>
+<p><strong>一、功能优先于视觉的落地顺序。</strong> 先保证 16 项功能可用，再统一成玻璃质感。实际执行时把颜色、圆角、阴影全部收敛成 CSS 变量，视觉返工只改令牌，不动组件。</p>
+<p><strong>二、静态站点的边界要说清楚。</strong> 点赞计数、评论、订阅确认都需要服务端。方案是：能降级的降级（评论走 Giscus，未配置时显示只读提示），不能降级的不伪造（不显示假的阅读量与点赞数）。</p>
+<p><strong>三、动效不能挡住输入。</strong> 所有入场只动 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>transform</span></span></code></span> 与 <span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>opacity</span></span></code></span>，<span data-rehype-pretty-code-figure=""><code data-language="text" data-theme="github-light-default github-dark-default"><span data-line=""><span>prefers-reduced-motion</span></span></code></span> 下全部取消；胶囊导航展开用弹簧，收起用短时长，避免"关不掉"的错觉。</p>
+<h2 id="结果"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#结果">#</a>结果</h2>
+<ul>
+<li>全站构建期生成，无运行时数据库</li>
+<li>首屏不加载搜索索引与评论 iframe</li>
+<li>深浅两套主题共用一份令牌，切换无闪烁</li>
+<li>每篇文章可导出原始 Markdown</li>
+</ul>
+<h2 id="已知限制"><a class="heading-anchor" data-anchor-copy="true" aria-label="复制本节链接" href="#已知限制">#</a>已知限制</h2>
+<ul>
+<li>定时发布依赖 CI 定时重建，误差等于构建间隔</li>
+<li>预览链接需要服务端鉴权，当前未实现</li>
+<li>全局点赞计数未接入，仅保留本地状态</li>
+</ul>
+<p>这些限制写在文章里，也写在 README 里，不藏在代码注释中。</p>1c:["$","div",null,{"className":"mt-10 grid gap-10 lg:grid-cols-[minmax(0,1fr)_280px] lg:gap-12","children":[["$","article",null,{"className":"min-w-0","children":["$","div",null,{"className":"prose-editorial","dangerouslySetInnerHTML":{"__html":"$29"}}]}],["$","aside",null,{"children":["$","$L16",null,{"as":"div","className":"project-panel sticky top-24 overflow-hidden rounded-[var(--radius-card)] p-5","children":[["$","span",null,{"aria-hidden":true,"className":"project-card-sheen"}],["$","p",null,{"className":"relative font-mono text-[10.5px] uppercase tracking-[0.14em] text-muted/85","children":"METADATA · 数据来源"}],["$","dl",null,{"className":"relative mt-4 divide-y divide-hairline/70 rounded-[12px] border border-hairline/75 bg-surface-sunken/70 px-3.5 py-1 text-sm","children":[["$","div",null,{"className":"flex items-baseline justify-between gap-3 py-2.5","children":[["$","dt",null,{"className":"text-[11px] text-muted","children":"来源平台"}],["$","dd",null,{"className":"font-mono text-xs tabular-nums text-ink","children":"手动维护"}]]}],["$","div",null,{"className":"flex items-baseline justify-between gap-3 py-2.5","children":[["$","dt",null,{"className":"text-[11px] text-muted","children":"本次更新"}],["$","dd",null,{"className":"font-mono text-xs tabular-nums text-ink","children":"未同步"}]]}],["$","div",null,{"className":"flex items-baseline justify-between gap-3 py-2.5","children":[["$","dt",null,{"className":"text-[11px] text-muted","children":"Star"}],["$","dd",null,{"className":"font-mono text-xs tabular-nums text-ink","children":"—"}]]}],"$L2a","$L2b","$L2c"]}],false,false,"$L2d"]}]}]]}]
+1d:["$","script","script-0",{"src":"/_next/static/chunks/1fm7xqvu_86p0.js","async":true}]
+1e:["$","$L2e",null,{"children":["$","$24",null,{"name":"Next.MetadataOutlet","children":"$@2f"}]}]
+28:true
+f:300
+2a:["$","div",null,{"className":"flex items-baseline justify-between gap-3 py-2.5","children":[["$","dt",null,{"className":"text-[11px] text-muted","children":"最近提交"}],["$","dd",null,{"className":"font-mono text-xs tabular-nums text-ink","children":"—"}]]}]
+2b:["$","div",null,{"className":"flex items-baseline justify-between gap-3 py-2.5","children":[["$","dt",null,{"className":"text-[11px] text-muted","children":"主语言"}],["$","dd",null,{"className":"font-mono text-xs tabular-nums text-ink","children":"—"}]]}]
+2c:["$","div",null,{"className":"flex items-baseline justify-between gap-3 py-2.5","children":[["$","dt",null,{"className":"text-[11px] text-muted","children":"许可证"}],["$","dd",null,{"className":"font-mono text-xs tabular-nums text-ink","children":"—"}]]}]
+2d:["$","p",null,{"className":"relative mt-4 border-t border-hairline/80 pt-3.5 text-[11px] leading-relaxed text-muted","children":"同步关闭的项目不随外部变化更新，手动填写的值长期保持。"}]
+2f:null
+f:C
+27:0
+11:"$undefined"
+d:"$undefined"
+26:"$undefined"
+1f:"$undefined"
